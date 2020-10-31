@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: auto;
+    margin-bottom: 0;
+}
+
+
+.icon {
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 30px;
+    right: 50px;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+
+._dropdown {
+    position: absolute;
+    border-radius: 4px 4px 6px 6px;
+    font-size: 16px;
+    animation-name: drop;
+    animation-duration: 0.2s;
+    transform-origin: top;
+    border-top: 1px solid #eeeeee;
+    z-index: 100;
+    top: 63px;
+    background-color: rgb(238, 238, 240);
+    right: 10px;
+    padding: 0 7px 6px 8px;
+    cursor: pointer;
+    opacity: 98.5%;
+}
+
+._dropdown a {
+    text-align: left;
+    display: block;
+    line-height: 36px;
+    padding: 0 40px 0 20px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    position: relative;
+}
+
+
+.header_m_t{
+    background-color: #d3d3d4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #393e46;
+    font-size: 32px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.fa-clock-o {
+    padding-left: 4px;
+    padding-top: 1px;
+}
+
+.t_text {
+    background-color: #ccc;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color: #393e46;
+    font-size: 27px;
+    font-family: 'Almarai', sans-serif;
+    border: 0;
+    border-left: 3px solid #393e46;
+}
+
+body{
+    background-color: #e2e2e2;
+    font-family: sans-serif;
+}
+
+.up_date {
+    background-color:  #15171b;
+    padding: 4px;
+    margin-bottom: 0;
+    direction: rtl;
+    font-family: 'Almarai', sans-serif;
+    color: rgb(185, 182, 182);
+    margin: auto;
+    font-size: 11.5px;
+    display: flex;
+    border: 0;
+    border-top: 3px solid #2c3036;
+    border-bottom: 4.5px solid#2c3036;
+    border-image: linear-gradient(to right, #2c3036 , #1f3068);
+    border-image-slice: 10;
+}
+.sections {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #e0e4e0;
+    color: #393e46;
+    direction: rtl;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+}
+.title_page {
+    background-color: rgb(221, 222, 223);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 13px;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 1.5px solid #d4d4cd;
+}
+
+.container_page {
+    padding: 13px;
+}
+
+.container_page p {
+    padding-right: 6px;
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+
+
+.section_r {
+    background-color: rgb(218, 218, 218);
+    color: #393e46;
+    direction: rtl;
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.246);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+.section_rO {
+    direction: rtl;
+    background-color: rgb(218, 218, 218);
+    color: #393e46;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 23px;
+
+}
+
+.sug_op {
+    display: flex;
+    justify-content: space-around;
+}
+
+.io {
+    padding: 10px;
+    font-family: 'Almarai', sans-serif;
+    font-size: 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.io:hover{
+    background-color: #ccc;
+    border-radius: 50px;
+}
+
+.io:focus{
+    background-color: #ccc;
+    border-radius: 50px;
+}
+
+.text_s_q {
+    padding: 20px;
+    font-family: 'Almarai', sans-serif;
+}
+
+.text_sub_r{
+    font-size: 18px;
+    padding: 10px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+
+}
+
+p.number_c {
+    font-size: 10px;
+}
+
+.s_sub_t_d_ {
+    display: flex;
+    text-align: right;
+}
+
+ a {
+    text-decoration: none;
+    color: #393e46;
+}
+
+a.r {
+    color: #2e466b;
+}
+
+ a:hover {
+     color: #3282b8;
+}
+
+a.se_mo_r_a {
+    color: #38537a;
+}
+
+.a_s:hover {
+    color: #393e46;
+}
+#n_ing {
+    text-align: center;
+    padding: 20px;
+}

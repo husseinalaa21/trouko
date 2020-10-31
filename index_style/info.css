@@ -1,0 +1,154 @@
+
+.information {
+    border:0;
+    border-top: 1px solid  #1f2224;
+    background-color:  #242729;
+    bottom: 0;
+    width: auto;
+    margin: auto;
+    margin-bottom: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    color: #393e46;
+    display: flex;
+    flex-direction: column;
+}
+
+.trouko_about{
+    float: left;
+    margin: auto;
+    padding: 15px;
+    padding-left: 10px;
+    margin: auto;
+    font-size: .8rem;
+    font-family: 'Almarai', sans-serif;
+    color: #6f7175;
+}
+
+
+
+.dis_sess {
+    display: flex;
+    width: auto;
+    margin: auto;
+    padding-top: 5px 10px 10px 10px;
+    padding-bottom: 10px;
+}
+
+.a_link {
+    width: 100px;
+}
+
+.a_sess {
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.m_telegram {
+    color: #3265b8;
+}
+
+.media {
+    color: #1f2829;
+}
+
+.m_each {
+    padding: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.w_each {
+    padding: 12px 16px 10px 16px;
+}
+
+.con_us {
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.media_m {
+    margin-bottom: 10px;
+}
+a.main-n {
+    color: #2e79ac;
+    border-bottom: 1px solid #2e79ac;
+}
+
+a.face {
+    color: #0f4c75;
+}
+
+.twi , a.twi{
+    color: #3282b8;
+}
+
+a.a_link {
+    text-decoration: none;
+    color: #848d95;
+}
+
+a.a_link:hover {
+    color: #143d58;
+}
+
+/* */
+
+div.s_sub_t_d {
+    position: relative;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 260px;
+    max-height: 260px;
+    background-color:#dddddde1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+div.s_sub_t_d:hover {
+    border: 0;
+    outline-color: 0;
+}
+
+.img_p_sugg_p {
+    height: 140px;
+}
+
+.sugg_p_t_bo_23{
+    position: absolute;
+    z-index: 10px;
+    bottom: 0;
+}
+
+a.link_t_read_p {
+    font-size: 16px;
+    padding: 8px 12px 5px 12px;
+    display: flex;
+    bottom: 0;
+    direction: rtl;
+    color: #1f4068;
+}
+
+.p_t_inf , .link_t_read_p{
+    background-color:#dddddd;
+}
+
+a.s_sub_t {
+    font-size: 22px;
+    display: flex;
+    direction: rtl;
+    padding: 10px;
+    padding-bottom: 2px;
+    background-color: #dbdbdb9f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
+
+}
+
+.p_t_inf {
+    direction: rtl;
+    padding: 10px;
+    color:  #1f2224;
+    height: 50px;
+}

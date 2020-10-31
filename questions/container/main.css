@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header {
+    background-color: #d3d3d4;
+    height: 70px;
+    width: auto;
+    padding-top: 20px;
+    border: 0;
+    top: 0;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 6px solid #ababac;
+}
+
+.header_m_t{
+    padding-top: 100px;
+    width: 330px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #393e46;
+    font-size: 37px;
+    font-family: 'Baloo Tamma 2', cursive;
+    border-bottom: 4px solid #393e46;
+}
+
+.t_text {
+    background-color: #ccc;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color: #393e46;
+    font-size: 30px;
+    font-family: 'Almarai', sans-serif;
+    border: 0;
+    border-left: 3px solid #393e46;
+}
+
+body{
+    background-color: #d3d3d4;
+    font-family: sans-serif;
+}
+
+.about ,.about_b {
+    display: flex;
+    direction: rtl;
+    padding: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 320px;
+    margin: auto;
+    color: rgb(24, 24, 29);
+    background-color:#ccc ;
+    text-align: center;
+}
+
+.a_contact {
+    background-color:#ccc ;
+    width: 320px;
+    padding: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: auto;
+
+}
+
+.about_b {
+    padding-top: 0;
+    line-height: 26px;
+}
+
+p.a {
+    font-weight: 600;
+    width: 74px;
+    color: rgb(58, 58, 65);
+}
+
+.contact_a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+    width: 320px;
+    margin: auto;
+    color: rgb(24, 24, 29);
+    text-align: center;
+}
+
+.contact_b {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+    padding-top: 0;
+    width: 320px;
+    margin: auto;
+    color: rgb(24, 24, 29);
+}
+
+
+p.a_b {
+    font-weight: 600;
+    width: 100px;
+    color: rgb(58, 58, 65);
+}
+
+a:hover {
+    color: #3282b8;
+}
+
+a.face {
+    color: #0f4c75;
+    text-decoration: none;
+}
+
+.twi , a.twi{
+    color: #3282b8;
+    text-decoration: none;
+}
+
+a.email {
+    color: #bd0000;
+    text-decoration: none;
+}
