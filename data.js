@@ -24,11 +24,11 @@
  "linkPage" : "https://www.trouko.co/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
 },{
+ "linkPage" : "https://www.trouko.co/questions/questions_physics/كيف_يعمل_المايكرويف/", 
+ "namePath" : "كيف يعمل المايكرويف" 
+},{
  "linkPage" : "https://www.trouko.co/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/", 
  "namePath" : "أقرب كوكب صالح للحياة من الأرض" 
-},{
- "linkPage" : "https://www.trouko.co/questions/questions_space/الطاقة_المضلمة/", 
- "namePath" : "الطاقة المضلمة" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_space/النسبية_العامة_و_الجاذبية/", 
  "namePath" : "النسبية العامة و الجاذبية" 
@@ -36,8 +36,8 @@
  "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/", 
  "namePath" : "ما هو عمر الكون" 
 },{
- "linkPage" : "https://www.trouko.co/questions/questions_physics/كيف_يعمل_المايكرويف/", 
- "namePath" : "كيف يعمل المايكرويف" 
+ "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هي_الطاقة_المضلمه/", 
+ "namePath" : "ما هي الطاقة المضلمه" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
  "namePath" : "ما هو الشحن اللاسلكي" 
