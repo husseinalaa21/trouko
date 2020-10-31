@@ -67,6 +67,12 @@
     border-radius: 1.5px;
 }
 
+.no_result {
+    font-size: 16px;
+    color: #393e46;
+    padding: 10px;
+}
+
 /* miunonc */
 .uMenuMine_m {
     position: relative;

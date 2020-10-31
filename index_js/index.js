@@ -121,47 +121,47 @@ function showText( data ) {
 }
 
 function changeTextLiSpy( btn ) {
-  li_list_spy.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن الفيزياء ' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp; مواضيع عن الفيزياء ') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن الفيزياء ' );
+  li_list_spy.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء' );
 }
 
 function changeTextLiSpy_q( btn ) {
-  li_list_spy_q.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;اسئلة عن الفيزياء' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp;اسئلة عن الفيزياء') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;اسئلة عن الفيزياء' );
+  li_list_spy_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء' );
 }
 
 function changeTextLispace( btn ) {
-  li_list_space.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن الفضاء  ' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp; مواضيع عن الفضاء  ') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن الفضاء  ' );
+  li_list_space.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء' );
 }
 
 function changeTextLispace_q( btn ) {
-  li_list_space_q.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; اسئلة عن  الفضاء' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp; اسئلة عن  الفضاء') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; اسئلة عن  الفضاء' );
+  li_list_space_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء' );
 }
 
 function changeTextLiSc( btn ) {
-  li_list_sc.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن العلوم  ' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp; مواضيع عن العلوم  ') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن العلوم  ' );
+  li_list_sc.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم' );
 }
 
 function changeTextLiSc_q( btn ) {
-  li_list_sc_q.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;اسئلة عن العلوم' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp;اسئلة عن العلوم') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;اسئلة عن العلوم' );
+  li_list_sc_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن العلوم' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن العلوم') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;"> &nbsp;اسئلة عن العلوم' );
 }
 
 function changeTextLiG( btn ) {
-  li_list_g.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن الجغرافية  ' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp; مواضيع عن الجغرافية  ') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; مواضيع عن الجغرافية  ' );
+  li_list_g.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية' );
 }
 
 
 function changeTextLielse( btn ) {
-  li_list_else.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;  مواضيع متنوعة  ' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp;  مواضيع متنوعة  ') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp  مواضيع متنوعة  ' );
+  li_list_else.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع متنوعة' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع متنوعة') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbspمواضيع متنوعة' );
 }
 
 
 function changeTextLielse_q( btn ) {
-  li_list_else_q.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;اسئلة متنوعة' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp;اسئلة متنوعة') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;اسئلة متنوعة' );
+  li_list_else_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة متنوعة' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;"> &nbsp;اسئلة متنوعة') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة متنوعة' );
 }
 
 function changeTextLitec( btn ) {
-  li_list_technology.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;مواضيع عن التقنية' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp;مواضيع عن التقنية') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp;مواضيع عن التقنية' );
+  li_list_technology.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية' );
 }
 
 function changeTextLitec_q( btn ) {
-  li_list_technology_q.html() === '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; اسئلة عن التقنية' ? btn.html( '<i class="material-icons" style="font-size:20px">format_align_left</i> &nbsp; اسئلة عن التقنية') : btn.html( '<i class="material-icons" style="font-size:20px">format_align_justify</i> &nbsp; اسئلة عن التقنية' );
+  li_list_technology_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية') : btn.html('<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية');
 }

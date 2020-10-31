@@ -1,6 +1,6 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP;
 titleIn = "النسبية العامة";
-adPhoto = "https://lh3.googleusercontent.com/proxy/i7CG6Bw3vsGhphslYCOOajM6Z-QTdrk16OARZpMfpwB516RYWvNMvMekas7Zfm5W7KXcCDHuX_mpVqEevcETioUMmErDq5Kle1tkeqEh"
+adPhoto = "https://community-static.arageek.com/wp-content/uploads/2020/04/%D8%A7%D9%8A%D9%86%D8%B4%D8%AA%D8%A7%D9%8A%D9%86.jpg"
 adDiscription = "تعرف النسبية العامة بأنها أساس الفيزياء الحديثة , كما انها النظرية الاولى لأينشتاين قبل النسبية الخاصة , وهي النضرية الهندسية للجاذبية و الوصف الحالي للجاذبية في الفيزياء الحديثة و التي نشرها ألبرت اينشتاين عام 1915 .<br>تقوم الجاذبية العامة على تنقيح قانون الجذب العام لنيوتن , وتقدم وصفاً موحداً للجاذبية كخاصية هندسية للمكان و الزمن أوما يعرف ب الزمكان .<br><br>ولتوضيح أهم مفهوم للنسبية ىالعامة , وفقاً للنسبية العامة فإن التجاذب الملاحظ بين الكتل ينتج من انحناء الزمكان الذي تحدثه هذه الكتل."
 namePpath = "https://www.trouko.co/questions/questions_space/النسبية_العامة_و_الجاذبية/"
 nameP = namePpath.replace('https://www.trouko.co/',"")

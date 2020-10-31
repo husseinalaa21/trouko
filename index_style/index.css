@@ -131,11 +131,12 @@ li:focus{
 
 .sub_r_s::-webkit-scrollbar{
     width: auto;
-    height: 7px;
+    height: 8px;
 }
 
 .sub_r_s::-webkit-scrollbar-thumb{
-    background-color: #1e1e22;
+    background-color:#a8a8ac;
+    border: 2px solid #c3c3c3;
     border-radius: 1.5px;
 }
 
@@ -310,4 +311,9 @@ li:focus{
     font-size: 23px;
     padding: 14px;
     outline-color: 0;
+}
+
+.clock {
+    width: 13px;
+    margin-left: 5px;
 }

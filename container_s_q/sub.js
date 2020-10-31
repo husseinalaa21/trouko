@@ -14,10 +14,18 @@ xReq.send();
 
 window.onload = function(){
     adIndexSugg(namePpath)
+    adIndexSuggT(namePpath)
+
+    setTimeout(function (){
+        if(resultOne == "false" && resultTwo == "false"){
+            hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
+        }}, 100)
+
 }
 
 // 
-
+var resultOne = "true";
+var resultTwo = "true";
 var storageD = [];
 
 function adIndexSugg(n){
@@ -40,7 +48,15 @@ function adIndexSugg(n){
                storageD.push(subTwo)
             }
         }
+    } else{
+        resultOne = "false"
     }
+    ad();
+}
+
+function adIndexSuggT(n){
+    var i;
+    var xData = JSON.parse(xReq.responseText);
 
     if(n.includes("/subjects/company/")){
         for(i=0; i < xData.length; i++){
@@ -67,18 +83,12 @@ function adIndexSugg(n){
                storageD.push(subFive)
             }
         }
+    }else{
+        return resultTwo = "false"
     }
-
-   /* if(n.includes("/subjects/technology/")){
-        for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes("/subjects/space/")){
-                var subSix = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(subSix)
-            }
-        }
-    }*/
     ad();
 }
+
 
 function ad(){
     var arr = [];
