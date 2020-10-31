@@ -96,10 +96,10 @@ a.a_link:hover {
 
 div.s_sub_t_d {
     position: relative;
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 260px;
-    max-height: 260px;
+    min-width: 240px;
+    max-width: 240px;
+    min-height: 250px;
+    max-height: 250px;
     background-color:#dddddde1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 8px;
