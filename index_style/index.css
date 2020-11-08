@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Almarai;
+    src: url(../index_style/Almarai-Regular.ttf);
+}
+
+@font-face {
+    font-family: BalooTamma;
+    src: url(../index_style/BalooTamma2-Regular.ttf);
+}
+
 header {
     width: auto;
     margin-bottom: 0;
@@ -17,7 +27,7 @@ header {
     justify-content: center;
     color: #393e46;
     font-size: 32px;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'BalooTamma', cursive;
 }
 
 .up_date {

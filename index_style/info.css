@@ -1,7 +1,10 @@
-
+@font-face {
+    font-family: Almarai;
+    src: url(../index_style/Almarai-Regular.ttf);
+}
 .information {
     border:0;
-    border-top: 1px solid  #1f2224;
+    border-top: 3px solid  #3265b8;
     background-color:  #242729;
     bottom: 0;
     width: auto;
@@ -12,10 +15,12 @@
     color: #393e46;
     display: flex;
     flex-direction: column;
+    font-family: 'Almarai', sans-serif;
+    font-size: 13px;
 }
 
 .trouko_about{
-    float: left;
+    background-color: #2c2f31;
     margin: auto;
     padding: 15px;
     padding-left: 10px;
@@ -23,16 +28,34 @@
     font-size: .8rem;
     font-family: 'Almarai', sans-serif;
     color: #6f7175;
+    direction: rtl;
 }
 
+.trouko_about_t{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 0px;
+}
 
+.trouko-about_p {
+    padding: 10px;
+    padding-right: 0px;
+    line-height: 20px;
+}
 
 .dis_sess {
     display: flex;
     width: auto;
     margin: auto;
-    padding-top: 5px 10px 10px 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.sweb {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .a_link {
@@ -43,15 +66,6 @@
     padding-top: 0;
     padding-bottom: 15px;
 }
-
-.m_telegram {
-    color: #3265b8;
-}
-
-.media {
-    color: #1f2829;
-}
-
 .m_each {
     padding: 14px;
     padding-top: 10px;
@@ -70,15 +84,6 @@
 .media_m {
     margin-bottom: 10px;
 }
-a.main-n {
-    color: #2e79ac;
-    border-bottom: 1px solid #2e79ac;
-}
-
-.twi , a.twi{
-    color: #3282b8;
-}
-
 a.a_link {
     text-decoration: none;
     color: #848d95;
@@ -94,8 +99,8 @@ div.s_sub_t_d {
     position: relative;
     min-width: 240px;
     max-width: 240px;
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 260px;
+    max-height: 260px;
     background-color:#dddddde1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 8px;
@@ -147,4 +152,5 @@ a.s_sub_t {
     padding: 10px;
     color:  #1f2224;
     height: 50px;
+    text-align: right;
 }

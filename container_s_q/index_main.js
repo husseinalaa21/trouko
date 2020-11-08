@@ -162,8 +162,8 @@ iconT.addEventListener("click", e =>{
     if (main_menu.style.display === "none") {
         main_menu.style.display = "block";
         iconBarTh.className = "icon-bar bar_a";
-        setTimeout(function(){ iconBar.className = "icon-bar bar_a" }, 200);
-        setTimeout(function(){ iconBarT.className = "icon-bar bar_a" }, 500);
+        setTimeout(function(){ iconBar.className = "icon-bar bar_a" }, 100);
+        setTimeout(function(){ iconBarT.className = "icon-bar bar_a" }, 200);
     } else {
 
         iconBarTh.className = "icon-bar";
@@ -187,12 +187,12 @@ var change = 'open';
     if (change === 'open') {
         photo_page_im.style.maxHeight = "100%";
         img.style.maxWidth = "50%"
-        click_material.innerHTML = '<i class="material-icons material_i" style="font-size:20px">crop</i>'
+        click_material.innerHTML = '<img src="../../../icons/compress-solid.svg" class="material_i" style="width: 16px;">'
         return change = 'close'
       } if(change === 'close') {
         photo_page_im.style.maxHeight = "";
         img.style.maxWidth = ""
-        click_material.innerHTML = '<i class="material-icons material_i" style="font-size:20px ">crop_free</i>'
+        click_material.innerHTML = '<img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">'
         return change = 'open'
       }
 })
