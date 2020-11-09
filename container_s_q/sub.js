@@ -67,14 +67,14 @@ function adIndexSugg(n){
             }
         }
     } else {
-        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
+        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
     }
     ad();
 }
 
 setTimeout(function(){
     if(index_sugg_p.innerText == ""){
-        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
+        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
     }
 },1900)
 
