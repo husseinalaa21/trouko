@@ -36,8 +36,8 @@
  "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/", 
  "namePath" : "ما هو عمر الكون" 
 },{
- "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هي_الطاقة_المضلمه/", 
- "namePath" : "ما هي الطاقة المضلمه" 
+ "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هي_الطاقة_المضلمة/", 
+ "namePath" : "ما هي الطاقة المضلمة" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
  "namePath" : "ما هو الشحن اللاسلكي" 
