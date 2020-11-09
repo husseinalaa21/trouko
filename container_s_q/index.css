@@ -15,12 +15,10 @@
 }
 
 header {
-    width: auto;
     border: 0;
     top: 0;
     z-index: 100;
     width: 100%;
-    position: fixed;
     opacity: 98.5%;
 }
 
@@ -141,7 +139,6 @@ body{
     background-color: #f0f0f0;
     font-family: sans-serif;
     position: relative;
-    top: 150px;
 }
 
 .container_header {
