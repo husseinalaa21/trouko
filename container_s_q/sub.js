@@ -72,6 +72,12 @@ function adIndexSugg(n){
     ad();
 }
 
+setTimeout(function(){
+    if(index_sugg_p.innerText == ""){
+        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
+    }
+},1900)
+
 function ad(){
     var arr = [];
     while(arr.length < storageD.length){
