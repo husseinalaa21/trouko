@@ -202,9 +202,6 @@ window.onscroll = function() {
     myFunction()
 };
 
-document.getElementById("header").style.position = "fixed";
-document.body.style.top = "150px";
-
 function checS() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 130) {
       document.getElementById("header_m_t").style.display = "none";
