@@ -1,5 +1,5 @@
 var sourcesanquotes , ad_sources_quotes_one ,ad_sources_quotes_two, ad_sources_quotes_three , ad_sources_quotes_four , 
-ad_sources_quotes_five , ad_sources_quotes_six, ad_sources_quotes_seven , ad_sources_quotes_index , numberSuoces,hide_text,ele_sugmen,index_sugg_p,nameP,title_p_index;
+ad_sources_quotes_five , ad_sources_quotes_six, ad_sources_quotes_seven , ad_sources_quotes_index , numberSuoces,hide_text,ele_sugmen;
 numberSuoces = 0;
 ad_sources_quotes_one = document.getElementById('ad_sources_quotes_one');
 ad_sources_quotes_two = document.getElementById('ad_sources_quotes_two');
@@ -12,11 +12,6 @@ ad_sources_quotes_index = document.getElementById('ad_sources_quotes_index');
 sourcesanquotes = document.getElementById('souquo');
 hide_text = document.getElementById('hide_text')
 ele_sugmen = document.getElementById("ele_sugmen")
-
-index_sugg_p = document.getElementById("index_sugg_p")
-nameP = document.getElementById("title").innerHTML
-title_p_index = document.getElementById("title_p_index").innerHTML = nameP;
-
 addSourcesAndQuotesOne(addSourcesAndQuotesOne_n,addSourcesAndQuotesOne_na)
 addSourcesAndQuotesTwo(addSourcesAndQuotesTwo_n,addSourcesAndQuotesTwo_na)
 addSourcesAndQuotesThree(addSourcesAndQuotesThree_n,addSourcesAndQuotesThree_na)
@@ -221,103 +216,3 @@ function myFunction() {
     var scrolled = (winScroll / height) * 110;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
-
-  var xReq = new XMLHttpRequest();
-  xReq.open('GET','../../../data.js');
-  
-  xReq.send();
-  
-  window.onload = function(){
-      adIndexSugg(namePpath)
-  }
-  
-  // 
-  
-  var storageD = [];
-  
-  function adIndexSugg(n){
-      var i;
-      var xData = JSON.parse(xReq.responseText);
-  
-      if(n.includes("/subjects/food_fruits_vegetables/")){
-          for(i=0; i < xData.length; i++){
-              if(xData[i].linkPage.includes("/subjects/food_fruits_vegetables/")){
-                  var subOne = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-                 storageD.push(subOne)
-              }
-          }
-      }
-  
-      else if(n.includes("/subjects/space/")){
-          for(i=0; i < xData.length; i++){
-              if(xData[i].linkPage.includes("/subjects/space/")){
-                  var subTwo = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-                 storageD.push(subTwo)
-              }
-          }
-      }
-      else if(n.includes("/subjects/company/")){
-          for(i=0; i < xData.length; i++){
-              if(xData[i].linkPage.includes("/company/")){
-                  var subThree = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-                 storageD.push(subThree)
-              }
-          }
-      }
-  
-      else if(n.includes("/subjects/else/")){
-          for(i=0; i < xData.length; i++){
-              if(xData[i].linkPage.includes("/subjects/space/")){
-                  var subFour = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-                 storageD.push(subFour)
-              }
-          }
-      }
-  
-      else if(n.includes("/subjects/technology/")){
-          for(i=0; i < xData.length; i++){
-              if(xData[i].linkPage.includes("/subjects/space/")){
-                  var subFive = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-                 storageD.push(subFive)
-              }
-          }
-      } else {
-          hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
-      }
-      ad();
-  }
-  
-  function ad(){
-      var arr = [];
-      while(arr.length < storageD.length){
-      var r = Math.floor(Math.random() * storageD.length);
-      if(arr.indexOf(r) === -1) arr.push(r);
-      }
-      var i;
-      for(i=0; i < arr.length; i++){
-          var x = arr[i]
-          addSuggTIndex(storageD[x].linkPage,storageD[x].namePath)
-      }
-  }
-  
-  
-  
-  var callf = 0;
-  
-  function addSuggTIndex(l,n){
-      var g = title_p_index.replace(/ /g,"")
-      callf ++;
-      if(callf >5){
-          return false
-      }
-      else if(g.includes(n)){
-          return false
-      }
-      var li = document.createElement("p");
-      li.innerHTML = "<a class='sugg_i_li' href='"+ l+"'>"+n+"</a>";
-      setTimeout(function(){hol_sugg.innerHTML= ''},170)
-      setTimeout(function(){index_sugg_p.append(li)},200)
-  }
-  
-  
-  //.
