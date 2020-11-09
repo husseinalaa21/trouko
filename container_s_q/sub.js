@@ -1,4 +1,4 @@
-var index_sugg_p ,nameP ,title_p_index,sub_r_s,sub_r_n,hol_sugg; 
+var index_sugg_p ,nameP ,title_p_index,sub_r_s,sub_r_n,hol_sugg,psp; 
 
 index_sugg_p = document.getElementById("index_sugg_p")
 nameP = document.getElementById("title").innerHTML
@@ -6,6 +6,7 @@ title_p_index = document.getElementById("title_p_index").innerHTML = nameP;
 sub_r_s = document.getElementById("sub_r_s")
 sub_r_n = document.getElementById("sub_r_n")
 hol_sugg = document.getElementById("hol_sugg")
+psp = document.getElementById("psp").innerHTML
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET','../../../data.js');
@@ -24,49 +25,14 @@ function adIndexSugg(n){
     var i;
     var xData = JSON.parse(xReq.responseText);
 
-    if(n.includes("/subjects/food_fruits_vegetables/")){
+    if(n.includes(psp)){
         for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes("/subjects/food_fruits_vegetables/")){
-                var subOne = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(subOne)
+            if(xData[i].linkPage.includes(psp)){
+                var sub = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
+               storageD.push(sub)
             }
         }
-    }
-
-    else if(n.includes("/subjects/space/")){
-        for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes("/subjects/space/")){
-                var subTwo = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(subTwo)
-            }
-        }
-    }
-    else if(n.includes("/subjects/company/")){
-        for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes("/company/")){
-                var subThree = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(subThree)
-            }
-        }
-    }
-
-    else if(n.includes("/subjects/else/")){
-        for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes("/subjects/space/")){
-                var subFour = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(subFour)
-            }
-        }
-    }
-
-    else if(n.includes("/subjects/technology/")){
-        for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes("/subjects/space/")){
-                var subFive = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(subFive)
-            }
-        }
-    } else {
+    }else {
         hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
     }
     ad();

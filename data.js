@@ -6,11 +6,11 @@
  "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
  "namePath" : "تيسلا موتورز" 
 },{
- "linkPage" : "https://www.trouko.co/subjects/physics/الطاقة_المتجددة/", 
- "namePath" : "الطاقة المتجددة" 
-},{
  "linkPage" : "https://www.trouko.co/subjects/space/استعمار_المريخ/", 
  "namePath" : "استعمار المريخ" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/space/الكون_الرباعي/", 
+ "namePath" : "الكون الرباعي" 
 },{
  "linkPage" : "https://www.trouko.co/subjects/space/سبيس_اكس/", 
  "namePath" : "سبيس اكس" 
@@ -23,6 +23,9 @@
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/physics/الطاقة_المتجددة/", 
+ "namePath" : "الطاقة المتجددة" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_physics/كيف_يعمل_المايكرويف/", 
  "namePath" : "كيف يعمل المايكرويف" 
