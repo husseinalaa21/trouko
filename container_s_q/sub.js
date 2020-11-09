@@ -15,18 +15,17 @@ xReq.send();
 window.onload = function(){
     adIndexSugg(namePpath)
     adIndexSuggT(namePpath)
-
-    setTimeout(function (){
-        if(resultOne == "false" && resultTwo == "false"){
-            hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
-        }}, 100)
-
 }
 
 // 
 var resultOne = "true";
 var resultTwo = "true";
 var storageD = [];
+
+setTimeout(function (){
+    if(resultOne == "false" && resultTwo == "false"){
+        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقرحات في الوقت الحالي </div>'
+}}, 100)
 
 function adIndexSugg(n){
     var i;
