@@ -17,6 +17,7 @@ window.onload = function(){
 }
 
 // 
+
 var storageD = [];
 
 function adIndexSugg(n){
@@ -82,18 +83,19 @@ function ad(){
         var x = arr[i]
         addSuggTIndex(storageD[x].linkPage,storageD[x].namePath)
     }
-    
 }
+
+
 
 var callf = 0;
 
 function addSuggTIndex(l,n){
+    var g = title_p_index.replace(/ /g,"")
     callf ++;
     if(callf >5){
         return false
     }
-    var g = nameP.replace(" ","")
-    if(g.includes(n)){
+    else if(g.includes(n)){
         return false
     }
     var li = document.createElement("p");
