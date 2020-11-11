@@ -173,11 +173,10 @@ a.s_sub_t {
 .infoPageSuQuTw {
     display: flex;
     justify-content: flex-end;
-    background-color:#dddddd;
     padding: 5px;
     text-align: right;
     border: 0;
-    background-color:  #babec2;
+    background-color:  #cbced1;
     font-size: 12px;
 }
 
