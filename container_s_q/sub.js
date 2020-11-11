@@ -18,26 +18,29 @@ xReq.open('GET','../../../data.js');
 xReq.send();
 
 window.onload = function(){
-    adIndexSugg(namePpath)
+    adIndexSugg(title_p_index)
 }
 
 // 
 
 var storageD = [];
 
-function adIndexSugg(n){
+function adIndexSugg(){
     var i;
     var xData = JSON.parse(xReq.responseText);
+    for(i=0; i < xData.length; i++){
+        if(xData[i].linkPage.includes(psp)){
+            var s = xData[i].namePath;
+            var l = xData[i].linkPage;
 
-    if(n.includes(psp)){
-        for(i=0; i < xData.length; i++){
-            if(xData[i].linkPage.includes(psp)){
-                var sub = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-               storageD.push(sub)
+            if(s.includes(title_p_index)){
+                l = ""
+                s = ""
             }
+
+            var sub = { "linkPage" : l,  "namePath" : s };
+            storageD.push(sub)
         }
-    }else {
-        hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
     }
     ad();
 }
@@ -60,7 +63,6 @@ function ad(){
         addSuggTIndex(storageD[x].linkPage,storageD[x].namePath)
         addSugg(storageD[x].linkPage,"_J_n_Hus_S","_pag_x_242","i_tfscript.js",sub_r_sSugg);
         sub_r_nSugg.style.display = "none"
-
     }
 }
 
