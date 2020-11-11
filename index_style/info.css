@@ -129,7 +129,9 @@ a.link_t_read_p {
     display: flex;
     bottom: 0;
     direction: rtl;
-    color: #1f4068;
+    color: #848d95;
+    background-color: #1f4068;
+    padding: 10px;
 }
 
 .p_t_inf , .link_t_read_p{
@@ -159,4 +161,9 @@ a.s_sub_t {
     display: flex;
     background-color:#dddddd;
     justify-content: flex-end;
+}
+
+.infoPageSuQuTw {
+    padding-bottom: 10px;   
+    background-color: #dddddd;
 }
