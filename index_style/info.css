@@ -129,9 +129,7 @@ a.link_t_read_p {
     display: flex;
     bottom: 0;
     direction: rtl;
-    color: #848d95;
-    background-color: #1f4068;
-    padding: 10px;
+    color: #1f4068;
 }
 
 .p_t_inf , .link_t_read_p{
