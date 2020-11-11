@@ -139,8 +139,7 @@ a.s_sub_t {
     font-size: 22px;
     display: flex;
     direction: rtl;
-    padding: 10px;
-    padding-bottom: 2px;
+    padding: 6px;
     background-color: #dbdbdb9f;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
 
