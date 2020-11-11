@@ -4,7 +4,7 @@ adPhoto = "https://community-static.arageek.com/wp-content/uploads/2020/04/%D8%A
 adDiscription = "تعرف النسبية العامة بأنها أساس الفيزياء الحديثة , كما انها النظرية الاولى لأينشتاين قبل النسبية الخاصة , وهي النضرية الهندسية للجاذبية و الوصف الحالي للجاذبية في الفيزياء الحديثة و التي نشرها ألبرت اينشتاين عام 1915 .<br>تقوم الجاذبية العامة على تنقيح قانون الجذب العام لنيوتن , وتقدم وصفاً موحداً للجاذبية كخاصية هندسية للمكان و الزمن أوما يعرف ب الزمكان .<br><br>ولتوضيح أهم مفهوم للنسبية ىالعامة , وفقاً للنسبية العامة فإن التجاذب الملاحظ بين الكتل ينتج من انحناء الزمكان الذي تحدثه هذه الكتل."
 namePpath = "https://www.trouko.co/questions/questions_space/النسبية_العامة_و_الجاذبية/"
 infSuGuPageOn = '<p>  أسئلة / الفضاء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الخميس, 29 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:14px; color: #393e46; margin-right: 5px;">watch_later</i>'
+infSuGuPageTw = '<p> الخميس, 29 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.co/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

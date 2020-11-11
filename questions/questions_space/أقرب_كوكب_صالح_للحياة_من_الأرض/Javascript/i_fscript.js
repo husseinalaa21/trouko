@@ -4,7 +4,7 @@ adPhoto = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEh
 adDiscription = "يوجد عدد كبير جداً من الكواكب الشبيها بالارض و التي يشار الى أنها صالحة للحياة , وذلك نضراً لتوفر العوامل التي تساعد الانسان على العيش بها , فأذا كنت تقصد اي كوكب صالح للعيش وألا يكون توأم الارض ويتسم بنفس المقومات الصالحه للحياة على الارض حتى لو كانت ليست بطبيعية كالهواء مثلا حيث يكون بداخل المحطات المخصصة للسكن او البدلات , فسيكون اول جوب هو الكوكب الاحمر او المريخ وغيره من الكواكب القريبة , وذلك بسبب عدة عوامل يتسم بها هذا الكوكب , وقد كتبنا بالفعل مقالة لهذا الكوكب الرائع والذي سيصبح يوماً ما المستقبل البشر [ <a href='https://www.trouko.co/subjects/space/استعمار_المريخ/'> استعمار المريخ </a> ] , ولكن اذا كان المقصود هو كوكب شبيه بالارض او كوكب يتسم بنفس عوامل الارض من هواء و مناخ و جاذبية .. فسنتطرق الى بعض الكواكب ومنها ما يلي .    "
 namePpath = "https://www.trouko.co/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/"
 infSuGuPageOn = '<p>          أسئلة / الفضاء          </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p>  السبت, 24 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:14px; color: #393e46; margin-right: 5px;">watch_later</i>'
+infSuGuPageTw = '<p>  السبت, 24 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.co/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)
