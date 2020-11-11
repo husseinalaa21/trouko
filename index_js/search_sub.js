@@ -6,7 +6,7 @@ random_t_ser, form_search,body,pageSearch ,
 header_m_t,pa_p,sub_r_s,
 item_list_sub_space_q,item_list_sub_empty_q,item_list_sub_technology_q
 ,google_search,se_in_p,cn_google,item_list_sub_empty,
-qususuggcon;
+qususuggcon,sususuggcon;
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET','../data.js');
@@ -14,6 +14,7 @@ xReq.open('GET','../data.js');
 xReq.send();
 item_list_sub_empty = document.getElementById('item_list_sub_empty')
 qususuggcon = document.getElementById("qususuggcon")
+sususuggcon = document.getElementById("sususuggcon")
 
 item_list_sub_space_q = document.getElementById('item_list_sub_space_q');
 item_list_sub_empty_q = document.getElementById("item_list_sub_empty_q");
@@ -37,6 +38,7 @@ xReq.onload = function(){
     adGs();
     addNewSubr();
     addNewSubrQU();
+    addNewSubrSU();
     addNewSub("/else/",item_list_sub_empty,"",'text_six');
     addNewSub("/questions_space/",item_list_sub_space_q,"",'text_aone');
     addNewSub("/questions_else/",item_list_sub_empty_q,"",'text_afive');
@@ -82,6 +84,7 @@ function addNewSub(nameSearch,urlAdd,urlLink,hiElement){
 }
 var storageD = [];
 var storageDQ = [];
+var storageDS = [];
 function addNewSubr(){
     var i;
     var xData = JSON.parse(xReq.responseText);
@@ -126,6 +129,18 @@ function addNewSubrQU(){
     adQu();
 }
 
+function addNewSubrSU(){
+    var i;
+    var xData = JSON.parse(xReq.responseText);
+    for(i=0; i < xData.length; i++){
+        if(xData[i].linkPage.includes("/subjects/")){
+            var adSub = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
+           storageDS.push(adSub)
+        }
+    }
+    adSu();
+}
+
 function ad(){
     var arr = [];
     while(arr.length < 6){
@@ -152,6 +167,19 @@ function adQu(){
         addNewSubrt(storageDQ[x].linkPage,qususuggcon,"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js")
     }
     
+}
+
+function adSu(){
+    var arr = [];
+    while(arr.length < 6){
+    var r = Math.floor(Math.random() * storageDS.length);
+    if(arr.indexOf(r) === -1) arr.push(r);
+    }
+    var i;
+    for(i=0; i < arr.length; i++){
+        var x = arr[i]
+        addNewSubrt(storageDS[x].linkPage,sususuggcon,"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js")
+    }
 }
 
 function addNewSubrt(m,xz,vz,xxc,psssp){

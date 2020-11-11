@@ -40,13 +40,13 @@
 
 .sub_r_s {
     padding: 14px;
-    padding-left: 7px;
+    padding-right: 0;
     margin: 6px;
     display: flex;
     flex-direction: row;
     overflow: scroll;
     overflow-y: hidden;
-    
+    direction: rtl;
 }
 
 .sub_r_n {

@@ -133,7 +133,7 @@ li:focus{
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    flex-direction: row;
+    direction: rtl;
     overflow: scroll;
     overflow-y: hidden;
     

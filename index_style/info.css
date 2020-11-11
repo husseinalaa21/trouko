@@ -104,6 +104,7 @@ div.s_sub_t_d {
     margin: 8px;
     border-radius: 3px;
     overflow: hidden;
+    direction: ltr;
 }
 
 div.s_sub_t_d:hover {
