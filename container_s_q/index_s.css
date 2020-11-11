@@ -41,6 +41,7 @@
 .sub_r_s {
     padding: 14px;
     padding-right: 0;
+    padding-top: 0;
     margin: 6px;
     display: flex;
     flex-direction: row;
