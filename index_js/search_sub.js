@@ -148,7 +148,6 @@ function adQu(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageD[x].linkPage,qususuggcon,"_J_n_Hus_Q")
     }
     
 }
