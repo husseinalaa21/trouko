@@ -119,7 +119,6 @@ div.s_sub_t_d:hover {
     position: absolute;
     z-index: 10px;
     bottom: 0;
-    height: auto;
 }
 
 a.link_t_read_p {
@@ -151,10 +150,9 @@ a.s_sub_t {
     direction: rtl;
     padding: 10px;
     color:  #1f2224;
-    height: 80px;
     text-align: right;
     bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 5px;
     padding-top: 5px;
 }
 
