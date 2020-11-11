@@ -5,13 +5,15 @@ item_list_sub_technology ,
 random_t_ser, form_search,body,pageSearch ,
 header_m_t,pa_p,sub_r_s,
 item_list_sub_space_q,item_list_sub_empty_q,item_list_sub_technology_q
-,google_search,se_in_p,cn_google,item_list_sub_empty;
+,google_search,se_in_p,cn_google,item_list_sub_empty,
+qususuggcon;
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET','../data.js');
 
 xReq.send();
 item_list_sub_empty = document.getElementById('item_list_sub_empty')
+qususuggcon = document.getElementById("qususuggcon")
 
 item_list_sub_space_q = document.getElementById('item_list_sub_space_q');
 item_list_sub_empty_q = document.getElementById("item_list_sub_empty_q");
@@ -34,6 +36,7 @@ cn_google = document.getElementById("cn_google")
 xReq.onload = function(){
     adGs();
     addNewSubr();
+    addNewSubrQU();
     addNewSub("/else/",item_list_sub_empty,"",'text_six');
     addNewSub("/questions_space/",item_list_sub_space_q,"",'text_aone');
     addNewSub("/questions_else/",item_list_sub_empty_q,"",'text_afive');
@@ -110,6 +113,18 @@ function addNewSubr(){
     ad();
 }
 
+function addNewSubrQU(){
+    var i;
+    var xData = JSON.parse(xReq.responseText);
+    for(i=0; i < xData.length; i++){
+        if(xData[i].linkPage.includes("/subjects/")){
+            var adSub = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
+           storageD.push(adSub)
+        }
+    }
+    adQu();
+}
+
 function ad(){
     var arr = [];
     while(arr.length < 6){
@@ -119,23 +134,37 @@ function ad(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageD[x].linkPage)
+        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_","_pag_n_232")
     }
     
 }
 
-function addNewSubrt(m){
+function adQu(){
+    var arr = [];
+    while(arr.length < 6){
+    var r = Math.floor(Math.random() * storageD.length);
+    if(arr.indexOf(r) === -1) arr.push(r);
+    }
+    var i;
+    for(i=0; i < arr.length; i++){
+        var x = arr[i]
+        addNewSubrt(storageD[x].linkPage,qususuggcon,"_J_n_Hus_Q","_pag_n_242")
+    }
+    
+}
+
+function addNewSubrt(m,xz,vz,psp){
     var n = m.replace("https://www.trouko.co/","")
     
     var g = Math.floor(Math.random() * 2000911); 
     
     var li = document.createElement("div");
     li.className = "s_sub_t_d";
-    li.id = n +"_J_n_Hus_"+ g
-    li.innerHTML = '<div id="'+n+'_pag_n_232"></div>'
-    sub_r_s.append(li)
+    li.id = n +vz+ g
+    li.innerHTML = '<div id="'+n+psp+'"></div>'
+    xz.append(li)
     
-    var pMine = document.getElementById(n+"_J_n_Hus_"+g)
+    var pMine = document.getElementById(n+vz+g)
     
     $.getScript( m+"JavaScript/i_fscript.js", function( data) {
        var li = document.createElement("div");
