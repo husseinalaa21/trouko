@@ -163,7 +163,6 @@ li:focus{
     margin: auto;
     margin-bottom: 10px;
     margin-top: 0;
-    padding: 14px;
     background-color: #d3d3d3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.246), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
     border: 0;
@@ -179,6 +178,13 @@ li:focus{
 .random_ser{
     border: 0;
     border-top: 4px solid rgba(0, 0, 0, 0.246);
+    font-family: sans-serif;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+    background-color: #d3d3d3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.246), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
+    padding: 14px;
 }
 
 .random_s_text {
@@ -196,7 +202,7 @@ li:focus{
 .text_sub_s {
     text-align: center;
     font-size: 23px;
-    padding: 6px 0px 7px 0;
+    padding: 14px;
     outline-color: 0;
 
 }
@@ -204,6 +210,8 @@ li:focus{
     display: flex;
     justify-content: center;
     line-height: 30px;
+    font-family: 'Almarai', sans-serif;
+    font-size: 21px;
 }
 .s_tas {
     background-color: #cbcbcc;
@@ -211,6 +219,39 @@ li:focus{
     border-left:  2px solid #111118;
     padding: 3px 3px 0px 5px;
     margin-left: 6px;
+}
+
+.subtitle_ss {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.subtitle_ss p{
+    font-family: 'Almarai', sans-serif;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.suntitlemaine {
+    border: 0;
+    border-right: 5px solid #3d5d85;
+    background-color: #e3e3e6;
+}
+.subtitlemainesec {
+    border: 0;
+    border-bottom: 2px solid #8b8e92;
+    margin-right: 10px;
+}
+
+.quntitlemaine {
+    border: 0;
+    border-right: 5px solid #8b0f0fab;
+    background-color: #e3e3e6;
+}
+
+.subcontainer_ss {
+    padding: 14px;
 }
 
 .text_sub_r {
@@ -324,6 +365,6 @@ li:focus{
 }
 
 .clock {
-    width: 13px;
+    width: 11px;
     margin-left: 5px;
 }
