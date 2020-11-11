@@ -134,7 +134,7 @@ function ad(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_","_pag_n_232")
+        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_")
     }
     
 }
@@ -148,12 +148,12 @@ function adQu(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageD[x].linkPage,qususuggcon,"_J_n_Hus_Q","_pag_n_242")
+        addNewSubrt(storageD[x].linkPage,qususuggcon,"_J_n_Hus_Q")
     }
     
 }
 
-function addNewSubrt(m,xz,vz,psp){
+function addNewSubrt(m,xz,vz){
     var n = m.replace("https://www.trouko.co/","")
     
     var g = Math.floor(Math.random() * 2000911); 
@@ -161,7 +161,7 @@ function addNewSubrt(m,xz,vz,psp){
     var li = document.createElement("div");
     li.className = "s_sub_t_d";
     li.id = n +vz+ g
-    li.innerHTML = '<div id="'+n+psp+'"></div>'
+    li.innerHTML = '<div id="'+n+'_pag_n_232"></div>'
     xz.append(li)
     
     var pMine = document.getElementById(n+vz+g)
