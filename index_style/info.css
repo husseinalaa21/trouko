@@ -154,21 +154,23 @@ a.s_sub_t {
     height: 80px;
     text-align: right;
     bottom: 0;
-}
-
-.infoPageSuQu ,.infoPageSuQuTw{
-    display: flex;
-    background-color:#dddddd;
-    justify-content: flex-end;
+    padding-bottom: 0;
+    padding-top: 5px;
 }
 
 .infoPageSuQu {
-    padding: 10px;
-    padding-bottom: 0;
+    display: flex;
+    background-color:#dddddd;
+    justify-content: flex-end;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid #babec2;
 }
 
 .infoPageSuQuTw {
-    padding-bottom: 10px;
+    background-color:#dddddd;
+    padding: 5px;
+    text-align: right;
     border: 0;
-    border-right: 4px solid #264061;
+    border-top: 1px solid #babec2;
 }

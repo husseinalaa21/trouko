@@ -146,8 +146,7 @@ li:focus{
 
 .sub_r_s::-webkit-scrollbar-thumb{
     background-color:#a8a8ac;
-    border: 2px solid #c3c3c3;
-    border-radius: 1.5px;
+    border-radius: 1.3px;
 }
 
 
