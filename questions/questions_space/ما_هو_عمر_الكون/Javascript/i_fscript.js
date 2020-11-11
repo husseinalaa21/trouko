@@ -4,7 +4,7 @@ adPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/NASA-HS2014
 adDiscription = "أن عمر الكون ، في علم الكون الفيزيائي هو المدة الزمنية المستغرقة منذ نشأه الكون أي ' منذ الانفجار العظيم ' لحد الآن (بوجود احتمالات عدة في التغير الزماني). , و يُقدّر عمر الكون بنحو ( 13.799±0.021 ) مليار سنة طبقًا لنموذج 'لامبدا-سي دي إم Lambda-CDM concordance model'.<br><br>و ترتبط مشكلة قياس عمر الكون ارتباطًا وثيقًا مع مشكلة حساب قيم المقاييس الكونيّة .<br><br>و بدأ ظهور مفهوم أن عمر الأرض يقدّر بملايين السنين في القرن الثامن عشر . حيث اعتقد العلماء ف القرن التاسع عشر وفي بدايات القرن العشرين أن الكون ثابت ولانهائيّ مع بعض النجوم التي تمضي وتذهب ، إلا أن التغيرات الكبيرة ليس لها مكان في الكون في نظرهم ."
 namePpath = "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/"
 infSuGuPageOn = '<p>  أسئلة / الفضاء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p>  تاريخ النشر : الثلاثاء, 27 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">query_builder</i>'
+infSuGuPageTw = '<p>  تاريخ النشر : الثلاثاء, 27 اكتوبر 2020  </p>'
 nameP = namePpath.replace('https://www.trouko.co/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

@@ -125,11 +125,11 @@ div.s_sub_t_d:hover {
 
 a.link_t_read_p {
     font-size: 16px;
-    padding: 8px 12px 5px 12px;
-    display: flex;
-    bottom: 0;
-    direction: rtl;
-    color: #1f4068;
+    background-color:#264061;
+    color: #bdbfc2;
+    border-radius: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .p_t_inf , .link_t_read_p{
@@ -151,8 +151,9 @@ a.s_sub_t {
     direction: rtl;
     padding: 10px;
     color:  #1f2224;
-    height: 50px;
+    height: 80px;
     text-align: right;
+    bottom: 0;
 }
 
 .infoPageSuQu ,.infoPageSuQuTw{
@@ -161,7 +162,13 @@ a.s_sub_t {
     justify-content: flex-end;
 }
 
+.infoPageSuQu {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
 .infoPageSuQuTw {
-    padding-bottom: 10px;   
-    background-color: #dddddd;
+    padding-bottom: 10px;
+    border: 0;
+    border-right: 4px solid #264061;
 }

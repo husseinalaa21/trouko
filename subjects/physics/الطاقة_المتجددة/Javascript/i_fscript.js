@@ -4,7 +4,7 @@ adPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Bioreaktor_
 adDiscription = "الحصول على الطاقة بشكل متجدد قد يبدو أمراً غريباً بعض الشيء , ولكن في الواقع أن كل شيء في الحياة هو متجدد و بطريقة ليست بتكرارية , و الطاقة المتجددة هي الطّاقة المستمدة من الموارد الطبيعية التي تتجدد أي الّتي لا تنفذ . تختلف جوهريًا عن الوقود الأحفوري من بترول وفحم وغاز الطبيعي، أو الوقود النووي الّذي يستخدم في المفاعلات النووية."
 namePpath = "https://www.trouko.co/subjects/physics/الطاقة_المتجددة/"
 infSuGuPageOn = '<p>  المواضيع / الفيزياء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p>  تاريخ النشر : الثلاثاء, 27 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">query_builder</i>'
+infSuGuPageTw = '<p>  تاريخ النشر : الثلاثاء, 27 اكتوبر 2020  </p>'
 nameP = namePpath.replace('https://www.trouko.co/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

@@ -4,7 +4,7 @@ adPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Electronic_
 adDiscription = "شاشات الحبر الالكتروني او ما تعرف ب E Ink , هذا النوع من الشاشات لا يحتاج الى استخدام الضوء المباشر من الشائة الى العين كما هو مستخدم مع الشاشات العادية , لذا فأن شاشة الحبر الالكترون تستخدم انعكاس الضوء أذ انها لا تستخدم الضوء لكي تعمل ' فهي بلا أي اضواء ' , وتكون الية عملها عن طريق الجزيئات السالبة و الموجبة الموجودة بداخلها , حيث ان الجزيئات تقوم بالتغيير الى السالب و الموجب عن طريق النبضات الكهربائيه الصداره اليها , وبنئاً على تلك النبضات تتدرج الالوان ' سواء التدريج الرمادي أو اللوان ' .<br>وتدريج الالوان يكون حسب الجزيأت السالبة و الموجبة التي تتغير بأستمرام ."
 namePpath = "https://www.trouko.co/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/"
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p>  تاريخ النشر : الثلاثاء, 27 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">query_builder</i>'
+infSuGuPageTw = '<p>  تاريخ النشر : الثلاثاء, 27 اكتوبر 2020  </p>'
 nameP = namePpath.replace('https://www.trouko.co/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)
