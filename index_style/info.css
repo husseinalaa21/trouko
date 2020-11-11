@@ -99,8 +99,6 @@ div.s_sub_t_d {
     position: relative;
     min-width: 240px;
     max-width: 240px;
-    min-height: 260px;
-    max-height: 260px;
     background-color:#dddddde1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 8px;
@@ -114,13 +112,14 @@ div.s_sub_t_d:hover {
 }
 
 .img_p_sugg_p {
-    height: 140px;
+    max-height: 260px;
 }
 
 .sugg_p_t_bo_23{
     position: absolute;
     z-index: 10px;
     bottom: 0;
+    height: auto;
 }
 
 a.link_t_read_p {
