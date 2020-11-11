@@ -154,3 +154,9 @@ a.s_sub_t {
     height: 50px;
     text-align: right;
 }
+
+.infoPageSuQu ,.infoPageSuQuTw{
+    display: flex;
+    background-color:#dddddd;
+    justify-content: flex-end;
+}
