@@ -124,12 +124,13 @@ div.s_sub_t_d:hover {
 }
 
 a.link_t_read_p {
-    font-size: 16px;
+    font-size: 13px;
     background-color:#264061;
     color: #bdbfc2;
     border-radius: 2px;
     padding-right: 5px;
     padding-left: 5px;
+    font-family: 'Almarai', sans-serif;
 }
 
 .p_t_inf , .link_t_read_p{
@@ -167,6 +168,12 @@ a.s_sub_t {
     border-bottom: 1px solid #babec2;
 }
 
+.infoPageSuQu p{
+    margin-right: 2px;
+    font-family: 'Almarai', sans-serif;
+    font-size: 14px;
+}
+
 .infoPageSuQuTw {
     display: flex;
     justify-content: flex-end;
@@ -174,5 +181,11 @@ a.s_sub_t {
     padding: 5px;
     text-align: right;
     border: 0;
-    border-top: 1px solid #babec2;
+    background-color:  #babec2;
+    font-size: 12px;
+}
+
+.infoPageSuQuTw p{
+    margin-right: 2px;
+    font-family: 'Almarai', sans-serif;
 }
