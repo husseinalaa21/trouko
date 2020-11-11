@@ -81,6 +81,7 @@ function addNewSub(nameSearch,urlAdd,urlLink,hiElement){
        }
 }
 var storageD = [];
+var storageDQ = [];
 function addNewSubr(){
     var i;
     var xData = JSON.parse(xReq.responseText);
@@ -117,9 +118,9 @@ function addNewSubrQU(){
     var i;
     var xData = JSON.parse(xReq.responseText);
     for(i=0; i < xData.length; i++){
-        if(xData[i].linkPage.includes("/subjects/")){
+        if(xData[i].linkPage.includes("/questions/")){
             var adSub = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
-           storageD.push(adSub)
+           storageDQ.push(adSub)
         }
     }
     adQu();
@@ -134,7 +135,7 @@ function ad(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_")
+        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_","_pag_n_232","i_fscript.js")
     }
     
 }
@@ -142,30 +143,31 @@ function ad(){
 function adQu(){
     var arr = [];
     while(arr.length < 6){
-    var r = Math.floor(Math.random() * storageD.length);
+    var r = Math.floor(Math.random() * storageDQ.length);
     if(arr.indexOf(r) === -1) arr.push(r);
     }
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
+        addNewSubrt(storageDQ[x].linkPage,qususuggcon,"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js")
     }
     
 }
 
-function addNewSubrt(m,xz,vz){
+function addNewSubrt(m,xz,vz,xxc,psssp){
     var n = m.replace("https://www.trouko.co/","")
     
     var g = Math.floor(Math.random() * 2000911); 
     
     var li = document.createElement("div");
     li.className = "s_sub_t_d";
-    li.id = n +vz+ g
-    li.innerHTML = '<div id="'+n+'_pag_n_232"></div>'
+    li.id = n+vz+g
+    li.innerHTML = '<div id="'+n+xxc+'"></div>'
     xz.append(li)
     
     var pMine = document.getElementById(n+vz+g)
     
-    $.getScript( m+"JavaScript/i_fscript.js", function( data) {
+    $.getScript( m+"JavaScript/"+psssp, function( data) {
        var li = document.createElement("div");
        li.innerHTML = "<script id='inf_sc_p'>"+data+"</script>";
        pMine.append(li)
