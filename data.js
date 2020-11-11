@@ -1,5 +1,11 @@
 [
 {
+ "linkPage" : "https://www.trouko.co/subjects/else/أبل/", 
+ "namePath" : "أبل" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
+ "namePath" : "تيسلا موتورز" 
+},{
  "linkPage" : "https://www.trouko.co/subjects/physics/الطاقة_المتجددة/", 
  "namePath" : "الطاقة المتجددة" 
 },{
@@ -17,12 +23,6 @@
 },{
  "linkPage" : "https://www.trouko.co/subjects/space/ناسا/", 
  "namePath" : "ناسا" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/else/أبل/", 
- "namePath" : "أبل" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
- "namePath" : "تيسلا موتورز" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
