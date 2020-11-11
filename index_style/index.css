@@ -215,7 +215,7 @@ li:focus{
 .s_tas {
     background-color: #cbcbcc;
     border: 0;
-    border-left:  2px solid #111118;
+    border-left:  2px solid #3f3f3f;
     padding: 3px 3px 0px 5px;
     margin-left: 6px;
 }
@@ -346,7 +346,6 @@ li:focus{
     padding-bottom: 10px;
     background-color: #d3d3d3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.246), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
-    border: 0;
     overflow: hidden;
     margin-bottom: 0;
     border: 0;
@@ -354,13 +353,15 @@ li:focus{
 }
 
 .spical_sub_title_text {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.041), 0 6px 20px 0 rgba(0, 0, 0, 0.041);
+    font-family: 'Almarai', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 23px;
+    font-size: 21px;
     padding: 14px;
     outline-color: 0;
+    border: 0;
+    border-bottom: 1px solid #bbbec0d7;
 }
 
 .clock {
