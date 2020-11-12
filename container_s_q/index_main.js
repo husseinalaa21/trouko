@@ -203,12 +203,12 @@ window.onscroll = function() {
 };
 
 function checS() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 130) {
-      document.getElementById("header_m_t").style.display = "none";
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 66) {
+      document.getElementById("menu_main").style.position = "fixed";
      // document.getElementById("header").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089)";
 
   } else {
-      document.getElementById("header_m_t").style.display = "flex";
+      document.getElementById("menu_main").style.position = "static";
       //document.getElementById("header").style.boxShadow = "";
   }
 }

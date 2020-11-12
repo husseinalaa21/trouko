@@ -14,29 +14,35 @@
     src: url(../index_style/BalooTamma2-Regular.ttf);
 }
 
-header {
-    border: 0;
+header{
+    width: 100%;
+    position: absolute;
     top: 0;
     z-index: 100;
-    width: 100%;
-    position: fixed;
-    opacity: 98.5%;
 }
 
 .header_main {
-    background-color: #dadada;
-    padding-bottom: 5px;
-    padding-top: 15px;
+    top: 0;
+    width: 100%;
 }
 
 .header_m_t{
-    height: 58px;
+    height: 48px;
     display: flex;
     justify-content: center;
     color: #393e46;
     font-size: 30px;
     font-family: 'BalooTamma', cursive;
     padding-bottom: 8px;
+    background-color: #dadada;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.main_menu_main {
+    background-color: #dadada;
+    padding-bottom: 5px;
+    padding-top: 15px;
 }
 
 .t_text {
@@ -51,17 +57,13 @@ header {
     border-left: 3px solid #393e46;
 }
 
-.header {
-    background-color: #f1f1f1;
-}
-  
-  .progress-container {
+.progress-container {
     width: 100%;
     height: 8px;
     background: #d3d3d4;
 }
   
-  .progress-bar {
+.progress-bar {
     height: 8px;
     background: #276995;
     width: 0%;
@@ -139,8 +141,7 @@ header {
 body{
     background-color: #f0f0f0;
     font-family: sans-serif;
-    position: relative;
-    top: 150px;
+    margin-top: 150px;
 }
 
 .container_header {
@@ -543,10 +544,6 @@ li {
 
     .scrNo{
         display: block;
-    }
-
-    body{
-        top: 150px;
     }
     .uMenuMine_m {
         display: none;
