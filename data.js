@@ -24,17 +24,23 @@
  "linkPage" : "https://www.trouko.co/subjects/space/ناسا/", 
  "namePath" : "ناسا" 
 },{
- "linkPage" : "https://www.trouko.co/questions/questions_else/البورصه/", 
- "namePath" : "البورصه" 
-},{
  "linkPage" : "https://www.trouko.co/questions/questions_physics/كيف_يعمل_المايكرويف/", 
  "namePath" : "كيف يعمل المايكرويف" 
+},{
+ "linkPage" : "https://www.trouko.co/questions/questions_else/البورصه/", 
+ "namePath" : "البورصه" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/", 
  "namePath" : "أقرب كوكب صالح للحياة من الأرض" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_space/النسبية_العامة_و_الجاذبية/", 
  "namePath" : "النسبية العامة و الجاذبية" 
+},{
+ "linkPage" : "https://www.trouko.co/questions/questions_space/كم_عدد_النجوم_في_مجرتنا/", 
+ "namePath" : "كم عدد النجوم في مجرتنا" 
+},{
+ "linkPage" : "https://www.trouko.co/questions/questions_space/كم_عمر_مجرة_درب_التبانة/", 
+ "namePath" : "كم عمر مجرة درب التبانة" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/", 
  "namePath" : "ما هو عمر الكون" 
