@@ -1,6 +1,6 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "كم عمر مجرة درب التبانة";
-adPhoto = "https://lh3.googleusercontent.com/proxy/Rab4J4dakaQMlnjZXaPVB_8EhXctMfPNPcobr879jl0dhYdR7cvI5Hl7_NyfUMMIdDuAxUcMgxTRQCgdQQtGOASD0zrtzVblBLnXBMV0R7C43hsFd3LeC8bajTFoA1ZJDRw8ZwqVDVI4WXjoqYaqFk9umybSFhoJdLJel_zIQVs"
+adPhoto = "https://media.wired.com/photos/5b3fef05ce9419115f46bb49/125:94/w_1595,h_1200,c_limit/milkyway-531503110.jpg"
 adDiscription = "درب التبانة او { milkly way } هي من المجرات الحلزونية الشكل. وهي اسم المجرة التي تنتمي إليها الشمس، والأرض، وبقية المجموعة الشمسية. تشتمل مجرة درب التبانة على مئات البلايين من النجوم و الكواكب بألاضافة الى الغبار الكوني المحيط بها و الذي يعطيها شكل الدرب اللبني ."
 namePpath = "https://www.trouko.co/questions/questions_space/كم_عمر_مجرة_درب_التبانة/"
 infSuGuPageOn = '<p>  أسئلة / الفضاء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
