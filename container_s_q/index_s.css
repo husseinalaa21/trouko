@@ -194,7 +194,7 @@
 .ads_eq {
     max-width: 80%;
     height: 100px !important;
-    margin: auto;
+    margin: 10px;
     justify-content: center;
     text-align: center;
     overflow: hidden;
