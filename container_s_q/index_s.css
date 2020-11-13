@@ -193,7 +193,8 @@
 
 .ads_eq {
     margin: auto;
-    width: 80%;
+   max-width: 80%;
     justify-content: center;
     text-align: center;
+   max-height: 200px;
 }
