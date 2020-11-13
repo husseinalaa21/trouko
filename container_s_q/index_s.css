@@ -190,3 +190,10 @@
     text-align: center;
     align-items: center;
 }
+
+.ads_eq {
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
