@@ -192,9 +192,15 @@
 }
 
 .ads_eq {
-    max-width: 80%;
+    max-width: 300;
     justify-content: center;
     text-align: center;
     overflow: hidden;
     margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .ads_eq {
+        max-width: 728;
+    }
 }
