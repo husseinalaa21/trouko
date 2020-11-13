@@ -198,11 +198,11 @@
     overflow: hidden;
     margin: auto;
 }
-#ads_eq {
-    height: 90px;
+‪.main_ads_eq {
+    height: 90px; 
 }
-@media screen and (max-width: 700px){
-    #ads_eq {
-        height: 60px;
+@media screen and (min-width: 900px) {
+    ‪.main_ads_eq {
+        height: 100px; 
     }
 }
