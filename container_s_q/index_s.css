@@ -198,11 +198,3 @@
     overflow: hidden;
     margin: auto;
 }
-‪.main_ads_eq {
-    width: 320px; height: 100px;
-}
-@media screen and (min-width: 900px) {
-    ‪.main_ads_eq {
-        width: 728px; height: 90px;
-    }
-}
