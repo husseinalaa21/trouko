@@ -193,7 +193,7 @@
 
 .ads_eq {
     max-width: 80%;
-    height: 90px;
+    height: 90px !important;
     justify-content: center;
     text-align: center;
     overflow: hidden;
@@ -201,6 +201,6 @@
 }
 @media screen and (max-width: 700px){
     .ads_eq {
-        height: 60px;
+        height: 60px !important;
     }
 }
