@@ -14,9 +14,9 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "";
-    addSugg_vrTwo  = "";
-    addSugg_vrThree  = "";
+    addSugg_vrOne  = "https://www.trouko.co/subjects/space/استعمار_المريخ/";
+    addSugg_vrTwo  = "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/";
+    addSugg_vrThree  = "https://www.trouko.co/subjects/space/مجرة_درب_التبانة/";
     addSugg_vrFour  = "";
-    addSugg_vrFive = "";
+    addSugg_vrFive = "https://www.trouko.co/subjects/space/ناسا/";
     namePpath = "https://www.trouko.co/subjects/physics/عالم_الكم_و_الزمان";
