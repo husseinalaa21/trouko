@@ -1,5 +1,11 @@
 [
 {
+ "linkPage" : "https://www.trouko.co/subjects/else/أبل/", 
+ "namePath" : "أبل" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
+ "namePath" : "تيسلا موتورز" 
+},{
  "linkPage" : "https://www.trouko.co/subjects/physics/الطاقة_المتجددة/", 
  "namePath" : "الطاقة المتجددة" 
 },{
@@ -50,11 +56,5 @@
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
  "namePath" : "ما هي شاشات الحبرالالكتروني" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/else/أبل/", 
- "namePath" : "أبل" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
- "namePath" : "تيسلا موتورز" 
 }
 ]
