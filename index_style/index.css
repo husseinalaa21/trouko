@@ -139,7 +139,11 @@ li:focus{
 }
 
 .subsr {
-    display: flex;
+    display: grid;
+    grid-template-columns:  auto auto;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sub_r_s::-webkit-scrollbar{

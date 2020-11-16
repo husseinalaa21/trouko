@@ -97,8 +97,6 @@ a.a_link:hover {
 
 div.s_sub_t_d {
     position: relative;
-    min-width: 240px;
-    max-width: 240px;
     background-color:#dddddde1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 8px;
@@ -113,13 +111,14 @@ div.s_sub_t_d:hover {
 }
 
 .img_p_sugg_p {
-    height: 280px;
+    height: 230px;
 }
 
 .sugg_p_t_bo_23{
     position: absolute;
     z-index: 10px;
     bottom: 0;
+    width: 100%;
 }
 
 a.link_t_read_p {
@@ -152,8 +151,8 @@ a.s_sub_t {
     color:  #1f2224;
     text-align: right;
     bottom: 0;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .infoPageSuQu {
@@ -177,7 +176,6 @@ a.s_sub_t {
     padding: 5px;
     text-align: right;
     border: 0;
-    background-color:  #cbced1;
     font-size: 12px;
 }
 
