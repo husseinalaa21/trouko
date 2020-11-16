@@ -43,11 +43,14 @@
     padding-right: 0;
     padding-top: 0;
     margin: 6px;
-    display: flex;
     flex-direction: row;
     overflow: scroll;
     overflow-y: hidden;
     direction: rtl;
+}
+
+.subsr {
+    display: flex;
 }
 
 .sub_r_n {
