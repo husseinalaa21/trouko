@@ -132,11 +132,14 @@ li:focus{
 .sub_r_s {
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex;
     direction: rtl;
     overflow: scroll;
     overflow-y: hidden;
     
+}
+
+.subsr {
+    display: flex;
 }
 
 .sub_r_s::-webkit-scrollbar{
@@ -297,7 +300,6 @@ li:focus{
 }
 
 .container_sugg_sub {
-    padding: 17px;
     padding-top: 0;
     padding-bottom: 0;
 }

@@ -212,11 +212,12 @@ div.s_sub_t_dTw:hover {
 div.img_p_sugg_pTw {
     z-index: 10;
     height: 0;
+    min-width: 200px;
+    max-width: 200px;
 }
 
 .sugg_p_t_bo_23Tw {
     position: relative;
-    width: 300%;
 }
 
 .sub_s_iTw {

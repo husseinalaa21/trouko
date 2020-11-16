@@ -150,7 +150,7 @@ function ad(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_","_pag_n_232","i_fscript.js")
+        addNewSubrt(storageD[x].linkPage,sub_r_s,"_J_n_Hus_","_pag_n_232","i_fscript.js","s_sub_t_d")
     }
     
 }
@@ -164,7 +164,7 @@ function adQu(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageDQ[x].linkPage,qususuggcon,"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js")
+        addNewSubrt(storageDQ[x].linkPage,qususuggcon,"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js","s_sub_t_dTw")
     }
     
 }
@@ -178,17 +178,17 @@ function adSu(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageDS[x].linkPage,sususuggcon,"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js")
+        addNewSubrt(storageDS[x].linkPage,sususuggcon,"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_d")
     }
 }
 
-function addNewSubrt(m,xz,vz,xxc,psssp){
+function addNewSubrt(m,xz,vz,xxc,psssp,classP){
     var n = m.replace("https://www.trouko.co/","")
     
     var g = Math.floor(Math.random() * 2000911); 
     
     var li = document.createElement("div");
-    li.className = "s_sub_t_d";
+    li.className = classP;
     li.id = n+vz+g
     li.innerHTML = '<div id="'+n+xxc+'"></div>'
     xz.append(li)
