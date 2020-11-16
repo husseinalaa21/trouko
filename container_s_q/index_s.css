@@ -255,7 +255,9 @@ a.s_sub_tTw {
     margin-top: 2px;
 }
 .p_t_infTw{
-    padding: 5px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     direction: rtl;
     text-align: right;
     color: #2c2f31;
