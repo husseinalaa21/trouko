@@ -185,3 +185,31 @@ a.s_sub_t {
     margin-right: 2px;
     font-family: 'Almarai', sans-serif;
 }
+
+/* t */ 
+div.s_sub_t_dTw{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    background-color:#dddddde1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    overflow: hidden;
+    direction: ltr;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+div.s_sub_t_dTw div{
+    display: flex;
+}
+
+div.s_sub_t_dTw:hover {
+    border: 0;
+    outline-color: 0;
+}
+
+div.img_p_sugg_pTw {
+    display: block;
+}

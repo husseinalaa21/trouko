@@ -61,7 +61,7 @@ function ad(){
     for(i=0; i < arr.length; i++){
         var x = arr[i]
         addSuggTIndex(storageD[x].linkPage,storageD[x].namePath)
-        addSugg(storageD[x].linkPage,"_J_n_Hus_S","_pag_x_242","i_tfscript.js",sub_r_sSugg);
+        addSugg(storageD[x].linkPage,"_J_n_Hus_S","_pag_x_242","i_tfscript.js",sub_r_sSugg,"s_sub_t_dTw");
         sub_r_nSugg.style.display = "none"
     }
 }
@@ -88,15 +88,15 @@ function addSuggTIndex(l,n){
 
 //.
 
-addSugg(addSugg_vrOne,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s);
-addSugg(addSugg_vrTwo,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s);
-addSugg(addSugg_vrThree,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s);
-addSugg(addSugg_vrFour,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s);
-addSugg(addSugg_vrFive,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s);
+addSugg(addSugg_vrOne,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s,"s_sub_t_d");
+addSugg(addSugg_vrTwo,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s,"s_sub_t_d");
+addSugg(addSugg_vrThree,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s,"s_sub_t_d");
+addSugg(addSugg_vrFour,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s,"s_sub_t_d");
+addSugg(addSugg_vrFive,"_J_n_Hus_","_pag_n_232","i_fscript.js",sub_r_s,"s_sub_t_d");
 
 
 
-function addSugg(m,xxID,ccID,iiID,appe){
+function addSugg(m,xxID,ccID,iiID,appe,classP){
     if(m == null || m == ""){
         return false
     }
@@ -104,7 +104,7 @@ function addSugg(m,xxID,ccID,iiID,appe){
      var n = m.replace("https://www.trouko.co/","")
      var g = Math.floor(Math.random() * 2000911); 
      var li = document.createElement("div");
-     li.className = "s_sub_t_d";
+     li.className = classP;
      li.id = n +xxID+ g
      li.innerHTML = '<div id="'+n+ccID+'"></div>'
      appe.append(li)
