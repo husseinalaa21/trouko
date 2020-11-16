@@ -178,7 +178,7 @@ function adSu(){
     var i;
     for(i=0; i < arr.length; i++){
         var x = arr[i]
-        addNewSubrt(storageDS[x].linkPage,sususuggcon,"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_d")
+        addNewSubrt(storageDS[x].linkPage,sususuggcon,"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_dTw")
     }
 }
 
