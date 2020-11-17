@@ -270,8 +270,7 @@ a.a_index {
     color: #393e46;
     padding: 12px;
     padding-bottom: 5px;
-    font-size: 19px;
-    font-family: al-jazeera-arabic-regular,Tahoma,Arial,Verdana,Helvetica,sans-serif!important;
+    font-size: 22px;
 }
 
 .tit_index__ div{
@@ -311,8 +310,7 @@ a.a_index {
 
 .container_text {
     padding: 12px;
-    font-size: 16px;
-    font-family: al-jazeera-arabic-regular,Tahoma,Arial,Verdana,Helvetica,sans-serif!important;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     border-radius: 0;
@@ -373,18 +371,15 @@ a.a_index {
 
 .title__ad_subject_p {
     padding: 12px;
-    padding-bottom: 8px;
-    font-size: 19px;
-    font-family: al-jazeera-arabic-regular,Tahoma,Arial,Verdana,Helvetica,sans-serif!important;
-
+    padding-bottom: 5px;
+    font-size: 22px;
 }
 
 .ad_i_subject_p{
     padding: 12px;
     padding-bottom: 10px;
     padding-top: 0;
-    font-size: 16px;
-    font-family: al-jazeera-arabic-regular,Tahoma,Arial,Verdana,Helvetica,sans-serif!important;
+    font-size: 18px;
     overflow: hidden;
     line-height: 28px;
 }
