@@ -14,7 +14,7 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://www.trouko.co/questions/questions_space/الطاقة_المضلمة/";
+    addSugg_vrOne  = "https://www.trouko.co/questions/questions_space/ما_هي_الطاقة_المضلمة/";
     addSugg_vrTwo  = "https://www.trouko.co/subjects/space/سبيس_اكس/";
     addSugg_vrThree  = "https://www.trouko.co/subjects/space/مجرة_درب_التبانة/";
     addSugg_vrFour  = "";
