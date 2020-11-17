@@ -79,7 +79,7 @@ header{
     color: #393e46;
     border: 1px solid #ccc;
     background: #dbdbdb;
-    background: linear-gradient(to bottom, #e0e0e0 40%, #d3d2d2 100%);
+    background: linear-gradient(to bottom, #e0e0e0e7 40%, #d3d2d2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#dbdbdb', GradientType=0);
     width: 70%;
     margin: auto;
