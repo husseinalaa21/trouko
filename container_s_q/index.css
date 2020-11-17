@@ -263,17 +263,22 @@ a.a_index {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
     direction: rtl;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .tit_index__ {
     color: #393e46;
-    padding: 14px;
+    padding: 12px;
     padding-bottom: 5px;
-    display: flex;
-    border-radius: 0;
+    padding-top: 8px;
+    font-size: 22px;
+}
+
+.tit_index__ div{
+    width: 100%;
+    padding-bottom: 5px;
     border: 0;
     border-bottom: 1.5px solid #d4d4cd;
-    font-size: 20px;
 }
 
 .Content__for__index__m {
@@ -305,7 +310,7 @@ a.a_index {
 }
 
 .container_text {
-    padding: 14px;
+    padding: 12px;
     font-size: 17px;
     display: flex;
     flex-direction: column;
@@ -368,12 +373,13 @@ a.a_index {
 }
 
 .title__ad_subject_p {
-    padding: 14px;
-    font-size: 20px;
+    padding: 12px;
+    padding-bottom: 8px;
+    font-size: 22px;
 }
 
 .ad_i_subject_p{
-    padding: 14px;
+    padding: 12px;
     padding-bottom: 10px;
     padding-top: 0;
     font-size: 18px;
