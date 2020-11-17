@@ -196,9 +196,11 @@ div.img_p_sugg_pTw ,div.img_p_sugg_pTh{
 a.s_sub_tTw ,a.s_sub_tTh{
     display: flex;
     direction: rtl;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Almarai', sans-serif;
     padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #b8b9bb;
 }
 
 .infoPageSuQuTwTw ,.infoPageSuQuTwTh,.infoPageSuQuTh{
