@@ -103,6 +103,7 @@ div.s_sub_t_d {
     border-radius: 3px;
     overflow: hidden;
     direction: ltr;
+    margin-bottom: 14px;
 }
 
 div.s_sub_t_d:hover {
@@ -111,15 +112,8 @@ div.s_sub_t_d:hover {
 }
 
 .img_p_sugg_p {
-    height: 270px;
+    height: 240px;
 }
-
-@media screen and (min-width: 800px) {
-    .img_p_sugg_p {
-        height: 220px;
-    }
-}
-
 .sugg_p_t_bo_23{
     position: absolute;
     z-index: 10px;

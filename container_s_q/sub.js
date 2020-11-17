@@ -37,19 +37,17 @@ function adIndexSugg(){
                 l = ""
                 s = ""
             }
-
             var sub = { "linkPage" : l,  "namePath" : s };
             storageD.push(sub)
         }
     }
     ad();
 }
-
 setTimeout(function(){
     if(index_sugg_p.innerText == ""){
         hol_sugg.innerHTML= '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
     }
-},1900)
+},3000)
 
 function ad(){
     var arr = [];
@@ -65,8 +63,6 @@ function ad(){
         sub_r_nSugg.style.display = "none"
     }
 }
-
-
 
 var callf = 0;
 

@@ -181,7 +181,7 @@ body{
 }
 
 .index_page_ {
-    max-height: 200px;
+    display: block;
 }
 
 .menfontmen {
@@ -190,13 +190,12 @@ body{
 }
 
 .index_p_sugg {
-    width: 100px;
     padding:7px;
     margin-bottom: 10px;
     border: 0;
     color:  rgb(5, 46, 87);
     border-right: 2px solid#276995;
-    background-color: rgb(221, 222, 223);
+    background-color: #dbdbdb86;
 }
 
 .menu_sugmen {
