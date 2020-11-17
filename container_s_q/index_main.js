@@ -138,11 +138,9 @@ var img =document.getElementById("img")
 icon.addEventListener("click", e =>{ 
     if (main_menu.style.display === "none") {
         main_menu.style.display = "block";
-        icon.style.backgroundColor = "#d3d3d4";
         icon.style.color = " #3282b8";
     } else {
         main_menu.style.display = "none";
-        icon.style.backgroundColor = "";
         icon.style.color = "";
     }
 

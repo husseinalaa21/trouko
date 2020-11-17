@@ -78,6 +78,9 @@ header{
     font-size: 18px;
     color: #393e46;
     border: 1px solid #ccc;
+    background: #dbdbdb;
+    background: linear-gradient(to bottom, #e0e0e0 40%, #d3d2d2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#dbdbdb', GradientType=0);
     width: 70%;
     margin: auto;
     margin-bottom: 12px;
@@ -252,9 +255,6 @@ a.a_index {
     width: 45px;
     border-radius:2px;
 }
-
-
-
 .index__page__main {
     width: 86%;
     margin: auto;
@@ -262,23 +262,18 @@ a.a_index {
     background-color: #e0e4e0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
     direction: rtl;
+    overflow: hidden;
 }
 
 .tit_index__ {
     color: #393e46;
-    padding-bottom: 0;
     padding: 14px;
-    font-size: 17px;
+    padding-bottom: 5px;
     display: flex;
-    margin-top: 15px;
     border-radius: 0;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
     border: 0;
     border-bottom: 1.5px solid #d4d4cd;
-    margin-bottom: 0;
     font-size: 20px;
-    padding-bottom: 5px;
 }
 
 .Content__for__index__m {
