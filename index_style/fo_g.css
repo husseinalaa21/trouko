@@ -160,7 +160,7 @@ table.gsc-search-box td.gsc-input {
 
 /* t */ 
 div.s_sub_t_dTw{
-    width: 90%;
+    width: 85%;
     background-color:#dddddde1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.041), 0 6px 20px 0 rgba(0, 0, 0, 0.048);
     border-radius: 3px;
@@ -213,18 +213,21 @@ a.s_sub_tTw ,a.s_sub_tTh{
     margin-right: auto;
     justify-content: flex-end;
 }
-.infoPageSuQuTwTw p{
+.infoPageSuQuTwTh p,.infoPageSuQuTh p,.infoPageSuQuTwTw p{
     padding-right: 4px;
     margin-top: 2px;
 }
 
-.infoPageSuQuTwTh p,.infoPageSuQuTh p{
-    padding-right: 4px;
-    margin-top: 2px;
+.infoPageSuQuTwTh,.infoPageSuQuTh,.infoPageSuQuTwTw{
+    padding-right: 10px;
 }
-
+.infoPageSuQuTwTh i,.infoPageSuQuTh i,.infoPageSuQuTwTw i{
+    margin-right: 0 !important;
+}
 .p_t_infTw ,.p_t_infTh{
-    padding: 5px;
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 5px;
     direction: rtl;
     text-align: right;
     color: #2c2f31;
