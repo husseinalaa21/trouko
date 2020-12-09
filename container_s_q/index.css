@@ -4,16 +4,6 @@
     box-sizing: content-box;
 }
 
-@font-face {
-    font-family: Almarai;
-    src: url(../index_style/Almarai-Regular.ttf);
-}
-
-@font-face {
-    font-family: BalooTamma;
-    src: url(../index_style/BalooTamma2-Regular.ttf);
-}
-
 header{
     width: 100%;
     position: absolute;
@@ -27,34 +17,33 @@ header{
 }
 
 .header_m_t{
-    height: 48px;
     display: flex;
     justify-content: center;
-    color: #393e46;
-    font-size: 30px;
-    font-family: 'BalooTamma', cursive;
     padding-bottom: 8px;
     background-color: #dadada;
     padding-bottom: 5px;
     padding-top: 15px;
 }
 
+.ico_m {
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 .main_menu_main {
     background-color: #dadada;
     padding-bottom: 5px;
     padding-top: 15px;
-}
-
-.t_text {
-    background-color:  #d3d3d4;
-    padding: 5px;
-    padding-left: 13px;
-    padding-right: 13px;
-    color: #393e46;
-    font-size: 25px;
-    font-family: 'Almarai', sans-serif;
-    border: 0;
-    border-left: 3px solid #393e46;
 }
 
 .progress-container {
@@ -91,7 +80,7 @@ header{
 }
 
 .men {
-    padding: 10px;
+    padding: 13px;
     margin: 0 14px 0 14px;
 }
 
