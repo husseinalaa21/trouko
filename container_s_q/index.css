@@ -350,7 +350,7 @@ a.a_index {
 .ad_sub_one , .ad_sub_two, .ad_sub_three , .ad_sub_four , .ad_sub_five , .ad_sub_six , .ad_sub_seven{
     width: 87%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 4px;
     background-color: #e0e4e0;
     color: #393e46;
