@@ -44,16 +44,18 @@ header{
     background-color: #dadada;
     padding-bottom: 5px;
     padding-top: 15px;
+    border: 0;
+    border-bottom: 1.5px solid #d3d2d2;
 }
 
 .progress-container {
     width: 100%;
-    height: 8px;
-    background: #d3d3d4;
+    height: 6px;
+    background: #e0e0e0;
 }
   
 .progress-bar {
-    height: 8px;
+    height: 6px;
     background: #276995;
     width: 0%;
 }
@@ -62,15 +64,12 @@ header{
     justify-content: space-between;
     direction: rtl;
     margin: auto;
-    background-color:#dbdbdb;
     border-radius: 4px;
     font-size: 18px;
     color: #393e46;
     border: 1px solid #ccc;
-    background: #dbdbdb;
-    background: linear-gradient(to bottom, #e0e0e0e7 40%, #d3d2d2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#dbdbdb', GradientType=0);
-    width: 70%;
+    background-color:#dbdbdb;
+    width: 80%;
     margin: auto;
     margin-bottom: 12px;
 }    
@@ -101,7 +100,7 @@ header{
 .menu_sec {
     display: flex;
 }
-
+/*
 .sccs {
     display: inline-block;
     width: 0;
@@ -114,7 +113,7 @@ header{
     border-left: 4px solid transparent;
     margin-right: 2px;
     margin-left: 0;
-}
+}*/
 .scs {
     display: inline-block;
     width: 0;
@@ -129,11 +128,96 @@ header{
     margin-left: 0;
     color: #276995;
 }
+.contr_Pa {
+    position: fixed;
+    z-index: 10;
+    left: 8px;
+    top: 200px;
+}
+.sh_contr_Pa {
+    position: absolute;
+    border-radius: 10px;
+    z-index: 10;
+    left: 18px;
+    top: 210px;
+    padding: 18px;
+    width: 54px;
+    background-color:#9a9c9c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
 
+}
+.control_contact_p {
+    border: 0;
+    padding-top: 10px;
+    background-color: #e7e7e9;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+
+}
+.control_c_b ,.control_text_ss{
+    display: grid;
+    grid-template-columns:  auto auto;
+}
+.control_text_ss {
+    border: 0;
+    border-top: 1px solid #d3d2d2;
+    margin: 8px;
+}
+.control_c_b div,.control_text_ss div{
+    padding:7px 12px 7px 12px;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30px;
+    margin-left: 22px;
+}
+.c_c_b_black {
+    background-color: black;
+    color: #d4d4cd;
+}
+.c_c_b_white {
+    background-color: rgb(255, 255, 255);
+    color: rgb(104, 104, 104);
+}
+.c_c_b_yellow {
+    background-color: wheat;
+    color: rgb(104, 104, 104);
+}
+.c_c_b_def {
+    background-color:gray;
+    color: rgb(235, 232, 232);
+}
+.isVis {
+    margin: 10px;
+    padding: 7px;
+    margin-top: 3px;
+    padding-right: 14px;
+    background-color: #f4f4f5;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+}
+.isVis:hover {
+    background-color:#393e46;
+    color: rgb(216, 216, 216);
+}
+.isVisbl {    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+    padding-right: 23px;
+    margin-top: 10px;
+}
+.isVis p{
+    font-size: 20px;
+    margin-right: 9px;
+    margin-left: 5px;
+}
 body{
     background-color: #f0f0f0;
     font-family: sans-serif;
-    margin-top: 150px;
+    margin-top: 142px;
 }
 
 .container_header {
@@ -192,14 +276,14 @@ body{
 
 .menu_sugmen {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: auto;
     color: #393e46;
     background-color:#dbdbdb;
     font-size: 17px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    top: -27px;
+    top: -20px;
     border: 1px solid #ccc;
     border-top: 0;
 }
@@ -513,7 +597,6 @@ li {
         justify-content: space-evenly;
         direction: rtl;
         margin: auto;
-        background-color:#dbdbdb;
         border-radius: 4px;
         font-size: 18px;
         color: #393e46;
