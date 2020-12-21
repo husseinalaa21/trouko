@@ -198,8 +198,8 @@ var change = 'open';
 window.onscroll = function() {
     myFunction()
 };
-var tolsShor = `<div class="isVis isVisbl" id="isVisb" onclick="isVisb();"><p id="wtvis">أضهار</p> <i class="fa fa-eye" style="font-size: 15px;margin-top: 3px"></i></div><div style="display: none;" id="myBar"></div>`
-var tols = `<div class="control_contact_p" ><div class="isVis" id="isVisb" onclick="isVisb();"><p id="wtvis">أخفاء</p> <i class='fas fa-low-vision' style="font-size: 15px;margin-top: 3px"></i></div>
+var tolsShor = `<div class="isVis isVisbl" id="isVisb" onclick="isVisb();"><p id="wtvis">أضهار</p> <i class="fa fa-eye" style="font-size: 15px;"></i></div><div style="display: none;" id="myBar"></div>`
+var tols = `<div class="control_contact_p" ><div class="isVis" id="isVisb" onclick="isVisb();"><p id="wtvis">أخفاء</p> <i class='fas fa-low-vision' style="font-size: 15px;"></i></div>
 <div id="control_contact_p"><div class="control_c_b">
 <div class="c_c_b_black" onclick="changeCo('bl')"> C </div>
 <div class="c_c_b_white" onclick="changeCo('wh')"> C </div>

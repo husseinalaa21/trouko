@@ -200,6 +200,9 @@ header{
     display: flex;
     border-radius: 10px;
 }
+.isVis p{
+    margin-top: -2px;
+}
 .isVis:hover {
     background-color:#393e46;
     color: rgb(216, 216, 216);
