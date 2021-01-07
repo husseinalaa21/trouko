@@ -100,20 +100,6 @@ header{
 .menu_sec {
     display: flex;
 }
-/*
-.sccs {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-top: 4px solid\9;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    margin-right: 2px;
-    margin-left: 0;
-}*/
 .scs {
     display: inline-block;
     width: 0;
@@ -252,7 +238,7 @@ body{
 
 .i_index_ {
     width: auto;
-    min-width: 40%;
+    min-width: 200px;
     margin-right: 10px;
 }
 
@@ -315,6 +301,7 @@ body{
     border-right: 2px solid #3282b8;
     font-family: 'Almarai', sans-serif;
     text-align: right;
+    overflow: hidden;
 }
 .sugg_i_l {
     padding: 0 15px 0 0;
@@ -337,6 +324,7 @@ body{
     font-size: 14px;
     border-right: 2px solid #3282b8;
     font-family: 'Almarai', sans-serif;
+    overflow: hidden;
 }
 
 a.a_index {
