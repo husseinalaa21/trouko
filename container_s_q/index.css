@@ -238,7 +238,7 @@ body{
 
 .i_index_ {
     width: auto;
-    min-width: 200px;
+    min-width: 35%;
     margin-right: 10px;
 }
 
@@ -634,6 +634,9 @@ li {
     }
     .menu_sugmen {
         width: 600px;
+    }
+    .i_index_ {
+        min-width: 200px;
     }
 }
 .randPag {
