@@ -262,6 +262,15 @@ li:focus{
     background-color: #e3e3e6;
     padding: 6px;
 }
+.suSug {
+    border: 0;
+    border-bottom: 3px solid #242729;
+    background-color: #e3e3e6;
+    padding: 6px;
+}
+.sSuug {
+    background-color:#242729;
+}
 .reQu {
     background-color: #853d3d;
 }
