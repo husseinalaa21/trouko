@@ -309,7 +309,7 @@ li:focus{
 }
 
 .text_sub_r {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 7px;
     margin-right: 10px;
 }
@@ -317,7 +317,7 @@ li:focus{
 .random_s_buttom {
     background-color: #1f4068;
     color: #e3e3e6;
-    font-size: 18px;
+    font-size: 16px;
     border: 0;
     padding: 8px;
     border-radius: 2px;
