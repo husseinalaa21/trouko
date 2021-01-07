@@ -264,7 +264,7 @@ body{
     border-radius: 3px;
 }
 .index_p_info {
-    padding: 0 17px 0 10px;
+    padding: 0 9px 0 10px;
 }
 
 .index_page_ {
@@ -459,7 +459,7 @@ a.a_index {
 .ad_sub_one , .ad_sub_two, .ad_sub_three , .ad_sub_four , .ad_sub_five , .ad_sub_six , .ad_sub_seven{
     width: 95%;
     margin: auto;
-    margin-top: 14px;
+    margin-top: 10px;
     border-radius: 2px;
     background-color: #e7e7e7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.144);
