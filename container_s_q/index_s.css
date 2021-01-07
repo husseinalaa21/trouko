@@ -1,27 +1,27 @@
 .ch_sub_ {
     font-family: sans-serif;
-    width: 87%;
+    width: 95%;
     margin: auto;
     margin-bottom: 18px;
-    background-color:#d8d8d8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.246), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
+    background-color: #e7e7e7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.144);
 }
 
 .sug {
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .text_sub_s {
     text-align: center;
     font-size: 22px;
     padding: 14px;
-    margin: 10px;
     margin-top: 0;
     margin-bottom: 0;
     outline-color: 0;
     border: 0;
     border-bottom: 1px solid #ccc;
+    background-color: #dfdfdf;
 
 }
 .tar {
@@ -31,7 +31,7 @@
 }
 
 .s_tas {
-    background-color:  #d6d6d6;
+    background-color:  #e0dede;
     border: 0;
     border-right:  2px solid #161f35;
     padding: 3px 3px 3px 6px;
@@ -95,7 +95,7 @@
 .icon-bar {
     display: block;
     width: 22px;
-    padding: 1.6px;
+    padding: 1.8px;
 }
 .icon-bar:after {
     content: '';
@@ -194,8 +194,8 @@
 div.s_sub_t_dTw{
     width: 90%;
     background-color:#dddddde1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.041), 0 6px 20px 0 rgba(0, 0, 0, 0.048);
-    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.185), 0 6px 20px 0 rgba(0, 0, 0, 0.068);
+    border-radius: 5px;
     overflow: hidden;
     direction: ltr;
     margin: auto;
