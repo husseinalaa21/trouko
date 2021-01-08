@@ -187,9 +187,9 @@ header{
     border-radius: 20px;
 }
 .isVis p{
+    margin-top: -3px;
 }
 .isVis i{
-    margin-bottom: -10px;
     font-size: 14px !important;
 }
 
