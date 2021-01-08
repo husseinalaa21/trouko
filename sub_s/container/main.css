@@ -8,49 +8,6 @@ header {
     margin-bottom: 0;
 }
 
-
-.icon {
-    position: absolute;
-    cursor: pointer;
-    z-index: 100;
-    top: 30px;
-    right: 50px;
-    font-size: 23px;
-    text-align: center;
-    border-radius: 5px;
-    font-family: sans-serif;
-}
-
-
-._dropdown {
-    position: absolute;
-    border-radius: 4px 4px 6px 6px;
-    font-size: 16px;
-    animation-name: drop;
-    animation-duration: 0.2s;
-    transform-origin: top;
-    border-top: 1px solid #eeeeee;
-    z-index: 100;
-    top: 63px;
-    background-color: rgb(238, 238, 240);
-    right: 10px;
-    padding: 0 7px 6px 8px;
-    cursor: pointer;
-    opacity: 98.5%;
-}
-
-._dropdown a {
-    text-align: left;
-    display: block;
-    line-height: 36px;
-    padding: 0 40px 0 20px;
-    margin: 0;
-    border-radius: 0;
-    border: none;
-    position: relative;
-}
-
-
 .header_m_t{
     background-color: #d3d3d4;
     padding: 20px;
@@ -102,7 +59,7 @@ body{
     border-image-slice: 10;
 }
 .sections {
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -140,7 +97,7 @@ body{
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.246);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 30px;
 
@@ -150,7 +107,7 @@ body{
     direction: rtl;
     background-color: rgb(218, 218, 218);
     color: #393e46;
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-top: 10px;
     font-size: 23px;
@@ -225,4 +182,9 @@ a.se_mo_r_a {
 #n_ing {
     text-align: center;
     padding: 20px;
+}
+
+.clock {
+    width: 11px;
+    margin-left: 5px;
 }
