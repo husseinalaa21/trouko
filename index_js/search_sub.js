@@ -19,14 +19,20 @@ sususuggcon = document.getElementById("sususuggcon")
 item_list_sub_space_q = document.getElementById('item_list_sub_space_q');
 item_list_sub_empty_q = document.getElementById("item_list_sub_empty_q");
 item_list_sub_technology_q = document.getElementById("item_list_sub_technology_q")
+item_list_sub_spy_q = document.getElementById('item_list_sub_spy_q');
+item_list_sub_sc_q = document.getElementById("item_list_sub_sc_q")
 
 random_ser_f = document.getElementById('random_ser_f');
 button_search = document.getElementById('button_search');
 search_random = document.getElementById('search_random');
 search_i_page_i = document.getElementById('search_i_page_i');
+
 item_list_sub_space = document.getElementById('item_list_sub_space')
 item_list_sub_technology =document.getElementById('item_list_sub_technology');
 item_list_sub_spy = document.getElementById('item_list_sub_spy');
+item_list_sub_geography = document.getElementById('item_list_sub_geography')
+item_list_sub_sc = document.getElementById("item_list_sub_sc")
+
 random_t_ser = document.getElementById('random_t_ser')
 pa_p = document.getElementById('pa_p')
 sub_r_s = document.getElementById('sub_r_s')
@@ -39,12 +45,19 @@ xReq.onload = function(){
     addNewSubr();
     addNewSubrQU();
     addNewSubrSU();
+
+    addNewSub("/sciences/",item_list_sub_sc,"sciences",'text_three');
+    addNewSub("/physics/",item_list_sub_spy,"physics",'text_two');
+    addNewSub("/geography/",item_list_sub_geography,"geography",'text_five');
     addNewSub("/else/",item_list_sub_empty,"else",'text_six');
+    addNewSub("/space/",item_list_sub_space,"space",'text_one');
+    addNewSub("/technology/",item_list_sub_technology,"technology",'text_four');
+
     addNewSub("/questions_space/",item_list_sub_space_q,"space",'text_aone');
     addNewSub("/questions_else/",item_list_sub_empty_q,"else",'text_afive');
     addNewSub("/questions_technology/",item_list_sub_technology_q,"technology",'text_afour');
-    addNewSub("/space/",item_list_sub_space,"space",'text_one');
-    addNewSub("/technology/",item_list_sub_technology,"technology",'text_four');
+    addNewSub("/questions_physics/",item_list_sub_spy_q,"physics",'text_atwo');
+    addNewSub("/questions_sciences/",item_list_sub_sc_q,"sciences",'text_athree');
 }
 function adGs(){
     cn_google.style.display = "block";
