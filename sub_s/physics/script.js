@@ -29,7 +29,7 @@ function random_a(){
     var i;
 
     for(i=0; i < xData.length; i++){
-        if(xData[i].linkPage.includes("/space")){
+        if(xData[i].linkPage.includes("/physics")){
             count_number_p.push(i);
             ad_sugg()
         }
@@ -48,10 +48,10 @@ function addNewSubr(){
     var xData = JSON.parse(xReq.responseText);
 
     for(i=0; i < xData.length; i++){
-        if(xData[i].linkPage.includes("/space/")){
+        if(xData[i].linkPage.includes("physics/")){
             addNewSubrm(xData[i].linkPage, xData[i].namePath)
         }
-        if(xData[i].linkPage.includes("/questions_space/")){
+        if(xData[i].linkPage.includes("/questions_physics/")){
             addNewSubrm_q(xData[i].linkPage, xData[i].namePath)
         }
     }
@@ -84,7 +84,7 @@ function addNewSubrSU(){
     var i;
     var xData = JSON.parse(xReq.responseText);
     for(i=0; i < xData.length; i++){
-        if(xData[i].linkPage.includes("/space" || "/questions_space")){
+        if(xData[i].linkPage.includes("/physics" || "/questions_physics")){
             var adSub = { "linkPage" : xData[i].linkPage,  "namePath" : xData[i].namePath };
            storageDS.push(adSub)
         }
