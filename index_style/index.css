@@ -245,10 +245,8 @@ li:focus{
 }
 .s_tas {
     border: 0;
-    border-bottom: 3px solid  #e3e3e6;
     padding: 6px;
-    color: #e3e3e6;
-    background-color:  #3d5d85;
+    background-color: #e3e3e64b;
 }
 .suSubs {
     border: 0;
@@ -268,12 +266,12 @@ li:focus{
     background-color: #e3e3e6;
     padding: 6px;
 }
+/*
 .sSuug {
-    background-color:#4f5253;
 }
 .reQu {
-    background-color: #853d3d;
 }
+*/
 
 .subtitle_ss {
     display: flex;
@@ -309,8 +307,8 @@ li:focus{
 }
 
 .text_sub_r {
-    font-size: 18px;
-    padding-top: 7px;
+    font-size: 17px;
+    padding-top: 5px;
     margin-right: 10px;
 }
 
@@ -319,7 +317,7 @@ li:focus{
     color: #e3e3e6;
     font-size: 16px;
     border: 0;
-    padding: 8px;
+    padding: 6px;
     border-radius: 2px;
     cursor: pointer;
 }
