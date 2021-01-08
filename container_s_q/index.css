@@ -181,15 +181,16 @@ header{
     padding-right: 14px;
     background-color: #f4f4f58f;
     width: 60px;
+    text-align: center;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
     border-radius: 20px;
 }
 .isVis p{
-    margin-top: -3px;
+    margin-top: -2px;
 }
 .isVis i{
+    margin-top: 2px;
     font-size: 14px !important;
 }
 
