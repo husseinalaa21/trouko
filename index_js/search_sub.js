@@ -39,12 +39,12 @@ xReq.onload = function(){
     addNewSubr();
     addNewSubrQU();
     addNewSubrSU();
-    addNewSub("/else/",item_list_sub_empty,"",'text_six');
-    addNewSub("/questions_space/",item_list_sub_space_q,"",'text_aone');
-    addNewSub("/questions_else/",item_list_sub_empty_q,"",'text_afive');
-    addNewSub("/questions_technology/",item_list_sub_technology_q,"",'text_afour');
+    addNewSub("/else/",item_list_sub_empty,"else",'text_six');
+    addNewSub("/questions_space/",item_list_sub_space_q,"space",'text_aone');
+    addNewSub("/questions_else/",item_list_sub_empty_q,"else",'text_afive');
+    addNewSub("/questions_technology/",item_list_sub_technology_q,"technology",'text_afour');
     addNewSub("/space/",item_list_sub_space,"space",'text_one');
-    addNewSub("/technology/",item_list_sub_technology,"",'text_four');
+    addNewSub("/technology/",item_list_sub_technology,"technology",'text_four');
 }
 function adGs(){
     cn_google.style.display = "block";
@@ -60,6 +60,7 @@ function random_a(){
 }
 
 function addNewSub(nameSearch,urlAdd,urlLink,hiElement){
+    var didIApp = "false"
     var i;
     var callFunction = 0;
     var xData = JSON.parse(xReq.responseText);
@@ -72,15 +73,23 @@ function addNewSub(nameSearch,urlAdd,urlLink,hiElement){
     }
     function createElement(l,n) {
         callFunction ++;
-        if(callFunction > 5){
-        return false
+        if(callFunction >= 5){
+            if(didIApp == "true"){
+                return false
+            } else {
+                var li = document.createElement("li");
+                li.innerHTML = "<a class='specialA' href='https://www.trouko.co/sub_s/"+urlLink+"/'> مشاهدة المزيد </a>";
+                urlAdd.append(li)
+                didIApp = "true"
+            }
        }
-        if(callFunction < 15)
+       if(callFunction < 5){
         var li = document.createElement("li");
         li.innerHTML = "<a href='"+ l+"'>"+n+"</a>";
         urlAdd.append(li)
-        var h = document.getElementById(hiElement).style.display = "none";
+        document.getElementById(hiElement).style.display = "none";
        }
+    }
 }
 var storageD = [];
 var storageDQ = [];

@@ -420,3 +420,8 @@ li:focus{
     width: 11px;
     margin-left: 5px;
 }
+
+.specialA {
+    color: #1f4068;
+    font-size: 18px;
+}
