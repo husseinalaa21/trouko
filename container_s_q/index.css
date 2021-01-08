@@ -189,6 +189,7 @@ header{
 .isVis p{
 }
 .isVis i{
+    margin-top: 5px;
     font-size: 14px !important;
 }
 
