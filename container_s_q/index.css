@@ -203,6 +203,71 @@ header{
     padding-right: 23px;
     margin-top: 10px;
 }
+@media screen and (max-width: 800px) {
+    .isVis {
+        margin: 10px;
+        margin-top: 3px;
+        background-color: #f4f4f58f;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        border-radius: 5px;
+        padding-top: 23px;
+        padding-left: 8px;
+        border: 2px solid #2769953f;
+    }
+    .control_contact_p {
+        border: 0;
+        background-color: #e7e7e9e3;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+    
+    }
+    .control_contact_p div{
+        padding-right: 7px;
+        justify-content: center;
+    
+    }
+    .control_c_b ,.control_text_ss{
+        display: flex;
+    }
+    .control_c_b ,.control_text_ss{
+        display: flex;
+    }
+    .contr_Pa {
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        justify-content: center;
+        margin-bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        width: auto;
+    }
+    .isVis p{
+        display: none;
+    }
+    .isVisbl {
+        width: 60px;
+        padding: 10px;
+        padding-right: 28px;
+        border-radius: 8px;
+        border: 2px solid #27699579;
+    }
+    .isVisbl p , .isVisbl i{
+        display: block;
+        color: #282a2be0;
+    }
+    .sh_contr_Pa {
+        display: none;
+    }
+}
 .isVis p{
     font-size: 20px;
     margin-right: 9px;
