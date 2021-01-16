@@ -260,9 +260,11 @@ header{
         border-radius: 8px;
         border: 2px solid #27699579;
     }
-    .isVisbl p , .isVisbl i{
-        display: block;
+    .isVisbl i{
         color: #282a2be0;
+        margin: auto;
+        font-size: 17px !important;
+        padding-left: 15px;
     }
     .sh_contr_Pa {
         display: none;
