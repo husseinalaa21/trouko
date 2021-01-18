@@ -1,31 +1,10 @@
 [
 {
- "linkPage" : "https://www.trouko.co/subjects/else/أبل/", 
- "namePath" : "أبل" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
- "namePath" : "تيسلا موتورز" 
-},{
  "linkPage" : "https://www.trouko.co/subjects/physics/الطاقة_المتجددة/", 
  "namePath" : "الطاقة المتجددة" 
 },{
  "linkPage" : "https://www.trouko.co/subjects/physics/عالم_الكم_و_الزمان/", 
  "namePath" : "عالم الكم و الزمان" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/space/استعمار_المريخ/", 
- "namePath" : "استعمار المريخ" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/space/الكون_الرباعي/", 
- "namePath" : "الكون الرباعي" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/space/سبيس_اكس/", 
- "namePath" : "سبيس اكس" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/space/مجرة_درب_التبانة/", 
- "namePath" : "مجرة درب التبانة" 
-},{
- "linkPage" : "https://www.trouko.co/subjects/space/ناسا/", 
- "namePath" : "ناسا" 
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
@@ -48,6 +27,9 @@
  "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/", 
  "namePath" : "ما هو عمر الكون" 
 },{
+ "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هي_أنواع_المجرات/", 
+ "namePath" : "ما هي أنواع المجرات" 
+},{
  "linkPage" : "https://www.trouko.co/questions/questions_space/ما_هي_الطاقة_المضلمة/", 
  "namePath" : "ما هي الطاقة المضلمة" 
 },{
@@ -56,5 +38,26 @@
 },{
  "linkPage" : "https://www.trouko.co/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
  "namePath" : "ما هي شاشات الحبرالالكتروني" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/space/استعمار_المريخ/", 
+ "namePath" : "استعمار المريخ" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/space/الكون_الرباعي/", 
+ "namePath" : "الكون الرباعي" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/space/سبيس_اكس/", 
+ "namePath" : "سبيس اكس" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/space/مجرة_درب_التبانة/", 
+ "namePath" : "مجرة درب التبانة" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/space/ناسا/", 
+ "namePath" : "ناسا" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/else/أبل/", 
+ "namePath" : "أبل" 
+},{
+ "linkPage" : "https://www.trouko.co/subjects/else/تيسلا_موتورز/", 
+ "namePath" : "تيسلا موتورز" 
 }
 ]
