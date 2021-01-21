@@ -207,7 +207,7 @@ header{
     .isVis {
         margin: 10px;
         margin-top: 3px;
-        background-color: #f4f4f58f;
+        background-color: #f4f4f5;
         width: 30px;
         text-align: center;
         cursor: pointer;
@@ -215,11 +215,11 @@ header{
         border-radius: 5px;
         padding-top: 23px;
         padding-left: 8px;
-        border: 2px solid #2769953f;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.041);
     }
     .control_contact_p {
         border: 0;
-        background-color: #e7e7e9e3;
+        background-color: #e7e7e9;
         border-radius: 5px;
         overflow: hidden;
         display: flex;
@@ -258,10 +258,10 @@ header{
         padding: 10px;
         padding-right: 28px;
         border-radius: 8px;
-        border: 2px solid #27699579;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
     }
     .isVisbl i{
-        color: #282a2be0;
+        color: #282a2b;
         margin: auto;
         font-size: 17px !important;
         padding-left: 15px;
