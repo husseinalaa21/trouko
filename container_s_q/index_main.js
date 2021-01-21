@@ -206,9 +206,9 @@ var tols = `<div class="control_contact_p" ><div class="isVis" id="isVisb" oncli
 <div class="c_c_b_yellow" onclick="changeCo('yell')"> C </div>
 <div class="c_c_b_def" onclick="changeCo('def')"> C </div>
 </div><div class="control_text_ss">
-<div class="t_t_small">   Aa </div>
-<div class="t_t_med">  Aa </div>
-<div class="t_t_larg">  Aa </div>
+<div class="t_t_small" onclick="changeFont('smal')">   Aa </div>
+<div class="t_t_med" onclick="changeFont('def')">  Aa </div>
+<div class="t_t_larg" onclick="changeFont('larg')">  Aa </div>
 </div><div class="header"><div class="progress-container"><div class="progress-bar" id="myBar"></div></div></div></div></div>`;
 
 function myFunction() {

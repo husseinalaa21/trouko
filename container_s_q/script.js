@@ -18,7 +18,6 @@ var titleDis = document.getElementsByClassName("ad_intro_in_p_h")[0]
 var titleContainer = document.getElementsByClassName("title__ad_subject_p")
 
 smalFont.addEventListener("click",e=>{
-
     titleDis.style.fontSize = "19px"
     pDis.style.fontSize = "16px"
     for(var n = 0; n < titleContainer.length; n++){
@@ -31,7 +30,6 @@ smalFont.addEventListener("click",e=>{
 })
 
 medFont.addEventListener("click",e=>{
-
     titleDis.style.fontSize = ""
     pDis.style.fontSize = ""
     for(var n = 0; n < titleContainer.length; n++){
@@ -54,3 +52,38 @@ largFont.addEventListener("click",e=>{
         p[i].style.fontSize = "25px"
     }
 })
+
+function changeFont(m){
+    if(m == "def"){
+        titleDis.style.fontSize = ""
+        pDis.style.fontSize = ""
+        for(var n = 0; n < titleContainer.length; n++){
+            titleContainer[n].style.fontSize = ""
+        }
+    
+        for(var i = 0; i < p.length; i++){
+            p[i].style.fontSize = ""
+        }
+    } else if (m == "smal"){
+        titleDis.style.fontSize = "19px"
+        pDis.style.fontSize = "16px"
+        for(var n = 0; n < titleContainer.length; n++){
+            titleContainer[n].style.fontSize = "19px"
+        }
+    
+        for(var i = 0; i < p.length; i++){
+            p[i].style.fontSize = "16px"
+        }
+
+    } else if(m == "larg"){
+        titleDis.style.fontSize = "29px"
+        pDis.style.fontSize = "25px"
+        for(var n = 0; n < titleContainer.length; n++){
+            titleContainer[n].style.fontSize = "29px"
+        }
+    
+        for(var i = 0; i < p.length; i++){
+            p[i].style.fontSize = "25px"
+        }
+    }
+}
