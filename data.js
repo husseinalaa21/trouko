@@ -45,9 +45,6 @@
  "linkPage" : "https://www.trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/", 
  "namePath" : "أقرب كوكب صالح للحياة من الأرض" 
 },{
- "linkPage" : "https://www.trouko.com/questions/questions_space/النسبية_العامة_و_الجاذبية/", 
- "namePath" : "النسبية العامة و الجاذبية" 
-},{
  "linkPage" : "https://www.trouko.com/questions/questions_space/كم_عدد_النجوم_في_مجرتنا/", 
  "namePath" : "كم عدد النجوم في مجرتنا" 
 },{
