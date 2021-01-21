@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://www.trouko.co/questions/questions_space/الطاقة_المضلمة/";
     addSugg_vrFour  = "https://www.trouko.co/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/";
     addSugg_vrFive = "https://www.trouko.co/subjects/space/استعمار_المريخ/";
-    namePpath = "https://www.trouko.co/subjects/space/مجرة_درب_التبانة";
+    namePpath = "https://www.trouko.com/subjects/space/مجرة_درب_التبانة";

@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://www.trouko.co/questions/questions_space/الطاقة_المضلمة/";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون";
+    namePpath = "https://www.trouko.com/questions/questions_space/ما_هو_عمر_الكون";

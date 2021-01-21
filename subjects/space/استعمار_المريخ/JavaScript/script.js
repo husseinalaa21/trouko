@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://www.trouko.co/subjects/space/مجرة_درب_التبانة/";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.co/subjects/space/استعمار_المريخ";
+    namePpath = "https://www.trouko.com/subjects/space/استعمار_المريخ";

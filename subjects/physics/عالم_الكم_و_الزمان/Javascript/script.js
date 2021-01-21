@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://www.trouko.co/subjects/space/مجرة_درب_التبانة/";
     addSugg_vrFour  = "";
     addSugg_vrFive = "https://www.trouko.co/subjects/space/ناسا/";
-    namePpath = "https://www.trouko.co/subjects/physics/عالم_الكم_و_الزمان";
+    namePpath = "https://www.trouko.com/subjects/physics/عالم_الكم_و_الزمان";

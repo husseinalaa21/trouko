@@ -2,10 +2,10 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "أقمار كوكب المريخ";
 adPhoto = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzP357i7QOhwBuQJGQaGeq2HXylc6BMG8qcw&usqp=CAU"
 adDiscription = "عدد اقمار المريخ اثنان ، هما: القمر ديموس، وفوبوس."
-namePpath = "https://www.trouko.co/subjects/space/أقمار_كوكب_المريخ/"
+namePpath = "https://www.trouko.com/subjects/space/أقمار_كوكب_المريخ/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاثنين  , 18 يناير 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.co/',"")
+infSuGuPageTw = '<p> الاثنين, 18 يناير 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+nameP = namePpath.replace('https://www.trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
 function addt(m){

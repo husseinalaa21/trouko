@@ -91,7 +91,7 @@ function addNewSub(nameSearch,urlAdd,urlLink,hiElement){
                 return false
             } else {
                 var li = document.createElement("li");
-                li.innerHTML = "<a class='specialA' href='https://www.trouko.co/sub_s/"+urlLink+"/'> مشاهدة المزيد </a>";
+                li.innerHTML = "<a class='specialA' href='https://www.trouko.com/sub_s/"+urlLink+"/'> مشاهدة المزيد </a>";
                 urlAdd.append(li)
                 didIApp = "true"
             }
@@ -205,7 +205,7 @@ function adSu(){
 }
 
 function addNewSubrt(m,xz,vz,xxc,psssp,classP){
-    var n = m.replace("https://www.trouko.co/","")
+    var n = m.replace("https://www.trouko.com/","")
     
     var g = Math.floor(Math.random() * 2000911); 
     

@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.co/questions/questions_technology/ما_هو_الشحن_اللاسلكي";
+    namePpath = "https://www.trouko.com/questions/questions_technology/ما_هو_الشحن_اللاسلكي";
