@@ -270,6 +270,13 @@ header{
         display: none;
     }
 }
+.t_t_small {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.t_t_larg {
+    font-size: 19px;
+}
 .isVis p{
     font-size: 20px;
     margin-right: 9px;
