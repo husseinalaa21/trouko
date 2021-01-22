@@ -15,7 +15,7 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
     addSugg_vrOne  = "";
-    addSugg_vrTwo  = "https://www.trouko.co/questions/questions_space/ما_هو_عمر_الكون/";
+    addSugg_vrTwo  = "https://www.trouko.com/questions/questions_space/ما_هو_عمر_الكون/";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
