@@ -272,6 +272,7 @@ function chooseeP(p){
         p.style.color = " #edf2f6";
         p.style.background = "#12437eb6";
     }
+    
     if(p == spy_sb){
         var i;
         for (i = 0; i < l_p_ch.length; i++) {
