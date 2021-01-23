@@ -97,7 +97,7 @@ function addSugg(m,xxID,ccID,iiID,appe,classP){
         return false
     }
     sub_r_n.style.display = "none"
-     var n = m.replace("https://www.trouko.co/","")
+     var n = m.replace("https://www.trouko.com/","")
      var g = Math.floor(Math.random() * 2000911); 
      var li = document.createElement("div");
      li.className = classP;
