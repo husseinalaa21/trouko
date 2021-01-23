@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" type="text/css" href="ed.css">
+    <title> trouko | edite </title>
+</head>
+<header>
+    <div id="docHtml" style="display:none;"><%= htmlFile %></div>
+    <div id="urlPage" style="display:none;"><%= linkPage %></div>
+    
+    <div class="header_main">
+        <div class="text_main">
+           <p class="trouko_t_t_m">
+             trouko <mark class="t_textn"> تروكو </mark>
+              </p>
+          </div>
+      </div>
+<div class="title_page"> <div class="back"><a href="/edite" class="aback"><img src="angle-left-solid.svg" style="width: 15px"> </a> </div> <div class="center_text"> تعديل المقالات <i class="material-icons" style="font-size:20px">border_color</i></div></div>
+<div id="waiteTFN" > </div>
+</header>
+<body> 
+    <div id="holadWait">
+     <div class="holad_wait">
+     <p class="textHolad"> جاري المعالجة <p> <i class="fas fa-cog fa-spin"></i>
+     </div>
+    </div>
+
+    <div class="holad_wait wrongPr" id="wrongRead" style="display: none;">
+    <p class="textHolad">: واجهتنا مشكلة في قرأة الصفحة الرجاء اتباع أحد الخيارات التالية </p> <div class="pageDisChos"> <p class="chPwron" onclick="reloadPageR()">  أعادة التحميل </p><p class="chPwron" onclick="exitPage()"> خروج </p> </div>
+    </div>
+
+    <div id="body" style="display: none;">
+    <div class="back_result">
+    <div id="wrong_page_info"></div>
+    
+      <div class="titlePageEdite"> أسم المقالة المراد تعديلها * </div>
+      <div class="title_ed_Page sh" id="title_ed_Page"></div>
+      <div class="title_ed_Page_dis sh"> المعاينة التقريبيه للصفحة الاصلية <i class="fa fa-eye" style="font-size:20px; margin-right:8px"></i> </div>
+      <div class="result sh">
+         <div id="result_ed" class="result_ed">
+            
+          </div>
+         <div id="link_page_view">
+           <style> 
+              <%= cssFile %> 
+           </style>
+           <style>
+            <%= cssTwoFile %> 
+           </style>
+           <style>
+            <%= cssThreeFile %> 
+           </style>
+          </div>
+       </div> 
+    </div>
+
+    <div id="body_maine_ed">
+    <form >
+    <div class="choose_s_p section">
+        <div class="p"> المعلومات الرئيسية </div>
+        <div class="warning sh">  لا يمكن تغيير هذه المعلومات <i class='fas fa-exclamation-triangle' style='font-size:14px'></i></div>
+        <div class="closeEd sh"> تاريخ النشر : <input id="time_pu" class="close_ed"> </div>
+        <div class="closeEd sh"> المسار واسم الملف : <input  id="pathEd" class="close_ed"></div>
+        <div class="closeEd sh"> اسم التصنيف : <input id="linEd" class="close_edS"> </div>
+        <div class="closeEd sh"> مسار تتبع الصفحة : <input id="sameUrl" class="close_edS"> </div>
+    </div>
+    
+    <div class="section">
+      <div class="p"> أختر نوع عرض المقالة * </div>
+      <div class="section_choese">
+        <div class="pChp sh" id="partOne" onclick="choneTypePage(partOne);"> بدون أعلانات </div>
+        <div class="pChp sh" id="partTwo" onclick="choneTypePage(partTwo);"> أعلان واحد </div>
+        <div class="pChp sh" id="partThree" onclick="choneTypePage(partThree);"> أعلانين </div>
+        <div class="pChp sh" id="partFour" onclick="choneTypePage(partFour);"> ثلاث أعلانات </div>
+      </div>
+      <div class="inputType" id="ppttType" style="color:  #3eaa81d7;">
+         <p> تم التحديد افتراضي  *</p>
+      </div>
+    </div>
+
+    <div class="section">
+        <div class="p"> معلومات الصفحة </div>
+        <p class="p3"> العنوان الرئيسي و الوصف و الصورة * </p>
+        <div class="name_project_">
+                <div class="n_p sh"> العنوان <div id="name_p"></div> </div> 
+                <input name="titleName" type="text" class="input_css sh" id="namePage" autocomplete="off">
+        </div>
+
+           <div class="discription container sh">
+            <div class="title_container_dis"> الوصف  </div><div id="name_p">
+                <textarea class="textarea" name="discription" id="discription" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other sh">
+        <div class="text_input_other">
+            * اضافة رابط للصورة &nbsp; &nbsp;: 
+          </div>
+      <input type="text" class="input_other" name="urlimg" id="urlimg">
+       </div>
+      </div>
+
+
+      <div  class="section_one section">
+        <div class="p"><div class="chapterOne chap"> <div id="sugg_name"> </div>&nbsp; | أضافة اقتراحات </div></div>
+        <div class="container_other links sh">
+            <div class="text_input_other">
+                * أضافة اقتراح أول &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="linkOne" id="linkOne">
+           </div>
+           <div class="container_other links sh">
+            <div class="text_input_other">
+                * أضافة اقتراح ثاني &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="linkTwo" id="linkTwo">
+           </div>
+           <div class="container_other links sh">
+            <div class="text_input_other">
+                * أضافة اقتراح ثالث &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="linkThree" id="linkThree">
+           </div>
+           <div class="container_other links sh">
+            <div class="text_input_other">
+                * أضافة اقتراح رابع &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="linkFour" id="linkFour">
+           </div>
+           <div class="container_other links sh">
+            <div class="text_input_other">
+                * أضافة اقتراح خامس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="linkFive" id="linkFive">
+           </div>
+      </div>
+
+
+      <div class="show_tt">
+          <div class="show_tt_text"> التحكم بأقسام الصفحة </div>
+      <div class="show_t_c">
+          <div class="showTT sh" id="showTTOne"><i class="fa fa-align-left"></i> اضهار قسم الاول </div>
+          <div class="showTT sh" id="showTTTwo" ><i class="fa fa-align-left"></i> اضهار قسم ثاني </div>
+          <div class="showTT sh" id="showTTThree" ><i class="fa fa-align-left"></i> اضهار قسم ثالث </div>
+          <div class="showTT sh" id="showTTFour" ><i class="fa fa-align-left"></i> اضهار قسم رابع </div>
+          <div class="showTT sh" id="showTTFive" ><i class="fa fa-align-left"></i> اضهار قسم خامس </div>
+          <div class="showTT sh" id="showTTSix" ><i class="fa fa-align-left"></i> اضهار قسم سادس </div>
+      </div>
+    </div>
+
+
+      <div id="sectionOne_T" class="section_one section"  style="display: none;">
+        <div class="p"><div class="chapterOne chap"> <div id="name_page"> </div>&nbsp; | القسم الاول </div></div>
+        <div class="titleContainer sh">
+            <div class="title_container"> العنوان  &nbsp;: </div>
+            <input type="text" name="titleContainerOne" id="titleContainerOne" class="inputTitleContainer" autocomplete="off"> 
+        </div>
+        <div class="containerOne container sh">
+            <div class="title_container_dis"> المحتوى  </div><div id="name_p">
+                <textarea class="textarea" name="containerOne" id="containerOne" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other que">
+                * أضافة مصدر أو اقتباس  أول &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoOne" id="quoOne">
+        </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other urli que">
+                * أضافة رابط المصدر او الاقتباس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoOnea" id="quoOnea">
+        </div>
+      </div>
+      
+
+      <div id="sectionTwo_T" class="section_two section" style="display: none;">
+        <div class="p"><div class="chapterTwo chap"> <div id="name_page2"> </div>&nbsp; | القسم الثاني </div></div>
+        <div class="titleContainer sh">
+            <div class="title_container"> العنوان  &nbsp;: </div>
+            <input type="text" name="titleContainerTwo" id="titleContainerTwo" class="inputTitleContainer" autocomplete="off">
+        </div>
+        <div class="containerTwo container sh">
+            <div class="title_container_dis"> المحتوى  </div><div id="name_p">
+                <textarea class="textarea" name="containerTwo" id="containerTwo" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other que">
+                * أضافة مصدر أو اقتباس  ثاني &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoTwo" id="quoTwo">
+        </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other urli que">
+                * أضافة رابط المصدر او الاقتباس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoTwoa" id="quoTwoa">
+        </div>
+       </div>
+
+
+
+
+       <div id="sectionThree_T"  class="section_two section" style="display: none;">
+        <div class="p"><div class="chapterTwo chap"> <div id="name_page3"> </div>&nbsp; | القسم الثالث </div></div>
+        <div class="titleContainer sh">
+            <div class="title_container"> العنوان  &nbsp;: </div>
+            <input type="text" name="titleContainerThree" id="titleContainerThree" class="inputTitleContainer" autocomplete="off">
+        </div>
+        <div class="containerTwo container sh">
+            <div class="title_container_dis"> المحتوى  </div><div id="name_p">
+                <textarea class="textarea" name="containerThree" id="containerThree" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other que">
+                * أضافة مصدر أو اقتباس  ثالث &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoThree" id="quoThree">
+        </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other urli que">
+                * أضافة رابط المصدر او الاقتباس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoThreea" id="quoThreea">
+        </div>
+       </div>
+
+
+
+
+       <div id="sectionFour_T" class="section_two section" style="display: none;">
+        <div class="p"><div class="chapterTwo chap"> <div id="name_page4"> </div>&nbsp; | القسم الرابع </div></div>
+        <div class="titleContainer sh">
+            <div class="title_container"> العنوان  &nbsp;: </div>
+            <input type="text" name="titleContainerFour" id="titleContainerFour" class="inputTitleContainer" autocomplete="off">
+        </div>
+        <div class="containerTwo container sh">
+            <div class="title_container_dis"> المحتوى  </div><div id="name_p">
+                <textarea class="textarea" name="containerFour" id="containerFour" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other que">
+                * أضافة مصدر أو اقتباس  رابع &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoFour" id="quoFour">
+        </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other urli que">
+                * أضافة رابط المصدر او الاقتباس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoFoura" id="quoFoura">
+        </div>
+       </div>
+
+
+
+
+       <div id="sectionFive_T" class="section_two section" style="display: none;">
+        <div class="p"><div class="chapterTwo chap"> <div id="name_page5"> </div>&nbsp; | القسم الخامس </div></div>
+        <div class="titleContainer sh">
+            <div class="title_container"> العنوان  &nbsp;: </div>
+            <input type="text" name="titleContainerFive" id="titleContainerFive" class="inputTitleContainer" autocomplete="off">
+        </div>
+        <div class="containerTwo container sh">
+            <div class="title_container_dis"> المحتوى  </div><div id="name_p">
+                <textarea class="textarea" name="containerFive" id="containerFive" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other que">
+                * أضافة مصدر أو اقتباس  خامس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoFive" id="quoFive">
+        </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other urli que">
+                * أضافة رابط المصدر او الاقتباس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoFivea" id="quoFivea">
+        </div>
+       </div>
+
+
+
+
+       <div id="sectionSix_T" class="section_two section" style="display: none;">
+        <div class="p"><div class="chapterTwo chap"> <div id="name_page6"> </div>&nbsp; | القسم السادس </div></div>
+        <div class="titleContainer sh">
+            <div class="title_container"> العنوان  &nbsp;: </div>
+            <input type="text" name="titleContainerSix" id="titleContainerSix" class="inputTitleContainer" autocomplete="off">
+        </div>
+        <div class="containerTwo container sh">
+            <div class="title_container_dis"> المحتوى  </div><div id="name_p">
+                <textarea class="textarea" name="containerSix" id="containerSix" rows="10" cols="60"></textarea></div>
+          </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other que">
+                * أضافة مصدر أو اقتباس  سادس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoSix" id="quoSix">
+        </div>
+        <div class="container_other links que sh">
+            <div class="text_input_other urli que">
+                * أضافة رابط المصدر او الاقتباس &nbsp; &nbsp;: 
+              </div>
+          <input type="text" class="input_other" name="quoSixa" id="quoSixa">
+        </div>
+       </div>
+
+        <div class="click_t_ch sh" id="click_t_ch">
+            <button type="submit" id="submit_data" class="submit_c"> حفظ التغييرات </button>
+            <div class="addLoad" id="addLoad"></div>
+        </div> 
+
+    </form>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascript_ed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </div>
+</body>
+</html>

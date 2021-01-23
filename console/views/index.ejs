@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <title> trouko | console </title>
+    <script>  const numberAllpageCount = "<%= numberAllPage %>"; </script>
+</head>
+<header>
+
+    <p style="display: none;" id="checkUpdate"><%= checkJX %></p>
+    <p style="display: none;" id="checkDeleteR"><%= checkDeleteR %></p>
+    <p style="display: none;" id="checkediteR"><%= checkediteR %></p>
+    <p style="display: none;" id="checkuploadR"><%= checkuploadR %></p>
+
+    <p style="display: none;" id="dataUp"><%= dataUp %></p>
+    
+    <div class="header_main">
+        <div class="text_main">
+           <p class="trouko_t_t_m">
+             trouko <mark class="t_text"> تروكو </mark>
+              </p>
+          </div>
+      </div>
+      <div class="menu_head_text">
+         <i class='fas fa-code' style="font-size : 22px; margin-right:5px"></i>
+          <div class="text_menu">
+              الصفحة الرئيسية
+          </div>
+      </div>
+      
+      <div class="menu_head_text sec">
+        <div class="notes">
+          <i class="fa fa-paperclip" style='font-size:14px; margin-left : 5px; margin-top: 4px'></i>
+          <div class="text_menu_n">
+             وحدة التحكم الرئيسي بالموقع , حذف , اضافه, تحديث و تعديل و معرفه جميع الملفات الموجودة والتحكم بها
+          </div>
+        </div>
+      </div>
+
+      <div class="siteEDUP"> 
+          <div class="siteEDUPS">
+             <div class="siteApo nnm">حالة الموقع</div>
+             <div id="whatUP"><div class="siteWite nnm"><i class="fas fa-cog fa-spin"></i></div> </div>
+          </div>
+      </div>
+
+      <div class="whatContainer nnm" id="whatContainer">
+         <div class="whatContainerTitle gre sh" id="whatContainerTitle">البيانات الغير محدثة هي :</div> 
+         <div class="whatContainerCon sh" id="whatCon">
+           
+         </div>
+         <div id="ifYNY"></div>
+      </div>
+</header>
+<body>
+ <div class="sectionx"> 
+    <div class="section_x one_s_p">
+        <div class="count_x">
+            <div class="count_a_text count_a_texta nnn">المقالات في ملفات جيسون واكس ماب</div>
+            <div class="count_p_subject npms"> جميع المواضيع &nbsp; :   &nbsp;<div id="count_p_subject"><%= numberSubjectPage %></div></div>
+            <div class="count_p_questions npms"> جميع الاسئلة &nbsp; :  &nbsp;<div id="count_p_questions"><%= numberquestionsPage %></div> </div>
+            <div class="count_all_p npms" > المجموع &nbsp; : &nbsp;<div id="count_all_p"><%= numberAllPage %></div> </div>
+        </div>
+        <div class="count_x">
+            <div class="count_a_text count_a_textb nnn">المقالات  في الملف الرئيسي </div>
+            <div class="count_p_subject npms"> جميع المواضيع &nbsp; :   &nbsp;<div id="count_p_subject_f"></div></div>
+            <div class="count_p_questions npms"> جميع الاسئلة &nbsp; :  &nbsp;<div id="count_p_questions_f"></div> </div>
+            <div class="count_all_p npms" > المجموع  &nbsp; : &nbsp;<div id="count_all_p_f"></div> </div>
+        </div>
+    </div>
+    <div class="section_x one_s_p">
+        <div class="count_x">
+            <div class="count_a_text tsubject nnn"> المواضيع </div>
+            <div class="containerW"><div class="container_W wsub"  id="containerS"></div></div>
+        </div>
+        <div class="count_x">
+            <div class="count_a_text tquestions nnn"> الاسئلة </div>
+            <div class="containerW"><div class="container_W wqu" id="containerQ"></div></div>
+        </div>
+    </div>
+ </div>
+
+ <div class="sectionsTols">
+    <div class="titleTols"> الادوات الرئيسية <mark class="markred"> * </mark></div>
+
+    <div class="section_p two_s_p">
+        <div class="refresh_json_j npms" id="refresh_json_j" onclick="resrartJX();">
+            تحديث ملف التخزين (جسون ) <i class="fa fa-refresh" style="font-size:14px;
+            margin-top : 3px; margin-right : 6px"></i>
+        </div>
+
+        <div class="ad_new_page npms">
+           <a href="/add"> اضافة مقالة جديدة <i class="material-icons" style="font-size:14px;
+            margin-top : 3px; margin-right : 6px">file_upload</i></a>
+        </div>
+        <div class="edite_ad__page npms">
+            <a href="/edite">  تعديل مقالة موجودة <i class="material-icons" style="font-size:14px;
+            margin-top : 3px; margin-right : 6px">border_color</i></a>
+        </div>
+        <div class="remove_ad_page npms">
+             <a href="/delete">  ازالة مقالة موجودة <i class="fa fa-trash" style="font-size:16px; margin-right : 6px"></i></a>
+        </div>
+    </div>
+
+    <div class="section_p two_s_p">
+        <div class="ad_new_page_ad npms">
+           <a href="/addAuto"> مراجعة الصفحات المضافة حديثاً <i class="material-icons" style="font-size:14px;
+            margin-top : 3px; margin-right : 6px">file_upload</i></a>
+        </div>
+        
+        <div class="remove_ad_page npms">
+             <a href="/delete">  سلة المحذوفات <i class="fa fa-trash" style="font-size:16px; margin-right : 6px"></i></a>
+        </div>
+    </div>
+
+    <div class="titleTols"> الادوات الذكية <mark class="markred"> * </mark></div>
+
+    <div class="section_p two_s_p">
+        <div class="ad_new_page_ad npms">
+           <a href="/addAuto"> اضافة مقالة تلقائية جديدة <i class="material-icons" style="font-size:14px;
+            margin-top : 3px; margin-right : 6px">file_upload</i></a>
+        </div>
+
+        <div class="addTitlePage npms" onclick="addTitlePage()">
+            اضافة عناوين مقالات
+        </div>
+        
+        <div id="changWords" class="changWords npms"  onclick="wordsSmart()">
+             معالجة الكلمات
+        </div>
+    </div>
+ </div>
+
+ <div id="wordsSmart" class="wordsSmart" style="display: none;">
+     <div class="titleTols"> معالجة الكلمات التلقائية <mark class="markred"> * </mark></div>
+     <div id="errWord" style="display: none;"> ! الكلمة موجودة بالفعل  </div>
+     <div id="sucWord" style="display: none;"> تم اضافة الكلمة بنجاح  </div>
+     <div class="containerWords">
+         <div class="inputWord"> <input type="text"  id="enWordOne" class="enWorld" placeholder="ادخل الكلملة" oninput="checkThisWord('enWordOne')"> </div>
+         <div class="inputWord"> <input type="text" id="enWordTwo" class="enWorld" placeholder="ادخل الكلملة المشابهة" oninput="checkThisWord('enWordTwo')"> </div>
+     </div>
+     <div id="passWord"> <div class="passWordX" id="passWordTrue"> معالجة </div> </div>
+ </div>
+
+
+    <div class="sugg_add" id="sugg_add">
+    <p class="sugg_add_"> عناوين مواضيع أو اسئلة مقترحة  </p>
+    <!-- STEP ONE -->
+    <div class="sugTitlediv"><p class="sugg_add_red"> * تصنيف المواضيع و الاسئلة  <p><p id="staSENDdataEd"><i class="fas fa-cog fa-spin"></i></p></div>
+
+    <div class="hideContainer"> <div class="sugg_add_green_num"> <p>العدد :  </p> <p id="sugg_add_container_edite_num"></p></div> <div class="sugg_add_container_edite" id="sugg_add_container_edite"></div> </div>
+
+    <!-- STEP TWO -->
+    <div class="sugTitlediv"><p class="sugg_add_green"> * مواضيع و أسئلة مقترحة للاضافة  </p><p id="staSENDdataS"><i class="fas fa-cog fa-spin"></i></p></div>
+    <div class="acaa" id="acaa"> <div class="autoCreate"> <div class="startAutoAdd" id="startAutoAdd"><p> بدء الانشاء التلقائي</p> <div id="startAutoAdd"><label class="switch"><input type="checkbox" onclick="startAutoAdd()"><span class="slider round"></span></label></div> </div> </div> <div class="startAddAuto" id="saa">  </div> </div>
+     <div class="hideContainer"><div class="sugg_add_green_num"> <p>العدد :  </p> <p id="sugg_add_container_num"></p></div> <div class="sugg_add_container" id="sugg_add_container"></div> </div>
+    
+    </div>
+
+    <div class="section_p three_s_p">
+    <div class="count_a_text count_a_texta nnn">أدوات أرسال الملفات و البيانات</div>
+        <div id="addSiteMap"></div>
+
+        <div class="refresh_site npms" id="refresh_SiteStorge" onclick="sendDataToSite();">
+           أرسال التغييرات الى الموقع <i class="fa fa-refresh" style="font-size:14px;
+            margin-top : 3px; margin-right : 6px"></i>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script> 
+</body>
+</html>

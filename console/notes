@@ -1,0 +1,107 @@
+if(containerOne == "" || containerOne == null|| containerOne == " "|| containerOne == "  "|| containerOne.length <= 6 ){
+         containerOne = ""
+}
+if(containerTwo == "" || containerTwo == null|| containerTwo == " "|| containerTwo == "  "|| containerTwo.length <= 6 ){
+    containerTwo = ""
+}
+if(containerThree == "" || containerThree == null|| containerThree == " "|| containerThree == "  "|| containerThree.length <= 6 ){
+    containerThree = ""
+}
+if(containerFour == "" || containerFour == null|| containerFour == " "|| containerFour == "  "|| containerFour.length <= 6 ){
+    containerFour = ""
+}
+if(containerFive == "" || containerFive == null|| containerFive == " "|| containerFive == "  "|| containerFive.length <= 6 ){
+    containerFive = ""
+}
+if(containerSix == "" || containerSix == null|| containerSix == " "|| containerSix == "  "|| containerSix.length <= 6 ){
+    containerSix = ""
+}
+
+
+if(titleContainerOne == "" || titleContainerOne == null  || titleContainerOne.length <=2){
+     titleContainerOne = ""
+}
+if(titleContainerTwo == "" || titleContainerTwo == null  || titleContainerTwo.length <=2){
+     titleContainerTwo = ""
+}
+if(titleContainerThree == "" || titleContainerThree == null  || titleContainerThree.length <=2){
+     titleContainerThree = ""
+}
+if(titleContainerFour == "" || titleContainerFour == null  || titleContainerFour.length <=2){
+     titleContainerFour = ""
+}
+if(titleContainerFive == "" || titleContainerFive == null  || titleContainerFive.length <=2){
+     titleContainerFive = ""
+}
+if(titleContainerSix == "" || titleContainerSix == null  || titleContainerSix.length <=2){
+     titleContainerSix = ""
+}
+
+if(quoOne == "" || quoOne == null  || quoOne.length <=2){
+    quoOne = ""
+}
+if(quoTwo == "" || quoTwo == null  || quoTwo.length <=2){
+    quoTwo = ""
+}
+if(quoThree == "" || quoThree == null  || quoThree.length <=2){
+    quoThree = ""
+}
+if(quoFour == "" || quoFour == null  || quoFour.length <=2){
+    quoFour = ""
+}
+if(quoFive == "" || quoFive == null  || quoFive.length <=2){
+    quoFive = ""
+}
+if(quoSix == "" || quoSix == null  || quoSix.length <=2){
+    quoSix = ""
+}
+
+
+if(linkOne == "" || linkOne == null  || linkOne.length <=2){
+    linkOne = ""
+}
+if(linkTwo == "" || linkTwo == null  || linkTwo.length <=2){
+    linkTwo = ""
+}
+if(linkThree == "" || linkThree == null  || linkThree.length <=2){
+    linkThree = ""
+}
+if(linkFour == "" || linkFour == null  || linkFour.length <=2){
+    linkFour = ""
+}
+if(linkFive == "" || linkFive == null  || linkFive.length <=2){
+    linkFive = ""
+}
+
+***************** ADS ضمن المقالة كبير *******************
+
+             <!-- اعلانات جوجل --> 
+             <div class="ad_page_one" id="ad_page_one">
+                    <!-- one -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-8002456001478908"
+                         data-ad-slot="6906137822"></ins>
+                     <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                     </script>
+             </div>
+
+
+*************** ADS افقي رئيسي **************
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- main_ads -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8002456001478908"
+     data-ad-slot="8153122926"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+********** notes *********
