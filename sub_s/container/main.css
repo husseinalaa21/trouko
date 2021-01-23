@@ -202,6 +202,9 @@ a.se_mo_r_a {
         direction: rtl;
         overflow-y: hidden;   
     }
+    .sub_r_s div{
+        max-width: 50%;
+    }
     .subsr {
         padding: 20px;
         padding-top: 10px;
