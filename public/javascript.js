@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000/');
+var socket = io('https://trouko-console.herokuapp.com/');
 
 var list_t_chose ,space_sb,spy_sb,technology_sb
 ,g_sb,sc_sb,else_sb,nameProject,submit_data,path_name,path_r_n,l_p_ch,
@@ -272,7 +272,7 @@ function chooseeP(p){
         p.style.color = " #edf2f6";
         p.style.background = "#12437eb6";
     }
-    
+
     if(p == spy_sb){
         var i;
         for (i = 0; i < l_p_ch.length; i++) {
