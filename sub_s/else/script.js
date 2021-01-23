@@ -118,7 +118,7 @@ function adSu(){
 }
 
 function addSugg(m,vz,xxc,psssp,classP){
-    var n = m.replace("https://www.trouko.co/","")
+    var n = m.replace("https://www.trouko.com/","")
     
     var g = Math.floor(Math.random() * 2000911); 
     
