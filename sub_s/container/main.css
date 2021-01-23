@@ -196,14 +196,11 @@ a.se_mo_r_a {
 @media screen and (min-width: 800px) {
     .sub_r_s {
         display: grid;
-        grid-template-columns:  auto auto;
+        grid-template-columns:  50% 50%;
         padding-top: 10px;
         padding-bottom: 10px;
         direction: rtl;
         overflow-y: hidden;   
-    }
-    .sub_r_s div{
-        max-width: 50%;
     }
     .subsr {
         padding: 20px;
