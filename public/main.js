@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000/');
+var socket = io('https://trouko-console.herokuapp.com/');
 var count_p_subject_f,count_p_questions_f,count_all_p_f,counSu,counQu,containerS,containerQ,addSiteMap,
 whatUP,whatCon,whatContainerTitle,ifYNY,whatContainer
 ,checkUpdate,checkDeleteR,checkediteR,checkuploadR;
