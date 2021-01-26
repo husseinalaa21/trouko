@@ -319,7 +319,7 @@ body{
 
 .index_page {
     background-color: #e7e7e7;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.062), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.144);
     padding: 10px;
     padding-right: 0;
     border-radius: 3px;
@@ -455,7 +455,7 @@ a.a_index {
     padding-top: 18px;
     margin: auto;
     font-family: 'Almarai', sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.144);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.144);
     border: 0;
     border-bottom: 1px solid  rgb(218, 218, 218);
     margin-bottom: 10px;
