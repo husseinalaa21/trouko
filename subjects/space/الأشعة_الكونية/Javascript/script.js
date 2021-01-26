@@ -14,9 +14,9 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://www.trouko.com/subjects/space/ناسا/";
+    addSugg_vrOne  = "";
     addSugg_vrTwo  = "";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/space/أقمار_كوكب_المريخ";
+    namePpath = "https://www.trouko.com/subjects/space/الأشعة_الكونية";
