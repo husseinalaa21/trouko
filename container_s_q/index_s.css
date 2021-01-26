@@ -61,7 +61,7 @@
 /* miunonc */
 .uMenuMine_m {
     border: 0;
-    border-right: 1.8px solid #ccc;
+    border-right: 1px solid #ccc;
     position: relative;
     display: -webkit-box;
     display: flex;
