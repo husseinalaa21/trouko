@@ -113,6 +113,7 @@ header{
     margin-left: 0;
     color: #276995;
 }
+
 .contr_Pa {
     position: fixed;
     z-index: 10;
@@ -318,7 +319,7 @@ body{
 
 .index_page {
     background-color: #e7e7e7;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.062), 0 6px 20px 0 rgba(0, 0, 0, 0.089);
     padding: 10px;
     padding-right: 0;
     border-radius: 3px;
@@ -349,7 +350,7 @@ body{
 
 .menu_sugmen {
     position: relative;
-    width: 80%;
+    width: 70%;
     margin: auto;
     color: #393e46;
     background-color:#dbdbdb;
