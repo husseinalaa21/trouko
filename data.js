@@ -1,11 +1,5 @@
 [
 {
- "linkPage" : "https://www.trouko.com/subjects/else/أبل/", 
- "namePath" : "أبل" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/else/تيسلا_موتورز/", 
- "namePath" : "تيسلا موتورز" 
-},{
  "linkPage" : "https://www.trouko.com/subjects/physics/الطاقة_المتجددة/", 
  "namePath" : "الطاقة المتجددة" 
 },{
@@ -17,6 +11,12 @@
 },{
  "linkPage" : "https://www.trouko.com/subjects/space/استعمار_المريخ/", 
  "namePath" : "استعمار المريخ" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/space/الأشعة_الكونية/", 
+ "namePath" : "الأشعة الكونية" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/space/السفر_بين_النجوم/", 
+ "namePath" : "السفر بين النجوم" 
 },{
  "linkPage" : "https://www.trouko.com/subjects/space/القمر_فوبس/", 
  "namePath" : "القمر فوبس" 
@@ -39,6 +39,9 @@
  "linkPage" : "https://www.trouko.com/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
 },{
+ "linkPage" : "https://www.trouko.com/questions/questions_else/ماذا_حدث_لأسهم_شركة_Game_Stop/", 
+ "namePath" : "ماذا حدث لأسهم شركة Game Stop" 
+},{
  "linkPage" : "https://www.trouko.com/questions/questions_physics/كيف_يعمل_المايكرويف/", 
  "namePath" : "كيف يعمل المايكرويف" 
 },{
@@ -53,6 +56,9 @@
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_space/كيف_نشأت_مجرة_درب_التبانة/", 
  "namePath" : "كيف نشأت مجرة درب التبانة" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هو_تاريخ_الأشعة_الكونية/", 
+ "namePath" : "ما هو تاريخ الأشعة الكونية" 
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هو_عمر_الكون/", 
  "namePath" : "ما هو عمر الكون" 
@@ -71,5 +77,11 @@
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
  "namePath" : "ما هي شاشات الحبرالالكتروني" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/أبل/", 
+ "namePath" : "أبل" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/تيسلا_موتورز/", 
+ "namePath" : "تيسلا موتورز" 
 }
 ]
