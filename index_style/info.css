@@ -97,13 +97,15 @@ a.a_link:hover {
 
 div.s_sub_t_d {
     position: relative;
-    background-color:#dddddde1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 8px;
-    border-radius: 3px;
+    background-color: #e7e7de57;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
     overflow: hidden;
     direction: ltr;
+    max-width: 450px;
+    margin: auto;
     margin-bottom: 14px;
+    margin-top: 14px;
 }
 
 div.s_sub_t_d:hover {
@@ -132,7 +134,7 @@ a.link_t_read_p {
 }
 
 .p_t_inf , .link_t_read_p{
-    background-color:#dddddd;
+    background-color: #f7f7f7;
 }
 
 a.s_sub_t {
@@ -157,11 +159,11 @@ a.s_sub_t {
 
 .infoPageSuQu {
     display: flex;
-    background-color:#dddddd;
+    background-color: #f0f0f0;
     justify-content: flex-end;
     padding: 5px;
     border: 0;
-    border-bottom: 1px solid #babec2;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .infoPageSuQu p{

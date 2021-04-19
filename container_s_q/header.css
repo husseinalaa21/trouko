@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+.headerMenu {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.header {
+  padding: 20px;   
+  border-bottom: 2px solid #cedddf00;
+  transition: 0.4s;
+  background-color:  #f7f7f7;
+  transition: 0.4s;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 1%), 0 6px 20px 0 rgb(0 0 0 / 3%);
+}
+
+.header_main {
+  display: flex;
+  justify-content: space-between;
+}
+.logo_text {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.net_logo {
+  color: #30475e;
+}
+.icoHea {
+    margin-top: -1px;
+    margin-left: -3px;
+}
