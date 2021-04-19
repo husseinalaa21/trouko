@@ -91,7 +91,7 @@ body {
 .container_header {
   display: block;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   border: 0;
   border-bottom: 3px solid rgb(236, 238, 240);
 }
@@ -103,7 +103,7 @@ body {
   overflow: hidden;
   height: fit-content;
   margin: auto;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 }
 .info_indexSec {
