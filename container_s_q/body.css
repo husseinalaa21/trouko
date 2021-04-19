@@ -90,7 +90,7 @@ body {
 @media screen and (max-width : 500px){
 .container_header {
   display: block;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 6px;
   border: 0;
   border-bottom: 3px solid rgb(236, 238, 240);
