@@ -33,7 +33,6 @@
     font-size: 11.5px;
     display: flex;
     border: 0;
-    border-top: 3px solid  #3282b8;
     border-bottom: 4.5px solid #caced6;
     border-image: linear-gradient(to right,  #caced6 , #3282b8);
     border-image-slice: 10;
@@ -62,6 +61,9 @@ body{
 }
 .secWebBas {
     display: none;
+}
+.rootMain {
+  padding-top: 83px;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
   .rootContainer {
@@ -105,7 +107,8 @@ body{
   }
 }
 .up_date {
-    padding-top: 90px;
+    padding-top: 6px;
+    padding-bottom: 5px;
 }
 .title_t p{
     color: #b2b2b4;
