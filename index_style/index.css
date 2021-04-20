@@ -57,14 +57,12 @@
 
 body{
     background-color: #dddddd5d;
-    font-family: sans-serif;
 }
 .secWebBas {
     display: none;
 }
 .rootMain {
-  position: relative;
-  top: 83px;
+    padding-top : 100px;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
   .rootContainer {
