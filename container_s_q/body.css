@@ -129,8 +129,14 @@ body {
 }
 .phot {
   background-color: #d7dfe057;
-  width: 30px;
   text-align: center;
+  width: 30px;
+  position: relative;
+}
+.phot img {
+  position: absolute;
+  top: 25%;
+  left: 35%;
 }
 
 .index_list_i {
