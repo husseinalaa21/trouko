@@ -181,6 +181,13 @@ body {
 .icoLinShort {
   padding: 5px 10px 5px 10px;
   background-color: #d0dae0;
+  position: relative;
+  width: 12px;
+}
+.icoLinShort img {
+  position: absolute;
+  right: 40%;
+  top: 20%;
 }
 /* --- */
 /* img */
