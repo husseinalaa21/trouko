@@ -1,213 +1,286 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="application-name" content="تروكو">
-    <meta name="short_name" content="تروكو">
-    <meta name="apple-mobile-web-app-title" content="تروكو">
-    <link rel="stylesheet" type="text/css" href="index_style/fo_g.css">
-    <link rel="stylesheet" type="text/css" href="index_style/index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="icons/logoM.png" />
-    <link rel="stylesheet" type="text/css" href="index_style/info.css">
-    <script data-ad-client="ca-pub-9107947386033485" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://cse.google.com/cse.js?cx=3cb04986eeffd938e" id="google_search"></script>
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161831073-4"></script>
-   <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="application-name" content="تروكو">
+  <meta name="short_name" content="تروكو">
+  <meta name="apple-mobile-web-app-title" content="تروكو">
+  <link rel="stylesheet" type="text/css" href="./container_s_q/header.css">
+  <link rel="stylesheet" type="text/css" href="index_style/fo_g.css">
+  <link rel="stylesheet" type="text/css" href="index_style/index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="icons/logoM.png" />
+  <link rel="stylesheet" type="text/css" href="index_style/info.css">
+  <script data-ad-client="ca-pub-9107947386033485" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://cse.google.com/cse.js?cx=3cb04986eeffd938e" id="google_search"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161831073-4"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-     gtag('config', 'UA-161831073-4');
-    </script>
+    gtag('config', 'UA-161831073-4');
+  </script>
 
-    <meta name="description" content=" تروكو هو موقع لنشر المقالات باللغة العربية في مختلف المجالات , كالمقالات في مجال الفيزياء أو العلوم أو الفضاء أو غيرها من المجالات  ">
-    <title> تروكو | مدونة لنشر المقالات في مختلف المجالات </title>
+  <meta name="description"
+    content=" تروكو هو موقع لنشر المقالات باللغة العربية في مختلف المجالات , كالمقالات في مجال الفيزياء أو العلوم أو الفضاء أو غيرها من المجالات  ">
+  <title> تروكو | مدونة لنشر المقالات في مختلف المجالات </title>
 </head>
 
-<header  id="header_t">
-    <div class="header_m_t">
-      <img src="icons/logotrouko.svg" class="ico_m">
-     </div>
-     <div class="up_date" id="up_date">
-      <img src="icons/clock-solid.svg" class="clock"> <div id="time_up">  </div>
-     </div>
+<header>
+  <div class="headerMenu">
+    <div class="header normHeader">
+      <div class="header_main">
+        <div class="uMenuMine_m" id="uMenuMine_m">
+          <!-- One -->
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+        </div>
+        <div class="container_log">
+          <!-- Two -->
+          <div class="logo_text logo_textN">
+            <p class="net_logo"> تروكو </p>
+            <img src="../index_style/icon.png" width="34px" height="34px" alt="" class="icoHea"></img>
+          </div>
+        </div>
+      </div>
+      <p class="infDir" id="infDir"> مقالات , أخبار , أكثر </p>
+      <div id="menuLisWeb">
+
+      </div>
+    </div>
+  </div>
+  <div class="up_date" id="up_date">
+    <img src="icons/clock-solid.svg" class="clock">
+    <div id="time_up"> </div>
+  </div>
 </header>
 
 <body>
+  <div class="rootMain">
+    <div class="search_main_i_page" id="google_search_s_b">
+      <form id="form_search">
+        <div class="h title_t">
+          <p>مرحباً , أنقر للبحث عن موضوع </p>
+        </div>
+        <div class="se_in_p" id="se_in_p">
+          <p style="padding: 40px; padding-left: 0; padding-right: 0;"></p>
+          <div id="cn_google" style="display: none;">
+            <div class="gcse-search" id="google_s"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="rootContainer">
+      <div class="secWebBas">
+        <div class="random_ser">
+          <div class="random_s_text" id="random_s_text">
+            <div class="text_sub_r">أبحث عن موضوع عشوائي</div>
+            <button type="submit" id="search_random" class="random_s_buttom"
+              onclick="document.getElementById('random_t_ser').innerHTML = random_a()"> أنقر هنا </button>
+          </div>
+          <div class="random_t_ser" id="random_t_ser"></div>
+        </div>
+      </div>
+      <div class="secNorBas">
+        <div class="ad_subject" id="ad_subject">
+          <!---->
+        </div>
+        <div class="ch_sub_">
+          <div class="subtitle_ss">
+            <p class="subtitlemainesec">الفهرسة </p>
+            <p class="suntitlemaine"> المواضيع </p>
+          </div>
+          <div id="subject_list_n_s" class="text_sub_s list">
+            <ul class="item_list_sub">
 
-  <div class="search_main_i_page" id="google_search_s_b">
-        <form id="form_search">
-            <div class="h title_t">
-                <p>مرحباً , أنقر للبحث عن موضوع </p>
+              <li class="li_list" id="li_list_space"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;مواضيع
+                عن الفضاء</li>
+              <ul class="item_list_sub sub" id="item_list_sub_space">
+                <li class="text_h" id="text_one">لم تتم الاضافة بعد</li>
+              </ul>
+
+              <li class="li_list" id="li_list_spy"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;مواضيع
+                عن الفيزياء</li>
+              <ul class="item_list_sub sub" id="item_list_sub_spy">
+                <li class="text_h" id="text_two">لم تتم الاضافة بعد</li>
+              </ul>
+
+              <li class="li_list" id="li_list_sc"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;مواضيع
+                عن العلوم</li>
+              <ul class="item_list_sub sub" id="item_list_sub_sc">
+                <li class="text_h" id="text_three">لم تتم الاضافة بعد</li>
+              </ul>
+
+              <li class="li_list" id="li_list_technology"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;مواضيع عن التقنية</li>
+              <ul class="item_list_sub sub" id="item_list_sub_technology">
+                <li class="text_h" id="text_four">لم تتم الاضافة بعد</li>
+              </ul>
+
+              <li class="li_list" id="li_list_g"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع
+                عن الجغرافية</li>
+              <ul class="item_list_sub sub" id="item_list_sub_g">
+                <li class="text_h" id="text_five">لم تتم الاضافة بعد</li>
+              </ul>
+
+              <li class="li_list" id="li_list_else"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;مواضيع
+                متنوعة</li>
+              <ul class="item_list_sub sub" id="item_list_sub_empty">
+                <li class="text_h" id="text_six">لم تتم الاضافة بعد</li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="sub_ss">
+            <div class="subtitle_ss">
+              <p class="subtitlemainesec"> آخر المقالات </p>
+              <p class="suntitlemaine"> المواضيع </p>
             </div>
-            <div class="se_in_p" id="se_in_p">
-              <p style="padding: 40px; padding-left: 0; padding-right: 0;"></p>
-              <div id="cn_google" style="display: none;">
-                <div class="gcse-search" id="google_s"></div>
-              </div>
+            <div class="container_sugg_sub">
+              <div class="sub_r_s" id="sususuggcon"></div>
             </div>
-        </form>
-  </div>
-
-  <div class="sub_sugg__">
-    <div class="text_sub_">
-      <p class="text_title_sub_" id="text_title_sub_">  </p>
-    </div>
-  </div>
-
-  <div class="ad_subject" id="ad_subject"> 
-    <div class="random_ser">
-       <div class="random_s_text" id="random_s_text">
-         <div class="text_sub_r">أبحث عن موضوع عشوائي</div>
-         <button type="submit" id="search_random" class="random_s_buttom" onclick="document.getElementById('random_t_ser').innerHTML = random_a()">ضربه حظ</button>
+          </div>
         </div>
-      <div class="random_t_ser" id="random_t_ser"></div>
-    </div>
-    <div class="ch_sub_">
-      <div id="subject_list" class="text_sub_s tar"> <p class="suSubs"> المواضيع </p>   <p class="s_tas"> التصنيفات </p>  </div>
-      <div class="subtitle_ss">  <p class="subtitlemainesec">الفهرسة </p> <p class="suntitlemaine"> المواضيع </p></div>
-      <div id="subject_list_n_s" class="text_sub_s list">
-        <ul class="item_list_sub">
-          
-          <li class="li_list" id="li_list_space"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء</li>
-          <ul class="item_list_sub sub" id="item_list_sub_space"> <li class="text_h" id="text_one">لم تتم الاضافة بعد</li> </ul>
-          
-          <li class="li_list" id="li_list_spy"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء</li>
-          <ul class="item_list_sub sub" id="item_list_sub_spy"><li class="text_h" id="text_two">لم تتم الاضافة بعد</li></ul>
 
-          <li class="li_list" id="li_list_sc"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم</li>
-          <ul class="item_list_sub sub" id="item_list_sub_sc"><li class="text_h" id="text_three">لم تتم الاضافة بعد</li></ul>
+        <div class="ch_sub_">
+          <div class="subtitle_ss">
+            <p class="subtitlemainesec">الفهرسة </p>
+            <p class="quntitlemaine"> الأسئلة </p>
+          </div>
+          <div id="subject_list_n_s" class="text_sub_s list">
+            <ul class="item_list_sub">
 
-          <li class="li_list" id="li_list_technology"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية</li>
-          <ul class="item_list_sub sub" id="item_list_sub_technology"><li class="text_h" id="text_four">لم تتم الاضافة بعد</li></ul>
+              <li class="li_list" id="li_list_space_q"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;اسئلة عن الفضاء</li>
+              <ul class="item_list_sub sub" id="item_list_sub_space_q">
+                <li class="text_h" id="text_aone">لم تتم الاضافة بعد</li>
+              </ul>
 
-          <li class="li_list" id="li_list_g"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية</li>
-          <ul class="item_list_sub sub" id="item_list_sub_g"><li class="text_h" id="text_five">لم تتم الاضافة بعد</li></ul>
+              <li class="li_list" id="li_list_spy_q"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;اسئلة
+                عن الفيزياء</li>
+              <ul class="item_list_sub sub" id="item_list_sub_spy_q">
+                <li class="text_h" id="text_atwo">لم تتم الاضافة بعد</li>
+              </ul>
 
-          <li class="li_list" id="li_list_else"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع متنوعة</li>
-          <ul class="item_list_sub sub" id="item_list_sub_empty"><li class="text_h" id="text_six">لم تتم الاضافة بعد</li></ul>
+              <li class="li_list" id="li_list_sc_q"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;اسئلة
+                عن العلوم</li>
+              <ul class="item_list_sub sub" id="item_list_sub_sc_q">
+                <li class="text_h" id="text_athree">لم تتم الاضافة بعد</li>
+              </ul>
 
-        </ul>
-      </div>
-      <div class="sub_ss">
-        <div class="subtitle_ss">  <p class="subtitlemainesec"> آخر المقالات </p> <p class="suntitlemaine"> المواضيع </p></div>
-        <div class="container_sugg_sub">
-          <div class="sub_r_s" id="sususuggcon"></div>
+              <li class="li_list" id="li_list_technology_q"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;اسئلة عن التقنية</li>
+              <ul class="item_list_sub sub" id="item_list_sub_technology_q">
+                <li class="text_h" id="text_afour">لم تتم الاضافة بعد</li>
+              </ul>
+
+              <li class="li_list" id="li_list_else_q"><img src="icons/align-left-solid.svg"
+                  style="width: 14px;">&nbsp;&nbsp;اسئلة
+                متنوعة</li>
+              <ul class="item_list_sub sub" id="item_list_sub_empty_q">
+                <li class="text_h" id="text_afive">لم تتم الاضافة بعد</li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="sub_ss">
+            <div class="subtitle_ss">
+              <p class="subtitlemainesec"> آخر المقالات </p>
+              <p class="quntitlemaine"> الأسئلة </p>
+            </div>
+            <div class="container_sugg_sub">
+              <div class="sub_r_s" id="qususuggcon"></div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- اعلاناات جوجل -->
-      <div class="ads_view one_ads">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- اعلان_افقي_اساسي -->
-        <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-8002456001478908"
-        data-ad-slot="8123042223"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </div>
 
-    <div class="ch_sub_">
-      <div id="subject_qu_" class="text_sub_s tar"> <p class="suQus"> الاسئلة </p>  <p class="s_tas reQu"> التصنيفات </p> </div>
-      <div class="subtitle_ss">  <p class="subtitlemainesec">الفهرسة </p> <p class="quntitlemaine"> الأسئلة </p></div>
-      <div id="subject_list_n_s" class="text_sub_s list">
-        <ul class="item_list_sub">
-                              
-          <li class="li_list" id="li_list_space_q"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء</li>
-          <ul class="item_list_sub sub" id="item_list_sub_space_q"><li class="text_h" id="text_aone">لم تتم الاضافة بعد</li></ul>
-          
-          <li class="li_list" id="li_list_spy_q"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء</li>
-          <ul class="item_list_sub sub" id="item_list_sub_spy_q"><li class="text_h" id="text_atwo">لم تتم الاضافة بعد</li></ul>
-
-          <li class="li_list" id="li_list_sc_q"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن العلوم</li>
-          <ul class="item_list_sub sub" id="item_list_sub_sc_q"><li class="text_h" id="text_athree">لم تتم الاضافة بعد</li></ul>
-
-          <li class="li_list" id="li_list_technology_q"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية</li>
-          <ul class="item_list_sub sub" id="item_list_sub_technology_q"><li class="text_h" id="text_afour">لم تتم الاضافة بعد</li></ul>
-
-          <li class="li_list" id="li_list_else_q"><img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة متنوعة</li>
-          <ul class="item_list_sub sub" id="item_list_sub_empty_q"><li class="text_h" id="text_afive">لم تتم الاضافة بعد</li></ul>
-
-        </ul>
-      </div>
-      <div class="sub_ss">
-        <div class="subtitle_ss">  <p class="subtitlemainesec"> آخر المقالات </p> <p class="quntitlemaine"> الأسئلة </p></div>
-        <div class="container_sugg_sub">
-          <div class="sub_r_s" id="qususuggcon"></div>
+        <div class="spical_sub_title">
+          <div class="spical_sub_title_text">
+            <p class="suSug">مقترحات</p>
+          </div>
+          <div class="container_sugg_sub">
+            <div class="sub_r_s subsr" id="sub_r_s"></div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="spical_sub_title" >
-      <div class="spical_sub_title_text"> <p class="suSug">مقترحات</p>  <p class="s_tas sSuug"> التصنيفات </p></div>
-      <div class="container_sugg_sub">
-        <div class="sub_r_s subsr" id="sub_r_s"></div>
-      </div>
-    </div> 
   </div>
 
-<div class="information">
+  <div class="information">
     <div class="sweb">
 
-     <div class="">
-        <div class=" m_each"> <a class="a_link" href="../../../container_s_q/contact.html">أتصل بنا عبر البريد</a>   </div>
+      <div class="">
+        <div class=" m_each"> <a class="a_link" href="../../../container_s_q/contact.html">أتصل بنا عبر البريد</a>
+        </div>
         <div class="support_us m_each">
           <a class="a_link" href="../../../container_s_q/supportUs.html"> للدعم والمساعدة </a>
         </div>
         <div class="support_us m_each">
-          <a class="a_link" href="./container_s_q/developers.html"> مطور الموقع  </a>
+          <a class="a_link" href="./container_s_q/developers.html"> مطور الموقع </a>
         </div>
-     </div>
+      </div>
 
-     <div class="">
-        <div class=" m_each"> <a class="a_link" href="/">الصفحة الرئيسية</a>   </div>
+      <div class="">
+        <div class=" m_each"> <a class="a_link" href="/">الصفحة الرئيسية</a> </div>
         <div class="about_us m_each">
           <a class="a_link" href="../../../container_s_q/about.html"> مقالة عشوائية </a>
         </div>
         <div class="about_us m_each">
-          <a class="a_link" href="../../../container_s_q/about.html">  حول الموقع </a>
+          <a class="a_link" href="../../../container_s_q/about.html"> حول الموقع </a>
         </div>
-     </div>
+      </div>
     </div>
-  
-     <div id="info_information">
-     </div>
-  
-     <div class="b_sess dis_sess"> 
-     <div class="m_facebook w_each">
-       <a class="face" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-f-brands.svg" style="width: 12px"> </a>
-     </div>
-     <div class="m_twiter twi w_each">
-       <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px"> </a>
-     </div>
-     <div class="m_telegram w_each">
-      <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px"> </a>
-     </div>
-     <div class="m_instgram w_each">
-      <a class="m_instgram" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-brands.svg" style="width: 18px"></a>
-     </div>
+
+    <div id="info_information">
+    </div>
+
+    <div class="b_sess dis_sess">
+      <div class="m_facebook w_each">
+        <a class="face" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img
+            src="../../../icons/facebook-f-brands.svg" style="width: 12px"> </a>
+      </div>
+      <div class="m_twiter twi w_each">
+        <a class="twi" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-brands.svg"
+            style="width: 18px"> </a>
+      </div>
+      <div class="m_telegram w_each">
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg"
+            style="width: 18px"> </a>
+      </div>
+      <div class="m_instgram w_each">
+        <a class="m_instgram" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-brands.svg"
+            style="width: 18px"></a>
+      </div>
+    </div>
   </div>
-</div>
-<div class="trouko_about">
-   <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px;"> &nbsp; موقع تروكو هو مدونة لنشر المقالات المختلفة باللغة العربية , و الهدف الرئيسي من أنشائها هو لرفع نسبة المدونات المطروحة باللغة العربية , مع أطيب التحيات .</div>
-   <div class="trouko_about_t">
-    <div>  
-       جميع الحقوق محفوضة لدى مدونة تروكو
+  <div class="trouko_about">
+    <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px;"> &nbsp; موقع
+      تروكو هو مدونة لنشر المقالات المختلفة باللغة العربية , و الهدف الرئيسي من أنشائها هو لرفع نسبة المدونات المطروحة
+      باللغة العربية , مع أطيب التحيات .</div>
+    <div class="trouko_about_t">
+      <div>
+        جميع الحقوق محفوضة لدى مدونة تروكو
+      </div>
+      <div>
+        @ trouko | تروكو 2020
+      </div>
     </div>
-    <div>  
-       @ trouko | تروكو 2020
-    </div>
- </div>
-</div>
+  </div>
 </body>
 
 <script src="./index_js/jquery.js"></script>
-<script src="./index_js/search_sub.js" ></script>
+<script src="./index_js/search_sub.js"></script>
 <script src="./index_js/index.js"></script>
+
 </html>

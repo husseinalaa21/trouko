@@ -52,9 +52,8 @@ table.gsc-search-box{
     padding:0px 0 0px 0px !important;
 }
 
-
 input.gsc-input {
-    background-color:  #cacaca !important;
+    background-color:  #f7f7f7 !important;
     direction: rtl !important;
     color: #333333 !important;
     font: inherit !important;
@@ -117,7 +116,7 @@ padding-top: 5px!important;
 }
 
 .gsc-search-button-v2 {
-    background-color: #cacaca !important;
+    background-color:  #f7f7f7!important;
     color: #1f4068 !important;
     border:0 !important;
     cursor: pointer !important;
@@ -161,9 +160,9 @@ table.gsc-search-box td.gsc-input {
 /* t */ 
 div.s_sub_t_dTw{
     width: 85%;
-    background-color:#dddddde1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.041), 0 6px 20px 0 rgba(0, 0, 0, 0.048);
-    border-radius: 3px;
+    background-color: #e7e7de57;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
     overflow: hidden;
     direction: ltr;
     margin: auto;
@@ -200,7 +199,7 @@ a.s_sub_tTw ,a.s_sub_tTh{
     font-family: 'Almarai', sans-serif;
     padding: 10px;
     border: 0;
-    border-bottom: 1px solid #b8b9bb;
+    border-bottom: 1px solid #b8b9bb42;
 }
 
 .infoPageSuQuTwTw ,.infoPageSuQuTwTh,.infoPageSuQuTh{
@@ -244,7 +243,7 @@ a.s_sub_tTw ,a.s_sub_tTh{
 }
 
 .infoPageSuQuTw,.p_t_infTw,.infoPageSuQuTwTw,.infoPageSuQuTh,.p_t_infTh,.infoPageSuQuTwTh {
-    background-color: #d5d6d8;
+    background-color: #f7f7f7;
 }
 .infoPageSuQuTw ,.infoPageSuQuTwh{
     border: 0;

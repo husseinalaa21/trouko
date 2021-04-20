@@ -63,7 +63,7 @@ function adGs(){
     cn_google.style.display = "block";
 }
 function random_a(){
-    random_t_ser.style.paddingTop =  "20px";
+    random_t_ser.style.padding =  "10px";
     var xData = JSON.parse(xReq.responseText);
 
     var r = Math.floor(Math.random() * xData.length) 

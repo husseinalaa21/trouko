@@ -103,6 +103,7 @@ div.s_sub_t_d {
     overflow: hidden;
     direction: ltr;
     max-width: 450px;
+    width: 100%;
     margin: auto;
     margin-bottom: 14px;
     margin-top: 14px;
