@@ -63,7 +63,8 @@ body{
     display: none;
 }
 .rootMain {
-  padding-top: 83px;
+  position: relative;
+  top: 83px;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
   .rootContainer {
