@@ -40,8 +40,8 @@ header {
   color: #30475e;
 }
 .icoHea {
-    margin-top: -1px;
-    margin-left: -3px;
+    margin-top: 1px;
+    margin-left: 6px;
 }
 .infDir {
   direction: rtl;
