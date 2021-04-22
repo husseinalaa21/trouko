@@ -9,13 +9,12 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 0;
 }
 .header {
   transition: 0.4s;
-  transition: 0.4s;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 1%), 0 6px 20px 0 rgb(0 0 0 / 3%);
 }
-
 .header_main {
   display: flex;
   justify-content: space-between;
@@ -36,8 +35,8 @@
     margin-left: 6px;
 }
 .infDir {
-    -webkit-backdrop-filter: saturate(180%) blur(5px);
-    backdrop-filter: saturate(180%) blur(5px);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
   background-color:  #f7f7f7de;
   direction: rtl;
   padding: 3px 8px 6px 0;

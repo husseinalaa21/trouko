@@ -167,10 +167,24 @@ iconT.addEventListener("click", e => {
         menLis.innerHTML = lisBox
         isClickMenu = true
     } else {
-        iconBarTh.className = "icon-bar";
-        iconBar.className = "icon-bar"
-        iconBarT.className = "icon-bar"
-        menLis.innerHTML = ""
-        isClickMenu = false
+        cloLis()
     }
 })
+function cloLis(){
+    iconBarTh.className = "icon-bar";
+    iconBar.className = "icon-bar"
+    iconBarT.className = "icon-bar"
+    menLis.innerHTML = ""
+    isClickMenu = false
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navMean").style.top = "0";
+  } else {
+    document.getElementById("navMean").style.top = "-90px";
+    cloLis()
+  }
+  prevScrollpos = currentScrollPos;
+}
