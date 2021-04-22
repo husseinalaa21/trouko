@@ -49,6 +49,9 @@
         margin-top: 3px;
     }
 }
+.container_log {
+    cursor: pointer;
+}
 /* miunonc */
 .uMenuMine_m {
     border: 0;
