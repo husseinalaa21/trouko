@@ -1,5 +1,23 @@
 [
 {
+ "linkPage" : "https://www.trouko.com/subjects/else/أبل/", 
+ "namePath" : "أبل" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/أجمل_دول_العالم/", 
+ "namePath" : "أجمل دول العالم" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/تيسلا_موتورز/", 
+ "namePath" : "تيسلا موتورز" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/لا_تنخدع_بالربح_من_الانترنت/", 
+ "namePath" : "لا تنخدع بالربح من الانترنت" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/", 
+ "namePath" : "مقارنة بين السيارات التي تعمل بالكهرباء و التي تعمل بالبانزين" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/هل_الفيس_بوك_مربح_حقاً/", 
+ "namePath" : "هل الفيس بوك مربح حقاً" 
+},{
  "linkPage" : "https://www.trouko.com/subjects/physics/الطاقة_المتجددة/", 
  "namePath" : "الطاقة المتجددة" 
 },{
@@ -35,6 +53,9 @@
 },{
  "linkPage" : "https://www.trouko.com/subjects/space/ناسا/", 
  "namePath" : "ناسا" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/technology/اهم_ثلاث_مواقع_لتعليم_البرمجة/", 
+ "namePath" : "اهم ثلاث مواقع لتعليم البرمجة" 
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
@@ -80,20 +101,5 @@
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
  "namePath" : "ما هي شاشات الحبرالالكتروني" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/else/أبل/", 
- "namePath" : "أبل" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/else/أجمل_دول_العالم/", 
- "namePath" : "أجمل دول العالم" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/else/تيسلا_موتورز/", 
- "namePath" : "تيسلا موتورز" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/else/لا_تنخدع_بالربح_من_الانترنت/", 
- "namePath" : "لا تنخدع بالربح من الانترنت" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/", 
- "namePath" : "مقارنة بين السيارات التي تعمل بالكهرباء و التي تعمل بالبانزين" 
 }
 ]
