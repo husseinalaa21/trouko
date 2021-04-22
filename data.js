@@ -72,6 +72,9 @@
  "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_خصائص_الحياة_على_سطح_المريخ/", 
  "namePath" : "ما هي خصائص الحياة على سطح المريخ" 
 },{
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/", 
+ "namePath" : "كيفية تسريع جهاز الكمبيوتر أو اللابتوب" 
+},{
  "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
  "namePath" : "ما هو الشحن اللاسلكي" 
 },{
@@ -81,7 +84,16 @@
  "linkPage" : "https://www.trouko.com/subjects/else/أبل/", 
  "namePath" : "أبل" 
 },{
+ "linkPage" : "https://www.trouko.com/subjects/else/أجمل_دول_العالم/", 
+ "namePath" : "أجمل دول العالم" 
+},{
  "linkPage" : "https://www.trouko.com/subjects/else/تيسلا_موتورز/", 
  "namePath" : "تيسلا موتورز" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/لا_تنخدع_بالربح_من_الانترنت/", 
+ "namePath" : "لا تنخدع بالربح من الانترنت" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/", 
+ "namePath" : "مقارنة بين السيارات التي تعمل بالكهرباء و التي تعمل بالبانزين" 
 }
 ]
