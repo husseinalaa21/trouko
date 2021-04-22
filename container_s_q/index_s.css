@@ -63,6 +63,12 @@
     overflow: hidden;
     margin: auto;
 }
+@media screen and (min-width: 800px) {
+    .subsr {
+        display: grid;
+        grid-template-columns:  50% 50%;
+    }
+}
 
 /* t */ 
 div.s_sub_t_dTw{

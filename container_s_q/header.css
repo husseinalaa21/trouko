@@ -76,6 +76,14 @@
 .uMenuMine_m:focus .line:after {
     background-color: black;
 }
+@media screen and (max-width : 500px){
+    .icoHea{
+        margin-top: 3px;
+    }
+    .uMenuMine_m {
+        padding-top: 7px;
+    }
+}
 
 .icon-bar {
     display: block;
@@ -96,12 +104,6 @@
 }
 .bar_a:after {
     background-color: #3282b8;
-}
-@media screen and (min-width: 800px) {
-    .subsr {
-        display: grid;
-        grid-template-columns:  50% 50%;
-    }
 }
 .hol_sugg {
     padding: 10px;
