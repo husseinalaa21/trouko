@@ -43,8 +43,9 @@ body{
     display: none;
 }
 .rootMain {
-    position: relative;
-    top: 80px;
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
   .rootContainer {
