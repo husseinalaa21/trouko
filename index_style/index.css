@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: Almarai;
     src: url(../index_style/Almarai-Regular.ttf);
@@ -29,7 +24,6 @@
     direction: rtl;
     font-family: 'Almarai', sans-serif;
     color: #2d2e31;
-    margin: auto;
     font-size: 11.5px;
     display: flex;
     border: 0;
@@ -42,19 +36,6 @@
     padding-left: 4px;
     padding-top: 1px;
 }
-
-.t_text {
-    background-color:#d3d3d4;
-    padding: 5px;
-    padding-left: 13px;
-    padding-right: 13px;
-    color: #393e46;
-    font-size: 27px;
-    font-family: 'Almarai', sans-serif;
-    border: 0;
-    border-left: 3px solid #393e46;
-}
-
 body{
     background-color: #dddddd5d;
 }
@@ -62,7 +43,6 @@ body{
     display: none;
 }
 .rootMain {
-    padding-top : 100px;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
   .rootContainer {
@@ -108,6 +88,8 @@ body{
 .up_date {
     padding-top: 6px;
     padding-bottom: 5px;
+    top : 80px;
+    position: relative;
 }
 .title_t p{
     color: #b2b2b4;
