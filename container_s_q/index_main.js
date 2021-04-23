@@ -148,8 +148,10 @@ click_material.addEventListener("click", e => {
         return change = 'open'
     }
 })
+function copThis() {
+}
 function shoLiThisPage() {
-    document.getElementById("rlsh").innerHTML = `<div class="resLinShar">`+window.location.href + `</div>`
+    document.getElementById("rlsh").innerHTML = `<div class="resLinShar"> <div onclick="copThis()"> <img src="../../../icons/link-solid.svg" class="linSharICon"/> </div> <div class="sharLinContainer" >`+window.location.href + `</div> </div>`
 }
 var lisBox = `<div class="lisBox">
                 <div class="toLisBox">
@@ -157,15 +159,15 @@ var lisBox = `<div class="lisBox">
                     <div class="secSecLis" > <a> البحث </a><a> دعمنا </a></div>
                 </div>
                 <div class="medLis">
-                    <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" alert="" /> </a>
-                    <a class="twiMaenu" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-m.svg" alert="" /> </a>
-                    <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" alert="" > </a>
-                    <a class="instgramMaenu" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-m.svg" alert="" ></a>
+                    <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
+                    <a class="twiMaenu" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-m.svg" /> </a>
+                    <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" /> </a>
+                    <a class="instgramMaenu" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-m.svg" /></a>
                 </div>
                 <div class="endlis" onclick="shoLiThisPage()">
-                    <div class="icoLinShar"></div><div class="conSharLin"> مشاركة هذه المقالة </div>
+                    <div><img src='../../../icons/external-link-square-alt-solid.svg' class="icoLinShar"/></div><div class="conSharLin"> مشاركة هذه المقالة </div>
                 </div>
-                <div id="rlsh"></div>
+                <div id="rlsh" class="linContainer"></div>
             </div>`
 iconT.addEventListener("click", e => {
     if (isClickMenu === false) {
