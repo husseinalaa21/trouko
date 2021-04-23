@@ -1,7 +1,7 @@
 var button_search , search_i_page_i , ul_search , 
 search_random, random_ser_f, item_list_sub_space,
 item_list_sub_spy,
-item_list_sub_technology ,
+item_list_sub_technology ,item_list_sub_geography,
 random_t_ser, form_search,body,pageSearch ,
 header_m_t,pa_p,sub_r_s,
 item_list_sub_space_q,item_list_sub_empty_q,item_list_sub_technology_q
@@ -99,8 +99,12 @@ function addNewSub(nameSearch,urlAdd,urlLink,hiElement){
        if(callFunction < 5){
         var li = document.createElement("li");
         li.innerHTML = "<a href='"+ l+"'>"+n+"</a>";
-        urlAdd.append(li)
-        document.getElementById(hiElement).style.display = "none";
+        try {
+            urlAdd.append(li)
+            document.getElementById(hiElement).style.display = "none";
+        } catch(err) {
+            console.log(`Are u happy now ! pro with ${urlLink} .`)
+        }
        }
     }
 }

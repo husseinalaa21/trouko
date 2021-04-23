@@ -366,7 +366,7 @@ li:focus{
     font-size: 17px;
 }
 
-#item_list_sub_spy , #item_list_sub_space , #item_list_sub_sc , #item_list_sub_g, #item_list_sub_empty, #item_list_sub_technology{
+#item_list_sub_spy , #item_list_sub_space , #item_list_sub_sc , #item_list_sub_geography, #item_list_sub_empty, #item_list_sub_technology{
     display: none;
 }
 
