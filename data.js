@@ -1,5 +1,14 @@
 [
 {
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/", 
+ "namePath" : "كيفية تسريع جهاز الكمبيوتر أو اللابتوب" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
+ "namePath" : "ما هو الشحن اللاسلكي" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
+ "namePath" : "ما هي شاشات الحبرالالكتروني" 
+},{
  "linkPage" : "https://www.trouko.com/subjects/else/أبل/", 
  "namePath" : "أبل" 
 },{
@@ -17,6 +26,39 @@
 },{
  "linkPage" : "https://www.trouko.com/subjects/else/هل_الفيس_بوك_مربح_حقاً/", 
  "namePath" : "هل الفيس بوك مربح حقاً" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/", 
+ "namePath" : "أقرب كوكب صالح للحياة من الأرض" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/كم_عدد_النجوم_في_مجرتنا/", 
+ "namePath" : "كم عدد النجوم في مجرتنا" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/كم_عمر_مجرة_درب_التبانة/", 
+ "namePath" : "كم عمر مجرة درب التبانة" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/كيف_نشأت_مجرة_درب_التبانة/", 
+ "namePath" : "كيف نشأت مجرة درب التبانة" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هو_تاريخ_الأشعة_الكونية/", 
+ "namePath" : "ما هو تاريخ الأشعة الكونية" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هو_عمر_الكون/", 
+ "namePath" : "ما هو عمر الكون" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_أنواع_المجرات/", 
+ "namePath" : "ما هي أنواع المجرات" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_الطاقة_المضلمة/", 
+ "namePath" : "ما هي الطاقة المضلمة" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_خصائص_الحياة_على_سطح_المريخ/", 
+ "namePath" : "ما هي خصائص الحياة على سطح المريخ" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/physics/الطاقة_المتجددة/", 
+ "namePath" : "الطاقة المتجددة" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/physics/عالم_الكم_و_الزمان/", 
+ "namePath" : "عالم الكم و الزمان" 
 },{
  "linkPage" : "https://www.trouko.com/subjects/space/أقمار_كوكب_المريخ/", 
  "namePath" : "أقمار كوكب المريخ" 
@@ -51,58 +93,22 @@
  "linkPage" : "https://www.trouko.com/subjects/space/ناسا_تصنع_المستحيل_و_تحول_ثاني_اكسيد_الكاربون_الى_اوكسجين_نقي/", 
  "namePath" : "ناسا تصنع المستحيل و تحول ثاني اكسيد الكاربون الى اوكسجين نقي" 
 },{
+ "linkPage" : "https://www.trouko.com/subjects/space/هل_وصلت_ناسا_الى_المريخ_حقاً/", 
+ "namePath" : "هل وصلت ناسا الى المريخ حقاً" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_physics/كيف_يعمل_المايكرويف/", 
+ "namePath" : "كيف يعمل المايكرويف" 
+},{
  "linkPage" : "https://www.trouko.com/subjects/technology/اهم_ثلاث_مواقع_لتعليم_البرمجة/", 
  "namePath" : "اهم ثلاث مواقع لتعليم البرمجة" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/technology/هل_لغة_بايثون_مفيدة_حقاً/", 
+ "namePath" : "هل لغة بايثون مفيدة حقاً" 
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_else/البورصه/", 
  "namePath" : "البورصه" 
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_else/ماذا_حدث_لأسهم_شركة_Game_Stop/", 
  "namePath" : "ماذا حدث لأسهم شركة Game Stop" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/", 
- "namePath" : "أقرب كوكب صالح للحياة من الأرض" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/كم_عدد_النجوم_في_مجرتنا/", 
- "namePath" : "كم عدد النجوم في مجرتنا" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/كم_عمر_مجرة_درب_التبانة/", 
- "namePath" : "كم عمر مجرة درب التبانة" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/كيف_نشأت_مجرة_درب_التبانة/", 
- "namePath" : "كيف نشأت مجرة درب التبانة" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هو_تاريخ_الأشعة_الكونية/", 
- "namePath" : "ما هو تاريخ الأشعة الكونية" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هو_عمر_الكون/", 
- "namePath" : "ما هو عمر الكون" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_أنواع_المجرات/", 
- "namePath" : "ما هي أنواع المجرات" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_الطاقة_المضلمة/", 
- "namePath" : "ما هي الطاقة المضلمة" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_space/ما_هي_خصائص_الحياة_على_سطح_المريخ/", 
- "namePath" : "ما هي خصائص الحياة على سطح المريخ" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/", 
- "namePath" : "كيفية تسريع جهاز الكمبيوتر أو اللابتوب" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
- "namePath" : "ما هو الشحن اللاسلكي" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
- "namePath" : "ما هي شاشات الحبرالالكتروني" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_physics/كيف_يعمل_المايكرويف/", 
- "namePath" : "كيف يعمل المايكرويف" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/physics/الطاقة_المتجددة/", 
- "namePath" : "الطاقة المتجددة" 
-},{
- "linkPage" : "https://www.trouko.com/subjects/physics/عالم_الكم_و_الزمان/", 
- "namePath" : "عالم الكم و الزمان" 
 }
 ]
