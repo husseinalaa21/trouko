@@ -112,7 +112,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
-    var n = m.replace("https://www.trouko.com/", "")
+    var n = m.replace("https://www.trouko.com/", "").replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
     li.className = classP;
@@ -130,7 +130,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
-    var n = m.replace("https://www.trouko.com/", "")
+    var n = m.replace("https://www.trouko.com/", "").replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
     li.className = classP;
