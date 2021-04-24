@@ -14,8 +14,8 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://www.trouko.com/subjects/else/تيسلا_موتورز/";
-    addSugg_vrTwo  = "https://www.trouko.com/subjects/else/أبل/";
+    addSugg_vrOne  = "";
+    addSugg_vrTwo  = "";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
