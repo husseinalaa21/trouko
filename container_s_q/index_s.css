@@ -1,7 +1,6 @@
 .ch_sub_ {
     font-family: sans-serif;
     margin: auto;
-    background-color: #dddddd5d;
 }
 .sug {
     overflow: hidden;
@@ -16,6 +15,7 @@
     border: 0;
     border-bottom: 1px solid rgb(224, 223, 223);
     background-color: #eeeeee;
+    margin-top: 15px;
 }
 .tar {
     display: flex;
@@ -80,7 +80,7 @@ div.s_sub_t_dTw{
     margin-bottom: 8px;
     color: #3b3b3bc2;
     border: 0;
-    background-color: #e7e7de57;
+    background-color: #f3f3efd8;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
 }
