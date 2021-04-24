@@ -14,7 +14,7 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://trouko.com/subjects/else/هل_الفيس_بوك_مربح_حقاً/";
+    addSugg_vrOne  = "https://trouko.com/subjects/else/هل_الفيس_بوك_مربح_حقاً";
     addSugg_vrTwo  = "https://trouko.com/subjects/technology/اهم_ثلاث_مواقع_لتعليم_البرمجة/";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";

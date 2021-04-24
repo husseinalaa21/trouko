@@ -7,7 +7,7 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_n = "";
     addSourcesAndQuotesSix_n = "";
     addSourcesAndQuotesSeven_n
-    addSourcesAndQuotesOne_na = "https://twitter.com/skorusARK/status/1297921107740241921?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1298017332904620033%7Ctwgr%5E%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fobserver.com%2F2020%2F08%2Felon-musk-hint-tesla-electric-plane-battery-capacity-prediction%2F";
+    addSourcesAndQuotesOne_na = "https://twitter.com/skorusARK/status/1297921107740241921?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1298017332904620033%7Ctwgr%5E%7Ctwcon%5Es2_&amp;ref_url=https%3A%2F%2Fobserver.com%2F2020%2F08%2Felon-musk-hint-tesla-electric-plane-battery-capacity-prediction%2F";
     addSourcesAndQuotesTwo_na = "";
     addSourcesAndQuotesThree_na = "";
     addSourcesAndQuotesFour_na = "";
