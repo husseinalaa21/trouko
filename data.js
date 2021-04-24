@@ -24,8 +24,8 @@
  "linkPage" : "https://www.trouko.com/subjects/else/هل_الفيس_بوك_مربح_حقاً/", 
  "namePath" : "هل الفيس بوك مربح حقاً" 
 },{
- "linkPage" : "https://www.trouko.com/subjects/geography/جزيرة_الغد_و_حزيرة_الأمس/", 
- "namePath" : "جزيرة الغد و حزيرة الأمس" 
+ "linkPage" : "https://www.trouko.com/subjects/geography/جزيرة_الغد_و_جزيرة_الأمس/", 
+ "namePath" : "جزيرة الغد و جزيرة الأمس" 
 },{
  "linkPage" : "https://www.trouko.com/subjects/geography/حقائق_حول_القارة_الثامنة_المكتشفة_حديثاً/", 
  "namePath" : "حقائق حول القارة الثامنة المكتشفة حديثاً" 
@@ -96,6 +96,15 @@
  "linkPage" : "https://www.trouko.com/questions/questions_physics/كيف_يعمل_المايكرويف/", 
  "namePath" : "كيف يعمل المايكرويف" 
 },{
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/", 
+ "namePath" : "كيفية تسريع جهاز الكمبيوتر أو اللابتوب" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
+ "namePath" : "ما هو الشحن اللاسلكي" 
+},{
+ "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
+ "namePath" : "ما هي شاشات الحبرالالكتروني" 
+},{
  "linkPage" : "https://www.trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/", 
  "namePath" : "أقرب كوكب صالح للحياة من الأرض" 
 },{
@@ -128,14 +137,5 @@
 },{
  "linkPage" : "https://www.trouko.com/questions/questions_space/متى_سيكون_المريخ_صالح_للعيش/", 
  "namePath" : "متى سيكون المريخ صالح للعيش" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/", 
- "namePath" : "كيفية تسريع جهاز الكمبيوتر أو اللابتوب" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هو_الشحن_اللاسلكي/", 
- "namePath" : "ما هو الشحن اللاسلكي" 
-},{
- "linkPage" : "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/", 
- "namePath" : "ما هي شاشات الحبرالالكتروني" 
 }
 ]
