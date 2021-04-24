@@ -15,11 +15,17 @@
  "linkPage" : "https://www.trouko.com/subjects/else/ما_هي_اسعار_المنازل_في_كندا/", 
  "namePath" : "ما هي اسعار المنازل في كندا" 
 },{
+ "linkPage" : "https://www.trouko.com/subjects/else/مشروع_أبل_لصناعة_السيارات/", 
+ "namePath" : "مشروع أبل لصناعة السيارات" 
+},{
  "linkPage" : "https://www.trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/", 
  "namePath" : "مقارنة بين السيارات التي تعمل بالكهرباء و التي تعمل بالبانزين" 
 },{
  "linkPage" : "https://www.trouko.com/subjects/else/هل_الفيس_بوك_مربح_حقاً/", 
  "namePath" : "هل الفيس بوك مربح حقاً" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/geography/جزيرة_الغد_و_حزيرة_الأمس/", 
+ "namePath" : "جزيرة الغد و حزيرة الأمس" 
 },{
  "linkPage" : "https://www.trouko.com/subjects/geography/حقائق_حول_القارة_الثامنة_المكتشفة_حديثاً/", 
  "namePath" : "حقائق حول القارة الثامنة المكتشفة حديثاً" 
@@ -68,6 +74,12 @@
 },{
  "linkPage" : "https://www.trouko.com/subjects/technology/اهم_ثلاث_مواقع_لتعليم_البرمجة/", 
  "namePath" : "اهم ثلاث مواقع لتعليم البرمجة" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/technology/هل_أقتربت_تسلا_من_صناعة_طائرتها_الخاصة/", 
+ "namePath" : "هل أقتربت تسلا من صناعة طائرتها الخاصة" 
+},{
+ "linkPage" : "https://www.trouko.com/subjects/technology/هل_سوف_تتحول_أفلام_الخيال_العلمي_الى_حقيقة_؟/", 
+ "namePath" : "هل سوف تتحول أفلام الخيال العلمي الى حقيقة ؟" 
 },{
  "linkPage" : "https://www.trouko.com/subjects/technology/هل_لغة_بايثون_مفيدة_حقاً/", 
  "namePath" : "هل لغة بايثون مفيدة حقاً" 
