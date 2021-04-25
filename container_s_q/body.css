@@ -3,6 +3,7 @@
 body {
     top: 10px;
     background-color: #dddddd5d;
+    
 }
 .bodyDivs {
   padding-top : 10px;
@@ -10,9 +11,6 @@ body {
   transition: 0.3s;
   direction: rtl;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.bodyRootDisplay {
-    padding-top: 70px;
 }
 .infoStart {
   padding: 5px;
@@ -24,21 +22,22 @@ body {
 .sectionProcess {
   padding-bottom: 30px;
 }
-.container_header {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.contactIndex {
   border: 0;
-  border-bottom: 3px solid rgb(236, 238, 240);
+  border-bottom: 3px solid rgba(236, 238, 240, 0.705);
+  border-top: 3px solid  rgba(236, 238, 240, 0.705);
+  margin-bottom: 14px;
 }
 .info_index {
   background-color: #f7f7f7;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-  border-radius: 8px;
-  width: 40%;
+  border-radius: 3px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
   overflow: hidden;
-  height: fit-content;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
   .bodyRootDisplay {
@@ -60,7 +59,7 @@ body {
     direction: rtl;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  .container_header {
+  .contactCon {
     display: none;
   }
 }
@@ -88,25 +87,8 @@ body {
   }
 }
 @media screen and (max-width : 500px){
-.container_header {
-  display: block;
-  padding-top: 22px;
-  padding-bottom: 6px;
-  border: 0;
-  border-bottom: 3px solid rgb(236, 238, 240);
-}
-.info_index {
-  background-color: #f7f7f7;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-  border-radius: 8px;
-  width: 70%;
-  overflow: hidden;
-  height: fit-content;
-  margin: auto;
-  margin-bottom: 19px;
-}
 .bodyRootDisplay {
-  padding-top: 90px;
+  padding: 0;
 }
 }
 .info_indexSec {
@@ -158,7 +140,7 @@ body {
   padding: 2px 5px 2px 5px;
   border: 0;
   border-right: 3px solid #d8b416b6;
-  margin: 3px 5px 1px 0 !important;
+  margin: 6px 5px 1px 0 !important;
 }
 .a_index {
   border: 0;
@@ -276,6 +258,11 @@ body {
 }
 .adConInQ {
   font-size: 14px;
+  margin-top: 60px;
+  direction: rtl;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e3e9ec;
+  padding: 12px;
 }
 
 @media screen and (max-width : 600px){
@@ -291,7 +278,6 @@ body {
   .adConInQ {
     font-size: 14px;
     padding-bottom: 14px;
-    padding-top: 10px;
   } 
   .proImg {
   top: -3px;
