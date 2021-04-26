@@ -177,21 +177,24 @@ li:focus{
     padding: 10px;
     padding-bottom: 0;
 }
-
-@media screen and (min-width: 800px) {
+.sub_r_s {
+    display: grid;
+    grid-template-columns:  45% 45%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    direction: rtl;
+    justify-content: space-evenly;
+    overflow-y: hidden;   
+}
+@media screen and (max-width: 550px) {
     .sub_r_s {
-        display: grid;
-        grid-template-columns:  50% 50%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        direction: rtl;
-        overflow-y: hidden;   
+        display: block;
     }
-    .subsr {
-        padding: 20px;
-        padding-top: 10px;
-        padding-bottom: 0;
-    }
+}
+.subsr {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0;
 }
 
 .sub_r_s::-webkit-scrollbar{

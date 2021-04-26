@@ -63,28 +63,18 @@
     overflow: hidden;
     margin: auto;
 }
-@media screen and (min-width: 800px) {
-    .subsr {
-        display: grid;
-        grid-template-columns:  50% 50%;
+.sub_r_s {
+    display: grid;
+    grid-template-columns:  45% 45%;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 550px) {
+    .sub_r_s {
+        display: block;
     }
 }
 
-/* t */ 
-div.s_sub_t_dTw{
-    width: 90%;
-    overflow: hidden;
-    direction: ltr;
-    margin: auto;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    color: #3b3b3bc2;
-    border: 0;
-    background-color: #f3f3efd8;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 8px;
-}
-
+/* t */
 div.s_sub_t_dTw:hover {
     border: 0;
     outline-color: 0;
