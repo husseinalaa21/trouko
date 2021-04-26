@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/tesla-59370630.jpg"
 adDiscription = "شهد العالم في السنوات القليلة الماضية تنافس كبير في مجال صناعه السيارات الكهربائية , و تصدرت شركة تسلا في المرتبة الاولة عالمياً في صناعة السيارات الكهربائية حيث أنها قدمت أفضل سعر و أفضل كفائة استخدام لمستخدمي سيارات تسلا و أيضا قدمت الشركة أفضل وسائل الراحة و الرفاهية لمستخدمي سيارات تسلا .<br />وهذه قائمة لأفضل ثلاث سيارات لتسلا :-"
 namePpath = "https://www.trouko.com/subjects/technology/أفضل_و_ارخص_سيارة_كهربائية_لهذا_العام/"
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> السبت  , 24 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> السبت, 24 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

@@ -40,11 +40,14 @@
                    </div>
                 </div>
              </div>
-             <p class="infDir" id="infDir"> مقالات , أخبار , أكثر </p>
+             <p id="infDir"> </p>
              <div id="menuLisWeb"> </div>
           </div>
        </div>
     </header>
+    <div class="adConInQ">
+       <img src="../../../icons/folder-regular.svg" style="width: 14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.co/sub_s/space/"> المواضيع / الفضاء</a>
+    </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols">
              <div class="info_indexSec">
@@ -60,13 +63,14 @@
                    <div class="index_list_i" id="index_list_i">
                       <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
                       <a class="b_index" href="#title_sour_an_qou"> المراجع </a>
-                        <div class="index_list_"><a href="#title__ad_subject_one"> معلومات عن كوكب المريخ </a></div><div class="index_list_"><a href="#title__ad_subject_two"> تضاريس كوكب المريخ  </a></div><div class="index_list_"><a href="#title__ad_subject_three"> بعض المعلومات عن تضاريس الكوكب الاحمر </a></div>
+                      <div class="index_list_"><a href="#titleContainerOne_"> معلومات عن كوكب المريخ </a></div><div class="index_list_"><a href="#titleContainerTwo_"> تضاريس كوكب المريخ  </a></div><div class="index_list_"><a href="#titleContainerThree_"> بعض المعلومات عن تضاريس الكوكب الاحمر </a></div>
                    </div>
                 </div>
              </div>
              <div id="medContainers">
                 <!-- ADD SECTIONS HERE! -->
              </div>
+             <div id="suggContainerWeb" style="display:none;">
              <div class="info_indexSec i_index_s">
                 <div class="index_page index_page_" id="index_page">
                    <div class="menfontmen">
@@ -78,26 +82,47 @@
                       </div>
                    </div>
                    <div id="index_sugg_pT" class="index_sugg_p">
-                      <div id="hol_suggT">
-                         <div class="hol_sugg">
-                            <div class="hol_suggOne hol"></div>
-                            <div class="hol_suggTwo hol"></div>
-                            <div class="hol_suggThree hol"></div>
-                         </div>
-                      </div>
                    </div>
                 </div>
+             </div>
              </div>
              <div id="endContainers">
                 <!-- ADD SECTIONS HERE! -->
              </div>
           </div>
           <div class="bodyDivs">
-             <div class="main_un_t_inf_o">
-                <div class="conMainUpHeader">
-                   <div class="container_header">
+         <div id="adWebSec_One"></div>
+         <div class="tit_index__"><div id="title_index"> <div class="ad_intro_in_p_h" id="main_t_page">تضاريس كوكب المريخ</div> </div></div>
+         <div class="time_write_this_page_o">
+               <p class="buIndex"> بواسطة : </p>
+               <p class="buIndey"> </p>
+               &nbsp;<div class="imgUser proImg" id="icon_user"> <img src="../../../usAdm/adam.jpg" style="width: 12px;" > </div>&nbsp;
+               <p id="admenPage"> Adam Jim </p>
+         </div>
+         <div class="index__page__main" id="introudiction">
+                <div class="Content__for__index__m">
+                   <div id="ad_photo">
+     <div class="photo_page_im" id="photo_page_im">
+       <img class="img" id="img" src="data:image/jpeg;base64,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">
+       <p class="pText_Image">
+       <i id="click_material">
+         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+       </i>
+       </p>
+     </div></div>
+                   <div class="time_write_this_page_p" id="time_write_this_page">
+                      <div class="adConIn">
+                         <img src="../../../icons/clockPage-solid.svg" style="width: 12.3px;" id="icon_clockPage">&nbsp;&nbsp;
+                         <p id="timeWrite">  تاريخ النشر  : الاثنين, 18 يناير 2021</p>
+                      </div>
+                       <div class="adConIn" id="edTime">
+      <img src="../../../icons/edit-regular.svg" style="width:14px" id="icon_edit">&nbsp;&nbsp;
+      <p> آخر تعديل :    الجمعه  , 23 ابريل 2021  </p>
+   </div> 
+                   </div>
+                   <div class="contactIndex contactCon">
                       <div class="info_index">
-                         <div class="index_page" id="index_page">
+                         <div class="index_page indexMedialPage" id="index_page">
                             <div class="menfontmen">
                                <div class="phot">
                                   <img src="../../../icons/list-alt-regular.svg" style="width:14px;">
@@ -109,180 +134,68 @@
                             <div class="index_list_i" id="index_list_i">
                                <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
                                <a class="b_index" href="#title_sour_an_qou"> المراجع </a>
-                               <div class="index_list_"><a href="#title__ad_subject_one"> معلومات عن كوكب المريخ </a></div><div class="index_list_"><a href="#title__ad_subject_two"> تضاريس كوكب المريخ  </a></div><div class="index_list_"><a href="#title__ad_subject_three"> بعض المعلومات عن تضاريس الكوكب الاحمر </a></div>
+                               <div class="index_list_"><a href="#titleContainerOne_"> معلومات عن كوكب المريخ </a></div><div class="index_list_"><a href="#titleContainerTwo_"> تضاريس كوكب المريخ  </a></div><div class="index_list_"><a href="#titleContainerThree_"> بعض المعلومات عن تضاريس الكوكب الاحمر </a></div>
                             </div>
                          </div>
-                      </div>
-    
-                      <div class="info_index i_index_">
-                         <div class="index_page index_page_" id="index_page">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/stream-solid.svg" style="width:10px;">
-                               </div>
-                               <div class="tpot">
-                                  مقترحات
-                               </div>
-                            </div>
-                            <div id="index_sugg_p" class="index_sugg_p">
-                               <div id="hol_sugg">
-                                  <div class="hol_sugg">
-                                     <div class="hol_suggOne hol"></div>
-                                     <div class="hol_suggTwo hol"></div>
-                                     <div class="hol_suggThree hol"></div>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
                    </div>
-                </div>
-                <div class="tit_index__"><div id="title_index"> <div class="ad_intro_in_p_h" id="main_t_page">تضاريس كوكب المريخ</div> </div>
-               </div>
-                <div class="time_write_this_page_o">
-                   <div class="adConInQ">
-                      <img src="../../../icons/folder-regular.svg" style="width: 14px;" id="icon_folder">&nbsp;
-                      التصنيفات : رئيسي / <a id="lin" href="https://www.trouko.co/sub_s/space/"> المواضيع / الفضاء</a>
-                   </div>
-                   <div class="adConInX">
-                      <p> بواسطة : </p> &nbsp;&nbsp;
-                      <img src="../../../icons/user-circle-solid.svg" style="width: 12px;" id="icon_user-circle">&nbsp;
-                      <p> Admin </p>
-                   </div>
-                </div>
-    
-             </div>
-    
-             <div class="index__page__main" id="introudiction">
-    
-                <div class="Content__for__index__m">
-                   <div id="ad_photo">
-     <div class="photo_page_im" id="photo_page_im">
-       <img class="img" id="img" src="data:image/jpeg;base64,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">
-       <p class="pText_Image">
-       <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
-       </i>
-       </p>
-     </div>
-                   </div>
-                   <div class="time_write_this_page_p" id="time_write_this_page">
-                      <div class="adConIn">
-                         <img src="../../../icons/clockPage-solid.svg" style="width: 12.3px;" id="icon_clockPage">
-                         &nbsp;&nbsp;
-                         <p id="timeWrite">  تاريخ النشر  : الاثنين, 18 يناير 2021</p>
-                      </div>
-                       <div class="adConIn" id="edTime">
-      <img src="../../../icons/edit-regular.svg" style="width:14px" id="icon_edit">&nbsp;&nbsp;
-      <p> أخر تعديل :  الجمعه  , 23 ابريل 2021 </p>
-   </div> 
                    </div>
                    <div class="container_text" id="Content__for__index__m">
                       <div class="ad_continer"> <p id="discription_page">المريخ هو رابع كوكب بعدا عن الشمس في مجموعتنا الشمسية بعد عطارد، وتصل متوسط المسافة بين الشمس والمريخ حوالي 228.53 مليون كم، وهو ثاني أقرب الكواكب إلى الكرة الأرضية بعد الزهرة، ويصنف على أنه من الكواكب الصخرية، وهو سابع الكواكب من حيث الحجم والكتلة، إذ يبلغ حجمه نصف حجم كوكب الأرض، ويتشابه مع كوكب الأرض من حيث امتلاكه للفصول الأربعة خلال العام، وتغطي طبقات من الجليد قطبيه الجنوبي والشمالي. يعود تسمية كوكب المريخ بهذا الاسم إلى الرومان، إذ تمت تسميته تيمنا بإله الحرب لديهم، بسبب اعتقادهم أن لونه البرتقالي المائل إلى الأحمر يشبه لون الدم، لكن السبب الحقيقي للون هو الصدأ الناتج عن أكاسيد الحديد الموجودة في صخوره وتربته، لذا يطلق عليه اسم الكوكب الأحمر .</p> </div>
                    </div>
+                   
                 </div>
                 <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
-    
              <!-- add a sub -->
              <div class="s_add">
-              <div class="ad_sub_one" id="ad_sub_one">
-                  <div class="title__ad_subject" id="title__ad_subject_one">
-                    <!-- title here -->
-                    <div class="title__ad_subject_p" id="titleContainerOne_">معلومات عن كوكب المريخ</div>
-                  </div>
-                  <div class="ad_i_subject" id="ad_container_subject_one">
-                    <!-- continer here --> 
-                    
-   <div class="ad_i_subject_p">
-       <p class="p_container" id="containerOne_">يتكون كوكب المريخ من 3 طبقات هي: القشرة، والستار، واللب، وتتكون كل طبقة مما يأتي:القشرة: تتكون القشرة من صخور البازلت، كما في قشرة كوكب الأرض والقمر، وتتكون بعض أجزاء القشرة الموجودة في النصف الشمالي من الكوكب من صخور الأنديزيت البركانية الغنية السيليكا، ويتراوح سمكها حوالي 50 كم. الستار: تشبه طبقة الستار لكوكب المريخ الطبقة الموجودة في كوكب الأرض، إذ يتكون أغلبه من صخر البريدوتيت، والذي يحتوي على السيليكون، والأكسجين، والحديد، والمغنيسيوم، ويتراوح سمك الطبقة بين 1.4-1 .</p>
-   </div>
-                  </div>
-                  <div id="ad_sources_quotes_one" class="source_quotes"></div>
-              </div>
-    
-    
-              <div class="ad_sub_two" id="ad_sub_two">
-                 <div class="title__ad_subject" id="title__ad_subject_two">
-                  <!-- title here -->
-                  <div class="title__ad_subject_p" id="titleContainerTwo_">تضاريس كوكب المريخ </div>
-                 </div>
-                 <div class="ad_i_subject" id="ad_container_subject_two">
-                   <!-- continer here --> 
-                   
-   <div class="ad_i_subject_p">
-       <p class="p_container" id="containerTwo_">يمكن تقسيم سطح المريخ إلى 3 مناطق، وهي:المرتفعات الجنوبية. السهول الشمالية، والتي تضم السهول، وتقوسات القشرة .</p>
-   </div>
-                 </div>
-                 <div id="ad_sources_quotes_two" class="source_quotes"></div>
-              </div>
-
-    
-              <div class="ad_sub_three" id="ad_sub_three">
-                 <div class="title__ad_subject" id="title__ad_subject_three">
-                  <!-- title here -->
-                  <div class="title__ad_subject_p" id="titleContainerThree_">بعض المعلومات عن تضاريس الكوكب الاحمر</div>
-                 </div>
-                 <div class="ad_i_subject" id="ad_container_subject_three">
-                   <!-- continer here --> 
-                   
-   <div class="ad_i_subject_p">
-       <p class="p_container" id="containerThree_">كشف الباحثون من على بعد ملايين الكيلومترات عن المريخ دليلا جديدا عن كيفية تكون التضاريس المؤقتة على الكوكب الأحمر، وتشير تجاربهم المخبرية المبتكرة عن تصعد ثاني أوكسيد الكربون إلى أن العملية نفسها مسؤولة عن تغير مظهر الكثبان الرملية على المريخ.  <br />قاد البحث فريق دوبلين من جامعة ترينيتي، ومن ضمنه المرشحة للدكتوراه في كلية العلوم الطبيعية لورين ماك كيوان Lauren Mc Keown، والدكتورة ماري بورك Mary Bourke، والبروفيسور جيم ماكلوين Jim McElwaine، من جامعة دورهام، وقد نشر عملهم الذي يصف ظاهرة لم يشاهد لها مثيل على الأرض في مجلة Scientific Reports.  <br>تقول لورين ماك كيوان: "سمعنا مقتطفات من الأخبار المشوقة عن أدلة وجود الماء على المريخ، ومع ذلك فإن المناخ المريخي الحالي لا يدعم دوما وجود الماء في حالته السائلة، لذا فمن المهم أن نفهم دور المواد المتطايرة التي تغير المريخ اليوم، حيث يتألف غلاف المريخ الجوي من 95% من ثاني أوكسيد الكربون، ولكن لا نعلم سوى القليل عن كيفية تفاعله مع سطح الكوكب .  </p>
-   </div>
-                 </div>
-                 <div id="ad_sources_quotes_three" class="source_quotes"></div>
-              </div>
-    
-              <div class="ad_sub_four" id="ad_sub_four">
-                 <div class="title__ad_subject" id="title__ad_subject_four">
-                  <!-- title here -->
-                  
-                 </div>
-                 <div class="ad_i_subject" id="ad_container_subject_four">
-                      <!-- continer here --> 
-                      
-                 </div>
-                 <div id="ad_sources_quotes_four" class="source_quotes"></div>
-              </div>
-    
-              <div class="ad_sub_five" id="ad_sub_five">
-                <div class="title__ad_subject" id="title__ad_subject_five">
-                  <!-- title here -->
-                  
-                </div>
-                <div class="ad_i_subject" id="ad_container_subject_five">
-                      <!-- continer here --> 
-                      
-                </div>
-                <div id="ad_sources_quotes_five" class="source_quotes"></div>
-             </div>
-    
-             <div class="ad_sub_six" id="ad_sub_six">
-                <div class="title__ad_subject" id="title__ad_subject_six">
-                  <!-- title here -->
-                  
-                </div>
-                <div class="ad_i_subject" id="ad_container_subject_six">
-                      <!-- continer here --> 
-                      
-                </div>
-                <div id="ad_sources_quotes_six" class="source_quotes"></div>
-             </div>
-    
-             <div class="ad_sub_seven" id="ad_sub_seven">
-                <div class="title__ad_subject" id="title__ad_subject_seven">
-                  <!-- title here -->
-                </div>
-                <div class="ad_i_subject" id="ad_container_subject_seven">
-                      <!-- continer here --> 
-                </div>
-                <div id="ad_sources_quotes_seven" class="source_quotes"></div>
-             </div>
+               
+         <div class="ad_sub_one" id="ad_sub_one">
+             <div class="title__ad_subject_p"><p id="titleContainerOne_">معلومات عن كوكب المريخ</p></div>
+             <div class="ad_i_subject"><div id="containerOne_">يتكون كوكب المريخ من 3 طبقات هي: القشرة، والستار، واللب، وتتكون كل طبقة مما يأتي:القشرة: تتكون القشرة من صخور البازلت، كما في قشرة كوكب الأرض والقمر، وتتكون بعض أجزاء القشرة الموجودة في النصف الشمالي من الكوكب من صخور الأنديزيت البركانية الغنية السيليكا، ويتراوح سمكها حوالي 50 كم. الستار: تشبه طبقة الستار لكوكب المريخ الطبقة الموجودة في كوكب الأرض، إذ يتكون أغلبه من صخر البريدوتيت، والذي يحتوي على السيليكون، والأكسجين، والحديد، والمغنيسيوم، ويتراوح سمك الطبقة بين 1.4-1 .</div></div>
+             <div id="ad_sources_quotes_one" class="source_quotes"></div>
          </div>
+               <div id="adWebSec_Two"></div>
+               
+         <div id="suggContainerMed" style="display:none;">
+         <div class="contactCon">
+         <div class="info_index i_index_">
+            <div class="index_page index_page_" id="index_page">
+               <div class="menfontmen">
+                  <div class="phot">
+                     <img src="../../../icons/stream-solid.svg" style="width:10px;">
+                  </div>
+                  <div class="tpot">
+                     مقترحات
+                  </div>
+               </div>
+               <div id="index_sugg_p" class="index_sugg_p">
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+               
+         <div class="ad_sub_one" id="ad_sub_one">
+             <div class="title__ad_subject_p"><p id="titleContainerTwo_">تضاريس كوكب المريخ </p></div>
+             <div class="ad_i_subject"><div id="containerTwo_">يمكن تقسيم سطح المريخ إلى 3 مناطق، وهي:المرتفعات الجنوبية. السهول الشمالية، والتي تضم السهول، وتقوسات القشرة .</div></div>
+             <div id="ad_sources_quotes_two" class="source_quotes"></div>
+         </div>
+               <div id="adWebSec_Three"></div>
+               
+         <div class="ad_sub_one" id="ad_sub_one">
+             <div class="title__ad_subject_p"><p id="titleContainerThree_">بعض المعلومات عن تضاريس الكوكب الاحمر</p></div>
+             <div class="ad_i_subject"><div id="containerThree_">كشف الباحثون من على بعد ملايين الكيلومترات عن المريخ دليلا جديدا عن كيفية تكون التضاريس المؤقتة على الكوكب الأحمر، وتشير تجاربهم المخبرية المبتكرة عن تصعد ثاني أوكسيد الكربون إلى أن العملية نفسها مسؤولة عن تغير مظهر الكثبان الرملية على المريخ.  <br />قاد البحث فريق دوبلين من جامعة ترينيتي، ومن ضمنه المرشحة للدكتوراه في كلية العلوم الطبيعية لورين ماك كيوان Lauren Mc Keown، والدكتورة ماري بورك Mary Bourke، والبروفيسور جيم ماكلوين Jim McElwaine، من جامعة دورهام، وقد نشر عملهم الذي يصف ظاهرة لم يشاهد لها مثيل على الأرض في مجلة Scientific Reports.  <br />تقول لورين ماك كيوان: "سمعنا مقتطفات من الأخبار المشوقة عن أدلة وجود الماء على المريخ، ومع ذلك فإن المناخ المريخي الحالي لا يدعم دوما وجود الماء في حالته السائلة، لذا فمن المهم أن نفهم دور المواد المتطايرة التي تغير المريخ اليوم، حيث يتألف غلاف المريخ الجوي من 95% من ثاني أوكسيد الكربون، ولكن لا نعلم سوى القليل عن كيفية تفاعله مع سطح الكوكب .  </div></div>
+             <div id="ad_sources_quotes_three" class="source_quotes"></div>
+         </div>
+               
+               
+               
+               <div id="adWebSec_Four"></div>
+               
+           </div>
       </div>
-
    </div>
-    
+   <div id="morContacte"></div>
    <div class="ch_sub_ sug" id="suggest_sugg">  
        <div class="text_sub_s sug_t tar">  <p class="s_tas" id="title_p_index"> ــــــ </p>   ذات صلة بـ &nbsp;  </div>
 
@@ -290,8 +203,7 @@
        <div class="containerSugg" id="containerSugg">
           <div class="sub_r_s subsr" id="sub_r_s"></div>
        </div>
-   </div> 
-
+   </div>
    <div class="ch_sub_ sug" id="suggest_sugg">  
        <div class="text_sub_s sug_t tar">  مقترحات  </div>
        
@@ -299,8 +211,7 @@
           <div class="sub_r_n" id="sub_r_nSugg"> لا تتوفر معلومات </div>
           <div class="sub_r_s" id="sub_r_sSugg"></div>
        </div>
-   </div> 
-    
+   </div>
    <div class="sou_an_quo"> 
       <div class="title_sour_an_qou" id="title_sour_an_qou">
           <p class="title_sour_an_qou_p">  المراجع | المصادر | الأقتباسات </p>&nbsp; <img src="../../../icons/quote-left-solid.svg" style="width:12.5px; margin-bottom: 10px;">
@@ -312,25 +223,26 @@
       <p id="hide_text" class='p_t_container'>لا يتوفر مراجع لهذه الصفحة</p>
      </div>
   </div>
-
+   <div id="typePage" style="display:none;">typeTwo</div>
+   <div id="us_us" style="display:none;">adam</div>
+   <div id="sp_sp" style="display:none;"></div>
    <div style="display:none;"><div id="lin_k_One"></div><div id="lin_k_Two">https://www.trouko.com/subjects/space/مجرة_درب_التبانة/</div><div id="lin_k_Three"></div><div id="lin_k_Four"></div><div id="lin_k_Five"></div> </div>
    <div style="display:none;"><div id="quoOne_"></div><div id="quoTwo_"></div><div id="quoThree_"></div><div id="quoFour_"></div><div id="quoFive_"></div><div id="quoSix_"></div> </div>
-   <div style="display:none;"><div id="quoOnea_"></div><div id="quoTwoa_"></div><div id="quoThreea_"></div><div id="quoFoura_"></div><div id="quoFivea_"></div><div id="quoSixa_"></div> <div id="Urlsame">https://www.trouko.co/sub_s/space/</div><div id="psp">/subjects/space/</div></div>
-
+   <div style="display:none;"><div id="quoOnea_"></div><div id="quoTwoa_"></div><div id="quoThreea_"></div><div id="quoFoura_"></div><div id="quoFivea_"></div><div id="quoSixa_"></div> <div id="Urlsame">https://www.trouko.co/sub_s/space/</div><div id="psp">/subjects/space/</div><div id="miUrl">https://www.trouko.com/subjects/space/تضاريس_كوكب_المريخ</div></div>
    <div class="information">
       <div class="sweb">
 
-       <div class="">
+       <div class="swEnd">
           <div class=" m_each"> <a class="a_link" href="../../../container_s_q/contact.html">أتصل بنا عبر البريد</a>   </div>
           <div class="support_us m_each">
-            <a class="a_link" href="../../../container_s_q/supportUs.html"> للدعم والمساعدة </a>
+               <a href="../../../container_s_q/searchInPage.html"> قسم البحث </a>
           </div>
-          <div class="support_us m_each">
-            <a class="a_link" href="../../../container_s_q/developers.html"> مطور الموقع  </a>
+          <div class="support_us m_each" id="sEndWe">
+          <a href="https://www.trouko.co/sub_s/space/"> مقالات مشابهة </a>
           </div>
        </div>
 
-       <div class="">
+       <div class="swEndTwo">
           <div class=" m_each"> <a class="a_link" href="/">الصفحة الرئيسية</a>   </div>
           <div class="about_us m_each randPag" id="random_page" onclick="randoPag();">
              مقالة عشوائية 
