@@ -272,7 +272,7 @@ body {
 }
 
 .time_write_this_page_o {
-    padding: 10px 10px 5px 10px;
+    padding: 10px 10px 0px 10px;
     align-items: center;
     display: flex;
     font-size: 14px;
@@ -523,4 +523,18 @@ div.sources_ {
     background-color: #4f5052;
     padding: 0 8px 0 8px;
     border-radius: 3px 0 0 3px;
+}
+/* SHEARS */
+.sheThPage {
+    padding: 3px 6px 3px 6px;
+    text-align: center;
+    border-radius: 1px;
+    margin-right: 7px;
+}
+.faceShe {
+    background-color: #3B5998;
+}
+.twitShe {
+    background-color: #55ACEE;
+    width: 100% !important;
 }
