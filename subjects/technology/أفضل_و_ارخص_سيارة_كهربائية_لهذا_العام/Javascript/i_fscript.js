@@ -6,7 +6,7 @@ namePpath = "https://www.trouko.com/subjects/technology/أفضل_و_ارخص_س�
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> السبت, 24 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")
-addTitleIpage = document.getElementById(nameP+'_pag_n_232');
+addTitleIpage = document.getElementById(nameP+'undefined');
 addt(titleIn)
 function addt(m){
 var textDis = adDiscription.slice(0, 80);
