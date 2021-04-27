@@ -469,16 +469,8 @@ div.sources_ {
     height: 18px;
     background-color: #68a6d8;
     padding: 9px;
-}
-
-.medLis .instgramMaenu img {
-    width: 18px;
-    height: 18px;
-    background-color: #c15050;
-    padding: 9px;
     border-radius: 0 4px 4px 0;
 }
-
 .endlis {
     display: flex;
     direction: rtl;
@@ -537,4 +529,7 @@ div.sources_ {
 .twitShe {
     background-color: #55ACEE;
     width: 100% !important;
+}
+#admenPage {
+    direction: ltr;
 }

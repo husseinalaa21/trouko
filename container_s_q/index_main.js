@@ -155,14 +155,13 @@ function shoLiThisPage() {
 }
 var lisBox = `<div class="lisBox">
                 <div class="toLisBox">
-                    <div class="secMainLis" > <a> الصفحة الرئيسية </a><a> مقالات ذات صلة </a> </div>
-                    <div class="secSecLis" > <a> البحث </a><a> دعمنا </a></div>
+                    <div class="secMainLis" > <a href="/"> الصفحة الرئيسية </a><a href="`+document.getElementById("Urlsame").innerText+`"> مقالات ذات صلة </a> </div>
+                    <div class="secSecLis" > <a href="../../../container_s_q/searchInPage.html"> البحث </a><a href="../../../container_s_q/about.html"> حول </a></div>
                 </div>
                 <div class="medLis">
                     <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
                     <a class="twiMaenu" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-m.svg" /> </a>
                     <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" /> </a>
-                    <a class="instgramMaenu" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-m.svg" /></a>
                 </div>
                 <div class="endlis" onclick="shoLiThisPage()">
                     <div><img src='../../../icons/external-link-square-alt-solid.svg' class="icoLinShar"/></div><div class="conSharLin"> مشاركة هذه المقالة </div>
@@ -172,8 +171,8 @@ var lisBox = `<div class="lisBox">
 iconT.addEventListener("click", e => {
     if (isClickMenu === false) {
         iconBarTh.className = "icon-bar bar_a";
-        setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 100);
-        setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 200);
+        setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 150);
+        setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 250);
         menLis.innerHTML = lisBox
         isClickMenu = true
     } else {
