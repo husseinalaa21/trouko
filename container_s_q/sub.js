@@ -26,6 +26,7 @@ cdLink(true)
 //
 
 function ad(s,t) {
+    var cos = 0
     var arr = [];
     while (arr.length < s.length) {
         var r = Math.floor(Math.random() * s.length);
@@ -34,15 +35,21 @@ function ad(s,t) {
     var i;
     if (t === false) {
         for (i = 0; i < arr.length; i++) {
-            var x = arr[i]
-            addSuggTIndex(s[x].linkPage, s[x].namePath)
-            addSugg(s[x].linkPage, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
-            sub_r_nSugg.style.display = "none"
+            if(cos < 4){
+                cos ++
+                var x = arr[i]
+                addSuggTIndex(s[x].linkPage, s[x].namePath)
+                addSugg(s[x].linkPage, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
+                sub_r_nSugg.style.display = "none"
+            }
         }
     } else {
         for (i = 0; i < arr.length; i++) {
-            var x = arr[i]
-            adSugg(s[x].linkPage, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+            if(cos < 4){
+                cos ++
+                var x = arr[i]
+                adSugg(s[x].linkPage, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+            }
         }
     }
 }
@@ -62,16 +69,17 @@ function adIndexSugg() {
     var iWe = 0
     var iVe = 0
     var iVeSt = []
-    xData.forEach(e => {
+    for(var x = 0 ; x < xData.length; x++){
+        var e = xData[(xData.length-x)-1]
         if (e.linkPage.includes(psp) === true && miUrl !== e.linkPage && lin_k_One !== e.linkPage && lin_k_Two !== e.linkPage && lin_k_Three !== e.linkPage && lin_k_Four !== e.linkPage && lin_k_Five !== e.linkPage) {
-            if (iBasic < 4) {
+            if (iBasic < 8) {
                 iBasic++
                 var s = e.namePath;
                 var l = e.linkPage;
                 var sub = { "linkPage": l, "namePath": s };
                 storageD.push(sub)
             } else {
-                if (iWe < 4) {
+                if (iWe < 8) {
                     iWe++
                     var s = e.namePath;
                     var l = e.linkPage;
@@ -80,7 +88,7 @@ function adIndexSugg() {
                 }
             }
         } else {
-            if(iVe < 8){
+            if(iVe < 16){
                 iVe++
                 var s = e.namePath;
                 var l = e.linkPage;
@@ -88,16 +96,16 @@ function adIndexSugg() {
                 iVeSt.push(sub)
             }
         }
-    })
+    }
     iVeSt.forEach(e=>{
-        if(iBasic < 4){
+        if(iBasic < 8){
             iBasic ++
             var s = e.namePath;
             var l = e.linkPage;
             var sub = { "linkPage": l, "namePath": s };
             storageD.push(sub)
         } else {
-            if(iWe < 4){
+            if(iWe < 8){
                 var s = e.namePath;
                 var l = e.linkPage;
                 var sub = { "linkPage": l, "namePath": s };
