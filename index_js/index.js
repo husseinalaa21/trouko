@@ -55,3 +55,22 @@ function cloLis() {
   menLis.innerHTML = ""
   isClickMenu = false
 }
+var indexPage = [{n : " المواضيع آخر المقالات ", id: "xOne"},{n : " المواضيع فهرسة ", id: "subIndex"},{n : " الاسئلة آخر المقالات ", id: "xTwo"},
+{n : "الاسئلة فهرسة ", id: "qusIndex"},{n : " مقترحات ", id: "sugIndex"}]
+
+
+indexAll()
+function indexAll(params) {
+  var indexMain = document.getElementById("indexMain"),
+  indexWeb = document.getElementById("indexWeb");
+  indexPage.forEach(e=>{
+    let y = document.createElement("div")
+    let d = document.createElement("div")
+    y.className = "itemMain"
+    d.className = "itemMain"
+    y.innerHTML = '<a class="b_index" href="#'+e.id+'" > '+ e.n + '</a>'
+    d.innerHTML = '<a class="b_index" href="#'+e.id+'" > '+ e.n + '</a>'
+    indexMain.append(y)
+    indexWeb.append(d)
+  })
+}

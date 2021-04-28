@@ -172,8 +172,14 @@ li:focus{
     justify-content: space-evenly;
     overflow-y: hidden;
 }
+.indexMain {
+    display: none;
+}
 @media screen and (max-width: 550px) {
     .sub_r_s {
+        display: block;
+    }
+    .indexMain {
         display: block;
     }
 }
@@ -407,4 +413,53 @@ li:focus{
 .specialA {
     color: #1f4068;
     font-size: 18px;
+}
+/* MOVE MAIN */
+
+.info_indexSec {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 540px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    direction: rtl;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menfontmen {
+    background-color: #e7e7de57;
+    display: flex;
+}
+.menfontmen div {
+    padding: 7px;
+}
+.phot {
+    background-color: #d7dfe057;
+    text-align: center;
+    width: 30px;
+    position: relative;
+}
+
+.phot img {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+}
+.index_list_i {
+    display: grid;
+    padding: 10px;
+    padding-top: 0;
+}
+.itemMain {
+    border: 0;
+    border-right: 3px solid #7c8e96b6;
+    padding: 4px 6px 5px 5px;
+    margin: 2px 0 2px 0;
+    background-color: #b9c6d30a;
+}
+.itemMain:first-child {
+    margin-top: 8px;
 }
