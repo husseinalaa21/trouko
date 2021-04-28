@@ -53,66 +53,71 @@ var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfi
 
 xReq.onload = function () {
     cn_google.style.display = "block"
-    zaqSna()
-}
-function zaqSna() {
     var xData = JSON.parse(xReq.responseText);
-    for(var fc = 0; fc < sectionLoad.length; fc++){
-        let e = sectionLoad[fc]
-        let hrt = e.n.replace(/\//g, "")
-        $.getJSON("../jsData/" + hrt + ".json", function (data) {
-            let xcas, anData = {}
-            if (e.z === "sfirst") {
-                xcas = " مواضيع عن "
-                anData.id = "_pag_x_242"
-                anData.ur = "i_tfscript.js"
-                anData.sec = "xOne" 
-            } else if (e.z === "sTwo") {
-                xcas = " أسئلة عن "
-                anData.id = "_pag_s_262"
-                anData.ur = "i_tnfscript.js"
-                anData.sec = "xTwo"
-            }
-            if (data.length > 0) {
-                var sfirst = document.getElementById(e.z)
-                let li = document.createElement("div")
-                li.id = "x_" + e.n
-                li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
-                sfirst.append(li)
-                addDataSec(data, hrt, e.n, e.s,anData)
-                function addDataSec(x, d, v, q,anData) {
-                    let isFull = false
-                    for (var e = 0; e < x.length; e++) {
-                        if (e < 4) {
-                            let nam = x[e].replace(v, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
-                            let li = document.createElement("li")
-                            li.innerHTML = '<a href=' + x[e] + '>' + nam + '</a>'
-                            document.getElementById('s_' + d).append(li)
-                            let z = (x.length - e) - 1
-                            const index = xData.indexOf(x[z]);
-                            if (index > -1) {
-                              xData.splice(index, 1);
+    var fc = 0;
+    rea()
+    function rea() {
+        if(fc < sectionLoad.length){
+            let e = sectionLoad[fc]
+            let hrt = e.n.replace(/\//g, "")
+            $.getJSON("../jsData/" + hrt + ".json", function (data) {
+                let xcas, anData = {}
+                if (e.z === "sfirst") {
+                    xcas = " مواضيع عن "
+                    anData.id = "_pag_x_242"
+                    anData.ur = "i_tfscript.js"
+                    anData.sec = "xOne" 
+                } else if (e.z === "sTwo") {
+                    xcas = " أسئلة عن "
+                    anData.id = "_pag_s_262"
+                    anData.ur = "i_tnfscript.js"
+                    anData.sec = "xTwo"
+                }
+                if (data.length > 0) {
+                    var sfirst = document.getElementById(e.z)
+                    let li = document.createElement("div")
+                    li.id = "x_" + e.n
+                    li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
+                    sfirst.append(li)
+                    addDataSec(data, hrt, e.n, e.s,anData)
+                    function addDataSec(x, d, v, q,anData) {
+                        let isFull = false
+                        for (var e = 0; e < x.length; e++) {
+                            if (e < 3) {
+                                let nam = x[e].replace(v, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
+                                let li = document.createElement("li")
+                                li.innerHTML = '<a href=' + x[e] + '>' + nam + '</a>'
+                                document.getElementById('s_' + d).append(li)
+                                let z = (x.length - e) - 1
+                                const index = xData.indexOf(x[z]);
+                                if (index > -1) {
+                                  xData.splice(index, 1);
+                                }
+                                addNewSubrt(x[z],document.getElementById(anData.sec),"_J_n_Hus_Qu",anData.id,anData.ur,"s_sub_t_dTw")
+                            } else {
+                                isFull = true
                             }
-                            addNewSubrt(x[z],document.getElementById(anData.sec),"_J_n_Hus_Qu",anData.id,anData.ur,"s_sub_t_dTw")
-                        } else {
-                            isFull = true
+                        }
+                        if (isFull === true) {
+                            let li = document.createElement("li")
+                            li.innerHTML = '<a href=../sub_s/' + q + '/index.html> مشاهدة المزيد </a>'
+                            document.getElementById('s_' + d).append(li)
                         }
                     }
-                    if (isFull === true) {
-                        let li = document.createElement("li")
-                        li.innerHTML = '<a href=../sub_s/' + q + '/index.html> مشاهدة المزيد </a>'
-                        document.getElementById('s_' + d).append(li)
-                    }
                 }
-            }
-        }).fail(function () {
-            // 
-        });
-        if(sectionLoad.length - 1 === fc){
-            setTimeout(() => {
+            }).fail(function () {
+                // 
+            });
+            if(sectionLoad.length -1 === fc){
                 addNewSubr(xData);
-            }, 4000);
+            }
+            console.log(fc)
+            setTimeout(() => {
+                fc ++;
+                rea()
+            }, 400);
         }
+        
     }
 }
 function random_a() {
@@ -140,6 +145,7 @@ function ad(d, c) {
     while (arr.length < d.length - 10) {
         var r = Math.floor(Math.random() * d.length);
         if (arr.indexOf(r) === -1) arr.push(r);
+        break;
     }
     var i;
     for (i = 0; i < arr.length; i++) {
