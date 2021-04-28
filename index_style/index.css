@@ -162,24 +162,12 @@ li:focus{
     outline: 0;
     border:0;
 }
-
-.sub_r_s {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    direction: rtl;
-    overflow-y: hidden;
-    
-}
-
 .subsr {
-    padding: 10px;
     padding-bottom: 0;
 }
 .sub_r_s {
     display: grid;
     grid-template-columns:  50% 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     direction: rtl;
     justify-content: space-evenly;
     overflow-y: hidden;
@@ -190,7 +178,6 @@ li:focus{
     }
 }
 .subsr {
-    padding: 20px;
     padding-top: 10px;
     padding-bottom: 0;
 }

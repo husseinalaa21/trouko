@@ -83,7 +83,7 @@ xReq.onload = function () {
                     function addDataSec(x, d, v, q,anData) {
                         let isFull = false
                         for (var e = 0; e < x.length; e++) {
-                            if (e < 3) {
+                            if (e < 2) {
                                 let nam = x[e].replace(v, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
                                 let li = document.createElement("li")
                                 li.innerHTML = '<a href=' + x[e] + '>' + nam + '</a>'
@@ -132,7 +132,7 @@ function random_a() {
 function addNewSubr(xData) {
     var storageD = [];
     for (var i = 0; i < xData.length; i++) {
-        if (i < 20) {
+        if (i < 8) {
             var e = xData[(xData.length - i) - 1]
             let adSub = { "linkPage": e, "namePath": e };
             storageD.push(adSub)
@@ -142,10 +142,9 @@ function addNewSubr(xData) {
 }
 function ad(d, c) {
     var arr = [];
-    while (arr.length < d.length - 10) {
+    while (arr.length < d.length) {
         var r = Math.floor(Math.random() * d.length);
         if (arr.indexOf(r) === -1) arr.push(r);
-        break;
     }
     var i;
     for (i = 0; i < arr.length; i++) {
