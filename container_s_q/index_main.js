@@ -156,7 +156,7 @@ function shoLiThisPage() {
 var lisBox = `<div class="lisBox">
                 <div class="toLisBox">
                     <div class="secMainLis" > <a href="/"> الصفحة الرئيسية </a><a href="`+document.getElementById("Urlsame").innerText+`"> مقالات ذات صلة </a> </div>
-                    <div class="secSecLis" > <a href="../../../container_s_q/searchInPage.html"> البحث </a><a href="../../../container_s_q/about.html"> حول </a></div>
+                    <div class="secSecLis" > <a href="/"> البحث </a><a href="../../../container_s_q/about.html"> حول </a></div>
                 </div>
                 <div class="medLis">
                     <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
