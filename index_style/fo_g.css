@@ -36,7 +36,6 @@ table.gsc-search-box{
    -webkit-transition: background-color 0.3s !important;
    transition: background-color 0.3s !important;
    border: 0 !important;
-   background-color: #cacaca !important;
    direction: rtl !important;
    width: 270px !important;
    min-width: 18% !important;
@@ -45,7 +44,6 @@ table.gsc-search-box{
    border-radius: 0 !important;
    border-bottom-right-radius: 3px !important;
    border-top-right-radius: 3px !important;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089) !important;
 }
 
 .gsib_a {
@@ -79,19 +77,21 @@ input.gsc-input {
     text-align: center !important;
     margin: auto !important;
     margin: 0 !important;
-    background-color: #cacaca !important;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 1%) !important;
+    background-color:  #f7f7f7 !important;
     border: 0 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
-
+.gs-title {
+    font-size: 18px !important;
+}
 .gsc-above-wrapper-area {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089) !important;
     padding-bottom: 3px!important;
 }
 
 img.gs-image {
-    border: 2px solid #ccc !important;
     border-radius: 4px !important;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.089) !important;
 }
 
 .gsc-webResult{
@@ -132,7 +132,7 @@ padding-top: 5px!important;
 .gs-snippet:last-of-type {
     background-color: #3282b8 !important;
     border-color: #3265b8 !important;
-    color: #bdbdc3 !important;
+    color: #f0f0f0 !important;
 }
 
 button.gsc-search-button svg {
@@ -141,7 +141,6 @@ button.gsc-search-button svg {
 }
 
 button.gsc-search-button-v2:focus{
-    background-color: #b8b9bb;
     border-color: 0;
     outline-offset: 0;
     outline-color: #3e4042;
