@@ -52,6 +52,7 @@ var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfi
 { n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo" }]
 
 xReq.onload = function () {
+    cn_google.style.display = "block"
     zaqSna()
 }
 function zaqSna() {
