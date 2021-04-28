@@ -37,7 +37,7 @@
     padding-top: 1px;
 }
 body{
-    background-color: #dddddd5d;
+    background-color: #eeeeee5d;
 }
 .secWebBas {
     display: none;
@@ -259,6 +259,8 @@ li:focus{
     text-align: center;
     font-size: 23px;
     padding: 14px;
+    padding-bottom: 0;
+    padding-top: 8px;
     outline-color: 0;
 
 }
