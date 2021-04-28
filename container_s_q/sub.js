@@ -56,14 +56,16 @@ function ad(s,t) {
 
 var storageD = [];
 var iWeSt = []
-
+var odUrl = "https://trouko.com/",
+    newOnw = "https://www.trouko.com/"
 function adIndexSugg() {
     var miUrl = document.getElementById("miUrl").innerText + '/'
-    var lin_k_One = document.getElementById("lin_k_One").innerText;
-    var lin_k_Two = document.getElementById("lin_k_Two").innerText;
-    var lin_k_Three = document.getElementById("lin_k_Three").innerText;
-    var lin_k_Four = document.getElementById("lin_k_Four").innerText;
-    var lin_k_Five = document.getElementById("lin_k_Five").innerText;
+    var lin_k_One = document.getElementById("lin_k_One").innerText.replace(odUrl,newOnw);
+    var lin_k_Two = document.getElementById("lin_k_Two").innerText.replace(odUrl,newOnw);
+    var lin_k_Three = document.getElementById("lin_k_Three").innerText.replace(odUrl,newOnw);
+    var lin_k_Four = document.getElementById("lin_k_Four").innerText.replace(odUrl,newOnw);
+    var lin_k_Five = document.getElementById("lin_k_Five").innerText.replace(odUrl,newOnw);
+
     var xData = JSON.parse(xReq.responseText);
     var iBasic = 0
     var iWe = 0
