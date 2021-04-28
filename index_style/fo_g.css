@@ -157,19 +157,7 @@ table.gsc-search-box td.gsc-input {
     margin-right: 0 !important;
 }
 
-/* t */ 
-div.s_sub_t_dTw{
-    width: 85%;
-    background-color: #e7e7de57;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 8px;
-    overflow: hidden;
-    direction: ltr;
-    margin: auto;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
+/* t */
 div.suggTwo,div.suggThree{
     display: block;
 }

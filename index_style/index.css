@@ -43,7 +43,7 @@ body{
     display: none;
 }
 .up_date {
-    padding-top: 88px;
+    padding-top: 68px;
     padding-bottom: 5px;
 }
 @media screen and (min-width : 730px),(min-width : 1000px){
@@ -151,12 +151,16 @@ li:focus {
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 1%);
     background-color:  #f7f7f7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
 }
 li.li_list:hover{
     color: #3d5d85;
     outline-color: 0;
 }
-
+.li_list div {
+    padding-left: 10px;
+    transition: 0.5s;
+}
 li:focus{
     border-color: 0;
     outline-offset: 0;
@@ -179,12 +183,12 @@ li:focus{
 }
 .sub_r_s {
     display: grid;
-    grid-template-columns:  45% 45%;
+    grid-template-columns:  50% 50%;
     padding-top: 10px;
     padding-bottom: 10px;
     direction: rtl;
     justify-content: space-evenly;
-    overflow-y: hidden;   
+    overflow-y: hidden;
 }
 @media screen and (max-width: 550px) {
     .sub_r_s {
@@ -349,7 +353,7 @@ li:focus{
 .item_list_sub {
     list-style-type: none;
     text-align: right;
-
+    transition: 0.4s;
 }
 .item_list_sub:hover{
     outline-color: 0;
@@ -367,14 +371,6 @@ li:focus{
     border-right: 1.5px solid #7b7b7e77;
     width: auto;
     font-size: 17px;
-}
-
-#item_list_sub_spy , #item_list_sub_space , #item_list_sub_sc , #item_list_sub_geography, #item_list_sub_empty, #item_list_sub_technology{
-    display: none;
-}
-
-#item_list_sub_spy_q , #item_list_sub_space_q , #item_list_sub_sc_q , #item_list_sub_empty_q, #item_list_sub_technology_q{
-    display: none;
 }
 
  a {

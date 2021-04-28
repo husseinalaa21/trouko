@@ -96,17 +96,18 @@ a.a_link:hover {
 /* */
 
 div.s_sub_t_d , div.s_sub_t_dTw{
+    width: 93%;
     position: relative;
     background-color: #e7e7de57;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     direction: ltr;
-    max-width: 450px;
-    width: 100%;
+    height: fit-content;
     margin: auto;
     margin-bottom: 14px;
     margin-top: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 div.s_sub_t_d:hover {
@@ -115,19 +116,18 @@ div.s_sub_t_d:hover {
 }
 
 .img_p_sugg_p {
-    height: 240px;
+    max-height: 100px;
+    position: relative;
 }
 .sugg_p_t_bo_23{
-    position: absolute;
-    z-index: 10px;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 a.link_t_read_p {
     font-size: 13px;
-    background-color:#264061;
-    color: #bdbfc2;
+    background-color: #3265b8;
+    color: #dee0e4;
     border-radius: 2px;
     padding-right: 5px;
     padding-left: 5px;
@@ -139,13 +139,15 @@ a.link_t_read_p {
 }
 
 a.s_sub_t {
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 500;
     display: flex;
     direction: rtl;
-    padding: 6px;
-    background-color: #dbdbdb9f;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.226);
-
+    padding: 3px 6px 6px 6px;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background-color: #f0f0f0cb;
+    text-align: right;
 }
 
 .p_t_inf {
@@ -165,6 +167,7 @@ a.s_sub_t {
     padding: 5px;
     border: 0;
     border-bottom: 1px solid #eeeeee;
+    align-items: center;
 }
 
 .infoPageSuQu p{

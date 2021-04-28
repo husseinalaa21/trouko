@@ -12,9 +12,9 @@ psp = document.getElementById("psp").innerHTML
 
 sub_r_nSugg = document.getElementById("sub_r_nSugg")
 sub_r_sSugg = document.getElementById("sub_r_sSugg")
-
+var et = document.getElementById("psp").innerText
 var xReq = new XMLHttpRequest();
-xReq.open('GET', '../../../data.js');
+xReq.open('GET', '../../../jsData/'+et.replace(/\//g,"")+'.json');
 
 xReq.send();
 
@@ -69,20 +69,23 @@ function adIndexSugg() {
     var iWe = 0
     var iVe = 0
     var iVeSt = []
+    var po = new RegExp('https://www.trouko.com/','g')
+    var etx = et.replace(/\//g,"")
+    var pet = new RegExp(etx,'g')
     for(var x = 0 ; x < xData.length; x++){
-        var e = xData[(xData.length-x)-1]
-        if (e.linkPage.includes(psp) === true && miUrl !== e.linkPage && lin_k_One !== e.linkPage && lin_k_Two !== e.linkPage && lin_k_Three !== e.linkPage && lin_k_Four !== e.linkPage && lin_k_Five !== e.linkPage) {
+        var e = (xData.length-x)-1
+        if (xData[e].includes(psp) === true && miUrl !== xData[e] && lin_k_One !== xData[e] && lin_k_Two !== xData[e] && lin_k_Three !== xData[e] && lin_k_Four !== xData[e] && lin_k_Five !== xData[e]) {
             if (iBasic < 8) {
                 iBasic++
-                var s = e.namePath;
-                var l = e.linkPage;
+                var s = xData[e].replace(/_/g," ").replace(po,"").replace(/\//g,"").replace(pet,"");
+                var l = xData[e];
                 var sub = { "linkPage": l, "namePath": s };
                 storageD.push(sub)
             } else {
                 if (iWe < 8) {
                     iWe++
-                    var s = e.namePath;
-                    var l = e.linkPage;
+                    var s = xData[e].replace(/_/g," ").replace(po,"").replace(/\//g,"").replace(pet,"");
+                    var l = xData[e];
                     var sub = { "linkPage": l, "namePath": s };
                     iWeSt.push(sub)
                 }
@@ -90,8 +93,8 @@ function adIndexSugg() {
         } else {
             if(iVe < 16){
                 iVe++
-                var s = e.namePath;
-                var l = e.linkPage;
+                var s = xData[e].replace(/_/g," ").replace(po,"").replace(/\//g,"").replace(pet,"");
+                var l = xData[e];
                 var sub = { "linkPage": l, "namePath": s };
                 iVeSt.push(sub)
             }

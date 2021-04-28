@@ -1,167 +1,57 @@
-var subject_list , subject_list_n_s,
-li_list_spy,item_list_sub_spy,li_list_space,li_list_g,item_list_sub_space
-,item_list_sub_g,item_list_sub_technology,item_list_sub_else,item_list_sub_sc
-,li_list_else,li_list_technology,li_list_sc,li_list_spy_q,li_list_space_q,li_list_technology_q,li_list_else_q,li_list_sc_q
-,item_list_sub_else_q,item_list_sub_space_q,item_list_sub_sc_q,item_list_sub_spy_q,item_list_sub_technology_q;
+var subject_list, subject_list_n_s;
 
 subject_list = $('#subject_list');
 subject_list_n_s = $('#subject_list_n_s');
-li_list_spy = $('#li_list_spy')
-li_list_space = $('#li_list_space')
-li_list_g = $('#li_list_g')
-li_list_technology = $('#li_list_technology')
-li_list_else = $('#li_list_else')
-li_list_sc = $('#li_list_sc')
-li_list_spy_q = $('#li_list_spy_q')
-li_list_space_q = $('#li_list_space_q')
-li_list_technology_q = $('#li_list_technology_q')
-li_list_else_q = $('#li_list_else_q')
-li_list_sc_q = $('#li_list_sc_q')
-item_list_sub_space = $('#item_list_sub_space')
-item_list_sub_spy = $('#item_list_sub_spy')
-item_list_sub_g = $('#item_list_sub_geography')
-item_list_sub_else = $('#item_list_sub_empty')
-item_list_sub_technology = $('#item_list_sub_technology')
-item_list_sub_sc = $('#item_list_sub_sc')
-item_list_sub_space_q = $('#item_list_sub_space_q')
-item_list_sub_spy_q = $('#item_list_sub_spy_q')
-item_list_sub_else_q = $('#item_list_sub_empty_q')
-item_list_sub_technology_q = $('#item_list_sub_technology_q')
-item_list_sub_sc_q = $('#item_list_sub_sc_q')
 
 
-window.onload = function(){
+window.onload = function () {
   document.getElementById('gsc-i-id1').placeholder = 'أبحث عن شيء ..';
 };
-
-$( document ).ready( function() {   
-     li_list_spy.on( 'click', function( ) {
-      showText();
-      item_list_sub_spy.toggle(function(){});
-      changeTextLiSpy( $( this ) );
-     }); 
-
-     li_list_spy_q.on( 'click', function( ) {
-      showText();
-      item_list_sub_spy_q.toggle(function(){});
-      changeTextLiSpy_q( $( this ) );
-     }); 
-
-     li_list_space.on( 'click', function( ) {
-      showText();
-      item_list_sub_space.toggle(function(){});
-      changeTextLispace( $( this ) );
-     }); 
-
-     li_list_space_q.on( 'click', function( ) {
-      showText();
-      item_list_sub_space_q.toggle(function(){});
-      changeTextLispace_q( $( this ) );
-     }); 
-
-     li_list_g.on( 'click', function( ) {
-      showText();
-      item_list_sub_g.toggle(function(){});
-      changeTextLiG( $( this ) );
-     }); 
-
-     li_list_technology.on( 'click', function( ) {
-      showText();
-      item_list_sub_technology.toggle(function(){});
-      changeTextLitec( $( this ) );
-     }); 
-
-     li_list_technology_q.on( 'click', function( ) {
-      showText();
-      item_list_sub_technology_q.toggle(function(){});
-      changeTextLitec_q( $( this ) );
-     }); 
-
-     li_list_sc.on( 'click', function( ) {
-      showText();
-      item_list_sub_sc.toggle(function(){});
-      changeTextLiSc( $( this ) );
-     }); 
-
-     li_list_sc_q.on( 'click', function( ) {
-      showText();
-      item_list_sub_sc_q.toggle(function(){});
-      changeTextLiSc_q( $( this ) );
-     }); 
-
-     li_list_else.on( 'click', function( ) {
-      showText();
-      item_list_sub_else.toggle(function(){});
-      changeTextLielse( $( this ) );
-     });
-     
-     li_list_else_q.on( 'click', function( ) {
-      showText();
-      item_list_sub_else_q.toggle(function(){});
-      changeTextLielse_q( $( this ) );
-     });  
-
-   }) 
-
-   document.getElementById("time_up").innerHTML = formatAMPM()
-   function formatAMPM() {
-   var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+document.getElementById("time_up").innerHTML = formatAMPM()
+function formatAMPM() {
+  var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
     ampm = d.getHours() >= 12 ? ' مسائاً ' : ' صباحاً ',
-    months = ['يناير','فبراير','مارس','ابريل','مايو','يونيو','يوليو','اغسطس','سبتمبر','اكتوبر','نوفمبر','ديسمير'],
-    days = ['الاحد','الاثنين','الثلاثاء','الاربعاء','الخميس','الجمعه','السبت'];
-   return days[d.getDay()]+'  , '+d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear()+' | '+hours+':'+minutes+ampm;
+    months = ['يناير', 'فبراير', 'مارس', 'ابريل', 'مايو', 'يونيو', 'يوليو', 'اغسطس', 'سبتمبر', 'اكتوبر', 'نوفمبر', 'ديسمير'],
+    days = ['الاحد', 'الاثنين', 'الثلاثاء', 'الاربعاء', 'الخميس', 'الجمعه', 'السبت'];
+  return days[d.getDay()] + '  , ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear() + ' | ' + hours + ':' + minutes + ampm;
 
-   }
-
-function showText( data ) {
-    var $text = subject_list;
-    data === 'true' ? $text.hide().data( 'show', 'false' ) : $text.show().data( 'show', 'true' );
 }
 
-function changeTextLiSpy( btn ) {
-  li_list_spy.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفيزياء' );
-}
-
-function changeTextLiSpy_q( btn ) {
-  li_list_spy_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن الفيزياء' );
-}
-
-function changeTextLispace( btn ) {
-  li_list_space.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الفضاء' );
-}
-
-function changeTextLispace_q( btn ) {
-  li_list_space_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن  الفضاء' );
-}
-
-function changeTextLiSc( btn ) {
-  li_list_sc.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن العلوم' );
-}
-
-function changeTextLiSc_q( btn ) {
-  li_list_sc_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن العلوم' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن العلوم') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;"> &nbsp;اسئلة عن العلوم' );
-}
-
-function changeTextLiG( btn ) {
-  li_list_g.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن الجغرافية' );
-}
-
-
-function changeTextLielse( btn ) {
-  li_list_else.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع متنوعة' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع متنوعة') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbspمواضيع متنوعة' );
-}
-
-
-function changeTextLielse_q( btn ) {
-  li_list_else_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة متنوعة' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;"> &nbsp;اسئلة متنوعة') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة متنوعة' );
-}
-
-function changeTextLitec( btn ) {
-  li_list_technology.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية') : btn.html( '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;مواضيع عن التقنية' );
-}
-
-function changeTextLitec_q( btn ) {
-  li_list_technology_q.html() === '<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية' ? btn.html( '<img src="icons/align-justify-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية') : btn.html('<img src="icons/align-left-solid.svg" style="width: 14px;">&nbsp;اسئلة عن التقنية');
+var iconT = document.getElementById("uMenuMine_m"),
+  iconBarTh = document.getElementsByClassName("icon-bar")[0],
+  iconBar = document.getElementsByClassName("icon-bar")[1],
+  iconBarT = document.getElementsByClassName("icon-bar")[2],
+  isClickMenu = false,
+  menLis = document.getElementById("menuLisWeb");
+var lisBox = `<div class="lisBox">
+               <div class="toLisBox">
+                   <div class="secMainLis" > <p class="inPage"> الصفحة الرئيسية </p><a href="#sugIndex"> مقترحات </a> <a href="#subIndex"> مواضيع </a></div>
+                   <div class="secSecLis" > <a href="./container_s_q/about.html"> حول </a><a> دعمنا </a><a href="#qusIndex"> أسئلة </a></div>
+               </div>
+               <div class="medLis">
+                   <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
+                   <a class="twiMaenu" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-m.svg" /> </a>
+                   <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" /> </a>
+                   <a class="instgramMaenu" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-m.svg" /></a>
+               </div>
+           </div>`
+iconT.addEventListener("click", e => {
+  if (isClickMenu === false) {
+    iconBarTh.className = "icon-bar bar_a";
+    setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 100);
+    setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 200);
+    menLis.innerHTML = lisBox
+    isClickMenu = true
+  } else {
+    cloLis()
+  }
+})
+function cloLis() {
+  iconBarTh.className = "icon-bar";
+  iconBar.className = "icon-bar"
+  iconBarT.className = "icon-bar"
+  menLis.innerHTML = ""
+  isClickMenu = false
 }
