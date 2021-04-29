@@ -80,28 +80,26 @@ function adIndexSugg() {
 
     for (var x = 0; x < xData.length; x++) {
         var e = (xData.length - x) - 1
-        if(lisSys.includes(xData[e]) !== true){
-            if (miUrl !== xData[e]) {
-                if (iBasic < 8) {
-                    iBasic++
+        if (lisSys.includes(xData[e]) !== true && miUrl !== xData[e]) {
+            if (iBasic < 8) {
+                iBasic++
+                var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                var l = xData[e];
+                var sub = { "linkPage": l, "namePath": s };
+                storageD.push(sub)
+            } else if (iVe < 16) {
+                iVe++
+                var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                var l = xData[e];
+                var sub = { "linkPage": l, "namePath": s };
+                iVeSt.push(sub)
+            } else {
+                if (iWe < 8) {
+                    iWe++
                     var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
                     var l = xData[e];
                     var sub = { "linkPage": l, "namePath": s };
-                    storageD.push(sub)
-                } else if (iVe < 16) {
-                    iVe++
-                    var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
-                    var l = xData[e];
-                    var sub = { "linkPage": l, "namePath": s };
-                    iVeSt.push(sub)
-                } else {
-                    if (iWe < 8) {
-                        iWe++
-                        var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
-                        var l = xData[e];
-                        var sub = { "linkPage": l, "namePath": s };
-                        iWeSt.push(sub)
-                    }
+                    iWeSt.push(sub)
                 }
             }
         }
