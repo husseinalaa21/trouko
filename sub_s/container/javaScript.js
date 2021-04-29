@@ -10,6 +10,8 @@ xReq.send();
 
 var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText];
 var blackList = []
+var lisB = []
+var isEle = 0
 var isMore = false
 
 function ad(s) {
@@ -28,6 +30,19 @@ function ad(s) {
         }
     }
 }
+function shoWe(){
+    for(var c = 0; c < lisB.length; c++){
+        surc.forEach(a => {
+            isEle ++;
+            let t = document.createElement("div")
+            t.className = "itD"
+            let canday = lisB[c].replace("https://www.trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
+            t.innerHTML = isEle + `. <a href="` + lisB[c] + `" > ` + canday + `</a>`
+            main_sub_ad_q.append(t)
+        })
+    }
+    document.getElementById("isMox").innerHTML = ``
+}
 
 xReq.onload = function () {
     async function seeFirst() {
@@ -40,14 +55,16 @@ xReq.onload = function () {
                         blackList.push(data[c])
                     }
                     if (i < 7) {
+                        isEle ++;
                         let t = document.createElement("div")
                         t.className = "itD"
                         let canday = data[i].replace("https://www.trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
-                        t.innerHTML = i + 1 + `. <a href="` + data[i] + `" > ` + canday + `</a>`
+                        t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
                         main_sub_ad_q.append(t)
                     } else {
                         if(isMore === false){
                             isMore = true
+                            lisB.push(data[i])
                         }
                     }
                 }
@@ -62,7 +79,7 @@ xReq.onload = function () {
                 var m = document.createElement("div")
                 m.className = "isMore"
                 m.innerHTML = " أضهار المزيد "
-                document.getElementById("isMox").innerHTML = `<div class="isMore" > أضهار المزيد </div>`
+                document.getElementById("isMox").innerHTML = `<div class="isMore" onclick="shoWe()"> أضهار المزيد </div>`
             }
             var neAr = []
             var ed = JSON.parse(xReq.responseText);
