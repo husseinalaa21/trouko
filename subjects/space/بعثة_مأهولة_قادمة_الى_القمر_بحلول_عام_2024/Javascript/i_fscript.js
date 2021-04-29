@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/mNasa.jpg"
 adDiscription = "تخطط وكالة الفضاء الدولية ( ناسا ) بالتعاون مع شركة سبيس أكس لارسالة بعثة ماهولة الى القمر بحلول عام 2024 , وهي ستكون أول رحلة ماهولة الى القمر منذ اكثر من 30 عام . واطلقت ناسا على مشروعها اسم أرتميس Artemis .<br /><br />سيطلق صاروخ نظام الإطلاق الفضائي القوي التابع للوكالة أربعة رواد فضاء على متن مركبة أوريون الفضائية في رحلتهم التي تستغرق عدة أيام إلى مدار حول القمر. هناك ، سينتقل اثنان من أفراد الطاقم إلى نظام سبيس إكس للهبوط البشري (HLS) في المرحلة الأخيرة من رحلتهم إلى سطح القمر. بعد أسبوع تقريبًا من استكشاف السطح ، سيصعدون إلى مركبة الهبوط في رحلتهم القصيرة إلى المدار حيث سيعودون إلى أوريون وزملائهم قبل العودة إلى الأرض."
 namePpath = "https://www.trouko.com/subjects/space/بعثة_مأهولة_قادمة_الى_القمر_بحلول_عام_2024/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاربعاء  , 28 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاربعاء, 28 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)
