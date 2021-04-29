@@ -11,6 +11,7 @@ xReq.send();
 var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText];
 var blackList = []
 var lisB = []
+var van = []
 var isEle = 0
 var isMore = false
 
@@ -36,7 +37,7 @@ function shoWe(){
             isEle ++;
             let t = document.createElement("div")
             t.className = "itD"
-            let canday = lisB[c].replace("https://www.trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
+            let canday = lisB[c].replace("https://www.trouko.com", "").replace(/\//g, "").replace(van[c], "").replace("_", " ")
             t.innerHTML = isEle + `. <a href="` + lisB[c] + `" > ` + canday + `</a>`
             main_sub_ad_q.append(t)
         })
@@ -61,10 +62,12 @@ xReq.onload = function () {
                         let canday = data[i].replace("https://www.trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
                         t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
                         main_sub_ad_q.append(t)
-                    } else {
-                        if(isMore === false){
-                            isMore = true
+                    }
+                    if(i > 7){
+                        isMore = true
+                        if(lisB.includes(data[i]) !== true){
                             lisB.push(data[i])
+                            van.push(a)
                         }
                     }
                 }
