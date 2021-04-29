@@ -14,7 +14,7 @@ sub_r_nSugg = document.getElementById("sub_r_nSugg")
 sub_r_sSugg = document.getElementById("sub_r_sSugg")
 var et = document.getElementById("psp").innerText
 var xReq = new XMLHttpRequest();
-xReq.open('GET', '../../../jsData/'+et.replace(/\//g,"")+'.json');
+xReq.open('GET', '../../../jsData/' + et.replace(/\//g, "") + '.json');
 
 xReq.send();
 
@@ -25,7 +25,7 @@ cdLink(true)
 
 //
 
-function ad(s,t) {
+function ad(s, t) {
     var cos = 0
     var arr = [];
     while (arr.length < s.length) {
@@ -35,8 +35,8 @@ function ad(s,t) {
     var i;
     if (t === false) {
         for (i = 0; i < arr.length; i++) {
-            if(cos < 4){
-                cos ++
+            if (cos < 4) {
+                cos++
                 var x = arr[i]
                 addSuggTIndex(s[x].linkPage, s[x].namePath)
                 addSugg(s[x].linkPage, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
@@ -45,8 +45,8 @@ function ad(s,t) {
         }
     } else {
         for (i = 0; i < arr.length; i++) {
-            if(cos < 4){
-                cos ++
+            if (cos < 4) {
+                cos++
                 var x = arr[i]
                 adSugg(s[x].linkPage, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
             }
@@ -59,58 +59,62 @@ var iWeSt = []
 var odUrl = "https://trouko.com/",
     newOnw = "https://www.trouko.com/"
 function adIndexSugg() {
-    var miUrl = document.getElementById("miUrl").innerText + '/'
-    var lin_k_One = document.getElementById("lin_k_One").innerText.replace(odUrl,newOnw);
-    var lin_k_Two = document.getElementById("lin_k_Two").innerText.replace(odUrl,newOnw);
-    var lin_k_Three = document.getElementById("lin_k_Three").innerText.replace(odUrl,newOnw);
-    var lin_k_Four = document.getElementById("lin_k_Four").innerText.replace(odUrl,newOnw);
-    var lin_k_Five = document.getElementById("lin_k_Five").innerText.replace(odUrl,newOnw);
+    var lisSys = []
+    var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
+    for (var t = 0; t < lisHtm.length; t++) {
+        try {
+            let val = document.getElementById(lisHtm[t]).innerText.replace(odUrl, newOnw)
+            lisSys.push(val)
+        } catch {
+            console.log("we feal!")
+        }
+    }
+    var miUrl = document.getElementById("miUrl").innerText + '/',
+        xData = JSON.parse(xReq.responseText),
+        iBasic = 0, iWe = 0,
+        iVe = 0,
+        iVeSt = [],
+        po = new RegExp('https://www.trouko.com/', 'g'),
+        etx = et.replace(/\//g, ""),
+        pet = new RegExp(etx, 'g');
 
-    var xData = JSON.parse(xReq.responseText);
-    var iBasic = 0
-    var iWe = 0
-    var iVe = 0
-    var iVeSt = []
-    var po = new RegExp('https://www.trouko.com/','g')
-    var etx = et.replace(/\//g,"")
-    var pet = new RegExp(etx,'g')
-    for(var x = 0 ; x < xData.length; x++){
-        var e = (xData.length-x)-1
-        if (xData[e].includes(psp) === true && miUrl !== xData[e] && lin_k_One !== xData[e] && lin_k_Two !== xData[e] && lin_k_Three !== xData[e] && lin_k_Four !== xData[e] && lin_k_Five !== xData[e]) {
-            if (iBasic < 8) {
-                iBasic++
-                var s = xData[e].replace(/_/g," ").replace(po,"").replace(/\//g,"").replace(pet,"");
-                var l = xData[e];
-                var sub = { "linkPage": l, "namePath": s };
-                storageD.push(sub)
-            } else {
-                if (iWe < 8) {
-                    iWe++
-                    var s = xData[e].replace(/_/g," ").replace(po,"").replace(/\//g,"").replace(pet,"");
+    for (var x = 0; x < xData.length; x++) {
+        var e = (xData.length - x) - 1
+        if(lisSys.includes(xData[e]) !== true){
+            if (miUrl !== xData[e]) {
+                if (iBasic < 8) {
+                    iBasic++
+                    var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
                     var l = xData[e];
                     var sub = { "linkPage": l, "namePath": s };
-                    iWeSt.push(sub)
+                    storageD.push(sub)
+                } else if (iVe < 16) {
+                    iVe++
+                    var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                    var l = xData[e];
+                    var sub = { "linkPage": l, "namePath": s };
+                    iVeSt.push(sub)
+                } else {
+                    if (iWe < 8) {
+                        iWe++
+                        var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                        var l = xData[e];
+                        var sub = { "linkPage": l, "namePath": s };
+                        iWeSt.push(sub)
+                    }
                 }
-            }
-        } else {
-            if(iVe < 16){
-                iVe++
-                var s = xData[e].replace(/_/g," ").replace(po,"").replace(/\//g,"").replace(pet,"");
-                var l = xData[e];
-                var sub = { "linkPage": l, "namePath": s };
-                iVeSt.push(sub)
             }
         }
     }
-    iVeSt.forEach(e=>{
-        if(iBasic < 8){
-            iBasic ++
+    iVeSt.forEach(e => {
+        if (iBasic < 8) {
+            iBasic++
             var s = e.namePath;
             var l = e.linkPage;
             var sub = { "linkPage": l, "namePath": s };
             storageD.push(sub)
         } else {
-            if(iWe < 8){
+            if (iWe < 8) {
                 var s = e.namePath;
                 var l = e.linkPage;
                 var sub = { "linkPage": l, "namePath": s };
@@ -118,7 +122,7 @@ function adIndexSugg() {
             }
         }
     })
-    ad(storageD,false);
+    ad(storageD, false);
     cdLink(false)
 }
 setTimeout(function () {
@@ -155,7 +159,7 @@ function addSuggTIndex(l, n) {
 
 //.
 function cdLink(x) {
-    if(x === true){
+    if (x === true) {
         if (addSugg_vrOne === "" && addSugg_vrTwo === "" && addSugg_vrThree === "" && addSugg_vrFour === "" && addSugg_vrFive === "") {
             return false
         } else {
@@ -167,7 +171,7 @@ function cdLink(x) {
         }
     } else {
         if (addSugg_vrOne === "" && addSugg_vrTwo === "" && addSugg_vrThree === "" && addSugg_vrFour === "" && addSugg_vrFive === "") {
-            ad(iWeSt,true)
+            ad(iWeSt, true)
             // Add From System
         }
     }
