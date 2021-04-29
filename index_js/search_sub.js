@@ -83,17 +83,19 @@ xReq.onload = function () {
                     function addDataSec(x, d, v, q,anData) {
                         let isFull = false
                         for (var e = 0; e < x.length; e++) {
-                            if (e < 2) {
-                                let nam = x[e].replace(v, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
-                                let li = document.createElement("li")
-                                li.innerHTML = '<a href=' + x[e] + '>' + nam + '</a>'
-                                document.getElementById('s_' + d).append(li)
+                            if(e < 2){
                                 let z = (x.length - e) - 1
                                 const index = xData.indexOf(x[z]);
                                 if (index > -1) {
                                   xData.splice(index, 1);
                                 }
                                 addNewSubrt(x[z],document.getElementById(anData.sec),"_J_n_Hus_Qu",anData.id,anData.ur,"s_sub_t_dTw")
+                            }
+                            if (e < 5) {
+                                let nam = x[e].replace(v, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
+                                let li = document.createElement("li")
+                                li.innerHTML = '<a href=' + x[e] + '>' + nam + '</a>'
+                                document.getElementById('s_' + d).append(li)
                             } else {
                                 isFull = true
                             }
