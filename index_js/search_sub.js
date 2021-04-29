@@ -109,7 +109,9 @@ xReq.onload = function () {
                 // 
             });
             if(sectionLoad.length -1 === fc){
-                addNewSubr(xData);
+                setTimeout(() => {
+                    addNewSubr(xData);
+                }, 1000);
             }
             console.log(fc)
             setTimeout(() => {
@@ -132,7 +134,7 @@ function random_a() {
 function addNewSubr(xData) {
     var storageD = [];
     for (var i = 0; i < xData.length; i++) {
-        if (i < 8) {
+        if (i < 25) {
             var e = xData[(xData.length - i) - 1]
             let adSub = { "linkPage": e, "namePath": e };
             storageD.push(adSub)
@@ -141,6 +143,7 @@ function addNewSubr(xData) {
     ad(storageD, { a: "_J_n_Hus_", b: "_pag_n_232", c: "i_fscript.js", d: "s_sub_t_d" });
 }
 function ad(d, c) {
+    var cs = 0;
     var arr = [];
     while (arr.length < d.length) {
         var r = Math.floor(Math.random() * d.length);
@@ -148,10 +151,11 @@ function ad(d, c) {
     }
     var i;
     for (i = 0; i < arr.length; i++) {
-        var x = arr[i]
-        addNewSubrt(d[x].linkPage, sub_r_s, c.a, c.b, c.c, c.d)
-        // Qu  addNewSubrt(storageDQ[x].linkPage,qususuggcon,"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js","s_sub_t_dTw")
-        // SB addNewSubrt(storageDS[x].linkPage,sususuggcon,"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_dTw")
+        if(cs < 8){
+            cs ++;
+            var x = arr[i]
+            addNewSubrt(d[x].linkPage, sub_r_s, c.a, c.b, c.c, c.d)
+        }
     }
 
 }
