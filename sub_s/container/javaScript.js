@@ -1,11 +1,100 @@
-document.getElementById("time_up").innerHTML = formatAMPM()
-function formatAMPM() {
-var d = new Date(),
- minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
- hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
- ampm = d.getHours() >= 12 ? ' مسائاً ' : ' صباحاً ',
- months = ['يناير','فبراير','مارس','ابريل','مايو','يونيو','يوليو','اغسطس','سبتمبر','اكتوبر','نوفمبر','ديسمير'],
- days = ['الاحد','الاثنين','الثلاثاء','الاربعاء','الخميس','الجمعه','السبت'];
-return days[d.getDay()]+'  , '+d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear()+' | '+hours+':'+minutes+ampm;
+var main_sub_ad = document.getElementById("main_sub_ad"),
+    main_sub_ad_q = document.getElementById("main_sub_ad_q"),
+    addSuggSQ = document.getElementById("addSuggSQ"),
+    adrs = document.getElementById("adrs");
 
+
+var xReq = new XMLHttpRequest();
+xReq.open('GET', '../../data.json');
+xReq.send();
+
+var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText];
+var blackList = []
+var isMore = false
+
+function ad(s) {
+    var cos = 0
+    var arr = [];
+    while (arr.length < s.length) {
+        var r = Math.floor(Math.random() * s.length);
+        if (arr.indexOf(r) === -1) arr.push(r);
+    }
+    var i;
+    for (i = 0; i < arr.length; i++) {
+        if (cos < 6) {
+            cos++
+            var x = arr[i]
+            addNewSubrt(s[x], addSuggSQ, "_J_n_Hus_Qu", "_pag_n_232", "i_fscript.js", "s_sub_t_dTw")
+        }
+    }
+}
+
+xReq.onload = function () {
+    async function seeFirst() {
+        surc.forEach(a => {
+            $.getJSON("../../jsData/" + a + ".json", function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    if (i < 3) {
+                        let c = (data.length - i) - 1
+                        addNewSubrt(data[c], main_sub_ad, "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw")
+                        blackList.push(data[c])
+                    }
+                    if (i < 7) {
+                        let t = document.createElement("div")
+                        t.className = "itD"
+                        let canday = data[i].replace("https://www.trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
+                        t.innerHTML = i + 1 + `. <a href="` + data[i] + `" > ` + canday + `</a>`
+                        main_sub_ad_q.append(t)
+                    } else {
+                        if(isMore === false){
+                            isMore = true
+                        }
+                    }
+                }
+            }).fail(function () {
+                // 
+            });
+        })
+    }
+    seeFirst().then(e=>{
+        setTimeout(() => {
+            if (isMore === true) {
+                var m = document.createElement("div")
+                m.className = "isMore"
+                m.innerHTML = " أضهار المزيد "
+                document.getElementById("isMox").innerHTML = `<div class="isMore" > أضهار المزيد </div>`
+            }
+            var neAr = []
+            var ed = JSON.parse(xReq.responseText);
+            for (var w = 0; w < ed.length; w++) {
+                if(blackList.includes(ed[w])){
+        
+                } else {
+                    if (w < 20) {
+                        neAr.push(ed[w])
+                    }
+                }
+            }
+            ad(neAr)
+        }, 1000);
+    })
+}
+function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
+    var n = m.replace("https://www.trouko.com/", "")
+
+    var g = Math.floor(Math.random() * 2000911);
+
+    var li = document.createElement("div");
+    li.className = classP;
+    li.id = n + vz + g
+    li.innerHTML = '<div id="' + n + xxc + '"></div>'
+    xz.append(li)
+
+    var pMine = document.getElementById(n + vz + g)
+
+    $.getScript(m + "JavaScript/" + psssp, function (data) {
+        var li = document.createElement("div");
+        li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
+        pMine.append(li)
+    });
 }
