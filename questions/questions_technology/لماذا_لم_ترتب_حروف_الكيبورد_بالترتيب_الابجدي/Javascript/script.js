@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/questions/questions_technology/لماذا_لم_ترتب_حروف_الكيبورد_بالترتيب_الابجدي";
+    namePpath = "https://trouko.com/questions/questions_technology/لماذا_لم_ترتب_حروف_الكيبورد_بالترتيب_الابجدي";

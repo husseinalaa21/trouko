@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "هل البيوت الخشبية أفضل من بيوت الاسمنت";
 adPhoto = "../../../imgs/cabin-1082063_640.jpg"
 adDiscription = "استخدم الانسان منذ قديم الزمان البيوت لغاية الراحة و السكينة و أيضاً لحماية نفسه من خطر الكائنات المفترسة و لحمايته من الامطار و الفياضانات , عبر مئات السنين طور الانسان المنازل لتصل الى شكلها الحالي و لتكون ليس فقط للمؤى بل أيضا لتكون للرفاهية . ولتصل البيت الى شكلها الحالي تطورت قديماً بأستخدام أما الاسمنت و الطين أو بأستخدام الخشب ؟ ولكن لماذا أختار الانسان منذ قديم الزمان الخشب و الاسمنت ولماذا لم يختارو جميعاً الخشب مثلاً لأن شكله جميل ؟ السبب وراء ذلك هو لتوفر المواد الاساسة في كل بلد و الاعتماد عليها بل بناء , فمثلاً لا تستطيع دولة تقع في الصحراء من تجلب الخشب من دول أخرى لأن ذلك مكلف جداً وليس عملي ."
-namePpath = "https://www.trouko.com/questions/questions_else/هل_البيوت_الخشبية_أفضل_من_بيوت_الاسمنت/"
+namePpath = "https://trouko.com/questions/questions_else/هل_البيوت_الخشبية_أفضل_من_بيوت_الاسمنت/"
 infSuGuPageOn = '<p>  أسئلة / متنوعة  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الاحد, 25 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

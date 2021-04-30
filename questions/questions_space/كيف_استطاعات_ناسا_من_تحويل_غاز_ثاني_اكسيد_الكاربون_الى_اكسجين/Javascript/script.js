@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/questions/questions_space/كيف_استطاعات_ناسا_من_تحويل_غاز_ثاني_اكسيد_الكاربون_الى_اكسجين";
+    namePpath = "https://trouko.com/questions/questions_space/كيف_استطاعات_ناسا_من_تحويل_غاز_ثاني_اكسيد_الكاربون_الى_اكسجين";

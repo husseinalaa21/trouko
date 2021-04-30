@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "ما هي اسعار المنازل في اوربا";
 adPhoto = "../../../imgs/house-540796_640.jpg"
 adDiscription = "تعد قارة اوربا من اجمل قارات العالم و تمتاز بجمال طبيعيتها و مناخها المعتدل مما يشكل حافز لدى الكثيرين للذهاب اليها و زياراتها بل و الاقامة الدائمة فيها ."
-namePpath = "https://www.trouko.com/questions/questions_else/ما_هي_اسعار_المنازل_في_اوربا/"
+namePpath = "https://trouko.com/questions/questions_else/ما_هي_اسعار_المنازل_في_اوربا/"
 infSuGuPageOn = '<p>  أسئلة / متنوعة  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الجمعه, 23 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/القمر_فوبس/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/ناسا/";
     addSugg_vrFive = "https://trouko.com/subjects/space/الكون_الرباعي/";
-    namePpath = "https://www.trouko.com/subjects/space/الأشعة_الكونية";
+    namePpath = "https://trouko.com/subjects/space/الأشعة_الكونية";

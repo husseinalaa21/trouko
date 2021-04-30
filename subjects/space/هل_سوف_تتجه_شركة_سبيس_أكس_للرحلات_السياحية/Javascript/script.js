@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/سبيس_اكس/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/السفر_بين_النجوم/";
     addSugg_vrFive = "https://trouko.com/subjects/space/مجرة_درب_التبانة/";
-    namePpath = "https://www.trouko.com/subjects/space/هل_سوف_تتجه_شركة_سبيس_أكس_للرحلات_السياحية";
+    namePpath = "https://trouko.com/subjects/space/هل_سوف_تتجه_شركة_سبيس_أكس_للرحلات_السياحية";

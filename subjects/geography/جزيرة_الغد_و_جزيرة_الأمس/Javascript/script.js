@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/geography/جزيرة_الغد_و_جزيرة_الأمس";
+    namePpath = "https://trouko.com/subjects/geography/جزيرة_الغد_و_جزيرة_الأمس";

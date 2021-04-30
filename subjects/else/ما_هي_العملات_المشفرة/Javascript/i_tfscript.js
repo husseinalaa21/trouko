@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "ما هي العملات المشفرة";
 adPhoto = "../../../imgs/cryptocurre.jpg"
 adDiscription = "شهدت الاعوام القليلة الماضية تطور هائل في مجال العملات الرقمية , و شهدت ايضاً ارتفاع هائل في سعرها . و ارتفعت اسعار العملات الرقمية بشكل مأهول مما جعلها تكون أغلى من الدولار و حتى الذهب . ومن أشهر العملات الرقمية التي شهدت ارتفاع كبير في سعرها هي البيتكوين و الايثيريوم مؤخراً . مما جعل الكثير من الاشخاص يعتمدون على الربح منها , فهل العملات المشفرة أو ' العملات الرقمية ' فيها خطورة ؟, وما هي ؟"
-namePpath = "https://www.trouko.com/subjects/else/ما_هي_العملات_المشفرة/"
+namePpath = "https://trouko.com/subjects/else/ما_هي_العملات_المشفرة/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الخميس, 29 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

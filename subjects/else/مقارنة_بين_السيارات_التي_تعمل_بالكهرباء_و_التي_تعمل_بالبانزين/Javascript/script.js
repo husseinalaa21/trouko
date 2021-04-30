@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين";
+    namePpath = "https://trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين";

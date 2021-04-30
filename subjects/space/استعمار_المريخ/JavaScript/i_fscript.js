@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "استعمار المريخ";
 adPhoto = "https://www.sciencealert.com/images/2019-12/processed/Mars2020RoverToPreparMarsForHoomans_1024.jpg"
 adDiscription = "الكوكب الاحمر , او المريخ او (المستقبل البشري بعد 100 سنة) , كوكب المريخ احد اهم الكواكب القريبه من الارض و التي تنبأ بمستقبل البشرية في المستقبل , فلا يمكن ان تجد فلم او رواية او مقاله االتي تتحدث عن الخيال العلمي او المستقبل وتخلو من ذكر استعمار المريخ في اهم مواضيعها."
-namePpath = "https://www.trouko.com/subjects/space/استعمار_المريخ/"
+namePpath = "https://trouko.com/subjects/space/استعمار_المريخ/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الثلاثاء, 27 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

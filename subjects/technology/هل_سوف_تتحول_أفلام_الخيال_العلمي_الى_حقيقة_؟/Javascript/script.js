@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/";
     addSugg_vrFour  = "https://trouko.com/subjects/technology/هل_أقتربت_تسلا_من_صناعة_طائرتها_الخاصة/";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/technology/هل_سوف_تتحول_أفلام_الخيال_العلمي_الى_حقيقة_؟";
+    namePpath = "https://trouko.com/subjects/technology/هل_سوف_تتحول_أفلام_الخيال_العلمي_الى_حقيقة_؟";

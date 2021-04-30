@@ -2,9 +2,9 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "اهم مواصفات ايفون 13";
 adPhoto = "../../../imgs/phone-801_640.jpg"
 adDiscription = "تعد شركة ابل من اكثر الشركات التي تقدمت في مجال صناعة الهواتف بل و تتصدر هواتفها في كل مرة قائمة افضل الهواتف العالمية , ويجدر الذكر أنه كان اول هاتف للشركة في عام 2007  و منذ اطلاق شركة ابل اول هواتفها و هي تتصدر في استمرار في كل مرة ."
-namePpath = "https://www.trouko.com/subjects/technology/اهم_مواصفات_ايفون_13/"
+namePpath = "https://trouko.com/subjects/technology/اهم_مواصفات_ايفون_13/"
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الجمعه  , 30 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الجمعه, 30 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

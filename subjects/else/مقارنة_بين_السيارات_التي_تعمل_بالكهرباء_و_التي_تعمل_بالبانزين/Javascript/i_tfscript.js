@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "مقارنة بين السيارات التي تعمل بالكهرباء و التي تعمل بالبانزين";
 adPhoto = "../../../imgs/143-1-tesla-4.jpeg"
 adDiscription = "تعد السيارات من اهم رق تنقل الاشخاص , و تنقسم السيارات إلى عدة أنواع منها السيارات الصغيرة الخاصة، وأكثرها يمتلكها الأناس العاديون ويستخدمونها للذهاب إلى العمل أو تنقل العائلة من مكان إلى آخر أو للقيام بالرحلات ومنها الحافلات الكبيرة التي تستخدم لنقل الركاب وهي من وسائل النقل العام المنتشرة في جميع البلاد ومنها الكبيرة، الشاحنات، التي تستخدم لنقل البضائع , وفي الاونه الاخيرة ازداد التطور في مجال صناعه السيارات سواء لغرض الرفاهية أو لغرض التنقل , وازداد تطور السيارات التي تعمل بالكهرباء بشكل غير مسبوق ."
-namePpath = "https://www.trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/"
+namePpath = "https://trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الجمعه, 23 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

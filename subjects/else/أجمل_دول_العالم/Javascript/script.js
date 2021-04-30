@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/geography/حقائق_حول_القارة_الثامنة_المكتشفة_حديثاً/";
     addSugg_vrFour  = "https://trouko.com/questions/questions_else/ما_هي_اسعار_المنازل_في_اوربا/";
     addSugg_vrFive = "https://trouko.com/questions/questions_else/هل_البيوت_الخشبية_أفضل_من_بيوت_الاسمنت/";
-    namePpath = "https://www.trouko.com/subjects/else/أجمل_دول_العالم";
+    namePpath = "https://trouko.com/subjects/else/أجمل_دول_العالم";

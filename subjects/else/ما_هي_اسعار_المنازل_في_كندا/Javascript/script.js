@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/else/ما_هي_اسعار_المنازل_في_كندا";
+    namePpath = "https://trouko.com/subjects/else/ما_هي_اسعار_المنازل_في_كندا";

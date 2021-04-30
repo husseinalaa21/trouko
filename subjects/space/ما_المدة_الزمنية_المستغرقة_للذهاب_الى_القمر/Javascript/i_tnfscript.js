@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "ما المدة الزمنية المستغرقة للذهاب الى القمر";
 adPhoto = "../../../imgs/rocket-940.jpg"
 adDiscription = "اثارت رحلة أبولو 11 عام 1969 يوليو 20 الى القمر , حدثاً عضيماً للبشرية حيث أنها كانت الرحلة المأهولة الثاني الى القمر , كما وأنها اثارت جدلاً كبيراً في المجتمعات العلمية بسبب ان ناسا لم ترسل بعثات مأهولة الى القمر منذ قرابة 30 سنة وخاصة في ضل التطور في مجال التكنلوجيا , ولكن تعهدت وكالة الفضاء الدولية ' ناسا ' بالشراكة مع شركة سبيس أكس لأرسال بعثة مأهولة الى القمر بحلول عام 2024 ."
-namePpath = "https://www.trouko.com/subjects/space/ما_المدة_الزمنية_المستغرقة_للذهاب_الى_القمر/"
+namePpath = "https://trouko.com/subjects/space/ما_المدة_الزمنية_المستغرقة_للذهاب_الى_القمر/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الخميس, 29 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/تضاريس_كوكب_المريخ/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/استعمار_المريخ/";
     addSugg_vrFive = "https://trouko.com/subjects/space/الكون_الرباعي/";
-    namePpath = "https://www.trouko.com/subjects/space/هل_وصلت_ناسا_الى_المريخ_حقاً";
+    namePpath = "https://trouko.com/subjects/space/هل_وصلت_ناسا_الى_المريخ_حقاً";

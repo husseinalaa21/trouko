@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/space/ما_المدة_الزمنية_المستغرقة_للذهاب_الى_القمر";
+    namePpath = "https://trouko.com/subjects/space/ما_المدة_الزمنية_المستغرقة_للذهاب_الى_القمر";

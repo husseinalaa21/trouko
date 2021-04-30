@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/ما_المدة_الزمنية_المستغرقة_للذهاب_الى_القمر/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/سبيس_اكس/";
     addSugg_vrFive = "https://trouko.com/subjects/space/ناسا/";
-    namePpath = "https://www.trouko.com/subjects/space/كم_تكلفة_ارسال_قمر_اصطناعي_الى_المدار_الارضي";
+    namePpath = "https://trouko.com/subjects/space/كم_تكلفة_ارسال_قمر_اصطناعي_الى_المدار_الارضي";

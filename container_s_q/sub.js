@@ -61,7 +61,7 @@ function adIndexSugg() {
     var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
     for (var t = 0; t < lisHtm.length; t++) {
         try {
-            let val = document.getElementById(lisHtm[t]).innerText
+            let val = document.getElementById(lisHtm[t]).innerText.replace("https://www.trouko.com","https://trouko.com")
             lisSys.push(val)
         } catch {
             console.log("we feal!")

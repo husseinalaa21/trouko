@@ -2,7 +2,7 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "ماذا حدث لأسهم شركة Game Stop";
 adPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/GameStop.svg/280px-GameStop.svg.png"
 adDiscription = "جيم ستوب هو متجر أمريكي لألعاب الفيديو والإلكترونيات الاستهلاكية، وبائع تجزئة للألعاب. يقع المقر الرئيسي للشركة في غرابفين، تكساس، الولايات المتحدة، إحدى ضواحي دالاس، واعتبارًا من 1 فبراير 2020، تدير 5،509 متجرًا للبيع بالتجزئة في جميع أنحاء الولايات المتحدة وكندا وأستراليا ونيوزيلندا وأوروبا."
-namePpath = "https://www.trouko.com/questions/questions_else/ماذا_حدث_لأسهم_شركة_Game_Stop/"
+namePpath = "https://trouko.com/questions/questions_else/ماذا_حدث_لأسهم_شركة_Game_Stop/"
 infSuGuPageOn = '<p>  أسئلة / متنوعة  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الثلاثاء, 9 فبراير 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://www.trouko.com/',"")

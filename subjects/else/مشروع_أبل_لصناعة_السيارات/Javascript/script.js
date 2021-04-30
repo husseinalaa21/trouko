@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/else/مشروع_أبل_لصناعة_السيارات";
+    namePpath = "https://trouko.com/subjects/else/مشروع_أبل_لصناعة_السيارات";

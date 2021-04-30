@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/technology/أفضل_و_ارخص_سيارة_كهربائية_لهذا_العام/";
     addSugg_vrFour  = "https://trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/";
     addSugg_vrFive = "https://trouko.com/questions/questions_technology/هل_الاندرويد_افضل_من_الايفون/";
-    namePpath = "https://www.trouko.com/subjects/technology/اهم_مواصفات_ايفون_13";
+    namePpath = "https://trouko.com/subjects/technology/اهم_مواصفات_ايفون_13";

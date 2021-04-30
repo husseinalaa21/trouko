@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/ناسا/";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/space/ناسا_تصنع_المستحيل_و_تحول_ثاني_اكسيد_الكاربون_الى_اوكسجين_نقي";
+    namePpath = "https://trouko.com/subjects/space/ناسا_تصنع_المستحيل_و_تحول_ثاني_اكسيد_الكاربون_الى_اوكسجين_نقي";

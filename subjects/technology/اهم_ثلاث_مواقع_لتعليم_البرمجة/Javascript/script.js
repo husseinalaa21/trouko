@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/technology/هل_لغة_بايثون_مفيدة_حقاً/";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/technology/اهم_ثلاث_مواقع_لتعليم_البرمجة";
+    namePpath = "https://trouko.com/subjects/technology/اهم_ثلاث_مواقع_لتعليم_البرمجة";

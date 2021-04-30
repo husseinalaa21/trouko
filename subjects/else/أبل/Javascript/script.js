@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/else/تيسلا_موتورز/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/ناسا/";
     addSugg_vrFive = "https://trouko.com/subjects/space/سبيس_اكس/";
-    namePpath = "https://www.trouko.com/subjects/else/أبل";
+    namePpath = "https://trouko.com/subjects/else/أبل";

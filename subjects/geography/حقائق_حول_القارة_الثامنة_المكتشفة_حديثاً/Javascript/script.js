@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/geography/حقائق_حول_القارة_الثامنة_المكتشفة_حديثاً";
+    namePpath = "https://trouko.com/subjects/geography/حقائق_حول_القارة_الثامنة_المكتشفة_حديثاً";
