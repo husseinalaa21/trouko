@@ -83,20 +83,20 @@ function adIndexSugg() {
         if (lisSys.includes(xData[e]) !== true && miUrl !== xData[e]) {
             if (iBasic < 8) {
                 iBasic++
-                var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
                 var l = xData[e];
                 var sub = { "linkPage": l, "namePath": s };
                 storageD.push(sub)
             } else if (iVe < 16) {
                 iVe++
-                var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
                 var l = xData[e];
                 var sub = { "linkPage": l, "namePath": s };
                 iVeSt.push(sub)
             } else {
                 if (iWe < 8) {
                     iWe++
-                    var s = xData[e].replace(/_/g, " ").replace(po, "").replace(/\//g, "").replace(pet, "");
+                    var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
                     var l = xData[e];
                     var sub = { "linkPage": l, "namePath": s };
                     iWeSt.push(sub)
