@@ -5,7 +5,7 @@ adDiscription = "جيم ستوب هو متجر أمريكي لألعاب الف�
 namePpath = "https://trouko.com/questions/questions_else/ماذا_حدث_لأسهم_شركة_Game_Stop/"
 infSuGuPageOn = '<p>  أسئلة / متنوعة  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الثلاثاء, 9 فبراير 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
 function addt(m){

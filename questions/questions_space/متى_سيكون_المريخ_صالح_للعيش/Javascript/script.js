@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/ناسا/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/تضاريس_كوكب_المريخ/";
     addSugg_vrFive = "https://trouko.com/subjects/space/استعمار_المريخ/";
-    namePpath = "https://www.trouko.com/questions/questions_space/متى_سيكون_المريخ_صالح_للعيش";
+    namePpath = "https://trouko.com/questions/questions_space/متى_سيكون_المريخ_صالح_للعيش";

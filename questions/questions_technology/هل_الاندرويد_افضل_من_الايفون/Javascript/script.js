@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/technology/هل_سوف_تتحول_أفلام_الخيال_العلمي_الى_حقيقة_؟/";
     addSugg_vrFour  = "https://trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/";
     addSugg_vrFive = "https://trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني/";
-    namePpath = "https://www.trouko.com/questions/questions_technology/هل_الاندرويد_افضل_من_الايفون";
+    namePpath = "https://trouko.com/questions/questions_technology/هل_الاندرويد_افضل_من_الايفون";

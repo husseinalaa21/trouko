@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/technology/هل_أقتربت_تسلا_من_صناعة_طائرتها_الخاصة/";
     addSugg_vrFour  = "https://trouko.com/subjects/technology/هل_سوف_تتحول_أفلام_الخيال_العلمي_الى_حقيقة_؟/";
     addSugg_vrFive = "https://trouko.com/subjects/technology/هل_لغة_بايثون_مفيدة_حقاً/";
-    namePpath = "https://www.trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني";
+    namePpath = "https://trouko.com/questions/questions_technology/ما_هي_شاشات_الحبرالالكتروني";

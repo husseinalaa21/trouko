@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/questions/questions_space/ما_هو_تاريخ_الأشعة_الكونية";
+    namePpath = "https://trouko.com/questions/questions_space/ما_هو_تاريخ_الأشعة_الكونية";

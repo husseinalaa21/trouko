@@ -5,7 +5,7 @@ adDiscription = "استطاعات ناسا من خلال  مختبر صغير ب
 namePpath = "https://trouko.com/questions/questions_space/كيف_استطاعات_ناسا_من_تحويل_غاز_ثاني_اكسيد_الكاربون_الى_اكسجين/"
 infSuGuPageOn = '<p>  أسئلة / الفضاء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الجمعه, 23 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)
 function addt(m){

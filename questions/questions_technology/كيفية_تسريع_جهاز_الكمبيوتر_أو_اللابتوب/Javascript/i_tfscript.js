@@ -2,10 +2,10 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "كيفية تسريع جهاز الكمبيوتر أو اللابتوب";
 adPhoto = "../../../imgs/laptop-3.jpg"
 adDiscription = "قد تبطء أجهزه الكمبيوتر أو اللابتوب مع مرور الوقت , أو بمعنى أوضح فهي تكون تأثرت من الاستخدام أو أن مكوناتها الداخلية قد ملئت بالغبار مما تسبب في التأثير على سرعة أنتقل البيانات في لوحة الام .<br />ففي كلا الحلات فأن السبب قد يكون متنوع و يعتمد على عوامل عدة ومن أبرزها ما سنذكره ."
-namePpath = "https://www.trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/"
+namePpath = "https://trouko.com/questions/questions_technology/كيفية_تسريع_جهاز_الكمبيوتر_أو_اللابتوب/"
 infSuGuPageOn = '<p>  أسئلة / التقنية  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الخميس, 22 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_x_242');
 addt(titleIn)
 function addt(m){

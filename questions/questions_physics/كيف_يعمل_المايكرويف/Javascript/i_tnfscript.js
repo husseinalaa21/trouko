@@ -2,10 +2,10 @@ var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPag
 titleIn = "كيف يعمل المايكرويف";
 adPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/VFPt_Solenoid_correct2.svg/200px-VFPt_Solenoid_correct2.svg.png"
 adDiscription = "المايكرويف او الفرن الموجي وهو احد اهم الطرق المستخدمة في تسخن الطعام او للطهي , و على عكس الافران التقلديدية فأن المايكرويف يقوم بتسخين الطعام ليس فقط من الخارج بل من الداخل و الخارج وذلك بسسب أنفاذ أشعة المايكرويف التي سنتحدث عنها في داخل الغذاء ; و افران المايكرويف المتاعرف عليها بالوقت الحالي هي من تكنولوجيا القرن العشرين."
-namePpath = "https://www.trouko.com/questions/questions_physics/كيف_يعمل_المايكرويف/"
+namePpath = "https://trouko.com/questions/questions_physics/كيف_يعمل_المايكرويف/"
 infSuGuPageOn = '<p>  أسئلة / الفيزياء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الثلاثاء, 27 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
 function addt(m){

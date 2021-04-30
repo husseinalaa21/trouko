@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/space/سبيس_اكس/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/تضاريس_كوكب_المريخ/";
     addSugg_vrFive = "https://trouko.com/subjects/space/هل_وصلت_ناسا_الى_المريخ_حقاً/";
-    namePpath = "https://www.trouko.com/questions/questions_physics/هل_يوجد_شيء_اسرع_من_الضوء";
+    namePpath = "https://trouko.com/questions/questions_physics/هل_يوجد_شيء_اسرع_من_الضوء";
