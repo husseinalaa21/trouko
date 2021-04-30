@@ -54,76 +54,48 @@ var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfi
 xReq.onload = function () {
     cn_google.style.display = "block"
     var xData = JSON.parse(xReq.responseText);
-    var fc = 0;
-    rea()
-    function rea() {
-        if(fc < sectionLoad.length){
-            let e = sectionLoad[fc]
-            let hrt = e.n.replace(/\//g, "")
-            $.getJSON("../jsData/" + hrt + ".json", function (data) {
-                let xcas, anData = {}
-                if (e.z === "sfirst") {
-                    xcas = " مواضيع عن "
-                    anData.id = "_pag_x_242"
-                    anData.ur = "i_tfscript.js"
-                    anData.sec = "xOne" 
-                } else if (e.z === "sTwo") {
-                    xcas = " أسئلة عن "
-                    anData.id = "_pag_s_262"
-                    anData.ur = "i_tnfscript.js"
-                    anData.sec = "xTwo"
-                }
-                if (data.length > 0) {
-                    var sfirst = document.getElementById(e.z)
-                    let li = document.createElement("div")
-                    li.id = "x_" + e.n
-                    li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
-                    sfirst.append(li)
-                    addDataSec(data, hrt, e.n, e.s,anData)
-                    function addDataSec(x, d, v, q,anData) {
-                        let isFull = false
-                        for (var e = 0; e < x.length; e++) {
-                            if(e < 2){
-                                let z = (x.length - e) - 1
-                                const index = xData.indexOf(x[z]);
-                                if (index > -1) {
-                                  xData.splice(index, 1);
-                                }
-                                addNewSubrt(x[z],document.getElementById(anData.sec),"_J_n_Hus_Qu",anData.id,anData.ur,"s_sub_t_dTw")
-                            }
-                            if (e < 5) {
-                                let nam = x[e].replace(v, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
-                                let li = document.createElement("li")
-                                li.innerHTML = '<a href=' + x[e] + '>' + nam + '</a>'
-                                document.getElementById('s_' + d).append(li)
-                            } else {
-                                isFull = true
-                            }
-                        }
-                        if (isFull === true) {
-                            let li = document.createElement("li")
-                            li.innerHTML = '<a href=../sub_s/' + q + '/index.html> مشاهدة المزيد </a>'
-                            document.getElementById('s_' + d).append(li)
-                        }
+    addNewSubr(xData);
+}
+
+$( document ).ready(function() {
+    sectionLoad.forEach(a=>{
+        var e = a
+        let hrt = e.n.replace(/\//g, "")
+        $.getJSON("../jsData/" + hrt + ".json", function (data) {
+            var e = a,xcas;
+            if (e.z === "sfirst") {
+                xcas = " مواضيع عن "
+            } else if (e.z === "sTwo") {
+                xcas = " أسئلة عن "
+            }
+            if (data.length > 0) {
+                var sfirst = document.getElementById(e.z)
+                let li = document.createElement("div")
+                li.id = "x_" + e.n
+                li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
+                sfirst.append(li)
+                let isFull = false
+                for (var x = 0; x < data.length; x++) {
+                    if (x < 5) {
+                        let nam = data[x].replace(e.n, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
+                        let li = document.createElement("li")
+                        li.innerHTML = '<a href=' + data[x] + '>' + nam + '</a>'
+                        document.getElementById('s_' + hrt).append(li)
+                    } else {
+                        isFull = true
                     }
                 }
-            }).fail(function () {
-                // 
-            });
-            if(sectionLoad.length -1 === fc){
-                setTimeout(() => {
-                    addNewSubr(xData);
-                }, 1000);
+                if (isFull === true) {
+                    let li = document.createElement("li")
+                    li.innerHTML = '<a href=../sub_s/' + e.s + '/index.html> مشاهدة المزيد </a>'
+                    document.getElementById('s_' + hrt).append(li)
+                }
             }
-            console.log(fc)
-            setTimeout(() => {
-                fc ++;
-                rea()
-            }, 400);
-        }
-        
-    }
-}
+        }).fail(function () {
+            // 
+        });
+    })
+})
 function random_a() {
     random_t_ser.style.padding = "10px";
     var xData = JSON.parse(xReq.responseText);
@@ -135,11 +107,18 @@ function random_a() {
 }
 function addNewSubr(xData) {
     var storageD = [];
+    var numCSub = 0,
+        numCQu = 0;
     for (var i = 0; i < xData.length; i++) {
-        if (i < 25) {
-            var e = xData[(xData.length - i) - 1]
-            let adSub = { "linkPage": e, "namePath": e };
-            storageD.push(adSub)
+        var e = xData[(xData.length - i) - 1]
+        if(e.includes("subjects") === true && numCSub < 10){
+            numCSub ++;
+            addNewSubrt(e,document.getElementById("xOne"),"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js","s_sub_t_dTw")
+        } else if (e.includes("questions") === true && numCQu < 10){
+            numCQu ++;
+            addNewSubrt(e,document.getElementById("xTwo"),"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_dTw")
+        } else {
+            storageD.push(e)
         }
     }
     ad(storageD, { a: "_J_n_Hus_", b: "_pag_n_232", c: "i_fscript.js", d: "s_sub_t_d" });
@@ -156,7 +135,7 @@ function ad(d, c) {
         if(cs < 8){
             cs ++;
             var x = arr[i]
-            addNewSubrt(d[x].linkPage, sub_r_s, c.a, c.b, c.c, c.d)
+            addNewSubrt(d[x], sub_r_s, c.a, c.b, c.c, c.d)
         }
     }
 
