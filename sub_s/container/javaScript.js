@@ -37,7 +37,7 @@ function shoWe(){
             isEle ++;
             let t = document.createElement("div")
             t.className = "itD"
-            let canday = lisB[c].replace("https://www.trouko.com", "").replace(/\//g, "").replace(van[c], "").replace("_", " ")
+            let canday = lisB[c].replace("https://trouko.com", "").replace(/\//g, "").replace(van[c], "").replace("_", " ")
             t.innerHTML = isEle + `. <a href="` + lisB[c] + `" > ` + canday + `</a>`
             main_sub_ad_q.append(t)
         })
@@ -59,7 +59,7 @@ xReq.onload = function () {
                         isEle ++;
                         let t = document.createElement("div")
                         t.className = "itD"
-                        let canday = data[i].replace("https://www.trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
+                        let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
                         t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
                         main_sub_ad_q.append(t)
                     }
@@ -100,7 +100,7 @@ xReq.onload = function () {
     })
 }
 function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
-    var n = m.replace("https://www.trouko.com/", "")
+    var n = m.replace("https://trouko.com/", "")
 
     var g = Math.floor(Math.random() * 2000911);
 
