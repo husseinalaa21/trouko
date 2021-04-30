@@ -19,4 +19,4 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSugg_vrThree  = "https://trouko.com/subjects/physics/الطاقة_المتجددة/";
     addSugg_vrFour  = "https://trouko.com/subjects/technology/أفضل_و_ارخص_سيارة_كهربائية_لهذا_العام/";
     addSugg_vrFive = "https://trouko.com/subjects/technology/هل_سوف_تتحول_أفلام_الخيال_العلمي_الى_حقيقة_؟/";
-    namePpath = "https://www.trouko.com/subjects/technology/هل_لغة_بايثون_مفيدة_حقاً";
+    namePpath = "https://trouko.com/subjects/technology/هل_لغة_بايثون_مفيدة_حقاً";

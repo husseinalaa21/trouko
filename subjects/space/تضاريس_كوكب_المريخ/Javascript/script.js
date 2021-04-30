@@ -15,8 +15,8 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
     addSugg_vrOne  = "";
-    addSugg_vrTwo  = "https://www.trouko.com/subjects/space/مجرة_درب_التبانة/";
+    addSugg_vrTwo  = "https://trouko.com/subjects/space/مجرة_درب_التبانة/";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/space/تضاريس_كوكب_المريخ";
+    namePpath = "https://trouko.com/subjects/space/تضاريس_كوكب_المريخ";

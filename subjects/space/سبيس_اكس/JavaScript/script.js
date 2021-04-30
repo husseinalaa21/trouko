@@ -14,9 +14,9 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://www.trouko.com/subjects/space/ناسا/";
-    addSugg_vrTwo  = "https://www.trouko.com/subjects/space/استعمار_المريخ/";
-    addSugg_vrThree  = "https://www.trouko.com/subjects/space/مجرة_درب_التبانة/";
+    addSugg_vrOne  = "https://trouko.com/subjects/space/ناسا/";
+    addSugg_vrTwo  = "https://trouko.com/subjects/space/استعمار_المريخ/";
+    addSugg_vrThree  = "https://trouko.com/subjects/space/مجرة_درب_التبانة/";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/space/سبيس_اكس";
+    namePpath = "https://trouko.com/subjects/space/سبيس_اكس";

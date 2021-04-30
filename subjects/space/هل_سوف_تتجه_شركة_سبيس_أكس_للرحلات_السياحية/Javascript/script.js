@@ -14,7 +14,7 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://www.trouko.com/subjects/space/ناسا/";
+    addSugg_vrOne  = "https://trouko.com/subjects/space/ناسا/";
     addSugg_vrTwo  = "https://trouko.com/subjects/space/ناسا_تصنع_المستحيل_و_تحول_ثاني_اكسيد_الكاربون_الى_اوكسجين_نقي/";
     addSugg_vrThree  = "https://trouko.com/subjects/space/سبيس_اكس/";
     addSugg_vrFour  = "https://trouko.com/subjects/space/السفر_بين_النجوم/";

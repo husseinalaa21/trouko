@@ -14,7 +14,7 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "https://www.trouko.com/subjects/space/ناسا/";
+    addSugg_vrOne  = "https://trouko.com/subjects/space/ناسا/";
     addSugg_vrTwo  = "";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";

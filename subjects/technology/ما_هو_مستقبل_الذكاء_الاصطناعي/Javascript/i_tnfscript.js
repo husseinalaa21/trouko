@@ -5,7 +5,7 @@ adDiscription = "بدأ مفهوم الذكاء الاصطناعي مع بداي
 namePpath = "https://trouko.com/subjects/technology/ما_هو_مستقبل_الذكاء_الاصطناعي/"
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الخميس, 29 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
 function addt(m){

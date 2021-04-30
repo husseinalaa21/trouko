@@ -15,8 +15,8 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
     addSugg_vrOne  = "";
-    addSugg_vrTwo  = "https://www.trouko.com/questions/questions_space/ما_هو_عمر_الكون/";
+    addSugg_vrTwo  = "https://trouko.com/questions/questions_space/ما_هو_عمر_الكون/";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
-    namePpath = "https://www.trouko.com/subjects/space/الكون_الرباعي";
+    namePpath = "https://trouko.com/subjects/space/الكون_الرباعي";

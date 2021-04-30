@@ -5,7 +5,7 @@ adDiscription = "الحصول على الطاقة بشكل متجدد قد يب�
 namePpath = "https://trouko.com/subjects/physics/الطاقة_المتجددة/"
 infSuGuPageOn = '<p>  المواضيع / الفيزياء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الثلاثاء, 27 اكتوبر 2020  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_x_242');
 addt(titleIn)
 function addt(m){

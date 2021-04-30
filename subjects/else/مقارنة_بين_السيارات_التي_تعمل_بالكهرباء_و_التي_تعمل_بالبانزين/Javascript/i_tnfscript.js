@@ -5,7 +5,7 @@ adDiscription = "تعد السيارات من اهم رق تنقل الاشخا�
 namePpath = "https://trouko.com/subjects/else/مقارنة_بين_السيارات_التي_تعمل_بالكهرباء_و_التي_تعمل_بالبانزين/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الجمعه, 23 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
 function addt(m){
