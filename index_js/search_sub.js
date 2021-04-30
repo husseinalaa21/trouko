@@ -77,7 +77,7 @@ $( document ).ready(function() {
                 let isFull = false
                 for (var x = 0; x < data.length; x++) {
                     if (x < 5) {
-                        let nam = data[x].replace(e.n, "").replace("https://www.trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
+                        let nam = data[x].replace(e.n, "").replace("https://trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
                         let li = document.createElement("li")
                         li.innerHTML = '<a href=' + data[x] + '>' + nam + '</a>'
                         document.getElementById('s_' + hrt).append(li)
@@ -142,7 +142,7 @@ function ad(d, c) {
 }
 
 function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
-    var n = m.replace("https://www.trouko.com/", "")
+    var n = m.replace("https://trouko.com/", "")
 
     var g = Math.floor(Math.random() * 2000911);
 

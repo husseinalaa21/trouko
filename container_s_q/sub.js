@@ -56,14 +56,12 @@ function ad(s, t) {
 
 var storageD = [];
 var iWeSt = []
-var odUrl = "https://trouko.com/",
-    newOnw = "https://www.trouko.com/"
 function adIndexSugg() {
     var lisSys = []
     var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
     for (var t = 0; t < lisHtm.length; t++) {
         try {
-            let val = document.getElementById(lisHtm[t]).innerText.replace(odUrl, newOnw)
+            let val = document.getElementById(lisHtm[t]).innerText
             lisSys.push(val)
         } catch {
             console.log("we feal!")
@@ -74,7 +72,7 @@ function adIndexSugg() {
         iBasic = 0, iWe = 0,
         iVe = 0,
         iVeSt = [],
-        po = new RegExp('https://www.trouko.com/', 'g'),
+        po = new RegExp('https://trouko.com/', 'g'),
         etx = et.replace(/\//g, ""),
         pet = new RegExp(etx, 'g');
 
@@ -189,7 +187,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
-    var n = m.replace("https://www.trouko.com/", "").replace("https://trouko.com/", "")
+    var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
     li.className = classP;
@@ -207,7 +205,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
-    var n = m.replace("https://www.trouko.com/", "").replace("https://trouko.com/", "")
+    var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
     li.className = classP;
