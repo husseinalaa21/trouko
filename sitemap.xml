@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <url>
-        <loc> https://trouko.com/ </loc>
-        <lastmod>2020-11-14T00:00:00+02:00</lastmod>
+        <loc>https://trouko.com/</loc>
+        <changefreq>daily</changefreq>
+        </url>
+        <url>
+        <loc>https://trouko.com/sub_s/technology/</loc>
+        <changefreq>daily</changefreq>
+        </url>
+        <url>
+        <loc>https://trouko.com/sub_s/physics/</loc>
+        <changefreq>daily</changefreq>
+        </url>
+        <url>
+        <loc>https://trouko.com/sub_s/else/</loc>
+        <changefreq>daily</changefreq>
+        </url>
+        <url>
+        <loc>https://trouko.com/sub_s/space/</loc>
         <changefreq>daily</changefreq>
         </url>
         <url>
