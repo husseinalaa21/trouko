@@ -137,7 +137,7 @@ li:focus{
 @media screen and (min-width:1000px) {
     .sub_r_s {
         display: grid;
-        grid-template-columns:  auto auto auto auto;
+        grid-template-columns:  auto auto auto;
         direction: rtl;
         justify-content: space-evenly;
         overflow-y: hidden;
@@ -164,21 +164,15 @@ li:focus{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 }
+@media screen and (max-width:550px) {
+    .sub_r_s {
+        display: block;
+    }
+}
 .subsr {
     padding-top: 10px;
     padding-bottom: 0;
 }
-
-.sub_r_s::-webkit-scrollbar{
-    width: auto;
-    height: 8px;
-}
-
-.sub_r_s::-webkit-scrollbar-thumb{
-    background-color:#a8a8ac;
-    border-radius: 1.3px;
-}
-
 
 .ad_subject {
     color: #393e46;
@@ -402,7 +396,7 @@ li:focus{
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     overflow: hidden;
-    max-width: 540px;
+    max-width: 580px;
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
