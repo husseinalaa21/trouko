@@ -105,6 +105,7 @@ div.s_sub_t_d , div.s_sub_t_dTw{
     margin: auto;
     margin-bottom: 14px;
     margin-top: 14px;
+    height: fit-content;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
