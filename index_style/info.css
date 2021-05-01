@@ -161,9 +161,9 @@ a.s_sub_t {
     border: 0;
     align-items: center;
     position: absolute;
-    bottom: 0;
-    padding: 5px;
+    bottom:3px;
     margin-left: 4px;
+    z-index: 1;
 }
 
 .infoPageSuQu p{
@@ -180,19 +180,23 @@ a.s_sub_t {
 .infoPageSuQuTw {
     display: flex;
     justify-content: flex-end;
-    padding: 5px;
     text-align: right;
     border: 0;
     font-size: 11px;
     border:0;
     background-color: #f5f5f5;
     border-top: 1px solid #e3e4e642 !important;
+    padding-top: 10px;
 }
 
 .infoPageSuQuTw i{
     font-size: 13px !important;
+    position: relative;
+    bottom: 4px;
 }
 .infoPageSuQuTw p{
     align-items: center;
     margin-right: 2px;
+    position: relative;
+    bottom: 5px;
 }
