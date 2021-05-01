@@ -56,6 +56,11 @@ xReq.onload = function () {
     var xData = JSON.parse(xReq.responseText);
     addNewSubr(xData);
 }
+function randoPag() {
+    var xData = JSON.parse(xReq.responseText);
+    var r = Math.floor(Math.random() * xData.length)
+    location.href = xData[r]
+}
 
 $( document ).ready(function() {
     sectionLoad.forEach(a=>{

@@ -331,7 +331,7 @@ body {
 }
 
 .ad_i_subject {
-    padding: 5px 13px 8px 13px;
+    padding: 5px 13px 19px 13px;
     font-size: 17px;
     line-height: 24px;
 }
@@ -541,4 +541,10 @@ div.sources_ {
 }
 #admenPage {
     direction: ltr;
+}
+.m_each a {
+    color: #d0dae0 !important;
+}
+#sEndWe a{
+    color: #d0dae0 !important;
 }
