@@ -161,7 +161,7 @@ a.s_sub_t {
     border: 0;
     align-items: center;
     position: absolute;
-    bottom:3px;
+    bottom:4px;
     margin-left: 4px;
     z-index: 1;
 }
@@ -198,5 +198,5 @@ a.s_sub_t {
     align-items: center;
     margin-right: 2px;
     position: relative;
-    bottom: 5px;
+    bottom: 4px;
 }
