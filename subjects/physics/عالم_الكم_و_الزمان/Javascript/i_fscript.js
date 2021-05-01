@@ -5,7 +5,7 @@ adDiscription = "ميكانيكا الكم هي مجموعة من النظريا
 namePpath = "https://trouko.com/subjects/physics/عالم_الكم_و_الزمان/"
 infSuGuPageOn = '<p>  المواضيع / الفيزياء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الخميس, 12 نوفمبر 2020  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://www.trouko.com/',"")
+nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)
 function addt(m){
