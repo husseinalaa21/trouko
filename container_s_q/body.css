@@ -200,6 +200,7 @@ body {
 .photo_page_im {
     overflow: hidden;
     max-height: 200px;
+    min-height: 100px;
     height: auto;
     width: auto;
     margin-top: 8px;
@@ -212,11 +213,14 @@ body {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    height: 18px;
+    align-items: center;
     padding: 10px;
-    background-color: #f7f7f791;
+    background-color: #ffffff54;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.335), 0 6px 20px 0 rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;
+    color: #f7f7f7;
 }
 
 .img {
@@ -225,9 +229,12 @@ body {
 }
 
 .material_i {
-    padding: 3px;
+    padding: 3px 4px 3px 4px;
     border-radius: 30px;
     cursor: pointer;
+    background-color: rgba(214, 214, 214, 0.192);
+    transition: 0.4s;
+    margin-top: 2px;
 }
 
 .material_i:hover {
@@ -239,8 +246,8 @@ body {
     border: 2px solid #d0dae0d8;
     border-radius: 4px;
     bottom: 15%;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -249,8 +256,8 @@ body {
 }
 
 .proImg img {
-    width: 18px !important;
-    height: 18px;
+    width: 16px !important;
+    height: 16px;
     margin: 1px;
     pointer-events: none;
     cursor: default;
@@ -258,7 +265,10 @@ body {
     border-radius: 2px;
 }
 
-
+#icon_clockPage {
+    width: 10px !important;
+    margin-right: 1px;
+}
 /* MAIN PAGE INFO */
 
 .adConIn {
@@ -270,6 +280,7 @@ body {
     margin: 3px 1px 3px 1px;
     width: 70%;
     max-width: 400px;
+    align-items: center;
 }
 #edTime {
     margin-bottom: 6px;
@@ -278,14 +289,14 @@ body {
     padding: 10px 10px 0px 10px;
     align-items: center;
     display: flex;
-    font-size: 13px;
+    font-size: 12px;
 }
 .buIndex {
     position: relative;
 }
 .buIndey {
-    height: 6px;
-    padding-left: 42px;
+    height: 4px;
+    padding-left: 38px;
     margin-left: auto;
     content: "";
     position: absolute;
