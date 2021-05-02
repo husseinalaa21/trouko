@@ -33,14 +33,12 @@ function ad(s) {
 }
 function shoWe(){
     for(var c = 0; c < lisB.length; c++){
-        surc.forEach(a => {
-            isEle ++;
-            let t = document.createElement("div")
-            t.className = "itD"
-            let canday = lisB[c].replace("https://trouko.com", "").replace(/\//g, "").replace(van[c], "").replace("_", " ")
-            t.innerHTML = isEle + `. <a href="` + lisB[c] + `" > ` + canday + `</a>`
-            main_sub_ad_q.append(t)
-        })
+        isEle ++;
+        let t = document.createElement("div")
+        t.className = "itD"
+        let canday = lisB[c].replace("https://trouko.com", "").replace(/\//g, "").replace(van[c], "").replace("_", " ")
+        t.innerHTML = isEle + `. <a href="` + lisB[c] + `" > ` + canday + `</a>`
+        main_sub_ad_q.append(t)
     }
     document.getElementById("isMox").innerHTML = ``
 }
