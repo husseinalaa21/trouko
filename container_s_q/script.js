@@ -3,7 +3,7 @@ var a = document.createElement("a")
 a.className = "sheThPage twitShe"
 a.href = 'http://twitter.com/share?text=' + document.getElementById("titleTs").innerText + '&url=' + someEncodedString
 a.innerHTML = '<img src="../../../icons/twitter-m.svg" width="13px" height="13px"/>'
-document.getElementById("sheTwi").append(a)
+document.getElementsByClassName("time_write_this_page_o")[1].append(a)
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../data.js');
