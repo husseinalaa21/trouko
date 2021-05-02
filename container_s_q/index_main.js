@@ -132,7 +132,8 @@ var iconT = document.getElementById("uMenuMine_m"),
     iconBarT = document.getElementsByClassName("icon-bar")[2],
     click_material = document.getElementById("click_material"),
     isClickMenu = false,
-    menLis = document.getElementById("menuLisWeb");
+    menLis = document.getElementById("menuLisWeb"),
+    photo_page_im = document.getElementById("photo_page_im");
 
 var change = 'open';
 click_material.addEventListener("click", e => {

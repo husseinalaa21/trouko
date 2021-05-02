@@ -211,34 +211,37 @@ body {
 
 .pText_Image {
     position: absolute;
-    bottom: 0px;
-    width: 100%;
+    bottom: 6px;
+    right: 6px;
+    width: fit-content;
     height: 20px;
     align-items: center;
     padding: 10px;
-    background-color: #ffffff54;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.335), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background-color:  #f7f7f75b;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     display: flex;
     justify-content: space-between;
     color: #f7f7f7;
+    border-radius: 4px;
 }
 
 .img {
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .material_i {
     padding: 3px 4px 3px 4px;
     border-radius: 30px;
     cursor: pointer;
-    background-color: rgba(214, 214, 214, 0.192);
+    background-color: rgb(236, 236, 236);
     transition: 0.4s;
     margin-top: 2px;
 }
 
 .material_i:hover {
-    background-color: #ccc;
+    background-color: rgb(221, 227, 233);
 }
 
 .proImg {
