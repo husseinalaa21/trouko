@@ -14,8 +14,8 @@ var addSourcesAndQuotesOne_n,addSourcesAndQuotesTwo_n ,addSourcesAndQuotesThree_
     addSourcesAndQuotesfive_na = "";
     addSourcesAndQuotesSix_na = "";
     addSourcesAndQuotesSeven_na
-    addSugg_vrOne  = "";
-    addSugg_vrTwo  = "";
+    addSugg_vrOne  = "https://trouko.com/subjects/else/أجمل_دول_العالم/";
+    addSugg_vrTwo  = "https://trouko.com/subjects/else/مشروع_أبل_لصناعة_السيارات/";
     addSugg_vrThree  = "";
     addSugg_vrFour  = "";
     addSugg_vrFive = "";
