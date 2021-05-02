@@ -1,5 +1,9 @@
 var someEncodedString = encodeURI(window.location.href)
-document.getElementById("sheTwi").innerHTML = '<a href="http://twitter.com/share?text=' + document.getElementById("titleTs").innerText + '&url=' + someEncodedString + '" target="_blank" class="sheThPage twitShe"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/>'
+var a = document.createElement("a")
+a.className = "sheThPage twitShe"
+a.href = 'http://twitter.com/share?text=' + document.getElementById("titleTs").innerText + '&url=' + someEncodedString
+a.innerHTML = '<img src="../../../icons/twitter-m.svg" width="13px" height="13px"/>'
+document.getElementById("sheTwi").append(a)
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../data.js');
