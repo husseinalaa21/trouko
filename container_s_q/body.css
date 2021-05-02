@@ -219,7 +219,7 @@ body {
     padding: 10px;
     -webkit-backdrop-filter: saturate(180%) blur(5px);
     backdrop-filter: saturate(180%) blur(5px);
-    background-color:  #f7f7f75b;
+    background-color:  #f7f7f7a8;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     display: flex;
     justify-content: space-between;
@@ -235,7 +235,7 @@ body {
     padding: 3px 4px 3px 4px;
     border-radius: 30px;
     cursor: pointer;
-    background-color: rgb(236, 236, 236);
+    background-color:  #f7f7f7a8;
     transition: 0.4s;
     margin-top: 2px;
 }
