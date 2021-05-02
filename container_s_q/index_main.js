@@ -138,7 +138,7 @@ var change = 'open';
 click_material.addEventListener("click", e => {
     if (change === 'open') {
         photo_page_im.style.maxHeight = "100%";
-        img.style.width = "auto"
+        img.style.maxWidth = "650px"
         click_material.innerHTML = '<img src="../../../icons/compress-solid.svg" class="material_i" style="width: 16px;">'
         return change = 'close'
     } if (change === 'close') {
