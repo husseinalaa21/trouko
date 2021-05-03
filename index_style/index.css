@@ -167,6 +167,8 @@ li:focus{
 @media screen and (max-width:550px) {
     .sub_r_s {
         display: block;
+        width: 94%;
+        margin: auto;
     }
 }
 .subsr {

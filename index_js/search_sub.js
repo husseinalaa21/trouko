@@ -113,16 +113,18 @@ function random_a() {
 function addNewSubr(xData) {
     var storageD = [];
     var numCSub = 0,
-        numCQu = 0;
+        numCQu = 0,
+        ranPick = 0;
     for (var i = 0; i < xData.length; i++) {
         var e = xData[(xData.length - i) - 1]
-        if(e.includes("subjects") === true && numCSub < 10){
+        if(e.includes("subjects") === true && numCSub < 7){
             numCSub ++;
             addNewSubrt(e,document.getElementById("xOne"),"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js","s_sub_t_dTw")
-        } else if (e.includes("questions") === true && numCQu < 10){
+        } else if (e.includes("questions") === true && numCQu < 7){
             numCQu ++;
             addNewSubrt(e,document.getElementById("xTwo"),"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_dTw")
-        } else {
+        } else if(ranPick < 20){
+            ranPick++;
             storageD.push(e)
         }
     }
@@ -137,7 +139,7 @@ function ad(d, c) {
     }
     var i;
     for (i = 0; i < arr.length; i++) {
-        if(cs < 8){
+        if(cs < 7){
             cs ++;
             var x = arr[i]
             addNewSubrt(d[x], sub_r_s, c.a, c.b, c.c, c.d)
