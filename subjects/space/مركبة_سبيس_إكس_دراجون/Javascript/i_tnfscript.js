@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/spacex-.jpg"
 adDiscription = "تاسست شركة سبيس إكس في 2002 على يد رجل الاعمال الامريكي إيلون ماسك , وهي شركة متخصصة بالرحلات الفضائية و هي تعمل على تصنيع معدات الطيران والنقل الفضائي , كما و أنها أطقلت العديد من الأقمار الصناعيّة لخدمة الإنترنت في مشروع ' ستارلنك ' ، وطورت العديد من المركّبات منها مركبة الشحن الفضائيّة دراجون، ونقلت البشر إلى محطة الفضاء الدولية على مركبة دراجون 2 ، كما و إِطلقت أول صاروخ يعمل بالوقود السائل ممول من القطاع الخاص ولها الكثير من الانجازات .<br /><br />وتعد شركة سبيس إكس  أول شركة خاصَّة ترسل مركبة فضائية إلى مدار حول الأرض وتعيدها إلى الأرض بنجاح، وأول شركة خاصَّة ترسل مركبة فضائية ورواد فضاء إلى محطّة الفضاء الدوليَّة ."
 namePpath = "https://trouko.com/subjects/space/مركبة_سبيس_إكس_دراجون/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاثنين  , 3 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاثنين, 3 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
