@@ -273,6 +273,23 @@ body {
     margin-right: 1px;
     margin-top: 0 !important;
 }
+.imgCon {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 3px;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #eeeeee;
+}
+.imgCon img{
+    width: auto;
+    max-width: 90%;
+    max-height: 300px;
+    border-radius: 2px;
+}
 /* MAIN PAGE INFO */
 
 .adConIn {
