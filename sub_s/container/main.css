@@ -78,6 +78,14 @@ body{
         justify-content: space-evenly;
     }
 }
+@media screen and (max-width: 550px) {
+    #main_sub_ad , #addSuggSQ{
+        display: block;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: auto;
+    }
+}
 .itD {
     padding: 10px;
     background-color: rgb(240, 243, 245);
