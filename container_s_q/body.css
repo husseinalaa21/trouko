@@ -285,6 +285,7 @@ body {
     width: 70%;
     max-width: 400px;
     align-items: center;
+    color: #595959;
 }
 #edTime {
     margin-bottom: 6px;
@@ -340,8 +341,7 @@ body {
     font-weight: 600;
     border: 0;
     padding: 5px 13px 8px 13px;
-    border-right: 4.5px solid #4999cf;
-    background-color: #fcfcfca2;
+    border-right: 5px solid #4999cf;
     color: #393e46;
 
 }
