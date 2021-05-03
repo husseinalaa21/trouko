@@ -211,7 +211,6 @@ body {
   color: #282929;
   padding: 10px;
   background-color: #e4eaee;
-  transition: 0.5s;
 }
 ._rotSlider a:hover{
   text-decoration: underline;
