@@ -274,6 +274,7 @@ body {
     margin-top: 0 !important;
 }
 .imgCon {
+    margin: auto;
     background-color: #f7f7f7;
     overflow: hidden;
     padding: 10px;
@@ -283,6 +284,7 @@ body {
     text-align: center;
     margin-top: 10px;
     border: 1px solid #eeeeee;
+    width: fit-content;
 }
 .imgCon img{
     width: auto;

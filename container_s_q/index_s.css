@@ -73,6 +73,12 @@
         display: block;
     }
 }
+@media screen and (min-width: 1000px) {
+    .sub_r_s {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
 
 /* t */
 div.s_sub_t_dTw:hover {
