@@ -189,6 +189,10 @@ body {
   z-index: 10;
   align-items: center;
 }
+.icoPage img {
+  position: relative;
+  top: 2px;
+}
 .sliderPage {
   border: 0;
   display: flex;
