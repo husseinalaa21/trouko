@@ -192,6 +192,8 @@ body {
 .icoPage img {
   position: relative;
   top: 2px;
+  pointer-events: none;
+  cursor: default;
 }
 .sliderPage {
   border: 0;
