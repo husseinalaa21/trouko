@@ -179,10 +179,10 @@ body {
 }
 
 .icoLinShort {
-    padding: 5px 13px 8px 13px;
+    align-items: center;
     background-color: #d0dae046;
     position: relative;
-    width: 12px;
+    min-width: 40px;
 }
 
 .icoLinShort img {
