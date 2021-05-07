@@ -38,11 +38,12 @@
 }
 .icoHea {
     margin-left: 6px;
-    margin-top: 3.6px;
     pointer-events: none;
     cursor: default;
-    width: 26px;
-    height: 26px;
+    width: 27px;
+    height: 27px;
+    position: relative;
+    top: 2px;
 }
 .infDir {
   -webkit-backdrop-filter: saturate(180%) blur(5px);
