@@ -39,17 +39,20 @@ function hsh(s) {
 }
 var sectionHide = ["text_one", "text_two", "text_three", "text_four", "text_five", "text_six"]
 
-var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfirst" },
-{ n: "subjects/physics", s: "physics", x: "الفيزياء", z: "sfirst" },
-{ n: "subjects/sciences", s: "sciences", x: "العلوم", z: "sfirst" },
-{ n: "subjects/technology", s: "technology", x: " التكنلوجيا ", z: "sfirst" },
-{ n: "subjects/geography", s: "geography", x: " الجغرافية ", z: "sfirst" },
-{ n: "subjects/else", s: "else", x: " متنوعة ", z: "sfirst" },
+var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfirst" ,c : true},
+{ n: "subjects/physics", s: "physics", x: "الفيزياء", z: "sfirst" ,c : true},
+{ n: "subjects/sciences", s: "sciences", x: "العلوم", z: "sfirst",c : true },
+{ n: "subjects/technology", s: "technology", x: " التكنلوجيا ", z: "sfirst",c : true },
+{ n: "subjects/geography", s: "geography", x: " الجغرافية ", z: "sfirst" ,c : true},
+{ n: "subjects/else", s: "else", x: " متنوعة ", z: "sfirst" ,c : true},
 
-{ n: "questions/questions_space", s: "space", x: "الفضاء", z: "sTwo" },
-{ n: "questions/questions_physics", s: "physics", x: "الفيزياء", z: "sTwo" },
-{ n: "questions/questions_else", s: "else", x: " متنوعة ", z: "sTwo" },
-{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo" }]
+{ n: "questions/questions_space", s: "space", x: "الفضاء", z: "sTwo" ,c : true},
+{ n: "questions/questions_physics", s: "physics", x: "الفيزياء", z: "sTwo" ,c : true},
+{ n: "questions/questions_else", s: "else", x: " متنوعة ", z: "sTwo",c : true },
+{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo",c : true },
+
+{ n: "subjects/movies",c : false },
+{ n: "subjects/scholarships",c : false }]
 
 xReq.onload = function () {
     cn_google.style.display = "block"
@@ -64,41 +67,43 @@ function randoPag() {
 
 $( document ).ready(function() {
     sectionLoad.forEach(a=>{
-        var e = a
-        let hrt = e.n.replace(/\//g, "")
-        $.getJSON("../jsData/" + hrt + ".json", function (data) {
-            var e = a,xcas;
-            if (e.z === "sfirst") {
-                xcas = " مواضيع عن "
-            } else if (e.z === "sTwo") {
-                xcas = " أسئلة عن "
-            }
-            if (data.length > 0) {
-                var sfirst = document.getElementById(e.z)
-                let li = document.createElement("div")
-                li.id = "x_" + e.n
-                li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
-                sfirst.append(li)
-                let isFull = false
-                for (var x = 0; x < data.length; x++) {
-                    if (x < 5) {
-                        let nam = data[x].replace(e.n, "").replace("https://trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
+        if(a.c === true){
+            var e = a
+            let hrt = e.n.replace(/\//g, "")
+            $.getJSON("../jsData/" + hrt + ".json", function (data) {
+                var e = a,xcas;
+                if (e.z === "sfirst") {
+                    xcas = " مواضيع عن "
+                } else if (e.z === "sTwo") {
+                    xcas = " أسئلة عن "
+                }
+                if (data.length > 0) {
+                    var sfirst = document.getElementById(e.z)
+                    let li = document.createElement("div")
+                    li.id = "x_" + e.n
+                    li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
+                    sfirst.append(li)
+                    let isFull = false
+                    for (var x = 0; x < data.length; x++) {
+                        if (x < 5) {
+                            let nam = data[x].replace(e.n, "").replace("https://trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
+                            let li = document.createElement("li")
+                            li.innerHTML = '<a href=' + data[x] + '>' + nam + '</a>'
+                            document.getElementById('s_' + hrt).append(li)
+                        } else {
+                            isFull = true
+                        }
+                    }
+                    if (isFull === true) {
                         let li = document.createElement("li")
-                        li.innerHTML = '<a href=' + data[x] + '>' + nam + '</a>'
+                        li.innerHTML = '<a href=../sub_s/' + e.s + '/index.html> مشاهدة المزيد </a>'
                         document.getElementById('s_' + hrt).append(li)
-                    } else {
-                        isFull = true
                     }
                 }
-                if (isFull === true) {
-                    let li = document.createElement("li")
-                    li.innerHTML = '<a href=../sub_s/' + e.s + '/index.html> مشاهدة المزيد </a>'
-                    document.getElementById('s_' + hrt).append(li)
-                }
-            }
-        }).fail(function () {
-            // 
-        });
+            }).fail(function () {
+                // 
+            });
+        }
     })
 })
 function random_a() {
@@ -107,7 +112,14 @@ function random_a() {
 
     var r = Math.floor(Math.random() * xData.length)
     var el = document.createElement("div")
-    el.innerHTML = "   الموضوع المقترح :  " + xData[r] + "<a class='r' href='" + xData[r] + "'>" + " [ انقر هنا للقرأه ]" + "</a>";
+    var xs = xData[r].replace("https://trouko.com/","")
+    var x;
+    sectionLoad.forEach(e=>{
+        if(xs.includes(e.n)){
+            x = xs.replace(e.n,"").replace(/\//g,"").replace(/_/g," ")
+        }
+    })
+    el.innerHTML = "   الموضوع المقترح :  " + x + "<a class='r' href='" + xData[r] + "'>" + " [ انقر هنا للقرأه ]" + "</a>";
     return el.innerHTML;
 }
 function addNewSubr(xData) {
