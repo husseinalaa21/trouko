@@ -97,6 +97,7 @@ a.a_link:hover {
 
 div.s_sub_t_d , div.s_sub_t_dTw{
     width: 93%;
+    max-width: 700px;
     position: relative;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 4px;
