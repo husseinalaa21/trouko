@@ -387,6 +387,9 @@ body {
     margin-top: 0.2em;
     color: #000;
 }
+.ad_i_subject a ,.container_text a{
+    color: #4f97f5 !important;
+}
 
 /* SOURCE */
 
