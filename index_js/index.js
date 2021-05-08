@@ -28,13 +28,12 @@ var iconT = document.getElementById("uMenuMine_m"),
 var lisBox = `<div class="lisBox">
                <div class="toLisBox">
                    <div class="secMainLis" > <p class="inPage"> الصفحة الرئيسية </p><a href="#sugIndex"> مقترحات </a> <a href="#subIndex"> مواضيع </a></div>
-                   <div class="secSecLis" > <a href="./container_s_q/about.html"> حول </a><a> دعمنا </a><a href="#qusIndex"> أسئلة </a></div>
+                   <div class="secSecLis" > <a href="./container_s_q/about.html"> حول </a><a href="../../../container_s_q/contact.html"> اتصل بنا </a><a href="#qusIndex"> أسئلة </a></div>
                </div>
                <div class="medLis">
                    <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
                    <a class="twiMaenu" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-m.svg" /> </a>
                    <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" /> </a>
-                   <a class="instgramMaenu" href="https://www.instagram.com/t.rouko/"> <img src="../../../icons/instagram-m.svg" /></a>
                </div>
            </div>`
 iconT.addEventListener("click", e => {
