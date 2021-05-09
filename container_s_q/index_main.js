@@ -188,6 +188,8 @@ function cloLis(){
     isClickMenu = false
 }
 var prevScrollpos = window.pageYOffset;
+var shtPagr = document.getElementById("infDir"),
+    nbxc = document.getElementById("titleTs").innerHTML
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -197,4 +199,9 @@ var currentScrollPos = window.pageYOffset;
     cloLis()
   }
   prevScrollpos = currentScrollPos;
+  if(window.scrollY > 170){
+    shtPagr.innerHTML = '<div class="titPage" ><p> عنوان المقالة : '+nbxc+' </p></div>'
+  } else {
+    shtPagr.innerHTML = ""
+  }
 }

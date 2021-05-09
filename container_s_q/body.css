@@ -338,7 +338,7 @@ body {
 }
 .adConInQ {
     font-size: 14px;
-    margin-top: 58px;
+    margin-top: 56px;
     direction: rtl;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #e3e9ec;
@@ -350,7 +350,22 @@ body {
     position: relative;
     top: 2px;
 }
-
+.titPage {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #393e46;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background-color:  #f7f7f7f5;
+    font-size: 14px;
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    top: 52px;
+    text-align: right;
+}
+.titPage p {
+    padding: 1px 10px 7px 10px;
+}
 /* MAIN CONTAINERS */
 
 .container_text {
