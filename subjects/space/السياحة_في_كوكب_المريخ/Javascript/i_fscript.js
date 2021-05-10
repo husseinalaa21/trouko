@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/mars-tourism.jpg"
 adDiscription = "في 2021 يوليو 20 أعلنت شركة الفضاء Blue Origin أنها ستبدأ في بيع تذاكر الرحلات دون المدارية إلى حافة الفضاء  , وفي وقت سابق اعلنت سبيس أكس ايضاً عن نيتها لارسال اشخاص في رحلة سياحية الى الاشخاص . كما وتقوم شركة جيف بيزوس ببيع تذكرة واحدة لمن يدفع أعلى سعر بالمزاد للذهاب في رحلة سياحية الى الفضاء  . ولكن أذا رجعنا ثلاثين سنة الى الوراء و سألنا الناس عن السياحة الى الفضاء فلا شك أنهم سيقومون بالضحك . وقد يبدو ذلك مجنوناً , ولكن في الوقت الحالي تبدو السياحة في الفضاء امر مسلي وقابل للتحقيق وممتع و أغلب الاشخاص في العالم سوف يتحمسون لفكرة الذهاب كسياحة للفضاء ."
 namePpath = "https://trouko.com/subjects/space/السياحة_في_كوكب_المريخ/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاثنين  , 10 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاثنين, 10 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)
