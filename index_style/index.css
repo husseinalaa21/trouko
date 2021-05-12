@@ -440,7 +440,8 @@ li:focus{
 .itemMain:first-child {
     margin-top: 8px;
 }
-.adsEqWeb , .adsEqMob {
+.adsEqWeb{
+    width: 96%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -448,16 +449,4 @@ li:focus{
 .adsWeb {
     width: 92%;
     margin: auto;
-}
-@media screen and (min-width:1000px) {
-    .adsEqWeb {
-        display: block !important;
-        width: 97%;
-    }
-}
-@media screen and (max-width:550px) {
-    .adsEqMob {
-        display: block !important;
-        width: 95%;
-    }
 }
