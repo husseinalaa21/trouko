@@ -441,12 +441,22 @@ li:focus{
     margin-top: 8px;
 }
 .adsEqWeb{
-    width: 96%;
-    margin: auto;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 .adsWeb {
     width: 92%;
     margin: auto;
+}
+.adsEqMain {
+    width: 320px;
+    height: 100px;
+    margin: auto;
+}
+
+@media screen and (min-width: 500px) {
+    .adsEqMain { width: 468px; height: 60px; } 
+}
+@media screen and (min-width: 800px) {
+    .adsEqMain { width: 728px; height: 90px; }
 }
