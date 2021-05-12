@@ -444,4 +444,7 @@ li:focus{
     height: auto;
     width: 95%;
     max-height: 140px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
