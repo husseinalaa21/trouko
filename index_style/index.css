@@ -471,7 +471,6 @@ li:focus{
     width: 320px !important;
     height: 100px !important;
     margin: auto !important;
-    background-color: #3282b8;
 }
 
 @media screen and (min-width: 500px) {
