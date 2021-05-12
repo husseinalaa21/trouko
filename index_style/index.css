@@ -465,6 +465,7 @@ li:focus{
 .adsContainer {
     margin: 3.6px;
     height: fit-content;
+    min-height: 30px;
 }
 .adsEqMain {
     width: 320px !important;
