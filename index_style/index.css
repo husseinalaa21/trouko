@@ -467,12 +467,14 @@ li:focus{
 .adsEqMain {
     width: 320px !important;
     height: 100px !important;
-    margin: auto;
+    margin: auto !important;
 }
 
 @media screen and (min-width: 500px) {
-    .adsEqMain { width: 468px !important; height: 60px !important;} 
+    .adsEqMain { width: 468px !important; height: 60px !important;
+        margin: auto !important;} 
 }
 @media screen and (min-width: 800px) {
-    .adsEqMain { width: 728px !important; height: 90px !important;}
+    .adsEqMain { width: 728px !important; height: 90px !important;
+        margin: auto !important;}
 }
