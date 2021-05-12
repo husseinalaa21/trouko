@@ -462,7 +462,7 @@ li:focus{
 }
 .adsContainer {
     margin: 3.6px;
-    overflow: auto;
+    height: fit-content;
 }
 .adsEqMain {
     width: 320px;
@@ -471,8 +471,8 @@ li:focus{
 }
 
 @media screen and (min-width: 500px) {
-    .adsEqMain { width: 468px; height: 60px; } 
+    .adsEqMain { width: 468px !important; height: 60px !important;} 
 }
 @media screen and (min-width: 800px) {
-    .adsEqMain { width: 728px; height: 90px; }
+    .adsEqMain { width: 728px !important; height: 90px !important;}
 }
