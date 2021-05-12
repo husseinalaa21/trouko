@@ -443,8 +443,8 @@ li:focus{
 .ads1eq {
     height: auto;
     width: 95%;
-    max-height: 140px;
+    max-height: 110px;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
