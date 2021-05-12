@@ -440,3 +440,8 @@ li:focus{
 .itemMain:first-child {
     margin-top: 8px;
 }
+.ads1eq {
+    height: auto;
+    width: 95%;
+    max-height: 140px;
+}
