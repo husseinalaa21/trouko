@@ -229,6 +229,7 @@ a.s_sub_t {
     border-radius: 4px;
     overflow: hidden;
     height: fit-content;
+    margin-bottom: 10px;
 }
 .adsTitle {
     padding: 10px;
