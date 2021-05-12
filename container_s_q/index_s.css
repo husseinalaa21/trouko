@@ -148,3 +148,8 @@ a.s_sub_tTw {
     border: 0;
     border-top: 1px solid #e3e4e6e5 ;
 }
+.adsWebContainer {
+    height: 100%;
+    max-height: 400px;
+    width: 100%;
+}

@@ -440,26 +440,3 @@ li:focus{
 .itemMain:first-child {
     margin-top: 8px;
 }
-
-
-.adsWeb {
-    width: 92%;
-    margin: auto;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 1%);
-    background-color:  #f7f7f7;
-    border-radius: 4px;
-    overflow: hidden;
-    height: fit-content;
-}
-.adsTitle {
-    padding: 10px;
-    background-color: #f3f3f3;
-    border: 0;
-    border-bottom: 1px solid #e4e4e4bb;
-    color: #505050;
-}
-.adsContainer {
-    margin: 3.6px;
-    height: fit-content;
-    min-height: 30px;
-}
