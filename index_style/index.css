@@ -465,8 +465,8 @@ li:focus{
     height: fit-content;
 }
 .adsEqMain {
-    width: 320px;
-    height: 100px;
+    width: 320px !important;
+    height: 100px !important;
     margin: auto;
 }
 
