@@ -28,3 +28,29 @@ function randoPag() {
         location.href = xData[e]
     })
 }
+document.getElementById("adWebSec_One").innerHTML = `
+<div class="adsEqWeb">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- اعلان افقي 1.0 -->
+<ins class="adsbygoogle adsEqMain" style="display:inline-block" data-ad-client="ca-pub-7171306952666828"
+  data-ad-slot="9727169173" ></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>`
+
+document.getElementById("endContainers").innerHTML = `
+<div class="adsWeb">
+  <div class="adsTitle">
+    أعلان
+  </div>
+  <div class="adsContainer">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- اعلان عمودي 1.0 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7171306952666828"
+      data-ad-slot="1106443123" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>`
