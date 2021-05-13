@@ -102,9 +102,10 @@ body {
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     overflow: hidden;
-    max-width: 240px;
+    width: 95%;
+    max-width: 260px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .ad_intro_in_p_h {
@@ -407,6 +408,32 @@ body {
 }
 .ad_i_subject a ,.container_text a{
     color: #4f97f5 !important;
+}
+.clis {
+    width: 86%;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+.clis .spanx{
+    padding: 1px 7.7px 1px 7.7px;
+    border-radius: 3px;
+    color: aliceblue;
+    background-color: #52a0d4;
+    margin-left: 4px;
+    text-align: center;
+}
+.clis .spano{
+    padding: 3px;
+    border-radius: 2px;
+    color: aliceblue;
+    background-color: #72b6e4;
+    margin-left: 6px;
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    right: -20px;
+    top: 40%;
 }
 
 /* SOURCE */

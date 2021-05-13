@@ -1,10 +1,10 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "كيف حساب كثافة الجسم";
 adPhoto = "../../../imgs/michael-d-unsplash.jpg"
-adDiscription = "يتم استخدام الكثافة بشكل أساسي في الجيولوجيا وعلم الفلزات وغيرها من المجالات العلمية، كتحديد خصائص الصخور والمعادن والفلزات، ولتحديد قدرة جسمٍ ما على الطفو في سائل معين. و كثافة الجسم هي ببساطة ناتج قسمة كتلة الجسم على الحجم .<br />كثافة الجسم = كتلة الجسم ÷ الحجم .<br /><br />* الكتلة ببساطة هي مقدار ما يحتويه الجسم من مادة  أما  الحجم فهو الحيز الذي يشغله الجسم ."
+adDiscription = "يتم استخدام الكثافة بشكل أساسي في الجيولوجيا وعلم الفلزات وغيرها من المجالات العلمية، كتحديد خصائص الصخور والمعادن والفلزات، ولتحديد قدرة جسمٍ ما على الطفو في سائل معين. و كثافة الجسم هي ببساطة ناتج قسمة كتلة الجسم على الحجم .كثافة الجسم = كتلة الجسم ÷ الحجم .11-6 الكتلة ببساطة هي مقدار ما يحتويه الجسم من مادة  أما  الحجم فهو الحيز الذي يشغله الجسم ."
 namePpath = "https://trouko.com/subjects/else/كيف_حساب_كثافة_الجسم/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> السبت  , 1 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> السبت, 1 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)

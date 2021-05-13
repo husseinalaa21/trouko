@@ -1,7 +1,7 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "كيف استطاعات ناسا من تحويل غاز ثاني اكسيد الكاربون الى اكسجين";
 adPhoto = "../../../imgs/mars-11656_640.jpg"
-adDiscription = "استطاعات ناسا من خلال  مختبر صغير بحجم محمص خبز بداخل المركبة التي ارسلتها مؤخراً الى المريخ بيرسيفيرانس، ذات العجلات الست، التي هبطت على سطح المريخ في 18 فبراير، بعد رحلة استغرقت 7 أشهر من الأرض.من أنتج نحو 5 غرامات من الأكسجين، أي ما يكفي لتنفس رائد فضاء لمدة 10 دقائق تقريبا.<br />"
+adDiscription = "استطاعات ناسا من خلال  مختبر صغير بحجم محمص خبز بداخل المركبة التي ارسلتها مؤخراً الى المريخ بيرسيفيرانس، ذات العجلات الست، التي هبطت على سطح المريخ في 18 فبراير، بعد رحلة استغرقت 7 أشهر من الأرض.من أنتج نحو 5 غرامات من الأكسجين، أي ما يكفي لتنفس رائد فضاء لمدة 10 دقائق تقريبا."
 namePpath = "https://trouko.com/questions/questions_space/كيف_استطاعات_ناسا_من_تحويل_غاز_ثاني_اكسيد_الكاربون_الى_اكسجين/"
 infSuGuPageOn = '<p>  أسئلة / الفضاء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الجمعه, 23 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'

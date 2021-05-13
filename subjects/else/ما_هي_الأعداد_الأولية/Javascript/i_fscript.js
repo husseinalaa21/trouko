@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/mathem.jpg"
 adDiscription = "الأعداد الأوليّة هي الأعداد الصحيحة الموجبة الأكبر من العدد واحد ،  التي تقبل القسمة على عددين هما العدد نفسه والواحد , أمّا الأعداد الصحيحة الأكبر من واحد ، التي تقبل القسمة على عدد آخر غيره أو غير نفسها فيطلق عليها اسم بالأعداد غير الأوليّة  ، وهي أعداد يمكن تجزئتها ."
 namePpath = "https://trouko.com/subjects/else/ما_هي_الأعداد_الأولية/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاثنين  , 3 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاثنين, 3 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

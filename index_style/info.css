@@ -222,14 +222,15 @@ a.s_sub_t {
     .adsEqMain { width: 728px !important; height: 90px !important;margin: auto !important;}
 }
 .adsWeb {
-    width: 92%;
+    width: 95%;
+    max-width: 260px;
     margin: auto;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 1%);
     background-color:  #f7f7f7;
     border-radius: 4px;
     overflow: hidden;
     height: fit-content;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .adsTitle {
     padding: 10px;
@@ -242,4 +243,8 @@ a.s_sub_t {
     margin: 3.6px;
     height: fit-content;
     min-height: 30px;
+}
+.adsWebContainer {
+    height: 320px;
+    width: 100%;
 }
