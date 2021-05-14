@@ -1,7 +1,7 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "ارخص التلسكوبات";
 adPhoto = "../../../imgs/telescopeLow.jpg"
-adDiscription = "تعد التلسكوبات ادة لتقريب رؤية الاشياء البعيدة , مثل الكواكب و النجوم و المجرات البعيدة , كما ولها استخدامات آخرى في الارض كتصوير السباقات أو غيرها ."
+adDiscription = "تعد التلسكوبات ادة لتقريب رؤية الاشياء البعيدة , مثل الكواكب و النجوم و المجرات البعيدة , كما ولها استخدامات آخرى في الارض كتصوير السباقات أو غيرها . كما و مكن تطور تكنولوجيا الفضاء الفلكيين من وضع التلسكوبات خارج نطاق الغلاف الجوي للأرض، واكتشاف كل الأماكن هناك عبر استعمال النطاق الكامل للطيف الكهرومغناطيسي . و هناك نوعان أساسيان من التلسكوبات وهما : العاكسة ، والكاسرة ، يطلق على جزء التلسكوب الذي يجمع الضوء بـ (العدسة الشيئية ) . التلسكوب العاكس يستعمل مرآة زجاجية لتمثل العدسة الشيئية له ."
 namePpath = "https://trouko.com/subjects/space/ارخص_التلسكوبات/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الجمعه, 14 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
