@@ -1,10 +1,9 @@
-var index_sugg_p, nameP, title_p_index, sub_r_s, hol_sugg, psp
+var index_sugg_p, title_p_index, sub_r_s, hol_sugg, psp
     , sub_r_sSugg, sub_r_nSugg, index_sugg_pT, hol_suggT;
 
 index_sugg_p = document.getElementById("index_sugg_p")
 index_sugg_pT = document.getElementById("index_sugg_pT")
-nameP = document.getElementById("title").innerHTML
-title_p_index = document.getElementById("title_p_index").innerHTML = nameP;
+title_p_index = document.getElementById("title_p_index").innerHTML
 sub_r_s = document.getElementById("sub_r_s")
 hol_sugg = document.getElementById("hol_sugg")
 hol_suggT = document.getElementById("hol_suggT")

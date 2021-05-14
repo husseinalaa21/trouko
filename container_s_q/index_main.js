@@ -132,10 +132,11 @@ var iconT = document.getElementById("uMenuMine_m"),
     iconBarT = document.getElementsByClassName("icon-bar")[2],
     click_material = document.getElementById("click_material"),
     isClickMenu = false,
+    isAppen = false,
     menLis = document.getElementById("menuLisWeb"),
-    photo_page_im = document.getElementById("photo_page_im");
-
-var change = 'open';
+    photo_page_im = document.getElementById("photo_page_im"),
+    change = 'open';
+    
 click_material.addEventListener("click", e => {
     if (change === 'open') {
         photo_page_im.style.maxHeight = "100%";
@@ -149,60 +150,109 @@ click_material.addEventListener("click", e => {
         return change = 'open'
     }
 })
-function copThis() {
-}
 function shoLiThisPage() {
-    document.getElementById("rlsh").innerHTML = `<div class="resLinShar"> <div onclick="copThis()"> <img src="../../../icons/link-solid.svg" class="linSharICon"/> </div> <div class="sharLinContainer" >`+window.location.href + `</div> </div>`
+    document.getElementById("rlsh").innerHTML = `<div class="resLinShar"> <div onclick="copThis()"> <img src="../../../icons/link-solid.svg" class="linSharICon"/> </div> <div class="sharLinContainer" >` + window.location.href + `</div> </div>`
 }
-var lisBox = `<div class="lisBox">
-                <div class="toLisBox">
-                    <div class="secMainLis" > <a href="/"> الصفحة الرئيسية </a><a href="`+document.getElementById("Urlsame").innerText+`"> مقالات ذات صلة </a> </div>
-                    <div class="secSecLis" > <a href="/"> البحث </a><a href="../../../container_s_q/about.html"> حول </a></div>
-                </div>
-                <div class="medLis">
-                    <a class="fasMaenu" href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
-                    <a class="twiMaenu" href="https://twitter.com/trouko1"> <img src="../../../icons/twitter-m.svg" /> </a>
-                    <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" /> </a>
-                </div>
-                <div class="endlis" onclick="shoLiThisPage()">
-                    <div><img src='../../../icons/external-link-square-alt-solid.svg' class="icoLinShar"/></div><div class="conSharLin"> مشاركة هذه المقالة </div>
-                </div>
-                <div id="rlsh" class="linContainer"></div>
-            </div>`
+function typePage() {
+    if(window.location.href.includes("/subjects/")){
+        return " مواضيع "
+    } else {
+        return " أسئلة "
+    }
+}
+var someEncodedString = encodeURI(window.location.href)
+var lisBox = `
+<div class="lisBox" id="mEdNavMenu">
+   <div class="maNaLis">
+      <div class="mainList">
+         <div class="mulist">
+            <div class="mulist-title"> القائمة الرئيسية </div>
+            <div class="mulistContainer">
+               <a href="/"> الصفحة الرئيسة </a>
+               <a href="`+document.getElementById("Urlsame").innerText+`"> مقالات مشابهة </a>
+               <a href="../../../container_s_q/about.html">حول </a>
+            </div>
+         </div>
+         <div class="mulist">
+            <div class="mulist-title"> `+typePage()+` | الاقسام </div>
+            <div class="mulistContainer">
+            <a href="../../../sub_s/space/">  `+typePage()+` عن الفضاء </a>
+            <a href="../../../sub_s/physics/">`+typePage()+` عن الفيزياء </a>
+            <a href="../../../sub_s/technology/">`+typePage()+` عن التقنية </a>
+            <a href="../../../sub_s/else/"> `+typePage()+` متنوعة </a>
+            </div>
+         </div>
+      </div>
+      <div class="endNaMa">
+         <div class="socLink">
+         <div class="medLis">
+            <a class="fasMaenu"
+               href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img
+                  src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
+            <a class="twiMaenu" href="https://twitter.com/trouko1"> <img
+                  src="../../../icons/twitter-m.svg" /> </a>
+            <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" />
+            </a>
+         </div>
+         <div class="conSharLin" > تابعنا على </div>
+         </div>
+         <div class="socLink">
+            <div class="medLis">
+            <a class="fasMaenu"
+               href="https://www.facebook.com/sharer/sharer.php?u=`+window.location.href+`"> <img
+                  src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
+            <a class="twiMaenu" href="http://twitter.com/share?text=` + document.getElementById("titleTs").innerText + `&url=` + someEncodedString + `"> <img
+                  src="../../../icons/twitter-m.svg" /> </a>
+            <a class="sheareMaenu" onclick="shoLiThisPage()"> <img src="../../../icons/external-link-square-alt-solid.svg" /></a>
+            </div>
+            <div class="conSharLin"> مشاركة هذه المقالة </div>
+         </div>
+         <div id="rlsh" class="linContainer"></div>
+      </div>
+   </div>
+</div>`
+
+var rt = document.getElementsByTagName('BODY')
 iconT.addEventListener("click", e => {
     if (isClickMenu === false) {
+        if(isAppen === false){
+            menLis.innerHTML = lisBox
+            isAppen = true
+        }
         iconBarTh.className = "icon-bar bar_a";
         setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 150);
         setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 250);
-        menLis.innerHTML = lisBox
         isClickMenu = true
+        rt[0].style.overflow = "hidden"
+        document.getElementById("mEdNavMenu").style.height = "100%";
     } else {
-        cloLis()
+        iconBarTh.className = "icon-bar";
+        iconBar.className = "icon-bar"
+        iconBarT.className = "icon-bar"
+        rt[0].style.overflow = "auto"
+        document.getElementById("mEdNavMenu").style.height = "0";
+        setTimeout(() => {
+            isClickMenu = false
+        }, 200);
     }
 })
-function cloLis(){
-    iconBarTh.className = "icon-bar";
-    iconBar.className = "icon-bar"
-    iconBarT.className = "icon-bar"
-    menLis.innerHTML = ""
-    isClickMenu = false
-}
 var prevScrollpos = window.pageYOffset;
 /*var shtPagr = document.getElementById("infDir"),
     nbxc = document.getElementById("titleTs").innerHTML*/
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navMean").style.top = "0";
-  } else {
-    document.getElementById("navMean").style.top = "-90px";
-    cloLis()
-  }
-  prevScrollpos = currentScrollPos;
-  /*
-  if(window.scrollY > 170){
-    shtPagr.innerHTML = '<div class="titPage" ><p> عنوان المقالة : '+nbxc+' </p></div>'
-  } else {
-    shtPagr.innerHTML = ""
-  }*/
+window.onscroll = function () {
+    if(isClickMenu === false){
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos || 53 > currentScrollPos) {
+            document.getElementById("navMean").style.top = "0";
+        } else {
+            document.getElementById("navMean").style.top = "-90px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+    /*
+    if(window.scrollY > 170){
+      shtPagr.innerHTML = '<div class="titPage" ><p> عنوان المقالة : '+nbxc+' </p></div>'
+    } else {
+      shtPagr.innerHTML = ""
+    }*/
 }
