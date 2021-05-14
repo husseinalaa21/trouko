@@ -133,6 +133,7 @@ var iconT = document.getElementById("uMenuMine_m"),
     click_material = document.getElementById("click_material"),
     isClickMenu = false,
     isAppen = false,
+    isWebT= false,
     menLis = document.getElementById("menuLisWeb"),
     photo_page_im = document.getElementById("photo_page_im"),
     change = 'open';
@@ -223,6 +224,7 @@ iconT.addEventListener("click", e => {
         setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 150);
         setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 250);
         isClickMenu = true
+        isWebT = true
         rt[0].style.overflow = "hidden"
         document.getElementById("mEdNavMenu").style.height = "100%";
     } else {
@@ -231,16 +233,17 @@ iconT.addEventListener("click", e => {
         iconBarT.className = "icon-bar"
         rt[0].style.overflow = "auto"
         document.getElementById("mEdNavMenu").style.height = "0";
+        isClickMenu = false
         setTimeout(() => {
-            isClickMenu = false
-        }, 200);
+            isWebT = false
+        }, 1000);
     }
 })
 var prevScrollpos = window.pageYOffset;
 /*var shtPagr = document.getElementById("infDir"),
     nbxc = document.getElementById("titleTs").innerHTML*/
 window.onscroll = function () {
-    if(isClickMenu === false){
+    if(isWebT === false){
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos || 53 > currentScrollPos) {
             document.getElementById("navMean").style.top = "0";
