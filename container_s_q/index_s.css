@@ -148,3 +148,26 @@ a.s_sub_tTw {
     border: 0;
     border-top: 1px solid #e3e4e6e5 ;
 }
+
+.adsInside {
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.textWaite {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    top: 40%;
+    color: #babec2;
+}
