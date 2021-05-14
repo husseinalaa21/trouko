@@ -173,6 +173,9 @@ a.s_sub_tTw {
     text-align: center;
 }
 
-‪.adsWeInside { width: 320px; height: 100px; }
-@media screen and (min-width: 500px) { .adsWeInside { width: 468px; height: 60px; } }
-@media screen and (min-width: 800px) { .adsWeInside { width: 728px; height: 90px; } }
+‪.adsWeInside { width: 320px; height: 100px;
+    margin: auto !important;}
+@media screen and (min-width: 500px) { .adsWeInside { width: 468px; height: 60px;
+    margin: auto !important; } }
+@media screen and (min-width: 800px) { .adsWeInside { width: 728px; height: 90px; 
+    margin: auto !important;} }
