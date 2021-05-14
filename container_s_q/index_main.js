@@ -195,7 +195,7 @@ var lisBox = `
             <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" />
             </a>
          </div>
-         <div class="conSharLin" > تابعنا على </div>
+         <div class="conSharLin" ><i class="arrow left"></i> تابعنا على </div>
          </div>
          <div class="socLink">
             <div class="medLis">
@@ -206,7 +206,7 @@ var lisBox = `
                   src="../../../icons/twitter-m.svg" /> </a>
             <a class="sheareMaenu" onclick="shoLiThisPage()"> <img src="../../../icons/external-link-square-alt-solid.svg" /></a>
             </div>
-            <div class="conSharLin"> مشاركة هذه المقالة </div>
+            <div class="conSharLin"><i class="arrow left"></i> مشاركة هذه المقالة </div>
          </div>
          <div id="rlsh" class="linContainer"></div>
       </div>

@@ -602,7 +602,6 @@ div.sources_ {
     margin-bottom: 10px;
 }
 .socLink {
-    background-color: rgb(231, 229, 229);
     width: fit-content;
     margin: auto;
     border-radius: 4px;
@@ -614,11 +613,23 @@ div.sources_ {
 .conSharLin {
     margin-left: 5px;
     padding: 7px 7px 7px 7px;
-    background-color: #3a8f81be;
+    background-color: rgb(231, 229, 229);
     border-radius: 3px;
-    color: rgb(250, 250, 250);
+    color: rgb(70, 70, 70);
 }
 
+.arrow {
+    border: solid rgb(58, 58, 58);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
 .medLis {
     width: fit-content;
     overflow: hidden;
@@ -657,6 +668,7 @@ div.sources_ {
     background-color: #6b6555;
     padding: 9px;
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 .icoLinShar {
     width: 18px;
