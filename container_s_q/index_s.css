@@ -170,7 +170,5 @@ a.s_sub_tTw {
     align-items: center;
     top: 40%;
     color: #babec2;
+    text-align: center;
 }
-‪.adsWeInside { width: 320px; height: 100px; }
-@media screen and (min-width: 500px) { .adsWeInside { width: 468px; height: 60px; } }
-@media screen and (min-width: 800px) { .adsWeInside { width: 728px; height: 90px; } }
