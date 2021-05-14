@@ -1,7 +1,7 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "القمر فوبس";
 adPhoto = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbLgpK-aONBZTtjFc9pGoVQlg67MSPi9Or6-Ivxjiw7VVHD6n&s"
-adDiscription = "تشير إحدى النماذج الجديدة التي وضعها العلماء إلى أن الأخاديد الموجودة على سطح قمر المريخ فوبوس ناجمة عن القوى المدية، أي قوة الجذب المتبادلة بين كل من المريخ وقمره .<br /><br />و يضن علماء الفلك أن الأخاديد الطويلة والعميقة المنتشرة طوليا على سطح قمر المريخ فوبوس Phobos، ما هي إلا إشارات مبكرة على الانهيار المحتمل الذي ستتعرض له بنية القمر ما سيؤدي في نهاية المطاف إلى تحطمه بشكل كامل.&nbsp;"
+adDiscription = "تشير إحدى النماذج الجديدة التي وضعها العلماء إلى أن الأخاديد الموجودة على سطح قمر المريخ فوبوس ناجمة عن القوى المدية، أي قوة الجذب المتبادلة بين كل من المريخ وقمره .و يضن علماء الفلك أن الأخاديد الطويلة والعميقة المنتشرة طوليا على سطح قمر المريخ فوبوس Phobos، ما هي إلا إشارات مبكرة على الانهيار المحتمل الذي ستتعرض له بنية القمر ما سيؤدي في نهاية المطاف إلى تحطمه بشكل كامل. "
 namePpath = "https://trouko.com/subjects/space/القمر_فوبس/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
 infSuGuPageTw = '<p> الاثنين, 18 يناير 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'

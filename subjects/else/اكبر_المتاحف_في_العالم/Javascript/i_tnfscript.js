@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/museums.jpg"
 adDiscription = "تعتبر المتاحف الفنية من أكبر المتاحف في العالم . شاركت المتاحف الأكثر شهرة في العالم أيضًا في مشاريع توسع مختلفة على مر السنين ، لتوسيع مساحة معرضها الإجمالية  , وسوف نستعرض في هذه المقالة اكبر متاحف العالم . "
 namePpath = "https://trouko.com/subjects/else/اكبر_المتاحف_في_العالم/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاثنين  , 3 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاثنين, 3 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
