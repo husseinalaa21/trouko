@@ -152,7 +152,7 @@ click_material.addEventListener("click", e => {
     }
 })
 function shoLiThisPage() {
-    document.getElementById("rlsh").innerHTML = `<div class="resLinShar"> <div onclick="copThis()"> <img src="../../../icons/link-solid.svg" class="linSharICon"/> </div> <div class="sharLinContainer" >` + window.location.href + `</div> </div>`
+    document.getElementById("rlsh").innerHTML = `<div class="resLinShar"> <div onclick="copThis()"> <img src="../../../icons/link-solid.svg" class="linSharICon"/> </div> <div class="sharLinContainer" >` +decodeURI(window.location.href) + `</div> </div>`
 }
 function typePage() {
     if(window.location.href.includes("/subjects/")){
