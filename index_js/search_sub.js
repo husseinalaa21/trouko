@@ -123,59 +123,76 @@ function random_a() {
     return el.innerHTML;
 }
 function addNewSubr(xData) {
-    var storageD = [];
+    var storageD = [],
+        strSub = [],
+        strQu = [];
     var numCSub = 0,
         numCQu = 0,
         ranPick = 0;
     for (var i = 0; i < xData.length; i++) {
-        var e = xData[(xData.length - i) - 1]
+        let e = xData[(xData.length - i) - 1]
         if(e.includes("subjects") === true && numCSub < 7){
             numCSub ++;
-            addNewSubrt(e,document.getElementById("xOne"),"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js","s_sub_t_dTw")
+            strSub.push(e)
         } else if (e.includes("questions") === true && numCQu < 7){
             numCQu ++;
-            addNewSubrt(e,document.getElementById("xTwo"),"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_dTw")
+            strQu.push(e)
         } else if(ranPick < 20){
             ranPick++;
             storageD.push(e)
         }
     }
-    ad(storageD, { a: "_J_n_Hus_", b: "_pag_n_232", c: "i_fscript.js", d: "s_sub_t_d" });
-}
-function ad(d, c) {
-    var cs = 0;
-    var arr = [];
-    while (arr.length < d.length) {
-        var r = Math.floor(Math.random() * d.length);
-        if (arr.indexOf(r) === -1) arr.push(r);
-    }
-    var i;
-    for (i = 0; i < arr.length; i++) {
-        if(cs < 7){
-            cs ++;
-            var x = arr[i]
-            addNewSubrt(d[x], sub_r_s, c.a, c.b, c.c, c.d)
+    var callSub = 0,
+        callQu = 0;
+    setit()
+    function setit() {
+        if(callSub < strSub.length){
+            addNewSubrtPlus(strSub[callSub],document.getElementById("xOne"),"_J_n_Hus_Qu","_pag_x_242","i_tfscript.js","s_sub_t_dTw").then(e=>{
+                callSub ++;
+                setit()
+            })
+        } else if(callQu < strQu.length){
+            addNewSubrtPlus(strQu[callQu],document.getElementById("xTwo"),"_J_n_Hus_Qu","_pag_s_262","i_tnfscript.js","s_sub_t_dTw").then(e=>{
+                callQu ++;
+                setit()
+            })
+        } else {
+            var c = { a: "_J_n_Hus_", b: "_pag_n_232", c: "i_fscript.js", d: "s_sub_t_d" },
+                cs = 0,
+                arr = [];
+            while (arr.length < storageD.length) {
+                let r = Math.floor(Math.random() * storageD.length);
+                if (arr.indexOf(r) === -1) arr.push(r);
+            }
+            setSug()
+            function setSug() {
+                if(cs < 7){
+                    addNewSubrtPlus(storageD[arr[cs]], sub_r_s, c.a, c.b, c.c, c.d).then(e=>{
+                        cs ++;
+                        setSug()
+                    })
+                }
+            }
+            return false
         }
     }
-
-}
-
-function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
-    var n = m.replace("https://trouko.com/", "")
-
-    var g = Math.floor(Math.random() * 2000911);
-
-    var li = document.createElement("div");
-    li.className = classP;
-    li.id = n + vz + g
-    li.innerHTML = '<div id="' + n + xxc + '"></div>'
-    xz.append(li)
-
-    var pMine = document.getElementById(n + vz + g)
-
-    $.getScript(m + "JavaScript/" + psssp, function (data) {
+    async function addNewSubrtPlus(m, xz, vz, xxc, psssp, classP) {
+        var n = m.replace("https://trouko.com/", "")
+    
+        var g = Math.floor(Math.random() * 2000911);
+    
         var li = document.createElement("div");
-        li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
-        pMine.append(li)
-    });
+        li.className = classP;
+        li.id = n + vz + g
+        li.innerHTML = '<div id="' + n + xxc + '"></div>'
+        xz.append(li)
+    
+        var pMine = document.getElementById(n + vz + g)
+    
+        $.getScript(m + "JavaScript/" + psssp, function (data) {
+            var li = document.createElement("div");
+            li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
+            pMine.append(li)
+        });
+    }
 }
