@@ -79,7 +79,7 @@ function reso() {
         if (seWww) clearTimeout(seWww);
         robenAre = setTimeout(() => {
             reso()
-        },40)
+        },10)
     }
 }
 async function husDev() {
