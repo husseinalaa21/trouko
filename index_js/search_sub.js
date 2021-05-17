@@ -53,9 +53,21 @@ sectionLoad.forEach(e => {
         selects.append(op)
     }
 })
-
-selects.addEventListener("change", husDev)
-serJs.addEventListener('input', husDev)
+var robenAre = 0
+selects.addEventListener("change", e=>{
+    resSer.innerHTML = ""
+    if (robenAre) clearTimeout(robenAre);
+    robenAre = setTimeout(() => {
+        husDev()
+    },100)
+})
+serJs.addEventListener('input', e=>{
+    resSer.innerHTML = ""
+    if (robenAre) clearTimeout(robenAre);
+    robenAre = setTimeout(() => {
+        husDev()
+    },100)
+})
 async function husDev() {
     if (serJs.value.length > 0) {
         resSer.innerHTML = ""
