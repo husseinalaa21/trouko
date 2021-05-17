@@ -100,7 +100,10 @@ function savDev(x) {
                         catcho.push({num : numCach,tit : sw.toString().replace(/,/g," "), url : data[o]})
                     }
                 }
-                
+            })
+        }
+
+        if(sectionLoad.length - 1 === q){
             if (robenAre) clearTimeout(robenAre);
             robenAre = setTimeout(() => {
                 if(catcho.length > 0){
@@ -137,10 +140,6 @@ function savDev(x) {
                 }
                 resSer.append(nmDiv)
             }, 100);
-            })
-        }
-
-        if(sectionLoad.length - 1 === q){
         }
     }
 }
