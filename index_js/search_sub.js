@@ -53,22 +53,35 @@ sectionLoad.forEach(e => {
         selects.append(op)
     }
 })
-var robenAre = 0
+var robenAre = 0,
+    huAl = false,
+    seWww = 0
 selects.addEventListener("change", e=>{
     resSer.innerHTML = ""
     if (robenAre) clearTimeout(robenAre);
     robenAre = setTimeout(() => {
-        husDev()
+        reso()
     },100)
 })
 serJs.addEventListener('input', e=>{
     resSer.innerHTML = ""
     if (robenAre) clearTimeout(robenAre);
     robenAre = setTimeout(() => {
-        husDev()
+        reso()
     },100)
 })
+function reso() {
+    if(huAl === false){
+        husDev()
+    } else {
+        if (seWww) clearTimeout(seWww);
+        robenAre = setTimeout(() => {
+            reso()
+        },40)
+    }
+}
 async function husDev() {
+    huAl = true
     if (serJs.value.length > 0) {
         resSer.innerHTML = ""
         var x = serJs.value
@@ -100,7 +113,6 @@ async function husDev() {
         serIn()
         async function serIn() {
             if (nCalln < sectionLoad.length) {
-                resSer.innerHTML = ""
                 if (sectionLoad[nCalln].s === selects.value || selects.value === "hussein") {
                     let nno = sectionLoad[nCalln].n
                     let soWhat = nno.replace(/\//g, "")
@@ -128,11 +140,9 @@ async function husDev() {
                     serIn()
                 }
             } else {
-                resSer.innerHTML = ""
                 if (catcho.length > 0) {
                     var lisWeb = [], numCall = 0
                     seeReels()
-                    resSer.innerHTML = ""
                     function seeReels() {
                         if (numCall < catcho.length) {
                             let heNum = 0, n, u, numCatch;
@@ -148,18 +158,15 @@ async function husDev() {
                             lisWeb.push({ n: n, u: u })
                             numCall++;
                             seeReels()
-                            resSer.innerHTML = ""
                         } else {
                             lisWeb.forEach(r => {
                                 let er = document.createElement("p")
                                 er.innerHTML = `<a href ="` + r.u + `" >` + r.n + `</a>`
                                 nmDiv.append(er)
-                                resSer.innerHTML = ""
                             })
                         }
                     }
                 } else {
-                    resSer.innerHTML = ""
                     let handel = document.createElement("div")
                     handel.className = "handlx"
                     handel.innerHTML = `<div class="handl" >لا توجد نتائج </div>`
@@ -167,10 +174,12 @@ async function husDev() {
                 }
                 resSer.innerHTML = ""
                 resSer.append(nmDiv)
+                huAl = false
             }
         }
     } else {
         resSer.innerHTML = ""
+        huAl = false
     }
 }
 
