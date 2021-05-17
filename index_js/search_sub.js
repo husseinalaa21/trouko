@@ -56,6 +56,7 @@ sectionLoad.forEach(e => {
 var conaller = []
 var robenAre = 0
 async function savDev(x) {
+    resSer.innerHTML = ""
     let spText = x.split(" ");
     if (spText.length === 1) {
         if (spText[0].includes("ال")) {
@@ -154,7 +155,6 @@ function husDev() {
         if (selects.value === "def") {
             resSer.innerHTML = "<div class='noRes'> يرجى تحديد القسم </div>"
         } else {
-            resSer.innerHTML = ""
             savDev(serJs.value)
         }
     } else {
