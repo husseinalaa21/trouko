@@ -61,6 +61,10 @@
     width: auto;
     text-align-last:center;
 }
+.serTols select:hover{
+    background-color: #ececec71;
+}
+
 
 .serTols select option{
     text-align: center;
@@ -70,16 +74,6 @@
 .serTols select:focus{
     outline: none;
     border: none;
-}
-.noRes {
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 4px;
-    padding: 10px;
-    width: fit-content;
-    margin: auto;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 1%);
 }
 
 .resLis {
@@ -113,6 +107,7 @@
     z-index: 10;
 }
 .resLis p:last-child{
+    margin-bottom: 10px;
     border-bottom: 0 !important;
 }
 .handlx {
