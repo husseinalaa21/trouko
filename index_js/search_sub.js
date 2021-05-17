@@ -55,24 +55,26 @@ sectionLoad.forEach(e => {
 })
 var robenAre = 0,
     huAl = false,
-    seWww = 0
+    seWww = 0,
+    okKey = false
 selects.addEventListener("change", e=>{
-    resSer.innerHTML = ""
-    if (robenAre) clearTimeout(robenAre);
-    robenAre = setTimeout(() => {
+    if(okKey === false){
+        resSer.innerHTML = ""
+        okKey = true
         reso()
-    },100)
+    }
 })
 serJs.addEventListener('input', e=>{
-    resSer.innerHTML = ""
-    if (robenAre) clearTimeout(robenAre);
-    robenAre = setTimeout(() => {
+    if(okKey === false){
+        resSer.innerHTML = ""
+        okKey = true
         reso()
-    },100)
+    }
 })
 function reso() {
     if(huAl === false){
         husDev()
+        okKey = false
     } else {
         if (seWww) clearTimeout(seWww);
         robenAre = setTimeout(() => {
