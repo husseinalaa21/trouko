@@ -83,7 +83,7 @@ function savDev(x) {
     var nCalln = 0
     serIn()
     async function serIn() {
-        if (nCalln < sectionLoad.length - 1) {
+        if (nCalln < sectionLoad.length) {
             if (sectionLoad[nCalln].s === selects.value) {
                 let nno = sectionLoad[nCalln].n
                 let soWhat = nno.replace(/\//g, "")
@@ -111,42 +111,39 @@ function savDev(x) {
                 serIn()
             }
         } else {
-            if (robenAre) clearTimeout(robenAre);
-            robenAre = setTimeout(() => {
-                if (catcho.length > 0) {
-                    var lisWeb = [], numCall = 0
-                    seeReels()
-                    function seeReels() {
-                        if (numCall < catcho.length) {
-                            let heNum = 0, n, u, numCatch;
-                            for (var e = 0; e < catcho.length; e++) {
-                                if (catcho[e].num > heNum) {
-                                    heNum = catcho[e].num
-                                    n = catcho[e].tit
-                                    u = catcho[e].url
-                                    numCatch = e
-                                }
+            if (catcho.length > 0) {
+                var lisWeb = [], numCall = 0
+                seeReels()
+                function seeReels() {
+                    if (numCall < catcho.length) {
+                        let heNum = 0, n, u, numCatch;
+                        for (var e = 0; e < catcho.length; e++) {
+                            if (catcho[e].num > heNum) {
+                                heNum = catcho[e].num
+                                n = catcho[e].tit
+                                u = catcho[e].url
+                                numCatch = e
                             }
-                            catcho[numCatch] = ""
-                            lisWeb.push({ n: n, u: u })
-                            numCall++;
-                            seeReels()
-                        } else {
-                            lisWeb.forEach(r => {
-                                let er = document.createElement("p")
-                                er.innerHTML = `<a href ="` + r.u + `" >` + r.n + `</a>`
-                                nmDiv.append(er)
-                            })
                         }
+                        catcho[numCatch] = ""
+                        lisWeb.push({ n: n, u: u })
+                        numCall++;
+                        seeReels()
+                    } else {
+                        lisWeb.forEach(r => {
+                            let er = document.createElement("p")
+                            er.innerHTML = `<a href ="` + r.u + `" >` + r.n + `</a>`
+                            nmDiv.append(er)
+                        })
                     }
-                } else {
-                    let handel = document.createElement("div")
-                    handel.className = "handlx"
-                    handel.innerHTML = `<div class="handl" >لا توجد نتائج </div>`
-                    nmDiv.append(handel)
                 }
-                resSer.append(nmDiv)
-            }, 10);
+            } else {
+                let handel = document.createElement("div")
+                handel.className = "handlx"
+                handel.innerHTML = `<div class="handl" >لا توجد نتائج </div>`
+                nmDiv.append(handel)
+            }
+            resSer.append(nmDiv)
         }
     }
 }
