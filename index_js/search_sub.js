@@ -151,6 +151,7 @@ async function husDev() {
                         handel.innerHTML = `<div class="handl" >لا توجد نتائج </div>`
                         nmDiv.append(handel)
                     }
+                    resSer.innerHTML = ""
                     resSer.append(nmDiv)
                 }
             }
