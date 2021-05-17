@@ -83,7 +83,7 @@ function savDev(x) {
     var nCalln = 0
     serIn()
     async function serIn() {
-        if (nCalln < sectionLoad.length) {
+        if (nCalln < sectionLoad.length - 1) {
             if (sectionLoad[nCalln].s === selects.value) {
                 let nno = sectionLoad[nCalln].n
                 let soWhat = nno.replace(/\//g, "")
