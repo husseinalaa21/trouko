@@ -139,7 +139,7 @@ function savDev(x) {
                     nmDiv.append(handel)
                 }
                 resSer.append(nmDiv)
-            }, 100);
+            }, 10);
         }
     }
 }
