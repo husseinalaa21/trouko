@@ -55,7 +55,7 @@ sectionLoad.forEach(e => {
 })
 var conaller = []
 var robenAre = 0
-function savDev(x) {
+async function savDev(x) {
     let spText = x.split(" ");
     if (spText.length === 1) {
         if (spText[0].includes("ال")) {
