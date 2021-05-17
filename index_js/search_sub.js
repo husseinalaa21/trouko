@@ -68,7 +68,7 @@ serJs.addEventListener('input', e=>{
         husDev()
     },100)
 })
-async function husDev() {
+function husDev() {
     if (serJs.value.length > 0) {
         resSer.innerHTML = ""
         var x = serJs.value
@@ -98,7 +98,7 @@ async function husDev() {
         var catcho = []
         var nCalln = 0
         serIn()
-        async function serIn() {
+        function serIn() {
             if (nCalln < sectionLoad.length) {
                 if (sectionLoad[nCalln].s === selects.value || selects.value === "hussein") {
                     let nno = sectionLoad[nCalln].n
