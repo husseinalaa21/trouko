@@ -18,7 +18,7 @@
   }
 
 .up_date {
-    background-color:#e2e8eb;
+    background-color:#f8f8f8;
     padding: 4px;
     margin-bottom: 0;
     direction: rtl;
@@ -27,8 +27,8 @@
     font-size: 11.5px;
     display: flex;
     border: 0;
-    border-bottom: 4.5px solid #e2e8eb;
-    border-image: linear-gradient(to right,  #e2e8eb , #3282b8);
+    border-bottom: 4.5px solid #f8f8f8;
+    border-image: linear-gradient(to right,  #f8f8f8 , #3282b8);
     border-image-slice: 10;
 }
 
@@ -43,36 +43,9 @@ body{
     display: none;
 }
 .up_date {
-    padding-top: 64px;
-    padding-bottom: 5px;
+    padding-top: 68px;
+    padding-bottom: 8px;
 }
-.title_t p{
-    color: #b2b2b4;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 20px;
-    font-family: 'Almarai', sans-serif;
-}
-
-.search_main_i_page {
-    background-image: url('./alpine-5349811_1920.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 20px;
-    border: 0;
-    border-bottom: 4px solid #3282b8;
-}
-
-.se_in_p {
-    padding-top: 35px;
-    padding-bottom: 10px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border: 0;
-}
-
 #ul_search {
     list-style-type: none;
     color: rgb(39, 40, 42);

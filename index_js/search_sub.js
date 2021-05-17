@@ -1,29 +1,20 @@
-var button_search, search_i_page_i, ul_search,
-    search_random, random_ser_f,
-    random_t_ser, form_search, body, pageSearch,
-    header_m_t, pa_p, sub_r_s
-    , google_search, se_in_p, cn_google, item_list_sub_empty,
-    qususuggcon, sususuggcon;
+var random_t_ser, sub_r_s;
+var serJs,selects,resSer;
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../data.json');
 
 xReq.send();
-item_list_sub_empty = document.getElementById('item_list_sub_empty')
-qususuggcon = document.getElementById("qususuggcon")
-sususuggcon = document.getElementById("sususuggcon")
-
-random_ser_f = document.getElementById('random_ser_f');
-button_search = document.getElementById('button_search');
-search_random = document.getElementById('search_random');
-search_i_page_i = document.getElementById('search_i_page_i');
 
 random_t_ser = document.getElementById('random_t_ser')
-pa_p = document.getElementById('pa_p')
 sub_r_s = document.getElementById('sub_r_s')
-google_search = document.getElementById("google_search")
-se_in_p = document.getElementById("se_in_p")
-cn_google = document.getElementById("cn_google")
+
+// ser
+serJs = document.getElementById("serJs")
+selects = document.getElementById("selects")
+resSer = document.getElementById("resSer")
+// ...
+
 function hsh(s) {
     let element = document.getElementById("s_" + s)
     element.style.display = (element.style.display == 'none') ? er(true) : er(false);
@@ -51,11 +42,123 @@ var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfi
 { n: "questions/questions_else", s: "else", x: " متنوعة ", z: "sTwo",c : true },
 { n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo",c : true },
 
-{ n: "subjects/movies",c : false },
-{ n: "subjects/scholarships",c : false }]
+{ n: "subjects/movies",c : false ,x : "افلام و مسلسلات"}]
+var alerAdd = []
+sectionLoad.forEach(e=>{
+    if(alerAdd.includes(e.s) === false){
+        alerAdd.push(e.s)
+        let op = document.createElement("option")
+        op.value = e.s
+        op.innerText = e.x
+        selects.append(op)
+    }
+})
+var conaller = []
+var robenAre = 0
+function savDev(x) {
+    let spText = x.split(" ");
+    if(spText.length === 1){
+        if(spText[0].includes("ال")){
+            let na = spText[0].replace("ال","")
+            spText.push(na)
+        } else {
+            let na = "ال"+spText[0]
+            spText.push(na)
+        }
+    } else {
+        spText.forEach(a=>{
+            if(a.includes("ال")){
+                let na = a.replace("ال","")
+                spText.push(na)
+            }
+        })
+    }
+    var nmDiv = document.createElement("div")
+    nmDiv.className = "resLis"
+    let headTop = document.createElement("div")
+    headTop.className = "headTop"
+    headTop.innerHTML = `<div class="namSec"> نتائج البحث </div> <div class="namB"></div>`
+    nmDiv.append(headTop)
+    var catcho = []
+    for(var q =0; q < sectionLoad.length;q++){
+        if(sectionLoad[q].s === selects.value){
+            let nno = sectionLoad[q].n
+            let soWhat = nno.replace(/\//g,"")
+            $.getJSON("../jsData/" + soWhat + ".json", function (data) {
+                for(var o = 0; o < data.length; o++){
+                    let numCach = 0,
+                    didCach = false
+                    let sese = data[o].replace("https://trouko.com/","").replace(nno,"").replace(/\//g,"").replace(/_/g," ")
+                    let sw = sese.split(" ");
+                    for(var e = 0; e < spText.length; e++){
+                        if(sw.includes(spText[e])){
+                            didCach = true
+                            numCach ++;
+                        }
+                    }
+                    if(didCach === true){
+                        catcho.push({num : numCach,tit : sw.toString().replace(/,/g," "), url : data[o]})
+                    }
+                }
+            })
+        }
+
+        if(sectionLoad.length - 1 === q){
+            if (robenAre) clearTimeout(robenAre);
+            robenAre = setTimeout(() => {
+                if(catcho.length > 0){
+                    var lisWeb = [],numCall = 0
+                    seeReels()
+                    function seeReels() {
+                        if(numCall < catcho.length){
+                            let heNum = 0,n,u,numCatch;
+                            for(var e =0; e < catcho.length;e++){
+                                if(catcho[e].num > heNum){
+                                    heNum = catcho[e].num
+                                    n = catcho[e].tit
+                                    u = catcho[e].url
+                                    numCatch = e
+                                }
+                            }
+                            catcho[numCatch] = ""
+                            lisWeb.push({n :n, u :u})
+                            numCall ++;
+                            seeReels()
+                        } else {
+                            lisWeb.forEach(r=>{
+                                let er = document.createElement("p")
+                                    er.innerHTML = `<a href ="`+r.u+`" >`+r.n+`</a>`
+                                    nmDiv.append(er)
+                            })
+                        }
+                    }
+                } else {
+                    let handel = document.createElement("div")
+                    handel.className = "handlx"
+                    handel.innerHTML = `<div class="handl" >لا توجد نتائج </div>`
+                    nmDiv.append(handel)
+                }
+                resSer.append(nmDiv)
+            }, 10);
+        }
+    }
+}
+selects.addEventListener("change",husDev)
+serJs.addEventListener('input', husDev)
+function husDev() {
+if(serJs.value.length > 0){
+    if(selects.value === "def"){
+        resSer.innerHTML = "<div class='noRes'> يرجى تحديد القسم </div>"
+    } else {
+        resSer.innerHTML = ""
+        savDev(serJs.value)
+    }
+} else {
+    resSer.innerHTML = ""
+}
+}
 
 xReq.onload = function () {
-    cn_google.style.display = "block"
     var xData = JSON.parse(xReq.responseText);
     addNewSubr(xData);
 }
@@ -131,13 +234,13 @@ function addNewSubr(xData) {
         ranPick = 0;
     for (var i = 0; i < xData.length; i++) {
         let e = xData[(xData.length - i) - 1]
-        if(e.includes("subjects") === true && numCSub < 7){
+        if(e.includes("subjects") === true && numCSub < 9){
             numCSub ++;
             strSub.push(e)
-        } else if (e.includes("questions") === true && numCQu < 7){
+        } else if (e.includes("questions") === true && numCQu < 9){
             numCQu ++;
             strQu.push(e)
-        } else if(ranPick < 20){
+        } else if(ranPick < 30){
             ranPick++;
             storageD.push(e)
         }
@@ -166,7 +269,7 @@ function addNewSubr(xData) {
             }
             setSug()
             function setSug() {
-                if(cs < 7){
+                if(cs < 9){
                     addNewSubrtPlus(storageD[arr[cs]], sub_r_s, c.a, c.b, c.c, c.d).then(e=>{
                         cs ++;
                         setSug()
