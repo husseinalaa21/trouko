@@ -74,11 +74,10 @@ serJs.addEventListener('input', e=>{
 })
 function reso() {
     if(huAl === false){
+        sesTrouko.style.display = "block"
         husDev()
         okKey = false
-        sesTrouko.style.display = "none"
     } else {
-        sesTrouko.style.display = "block"
         if (seWww) clearTimeout(seWww);
         robenAre = setTimeout(() => {
             reso()
@@ -180,11 +179,13 @@ async function husDev() {
                 resSer.innerHTML = ""
                 resSer.append(nmDiv)
                 huAl = false
+                sesTrouko.style.display = "none"
             }
         }
     } else {
         resSer.innerHTML = ""
         huAl = false
+        sesTrouko.style.display = "none"
     }
 }
 
