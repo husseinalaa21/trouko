@@ -137,7 +137,7 @@
     margin-top: -1px;
     background: #ececec71;
     border-radius: 0 0 3px 3px;
-    display: none;
+    display: block;
   }
   .dotTrouko {
       margin-left: -40%;
@@ -146,37 +146,37 @@
     transform: translateX(0);
     margin-top: 3px;
     margin-left:6px;
-    animation: dot 2s infinite cubic-bezier(.2,.64,.81,.23);
+    animation: dot 2s infinite cubic-bezier(.9,.71,.88,.30);
   }
   .gooey .dots:nth-child(3){
     transform: translateX(0);
     margin-top: 3px;
     margin-left:6px;
-    animation: dot 2s 150ms infinite cubic-bezier(.2,.64,.81,.23);
+    animation: dot 2s 150ms infinite cubic-bezier(.9,.71,.88,.30);
   }
   .gooey .dots:nth-child(4){
     transform: translateX(0);
     margin-top: 3px;
     margin-left:6px;
-    animation: dot 2s 300ms infinite cubic-bezier(.2,.64,.81,.23);
+    animation: dot 2s 300ms infinite cubic-bezier(.9,.71,.88,.30);
   }
   .gooey .dots:nth-child(5){
     transform: translateX(0);
     margin-top: 3px;
     margin-left:6px;
-    animation: dot 2s 450ms infinite cubic-bezier(.2,.64,.81,.23);
+    animation: dot 2s 450ms infinite cubic-bezier(.9,.71,.88,.30);
   }
   .gooey .dots:nth-child(6){
     transform: translateX(0);
     margin-top: 3px;
     margin-left:6px;
-    animation: dot 2s 600ms infinite cubic-bezier(.2,.64,.81,.23);
+    animation: dot 2s 600ms infinite cubic-bezier(.9,.71,.88,.30);
   }
   .gooey .dots:nth-child(7){
     transform: translateX(0);
     margin-top: 3px;
     margin-left:6px;
-    animation: dot 2s 750ms infinite cubic-bezier(.2,.64,.81,.23);
+    animation: dot 2s 750ms infinite cubic-bezier(.9,.71,.88,.30);
   }
   .gooey .dots span {
     display: block;
