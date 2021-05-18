@@ -24,7 +24,7 @@ function ad(s) {
     }
     var i;
     for (i = 0; i < arr.length; i++) {
-        if (cos < 6) {
+        if (cos < 10) {
             cos++
             var x = arr[i]
             addNewSubrt(s[x], addSuggSQ, "_J_n_Hus_Qu", "_pag_n_232", "i_fscript.js", "s_sub_t_dTw")
