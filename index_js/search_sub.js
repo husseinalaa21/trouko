@@ -230,7 +230,7 @@ $(document).ready(function () {
                     }
                     if (isFull === true) {
                         let li = document.createElement("li")
-                        li.innerHTML = '<a href=../sub_s/' + e.s + '/index.html> مشاهدة المزيد </a>'
+                        li.innerHTML = '<a href="../sub_s/' + e.s + '/index.html" > مشاهدة المزيد </a>'
                         document.getElementById('s_' + hrt).append(li)
                     }
                 }
