@@ -48,7 +48,7 @@ xReq.onload = function () {
         surc.forEach(a => {
             $.getJSON("../../jsData/" + a + ".json", function (data) {
                 for (var i = 0; i < data.length; i++) {
-                    if (i < 3) {
+                    if (i < 4) {
                         let c = (data.length - i) - 1
                         addNewSubrt(data[c], main_sub_ad, "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw")
                         blackList.push(data[c])
@@ -144,7 +144,6 @@ var iconT = document.getElementById("uMenuMine_m"),
                 <div class="mulist-title"> القائمة الرئيسية </div>
                 <div class="mulistContainer">
                    <a href="/"> الصفحة الرئيسة </a>
-                   <a href="/"> البحث </a>
                    <a href="../../../container_s_q/about.html">حول </a>
                    <a href="../../../container_s_q/contact.html"> اتصل بنا </a>
                 </div>
