@@ -8,18 +8,18 @@ sideSlider = document.getElementById("sideSlider")
 // ...
 
 // Slider 
-var ollStuff = [{n : "الرئيسة" , u : "../"},{n:"آخر المقالات",u:"al_s"},{n : "الفهرسة", u :"al_q"},{n:"مقترحات", u : "al_g"}
-,{n:"الفضاء",u:"space"},{n:"الجغرافية",u:"geography"},{n:"التقنية",u:"technology"},{n:"علوم",u:"sciences"},{n:"فيزياء",u:"physics"},{n:"افلام و مسلسلات",u:"movies"}]
+var ollStuff = [{n : "الرئيسة" , u : "/"},{n:"آخر المقالات",u:"#al_s"},{n : "الفهرسة", u :"#al_q"},{n:"مقترحات", u : "#al_g"}
+,{n:"الفضاء",u:"../space/"},{n:"الجغرافية",u:"../geography/"},{n:"التقنية",u:"../technology/"},{n:"علوم",u:"../sciences/"},{n:"منوعات",u:"../else/"},{n:"فيزياء",u:"../physics/"},{n:"افلام و مسلسلات",u:"../movies/"}]
 
 ollStuff.forEach(r=>{
-   if(r.u === document.getElementById("adrs").innerText){
+   if(r.u.includes(document.getElementById("adrs").innerText)){
        let hussein = document.createElement("p")
        hussein.innerText = r.n
        sideSlider.append(hussein)
    } else {
        let hussein = document.createElement("a")
        hussein.innerText = r.n
-       hussein.href = "../"+r.u
+       hussein.href = r.u
        sideSlider.append(hussein)
    }
 })
