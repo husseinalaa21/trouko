@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="../../index_style/logo.png" />
-  <link rel="stylesheet" type="text/css" href="./main_m.css">
+  <link rel="stylesheet" type="text/css" href="../../index_style/fo_g.css">
   <link rel="stylesheet" type="text/css" href="../../index_style/info.css">
   <link rel="stylesheet" type="text/css" href="../../container_s_q/header.css">
   <link rel="stylesheet" type="text/css" href="../container/main.css">
@@ -43,9 +43,45 @@
 
 <body>
 
-  <div class="sectionTop">
-    <img src="../../../icons/folder-regular.svg" style="width: 14px;" class="icon_folder">&nbsp; <a href="/"> الصفحة
-      الرئيسية </a> / الفيزياء
+  <div class="up_date" id="up_date">
+    <div class="container_upTop" id="sideSlider">
+    </div>
+  </div>
+  <div class="search_main_i_page">
+    <div class="se_in_p" id="se_in_p">
+      <div class="serchJs">
+        <div class="serTols"> <select id="selects" class="selects" aria-label="Default select example"
+            title="حدد قسم">
+            <option selected value="hussein"> الكل </option>
+          </select> </div>
+        <div class="serCase"> <img src="./index_style/search-solid.svg" width="14px" height="14px" /></div>
+        <div class="serCon"> <input type="text" id="serJs" placeholder=" ابحث عن شيء .. " title="بحث" /> </div>
+      </div>
+      <div class="gooey" id="sesTrouko">
+        <div class="dotTrouko">
+          <span class="dot"></span>
+          <div class="dots">
+            <span></span>
+          </div>
+          <div class="dots">
+            <span></span>
+          </div>
+          <div class="dots">
+            <span></span>
+          </div>
+          <div class="dots">
+            <span></span>
+          </div>
+          <div class="dots">
+            <span></span>
+          </div>
+          <div class="dots">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="resSer"></div>
+    </div>
   </div>
   <div class="pageRoot">
     <div class="webPage" id="webPage"></div>
@@ -94,8 +130,8 @@
       <div class="swEnd">
         <div class=" m_each"> <a class="a_link" href="../../../container_s_q/contact.html">أتصل بنا عبر البريد</a>
         </div>
-        <div class="support_us m_each">
-          <a href="../../../container_s_q/searchInPage.html"> قسم البحث </a>
+        <div class="about_us m_each randPag" id="random_page" onclick="randoPag();">
+           مقالة عشوائية 
         </div>
       </div>
 
@@ -127,8 +163,8 @@
   </div>
   <div class="trouko_about">
     <div class="trouko-about_p" id="infoLink"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px;">
-      &nbsp; موقع تروكو هو مدونة لنشر المقالات المختلفة باللغة العربية , و الهدف الرئيسي من أنشائها هو لرفع نسبة
-      المدونات المطروحة باللغة العربية , مع أطيب التحيات . </div>
+      &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+      المقالات المطروحة باللغة العربية , مع أطيب التحيات . </div>
     <div class="trouko_about_t">
       <div id="disLink">
         جميع الحقوق محفوضة لدى مدونة تروكو
@@ -139,7 +175,7 @@
     </div>
   </div>
   <script src="../container/jquery.js"></script>
-  <script src="script.js"></script>
+  <script src="../container/script.js"></script>
   <script src="../container/javaScript.js"></script>
 </body>
 
