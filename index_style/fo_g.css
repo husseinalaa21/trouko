@@ -137,7 +137,7 @@
     margin-top: -1px;
     background: #ececec71;
     border-radius: 0 0 3px 3px;
-    display: block;
+    display: none;
   }
   .dotTrouko {
       margin-left: -40%;
