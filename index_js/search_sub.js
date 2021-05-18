@@ -1,5 +1,5 @@
 var random_t_ser, sub_r_s;
-var serJs, selects, resSer;
+var serJs, selects, resSer,sesTrouko;
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../data.json');
@@ -13,6 +13,7 @@ sub_r_s = document.getElementById('sub_r_s')
 serJs = document.getElementById("serJs")
 selects = document.getElementById("selects")
 resSer = document.getElementById("resSer")
+sesTrouko = document.getElementById("sesTrouko")
 // ...
 
 function hsh(s) {
@@ -75,7 +76,9 @@ function reso() {
     if(huAl === false){
         husDev()
         okKey = false
+        sesTrouko.style.display = "none"
     } else {
+        sesTrouko.style.display = "block"
         if (seWww) clearTimeout(seWww);
         robenAre = setTimeout(() => {
             reso()
