@@ -213,7 +213,8 @@ var lisBox = `
    </div>
 </div>`
 
-var rt = document.getElementsByTagName('BODY')
+var rt = document.getElementsByTagName('BODY'),
+    rtf = document.getElementsByClassName("bodyDivs")[0]
 iconT.addEventListener("click", e => {
     if (isClickMenu === false) {
         if(isAppen === false){
@@ -226,7 +227,7 @@ iconT.addEventListener("click", e => {
         isClickMenu = true
         isWebT = true
         rt[0].style.overflow = "hidden"
-        document.getElementById("mEdNavMenu").style.height = "100%";
+        document.getElementById("mEdNavMenu").style.height = "63%";
     } else {
         iconBarTh.className = "icon-bar";
         iconBar.className = "icon-bar"
@@ -259,3 +260,16 @@ window.onscroll = function () {
       shtPagr.innerHTML = ""
     }*/
 }
+rtf.addEventListener("click",e=>{
+    if(isClickMenu === true){
+        iconBarTh.className = "icon-bar";
+        iconBar.className = "icon-bar"
+        iconBarT.className = "icon-bar"
+        rt[0].style.overflow = "auto"
+        document.getElementById("mEdNavMenu").style.height = "0";
+        isClickMenu = false
+        setTimeout(() => {
+            isWebT = false
+        }, 1000);
+    }
+})

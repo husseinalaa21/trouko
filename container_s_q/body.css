@@ -547,22 +547,15 @@ div.sources_ {
     overflow: auto;
     transition: 0.5s;
 }
-/* width */
 .lisBox::-webkit-scrollbar {
   width: 10px;
 }
-
-/* Track */
 .lisBox::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
- 
-/* Handle */
 .lisBox::-webkit-scrollbar-thumb {
   background: #88b1ccb4;
 }
-
-/* Handle on hover */
 .lisBox::-webkit-scrollbar-thumb:hover {
   background: #88b1ccb4;
 }
@@ -575,7 +568,6 @@ div.sources_ {
 .endNaMa {
     background-color: #427fa5;
     padding-top: 10px;
-    margin-bottom: 60px;
     padding-bottom: 10px;
 }
 
