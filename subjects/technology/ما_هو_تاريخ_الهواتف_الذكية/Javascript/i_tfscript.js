@@ -1,10 +1,10 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "ما هو تاريخ الهواتف الذكية";
 adPhoto = "../../../imgs/iphone-410324_640.jpg"
-adDiscription = "ت"
+adDiscription = "مع ضهور اول هاتف ذكية عام 1992 بواسطة شركة ' IBM ' , بدأ مفهوم الهواتف الذكية بالتطور عام بعد عام حتى وصل الهاتف الذكي الى شكله الحالي . كما و تعد شركة ' IBM ' هي اول شركة في العالم تنتج و تبيع اول هاتف ذكي في عام 1994 أي بعد طرح فكرة هاتفها بعامين .<br />وشهدت سنوات تطور الهواتف بالترتيب التالي : "
 namePpath = "https://trouko.com/subjects/technology/ما_هو_تاريخ_الهواتف_الذكية/"
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاربعاء  , 19 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاربعاء, 19 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_x_242');
 addt(titleIn)
