@@ -56,6 +56,9 @@
     direction: rtl;
     height: fit-content;
     width: fit-content;
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     overflow: hidden;
     justify-content: center;
     margin-left: auto;
