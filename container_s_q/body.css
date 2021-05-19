@@ -349,11 +349,11 @@ body {
     align-items: center;
 }
 .adConInQ a:nth-child(2){
-    padding-left: 3px ;
+    padding-left: 2px ;
     padding-right: 2px;
 }
 .adConInQ a:nth-child(3){
-    padding-right: 4px ;
+    padding-right: 3px ;
 }
 
 .adConInQ img {
