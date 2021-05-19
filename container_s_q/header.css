@@ -6,8 +6,6 @@
     font-family: Almarai;
     src: url(../index_style/Almarai-Regular.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
 .headerMenu {
   position: fixed;
   width: 100%;
@@ -30,7 +28,7 @@
   display: flex;
   font-size: 22px;
   font-weight: 550;
-  font-family: "Almarai";
+  font-family: 'Almarai', sans-serif;
   align-items: center;
 }
 .net_logo {
