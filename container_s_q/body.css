@@ -340,7 +340,8 @@ body {
     border-bottom: 1px solid #d5e3eb9f;
 }
 .adConInQ {
-    font-size: 13.6px;
+    font-display: swap;
+    font-size: 13.4px;
     margin-top: 56px;
     direction: rtl;
     font-family: 'Almarai', sans-serif;
