@@ -274,14 +274,12 @@ body {
     position: relative;
     border-radius: 2px;
 }
-/* OLD IMG CLOCK */
 #icon_clockPage {
     width: 10.4px !important;
     height: 10.4px !important;
     margin-right: 1px;
-    margin-top: 1.7px !important;
+    margin-top: 1.5px !important;
 }
-/* ... */
 .imgCon {
     margin: auto;
     background-color: #f7f7f7;
@@ -344,7 +342,7 @@ body {
 }
 .adConInQ {
     font-display: swap;
-    font-size: 14px;
+    font-size: 13.5px;
     margin-top: 56px;
     direction: rtl;
     font-family: 'Almarai', sans-serif;
