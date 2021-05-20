@@ -274,12 +274,14 @@ body {
     position: relative;
     border-radius: 2px;
 }
-
+/* OLD IMG CLOCK */
 #icon_clockPage {
-    width: 10.3px !important;
+    width: 10.4px !important;
+    height: 10.4px !important;
     margin-right: 1px;
-    margin-top: 0 !important;
+    margin-top: 1.7px !important;
 }
+/* ... */
 .imgCon {
     margin: auto;
     background-color: #f7f7f7;
@@ -303,10 +305,11 @@ body {
 
 .adConIn {
     display: flex;
-    font-size: 11.3px;
+    font-size: 11px;
     padding: 4px;
     border: 0;
     border-right: 2px solid #b1cce0;
+    font-family: 'Almarai', sans-serif;
     margin: 3px 1px 3px 1px;
     width: 70%;
     max-width: 400px;
@@ -341,7 +344,7 @@ body {
 }
 .adConInQ {
     font-display: swap;
-    font-size: 13.4px;
+    font-size: 14px;
     margin-top: 56px;
     direction: rtl;
     font-family: 'Almarai', sans-serif;
