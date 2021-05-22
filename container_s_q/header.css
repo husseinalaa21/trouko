@@ -92,7 +92,21 @@
     display: block;
     width: 23px;
     padding: 2.1px;
-    position: relative;
+    position: absolute;
+}
+.icon-bar:nth-child(3){
+    display: block;
+    width: 23px;
+    padding: 2.1px;
+    position: absolute;
+    top: 6px;
+}
+.icon-bar:nth-child(1){
+    display: block;
+    width: 23px;
+    padding: 2px;
+    position: absolute;
+    top: -6px;
 }
 .icon-bar:after {
     content: '';
