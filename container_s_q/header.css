@@ -92,6 +92,7 @@
     display: block;
     width: 23px;
     padding: 2.05px;
+    height: 3px;
     position: relative;
 }
 .icon-bar:after {
