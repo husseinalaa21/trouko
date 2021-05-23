@@ -91,7 +91,7 @@
 .icon-bar {
     display: block;
     width: 23px;
-    padding: 2.15px;
+    padding: .13em;
     position: relative;
 }
 .icon-bar:after {
