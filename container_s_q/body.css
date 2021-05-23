@@ -404,13 +404,15 @@ body {
 }
 
 .title__ad_subject_p {
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 23px;
+    font-weight: 600;
     border: 0;
+    line-height: 1.4;
     padding: 4px 10px 8px 10px;
     border-right: 5px solid #6fb9eb;
     color: #32363b;
     word-break: break-word;
+    width: 85%;
 }
 
 .ad_i_subject {
