@@ -27,7 +27,7 @@
 .logo_text {
   font-display: swap;
   display: flex;
-  font-size: 24px;
+  font-size: 23.4px;
   font-weight: 550;
   font-family: 'Almarai', sans-serif;
   align-items: center;
@@ -91,7 +91,7 @@
 .icon-bar {
     display: block;
     width: 23px;
-    padding: 2.2px;
+    padding: 2.1px;
     position: relative;
 }
 .icon-bar:after {

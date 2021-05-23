@@ -345,12 +345,12 @@ body {
 }
 .adConInQ {
     font-display: swap;
-    font-size: 13.5px;
+    font-size: 13.1px;
     margin-top: 56px;
     direction: rtl;
     font-family: 'Almarai', sans-serif;
     background-color: #e3e9ec;
-    padding: 14.6px;
+    padding: 14px;
     align-items: center;
     color: #6b778d;
 }
