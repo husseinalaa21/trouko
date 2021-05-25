@@ -36,7 +36,7 @@ function shoWe(){
         isEle ++;
         let t = document.createElement("div")
         t.className = "itD"
-        let canday = lisB[c].replace("https://trouko.com", "").replace(/\//g, "").replace(van[c], "").replace("_", " ")
+        let canday = lisB[c].replace("https://trouko.com", "").replace(/\//g, "").replace(van[c], "").replace(/_/g, " ")
         t.innerHTML = isEle + `. <a href="` + lisB[c] + `" > ` + canday + `</a>`
         main_sub_ad_q.append(t)
     }
@@ -57,7 +57,7 @@ xReq.onload = function () {
                         isEle ++;
                         let t = document.createElement("div")
                         t.className = "itD"
-                        let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace("_", " ")
+                        let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace(/_/g, " ")
                         t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
                         main_sub_ad_q.append(t)
                     }
