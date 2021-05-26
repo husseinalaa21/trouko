@@ -151,93 +151,83 @@ click_material.addEventListener("click", e => {
         return change = 'open'
     }
 })
-function shoLiThisPage() {
-    document.getElementById("rlsh").innerHTML = `<div class="resLinShar"> <div onclick="copThis()"> <img src="../../../icons/link-solid.svg" class="linSharICon"/> </div> <div class="sharLinContainer" >` +decodeURI(window.location.href) + `</div> </div>`
+var lisBox = `
+<div class="newBody" id="covBody" onclick="iloveHusseinAlaa()"></div>
+<div id="mySidenav" class="sidenav">
+<div class="sliteLIst">
+  <a href="/">الرئيسة</a>
+  <a href="../../../container_s_q/about.html">عنا</a>
+  <div class="sectionIns">
+    <div class="headerIns" onclick="seIns('containerListOne')">
+      <p>الاقسام</p>
+      <p><span class="arrow" id="erSAre"><span></span><span></span></span></p>
+    </div>
+    <div class="containerIns" id="containerListOne" style="display : none;">
+        <div class="containerStaff">
+        <a href="https://trouko.com/sub_s/space/"> الفضاء </a>
+        <a href="https://trouko.com/sub_s/else/"> منوعات </a>
+        <a href="https://trouko.com/sub_s/technology/"> تكنلوجيا </a>
+        <a href="https://trouko.com/sub_s/movies/"> افلام </a>
+        <a href="https://trouko.com/sub_s/physics/"> فيزياء </a>
+       </div>
+    </div>
+  </div>
+  <a href="`+document.getElementById("Urlsame").innerText+`"> مقالات مشابهة </a>
+  <div class="secSearch">
+    <form role="search" method="get" class="search-form" action="https://trouko.com/">
+    <input type="search" class="search-field" placeholder="بحث …" value="apple" name="s">
+    <buttom class="serXf"> <img src="../../../index_style/search-solid.svg" width="14px" height="14px" /> </buttom>
+</form>
+</div>
+<div class="socMedia"> 
+<a class="fasMaenu"
+ href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img
+    src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
+<a class="twiMaenu" href="https://twitter.com/trouko1"> <img
+    src="../../../icons/twitter-m.svg" /> </a>
+<a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" />
+</a> </div>
+</div>
+</div>`
+function iloveHusseinAlaa() {
+iconBarTh.className = "icon-bar";
+iconBar.className = "icon-bar"
+iconBarT.className = "icon-bar"
+document.getElementById("covBody").style.width = "0";
+document.getElementById("mySidenav").style.width = "0";
+isClickMenu = false
+isWebT = false
 }
-function typePage() {
-    if(window.location.href.includes("/subjects/")){
-        return " مواضيع "
+function seIns(z) {
+let element = document.getElementById(z)
+element.style.display = (element.style.display == 'none') ? er(true) : er(false);
+function er(params) {
+    if (params === true) {
+        element.style.display = 'block'
+        document.getElementById("erSAre").className = "arrow active"
     } else {
-        return " أسئلة "
+        element.style.display = 'none'
+        document.getElementById("erSAre").className = "arrow"
     }
 }
-var someEncodedString = encodeURI(window.location.href)
-var lisBox = `
-<div class="lisBox" id="mEdNavMenu">
-   <div class="maNaLis">
-      <div class="mainList">
-         <div class="mulist">
-            <div class="mulist-title"> القائمة الرئيسية </div>
-            <div class="mulistContainer">
-               <a href="/"> الصفحة الرئيسة </a>
-               <a href="`+document.getElementById("Urlsame").innerText+`"> مقالات مشابهة </a>
-               <a href="../../../container_s_q/about.html">حول </a>
-            </div>
-         </div>
-         <div class="mulist">
-            <div class="mulist-title"> `+typePage()+` | الاقسام </div>
-            <div class="mulistContainer">
-            <a href="../../../sub_s/space/">  `+typePage()+` عن الفضاء </a>
-            <a href="../../../sub_s/physics/">`+typePage()+` عن الفيزياء </a>
-            <a href="../../../sub_s/technology/">`+typePage()+` عن التقنية </a>
-            <a href="../../../sub_s/else/"> `+typePage()+` متنوعة </a>
-            </div>
-         </div>
-      </div>
-      <div class="endNaMa">
-         <div class="socLink">
-         <div class="medLis">
-            <a class="fasMaenu"
-               href="https://web.facebook.com/%D8%AA%D8%B1%D9%88%D9%83%D9%88-trouko-104470178026820"> <img
-                  src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
-            <a class="twiMaenu" href="https://twitter.com/trouko1"> <img
-                  src="../../../icons/twitter-m.svg" /> </a>
-            <a class="telegramMaenu" href="https://t.me/trouko"> <img src="../../../icons/telegram-m.svg" />
-            </a>
-         </div>
-         <div class="conSharLin" ><i class="arrow left"></i> تابعنا على </div>
-         </div>
-         <div class="socLink">
-            <div class="medLis">
-            <a class="fasMaenu"
-               href="https://www.facebook.com/sharer/sharer.php?u=`+window.location.href+`"> <img
-                  src="../../../icons/facebook-m.svg" class="fasImg" /> </a>
-            <a class="twiMaenu" href="http://twitter.com/share?text=` + document.getElementById("titleTs").innerText + `&url=` + someEncodedString + `"> <img
-                  src="../../../icons/twitter-m.svg" /> </a>
-            <a class="sheareMaenu" onclick="shoLiThisPage()"> <img src="../../../icons/external-link-square-alt-solid.svg" /></a>
-            </div>
-            <div class="conSharLin"><i class="arrow left"></i> مشاركة هذه المقالة </div>
-         </div>
-         <div id="rlsh" class="linContainer"></div>
-      </div>
-   </div>
-</div>`
-
-var rt = document.getElementsByTagName('BODY'),
-    rtf = document.getElementsByClassName("bodyDivs")[0]
+}
+var rt = document.getElementsByTagName('BODY')
 iconT.addEventListener("click", e => {
     if (isClickMenu === false) {
         if(isAppen === false){
             menLis.innerHTML = lisBox
             isAppen = true
         }
+        isClickMenu = true
+        isWebT = true
         iconBarTh.className = "icon-bar bar_a";
         setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 150);
         setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 250);
-        isClickMenu = true
-        isWebT = true
-        rt[0].style.overflow = "hidden"
-        document.getElementById("mEdNavMenu").style.height = "63%";
+        document.getElementById("covBody").style.width = "100%";
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenav").style.maxWidth = "500px";
     } else {
-        iconBarTh.className = "icon-bar";
-        iconBar.className = "icon-bar"
-        iconBarT.className = "icon-bar"
-        rt[0].style.overflow = "auto"
-        document.getElementById("mEdNavMenu").style.height = "0";
-        isClickMenu = false
-        setTimeout(() => {
-            isWebT = false
-        }, 1000);
+        iloveHusseinAlaa()
     }
 })
 var prevScrollpos = window.pageYOffset;
