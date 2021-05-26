@@ -250,16 +250,3 @@ window.onscroll = function () {
       shtPagr.innerHTML = ""
     }*/
 }
-rtf.addEventListener("click",e=>{
-    if(isClickMenu === true){
-        iconBarTh.className = "icon-bar";
-        iconBar.className = "icon-bar"
-        iconBarT.className = "icon-bar"
-        rt[0].style.overflow = "auto"
-        document.getElementById("mEdNavMenu").style.height = "0";
-        isClickMenu = false
-        setTimeout(() => {
-            isWebT = false
-        }, 1000);
-    }
-})

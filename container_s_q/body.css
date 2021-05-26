@@ -742,9 +742,26 @@ div.sources_ {
   .telegramMaenu img{
     width: 16px;
   }
-.m_each a {
-    color: #d0dae091 !important;
-}
-#sEndWe a{
-    color: #d0dae091 !important;
-}
+  /* SHEARS */
+  .sheThPage {
+      padding: 3px 6px 3px 6px;
+      text-align: center;
+      border-radius: 1px;
+      margin-right: 7px;
+      align-items: center;
+  }
+  .faceShe {
+      background-color: #3B5998;
+  }
+  .twitShe {
+      background-color: #55ACEE;
+  }
+  #admenPage {
+      direction: ltr;
+  }
+  .m_each a {
+      color: #d0dae091 !important;
+  }
+  #sEndWe a{
+      color: #d0dae091 !important;
+  }
