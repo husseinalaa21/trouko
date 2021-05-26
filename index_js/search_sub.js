@@ -265,13 +265,13 @@ function addNewSubr(xData) {
         ranPick = 0;
     for (var i = 0; i < xData.length; i++) {
         let e = xData[(xData.length - i) - 1]
-        if (e.includes("subjects") === true && numCSub < 9) {
+        if (e.includes("subjects") === true && numCSub < 6) {
             numCSub++;
             strSub.push(e)
-        } else if (e.includes("questions") === true && numCQu < 9) {
+        } else if (e.includes("questions") === true && numCQu < 6) {
             numCQu++;
             strQu.push(e)
-        } else if (ranPick < 30) {
+        } else if (ranPick < 20) {
             ranPick++;
             storageD.push(e)
         }
@@ -300,7 +300,7 @@ function addNewSubr(xData) {
             }
             setSug()
             function setSug() {
-                if (cs < 9) {
+                if (cs < 6) {
                     addNewSubrtPlus(storageD[arr[cs]], sub_r_s, c.a, c.b, c.c, c.d).then(e => {
                         cs++;
                         setSug()
