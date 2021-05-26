@@ -174,9 +174,9 @@ var lisBox = `
   </div>
   <a href="`+document.getElementById("Urlsame").innerText+`"> مقالات مشابهة </a>
   <div class="secSearch">
-    <form role="search" method="get" class="search-form" action="https://trouko.com/">
-    <input type="search" class="search-field" placeholder="بحث …" name="s">
-    <buttom class="serXf"> <img src="../../../index_style/search-solid.svg" width="14px" height="14px" /> </buttom>
+    <form role="search" method="get" class="search-form" action="https://trouko.com/" id="grootIsTree">
+    <input type="search" class="search-field" placeholder="ابحث عن شيء …" name="c">
+    <buttom class="serXf" onclick="imGroot()"> <img src="../../../index_style/search-solid.svg" width="14px" height="14px" /> </buttom>
 </form>
 </div>
 <div class="socMedia"> 
@@ -189,6 +189,9 @@ var lisBox = `
 </a> </div>
 </div>
 </div>`
+function imGroot() {
+    document.getElementById("grootIsTree").submit();
+}
 function iloveHusseinAlaa() {
 iconBarTh.className = "icon-bar";
 iconBar.className = "icon-bar"
