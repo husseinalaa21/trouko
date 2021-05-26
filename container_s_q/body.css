@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 @font-face {
     font-family: Almarai;
     src: url(../index_style/Almarai-Regular.ttf);
@@ -553,8 +554,6 @@ div.sources_ {
 
 
 /* list Menu */
-
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 .newBody {
   position: fixed;
   background-color: #3d3d3d2d;
@@ -717,7 +716,7 @@ div.sources_ {
   }
   .serXf img{
     position: relative;
-    top: 10px;
+    top: 7px;
   }
   .socMedia {
     display: flex;
