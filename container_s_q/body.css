@@ -47,7 +47,13 @@ body {
     margin-top: 14px;
     margin-bottom: 14px;
 }
-
+/* TITLE OF SUGG AND CONT . *TEST* -- START*/
+.tpot {
+    font-size: 16px;
+    font-weight: 500;
+    color: #363738;
+}
+/* TITLE OF SUGG AND CONT . *TEST* -- END*/
 @media screen and (min-width: 730px),
 (min-width: 1000px) {
     .bodyRootDisplay {
