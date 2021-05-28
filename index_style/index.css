@@ -215,7 +215,7 @@ li:focus{
 
 .suntitlemaine {
     border: 0;
-    border-right: 7px solid #457aa5;
+    border-right: 4px solid #457aa5;
 }
 .subtitlemainesec {
     border: 0;
@@ -225,7 +225,7 @@ li:focus{
 
 .quntitlemaine {
     border: 0;
-    border-right: 5px solid #8b0f0fab;
+    border-right: 4px solid #8b0f0fab;
 }
 
 .subcontainer_ss {
