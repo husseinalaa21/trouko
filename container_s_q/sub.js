@@ -198,7 +198,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     var pMine = document.getElementById(n + xxID + g)
     $.getScript(cm + "JavaScript/" + iiID, function (data) {
         var li = document.createElement("div");
-        li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
+        li.innerHTML = `<script type="text/javascript">` + data + `</script>`;
         pMine.append(li)
     });
 }
@@ -217,7 +217,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     var pMine = document.getElementById(n + xxID + g)
     $.getScript(cm + "JavaScript/" + iiID, function (data) {
         var li = document.createElement("div");
-        li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
+        li.innerHTML = `<script type="text/javascript">` + data + `</script>`;
         pMine.append(li)
         if (pMine.innerText.length > 0) {
             sub_r_n.style.display = "none"
