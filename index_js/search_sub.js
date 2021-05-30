@@ -281,12 +281,14 @@ function addNewSubr(xData) {
     setit()
     function setit() {
         if (callSub < strSub.length) {
-            addNewSubrtPlus(strSub[callSub], document.getElementById("xOne"), "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw").then(e => {
+            let src = strSub[callSub].replace("https://trouko.com/","../")
+            addNewSubrtPlus(src, document.getElementById("xOne"), "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw").then(e => {
                 callSub++;
                 setit()
             })
         } else if (callQu < strQu.length) {
-            addNewSubrtPlus(strQu[callQu], document.getElementById("xTwo"), "_J_n_Hus_Qu", "_pag_s_262", "i_tnfscript.js", "s_sub_t_dTw").then(e => {
+            let src = strQu[callQu].replace("https://trouko.com/","../")
+            addNewSubrtPlus(src, document.getElementById("xTwo"), "_J_n_Hus_Qu", "_pag_s_262", "i_tnfscript.js", "s_sub_t_dTw").then(e => {
                 callQu++;
                 setit()
             })
@@ -301,7 +303,8 @@ function addNewSubr(xData) {
             setSug()
             function setSug() {
                 if (cs < 6) {
-                    addNewSubrtPlus(storageD[arr[cs]], sub_r_s, c.a, c.b, c.c, c.d).then(e => {
+                    let src = storageD[arr[cs]].replace("https://trouko.com/","../")
+                    addNewSubrtPlus(src, sub_r_s, c.a, c.b, c.c, c.d).then(e => {
                         cs++;
                         setSug()
                     })
@@ -311,7 +314,7 @@ function addNewSubr(xData) {
         }
     }
     async function addNewSubrtPlus(m, xz, vz, xxc, psssp, classP) {
-        var n = m.replace("https://trouko.com/", "")
+        var n = m.replace("../", "")
 
         var g = Math.floor(Math.random() * 2000911);
 
@@ -323,11 +326,9 @@ function addNewSubr(xData) {
 
         var pMine = document.getElementById(n + vz + g)
 
-        $.getScript(m + "JavaScript/" + psssp, function (data) {
-            var li = document.createElement("div");
-            li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
-            pMine.append(li)
-        });
+        var li = document.createElement("script");
+        li.src = m+`Javascript/`+ psssp
+        pMine.append(li)
     }
 }
 var url_string = window.location.href
