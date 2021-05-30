@@ -478,8 +478,9 @@ b {
 
 .source_quotes div {
     display: flex;
-    margin-top: 5px;
-    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: -10px;
 }
 
 .source_quotes div a {
@@ -504,20 +505,33 @@ b {
     color: #393e46;
     text-align: right;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
 }
-
 .sou_an_quo_content {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sou_an_quo_content div{
+    direction: rtl;
     padding: 10px;
     padding-top: 0;
     padding-bottom: 40px;
     border-radius: 0;
     font-size: 13px;
 }
+.sou_an_quo_content div a {
+    color: #062c96;
+    padding-left: 5px;
+}
 
+.p_t_container {
+    color: #393e46;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 13px;
+}
 a {
     text-decoration: none;
     color: #393e46;
@@ -525,21 +539,6 @@ a {
 
 a:hover {
     color: #3282b8;
-}
-
-div.sources_ a {
-    color: #062c96;
-    padding: 10px;
-    padding-right: 12px;
-}
-
-div.sources_ {
-    display: block;
-    color: #393e46;
-    padding: 0;
-    padding-right: 12px;
-    direction: rtl;
-    line-height: 25px;
 }
 
 .source_quotes div {
@@ -551,11 +550,6 @@ div.sources_ {
 .source_quotes a {
     color: #3282b8;
     font-size: 13px;
-}
-
-.p_t_container {
-    color: #393e46;
-    text-align: center;
 }
 
 

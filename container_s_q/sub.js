@@ -1,5 +1,5 @@
 var index_sugg_p, nameP, title_p_index, sub_r_s, hol_sugg, psp
-, sub_r_sSugg, sub_r_nSugg, index_sugg_pT, hol_suggT;
+, sub_r_sSugg, sub_r_nSugg,sub_r_nLink, index_sugg_pT, hol_suggT;
 
 index_sugg_p = document.getElementById("index_sugg_p")
 index_sugg_pT = document.getElementById("index_sugg_pT")
@@ -12,7 +12,9 @@ psp = document.getElementById("psp").innerHTML
 
 sub_r_nSugg = document.getElementById("sub_r_nSugg")
 sub_r_sSugg = document.getElementById("sub_r_sSugg")
+sub_r_nLink = document.getElementById("sub_r_nLink")
 var et = document.getElementById("psp").innerText
+var pMinex = document.getElementById("javaAx")
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../../../jsData/' + et.replace(/\//g, "") + '.json');
 
@@ -40,7 +42,6 @@ function ad(s, t) {
                 var x = arr[i]
                 addSuggTIndex(s[x].linkPage, s[x].namePath)
                 addSugg(s[x].linkPage, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
-                sub_r_nSugg.style.display = "none"
             }
         }
     } else {
@@ -180,6 +181,9 @@ function callGayes() {
             document.getElementById("suggContainerMed").style.display = "block"
             document.getElementById("suggContainerWeb").style.display = "block"
         }, 500);
+        
+        sub_r_nSugg.style.display = "none"
+        sub_r_nLink.style.display = "none"
     }
 }
 
@@ -195,14 +199,11 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     li.id = n + xxID + g
     li.innerHTML = '<div id="' + n + ccID + '"></div>'
     appe.append(li)
-    var pMine = document.getElementById(n + xxID + g)
-    var li = document.createElement("script");
-    li.src = cm+`Javascript/`+ iiID
-    pMine.append(li)
-    if (pMine.innerText.length > 0) {
-        sub_r_n.style.display = "none"
-        callGayes()
-    }
+
+    var lic = document.createElement("script");
+    lic.src = cm+`Javascript/`+ iiID
+    pMinex.append(lic)
+    callGayes()
 }
 function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
@@ -216,12 +217,9 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     li.id = n + xxID + g
     li.innerHTML = '<div id="' + n + ccID + '"></div>'
     appe.append(li)
-    var pMine = document.getElementById(n + xxID + g)
-    var li = document.createElement("script");
-    li.src = cm+`Javascript/`+ iiID
-    pMine.append(li)
-    if (pMine.innerText.length > 0) {
-        sub_r_n.style.display = "none"
-        callGayes()
-    }
+
+    var lic = document.createElement("script");
+    lic.src = cm+`Javascript/`+ iiID
+    pMinex.append(lic)
+    callGayes()
 }
