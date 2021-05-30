@@ -197,7 +197,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     appe.append(li)
     var pMine = document.getElementById(n + xxID + g)
     var li = document.createElement("script");
-    li.src = cm+`JavaScript/`+ iiID
+    li.src = cm+`Javascript/`+ iiID
     pMine.append(li)
     if (pMine.innerText.length > 0) {
         sub_r_n.style.display = "none"
@@ -218,7 +218,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     appe.append(li)
     var pMine = document.getElementById(n + xxID + g)
     var li = document.createElement("script");
-    li.src = cm+`JavaScript/`+ iiID
+    li.src = cm+`Javascript/`+ iiID
     pMine.append(li)
     if (pMine.innerText.length > 0) {
         sub_r_n.style.display = "none"
