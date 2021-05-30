@@ -208,6 +208,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
+    
     var cm = m.replace("https://trouko.com/","../../../")
     var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
