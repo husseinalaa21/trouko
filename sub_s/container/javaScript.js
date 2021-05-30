@@ -27,7 +27,8 @@ function ad(s) {
         if (cos < 10) {
             cos++
             var x = arr[i]
-            addNewSubrt(s[x], addSuggSQ, "_J_n_Hus_Qu", "_pag_n_232", "i_fscript.js", "s_sub_t_dTw")
+            let src = s[x].replace("https://trouko.com/","../../")
+            addNewSubrt(src, addSuggSQ, "_J_n_Hus_Qu", "_pag_n_232", "i_fscript.js", "s_sub_t_dTw")
         }
     }
 }
@@ -50,7 +51,8 @@ xReq.onload = function () {
                 for (var i = 0; i < data.length; i++) {
                     if (i < 4) {
                         let c = (data.length - i) - 1
-                        addNewSubrt(data[c], main_sub_ad, "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw")
+                        let src = data[c].replace("https://trouko.com/","../../")
+                        addNewSubrt(src, main_sub_ad, "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw")
                         blackList.push(data[c])
                     }
                     if (i < 7) {
@@ -98,7 +100,7 @@ xReq.onload = function () {
     })
 }
 function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
-    var n = m.replace("https://trouko.com/", "")
+    var n = m.replace("../../", "")
 
     var g = Math.floor(Math.random() * 2000911);
 
@@ -110,11 +112,9 @@ function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
 
     var pMine = document.getElementById(n + vz + g)
 
-    $.getScript(m + "JavaScript/" + psssp, function (data) {
-        var li = document.createElement("div");
-        li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
-        pMine.append(li)
-    });
+    var li = document.createElement("script");
+    li.src = m+`Javascript/` + psssp
+    pMine.append(li)
 }
 var iconT = document.getElementById("uMenuMine_m"),
     iconBarTh = document.getElementsByClassName("icon-bar")[0],
