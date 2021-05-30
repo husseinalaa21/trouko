@@ -187,6 +187,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
+    var cm = m.replace("https://trouko.com/","../../../")
     var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
@@ -195,7 +196,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     li.innerHTML = '<div id="' + n + ccID + '"></div>'
     appe.append(li)
     var pMine = document.getElementById(n + xxID + g)
-    $.getScript(m + "JavaScript/" + iiID, function (data) {
+    $.getScript(cm + "JavaScript/" + iiID, function (data) {
         var li = document.createElement("div");
         li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
         pMine.append(li)
@@ -205,6 +206,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
+    var cm = m.replace("https://trouko.com/","../../../")
     var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
@@ -213,7 +215,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     li.innerHTML = '<div id="' + n + ccID + '"></div>'
     appe.append(li)
     var pMine = document.getElementById(n + xxID + g)
-    $.getScript(m + "JavaScript/" + iiID, function (data) {
+    $.getScript(cm + "JavaScript/" + iiID, function (data) {
         var li = document.createElement("div");
         li.innerHTML = "<script id='inf_sc_p'>" + data + "</script>";
         pMine.append(li)
