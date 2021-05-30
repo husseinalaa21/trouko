@@ -196,11 +196,13 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     li.innerHTML = '<div id="' + n + ccID + '"></div>'
     appe.append(li)
     var pMine = document.getElementById(n + xxID + g)
-    $.getScript(cm + "JavaScript/" + iiID, function (data) {
-        var li = document.createElement("div");
-        li.innerHTML = `<script type="text/javascript">` + data + `</script>`;
-        pMine.append(li)
-    });
+    var li = document.createElement("script");
+    li.src = cm+`JavaScript/`+ iiID
+    pMine.append(li)
+    if (pMine.innerText.length > 0) {
+        sub_r_n.style.display = "none"
+        callGayes()
+    }
 }
 function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
@@ -215,13 +217,11 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     li.innerHTML = '<div id="' + n + ccID + '"></div>'
     appe.append(li)
     var pMine = document.getElementById(n + xxID + g)
-    $.getScript(cm + "JavaScript/" + iiID, function (data) {
-        var li = document.createElement("div");
-        li.innerHTML = `<script type="text/javascript">` + data + `</script>`;
-        pMine.append(li)
-        if (pMine.innerText.length > 0) {
-            sub_r_n.style.display = "none"
-            callGayes()
-        }
-    });
+    var li = document.createElement("script");
+    li.src = cm+`JavaScript/`+ iiID
+    pMine.append(li)
+    if (pMine.innerText.length > 0) {
+        sub_r_n.style.display = "none"
+        callGayes()
+    }
 }
