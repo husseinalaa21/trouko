@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/1545957-710c3e2e51565a6e8639acfb25017a4c.png"
 adDiscription = "اعلنت شركة جوجل عن أندرويد 12 في 18 فبراير 2021. و تقول الشركة أن اندرويد 11 يعد أكبر تغيير في التصميم في تاريخ اندرويد .يأتي اصدار اندرويد 12 مع تغييرات كبيرة في التصميم و في تحسين و تطوير الاعدادت و الادوات الذكية المساعدة ولوحة الاشعارات و الامان و الخصوصية و العديد من الاشياء التي سوف نتحدث عنها في هذه المقالة . وفيما يلي بعض من مميزات اندرويد 12 :"
 namePpath = "https://trouko.com/subjects/technology/مميزات_اندرويد_12/"
 infSuGuPageOn = '<p>  المواضيع / تكنلوجيا </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاثنين  , 24 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاثنين, 24 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_x_242');
 addt(titleIn)

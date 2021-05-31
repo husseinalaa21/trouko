@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/electrical-generator.jpg"
 adDiscription = "يقوم المولد الكهربائي بتحويل شكلاً من أشكال الطاقة إلى كهرباء. "
 namePpath = "https://trouko.com/questions/questions_physics/ما_هي_طرق_توليد_الكهرباء/"
 infSuGuPageOn = '<p>  أسئلة / الفيزياء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> السبت  , 15 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> السبت, 15 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

@@ -4,7 +4,7 @@ adPhoto = "../../../imgs/mercury.jpg"
 adDiscription = "يعتبر عطارد أقرب كوكب إلى الشمس وبسبب قربه لا يمكن رؤيته بسهولة إلا خلال فترة الشفق. لكل مدارين للشمس ، يكمل عطارد ثلاث دورات حول محوره وحتى عام 1965 كان يُعتقد أن نفس الجانب من عطارد يواجه الشمس باستمرار.كما يمكن ملاحظة عطارد ثلاث عشرة مرة في القرن من الأرض يمر عبر وجه الشمس في حدث يسمى العبور ."
 namePpath = "https://trouko.com/subjects/space/حقائق_عن_كوكب_عطارد/"
 infSuGuPageOn = '<p>  المواضيع / الفضاء </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الثلاثاء  , 25 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الثلاثاء, 25 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_n_232');
 addt(titleIn)

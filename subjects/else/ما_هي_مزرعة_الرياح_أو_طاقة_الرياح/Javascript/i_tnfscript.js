@@ -1,10 +1,10 @@
 var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
 titleIn = "ما هي مزرعة الرياح أو طاقة الرياح";
 adPhoto = "../../../imgs/wind-farms.jpg"
-adDiscription = "مزرعة الرياح تتكون من مجموعة من عنفات الرياح تستخدم لإنتاج الطاقة مستخرجة من الطاقة الحركية للرياح بواسطة استخدام عنفات الرياح لإنتاج الطاقة الكهربائية، وهي تعتبر من أنواع الطاقة الكهروميكانيكية. و تتكون مزرعة الرياح الكبيرة من عدة مئات من عنفات الرياح وتغطي مساحات واسعة.<br /><strong> كما و يمكن استخدام الطاقة الميكانيكية في مهام محددة (مثل طحن الحبوب أو ضخ المياه) . </strong><br />و"
+adDiscription = "مزرعة الرياح تتكون من مجموعة من عنفات الرياح تستخدم لإنتاج الطاقة مستخرجة من الطاقة الحركية للرياح بواسطة استخدام عنفات الرياح لإنتاج الطاقة الكهربائية، وهي تعتبر من أنواع الطاقة الكهروميكانيكية. و تتكون مزرعة الرياح الكبيرة من عدة مئات من عنفات الرياح وتغطي مساحات واسعة. كما و يمكن استخدام الطاقة الميكانيكية في مهام محددة (مثل طحن الحبوب أو ضخ المياه) . و"
 namePpath = "https://trouko.com/subjects/else/ما_هي_مزرعة_الرياح_أو_طاقة_الرياح/"
 infSuGuPageOn = '<p>  المواضيع / متنوعة   </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الاحد  , 16 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
+infSuGuPageTw = '<p> الاحد, 16 مايو 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
 nameP = namePpath.replace('https://trouko.com/',"")
 addTitleIpage = document.getElementById(nameP+'_pag_s_262');
 addt(titleIn)
