@@ -1,5 +1,5 @@
 var index_sugg_p, nameP, title_p_index, sub_r_s, hol_sugg, psp
-, sub_r_sSugg, sub_r_nSugg,sub_r_nLink, index_sugg_pT, hol_suggT;
+    , sub_r_sSugg, sub_r_nSugg, sub_r_nLink, index_sugg_pT, hol_suggT;
 
 index_sugg_p = document.getElementById("index_sugg_p")
 index_sugg_pT = document.getElementById("index_sugg_pT")
@@ -15,6 +15,20 @@ sub_r_sSugg = document.getElementById("sub_r_sSugg")
 sub_r_nLink = document.getElementById("sub_r_nLink")
 var et = document.getElementById("psp").innerText
 var pMinex = document.getElementById("javaAx")
+
+var lisSys = []
+var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
+for (var t = 0; t < lisHtm.length; t++) {
+    try {
+        let vla = document.getElementById(lisHtm[t]).innerText.replace("https://www.trouko.com", "https://trouko.com")
+        // REPLACE OLD DOMAIN
+        let val = vla.replace("https://trouko.co/", "https://trouko.com/").replace("https://www.trouko.co/", "https://trouko.com/")
+        lisSys.push(val)
+    } catch {
+        console.log("we feal!")
+    }
+}
+
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../../../jsData/' + et.replace(/\//g, "") + '.json');
 
@@ -58,16 +72,6 @@ function ad(s, t) {
 var storageD = [];
 var iWeSt = []
 function adIndexSugg() {
-    var lisSys = []
-    var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
-    for (var t = 0; t < lisHtm.length; t++) {
-        try {
-            let val = document.getElementById(lisHtm[t]).innerText.replace("https://www.trouko.com","https://trouko.com")
-            lisSys.push(val)
-        } catch {
-            console.log("we feal!")
-        }
-    }
     var miUrl = document.getElementById("miUrl").innerText + '/',
         xData = JSON.parse(xReq.responseText),
         iBasic = 0, iWe = 0,
@@ -155,21 +159,23 @@ function addSuggTIndex(l, n) {
 
 
 //.
+
 function cdLink(x) {
     if (x === true) {
-        if (addSugg_vrOne === "" && addSugg_vrTwo === "" && addSugg_vrThree === "" && addSugg_vrFour === "" && addSugg_vrFive === "") {
-            return false
-        } else {
-            adSugg(addSugg_vrOne, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
-            adSugg(addSugg_vrTwo, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
-            adSugg(addSugg_vrThree, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
-            adSugg(addSugg_vrFour, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
-            adSugg(addSugg_vrFive, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
-        }
+        lisSys.forEach(vr => {
+            if (vr !== "") {
+                adSugg(vr, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+            }
+        })
     } else {
-        if (addSugg_vrOne === "" && addSugg_vrTwo === "" && addSugg_vrThree === "" && addSugg_vrFour === "" && addSugg_vrFive === "") {
+        var didFile = false
+        lisSys.forEach(vr => {
+            if (vr !== "") {
+                didFile = true
+            }
+        })
+        if (didFile === false) {
             ad(iWeSt, true)
-            // Add From System
         }
     }
 }
@@ -181,7 +187,7 @@ function callGayes() {
             document.getElementById("suggContainerMed").style.display = "block"
             document.getElementById("suggContainerWeb").style.display = "block"
         }, 500);
-        
+
         sub_r_nSugg.style.display = "none"
         sub_r_nLink.style.display = "none"
     }
@@ -191,7 +197,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
-    var cm = m.replace("https://trouko.com/","../../../")
+    var cm = m.replace("https://trouko.com/", "../../../")
     var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
@@ -201,7 +207,7 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     appe.append(li)
 
     var lic = document.createElement("script");
-    lic.src = cm+`Javascript/`+ iiID
+    lic.src = cm + `Javascript/` + iiID
     pMinex.append(lic)
     callGayes()
 }
@@ -209,7 +215,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     if (m === null || m === "") {
         return false
     }
-    var cm = m.replace("https://trouko.com/","../../../")
+    var cm = m.replace("https://trouko.com/", "../../../")
     var n = m.replace("https://trouko.com/", "")
     var g = Math.floor(Math.random() * 2000911);
     var li = document.createElement("div");
@@ -219,7 +225,7 @@ function adSugg(m, xxID, ccID, iiID, appe, classP) {
     appe.append(li)
 
     var lic = document.createElement("script");
-    lic.src = cm+`Javascript/`+ iiID
+    lic.src = cm + `Javascript/` + iiID
     pMinex.append(lic)
     callGayes()
 }
