@@ -125,5 +125,3 @@ window.onscroll = function () {
       shtPagr.innerHTML = ""
     }*/
 }
-document.getElementById("endGPage").innerHTML = `<img src="../../../icons/check-circle-regular.svg" style="width: 9px;"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
-المقالات المطروحة باللغة العربية.`
