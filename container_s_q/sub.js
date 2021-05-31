@@ -55,7 +55,8 @@ function ad(s, t) {
                 cos++
                 var x = arr[i]
                 addSuggTIndex(s[x].linkPage, s[x].namePath)
-                addSugg(s[x].linkPage, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
+                let src = s[x].linkPage.replace("https://trouko.com/","../../../")
+                addSugg(src, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
             }
         }
     } else {
@@ -63,7 +64,8 @@ function ad(s, t) {
             if (cos < 4) {
                 cos++
                 var x = arr[i]
-                adSugg(s[x].linkPage, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+                let src = s[x].linkPage.replace("https://trouko.com/","../../../")
+                adSugg(src, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
             }
         }
     }
@@ -164,7 +166,8 @@ function cdLink(x) {
     if (x === true) {
         lisSys.forEach(vr => {
             if (vr !== "") {
-                adSugg(vr, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+                let src = vr.replace("https://trouko.com/","../../../")
+                adSugg(src, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
             }
         })
     } else {
@@ -193,17 +196,14 @@ function callGayes() {
     }
 }
 
-function addSugg(m, xxID, ccID, iiID, appe, classP) {
-    if (m === null || m === "") {
+function addSugg(cm, xxID, ccID, iiID, appe, classP) {
+    if (cm === null || cm === "") {
         return false
     }
-    var cm = m.replace("https://trouko.com/", "../../../")
-    var n = m.replace("https://trouko.com/", "")
-    var g = Math.floor(Math.random() * 2000911);
+    var n = cm.replace("../../../", "")
     var li = document.createElement("div");
     li.className = classP;
-    li.id = n + xxID + g
-    li.innerHTML = '<div id="' + n + ccID + '"></div>'
+    li.id = n + ccID
     appe.append(li)
 
     var lic = document.createElement("script");
@@ -211,17 +211,14 @@ function addSugg(m, xxID, ccID, iiID, appe, classP) {
     pMinex.append(lic)
     callGayes()
 }
-function adSugg(m, xxID, ccID, iiID, appe, classP) {
-    if (m === null || m === "") {
+function adSugg(cm, xxID, ccID, iiID, appe, classP) {
+    if (cm === null || cm === "") {
         return false
     }
-    var cm = m.replace("https://trouko.com/", "../../../")
-    var n = m.replace("https://trouko.com/", "")
-    var g = Math.floor(Math.random() * 2000911);
+    var n = cm.replace("../../../", "")
     var li = document.createElement("div");
     li.className = classP;
-    li.id = n + xxID + g
-    li.innerHTML = '<div id="' + n + ccID + '"></div>'
+    li.id = n + ccID
     appe.append(li)
 
     var lic = document.createElement("script");
