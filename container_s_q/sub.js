@@ -56,7 +56,7 @@ function ad(s, t) {
                 var x = arr[i]
                 addSuggTIndex(s[x].linkPage, s[x].namePath)
                 let src = s[x].linkPage.replace("https://trouko.com/","../../../")
-                addSugg(src, "_J_n_Hus_S", "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
+                adSugg(src, "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
             }
         }
     } else {
@@ -65,7 +65,7 @@ function ad(s, t) {
                 cos++
                 var x = arr[i]
                 let src = s[x].linkPage.replace("https://trouko.com/","../../../")
-                adSugg(src, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+                adSugg(src, "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
             }
         }
     }
@@ -128,12 +128,6 @@ function adIndexSugg() {
     ad(storageD, false);
     cdLink(false)
 }
-setTimeout(function () {
-    if (index_sugg_p.innerText === "" || index_sugg_pT.innerText === "") {
-        hol_sugg.innerHTML = '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
-        hol_suggT.innerHTML = '<div class="no_result"> لا يتوفر مقترحات في الوقت الحالي </div>'
-    }
-}, 3000)
 
 var callf = 0;
 
@@ -153,10 +147,8 @@ function addSuggTIndex(l, n) {
     lit = document.createElement("p");
     lit.className = "linShort"
     lit.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
-    setTimeout(function () {
-        index_sugg_p.append(li)
-        index_sugg_pT.append(lit)
-    }, 200)
+    index_sugg_p.append(li)
+    index_sugg_pT.append(lit)
 }
 
 
@@ -167,7 +159,7 @@ function cdLink(x) {
         lisSys.forEach(vr => {
             if (vr !== "") {
                 let src = vr.replace("https://trouko.com/","../../../")
-                adSugg(src, "_J_n_Hus_", "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+                adSugg(src, "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
             }
         })
     } else {
@@ -186,32 +178,15 @@ var isCallHim = false
 function callGayes() {
     if (isCallHim === false) {
         isCallHim = true
-        setTimeout(() => {
-            document.getElementById("suggContainerMed").style.display = "block"
-            document.getElementById("suggContainerWeb").style.display = "block"
-        }, 500);
-
+        document.getElementById("suggContainerMed").style.display = "block"
+        document.getElementById("suggContainerWeb").style.display = "block"
+        // Suggesst in buttom
         sub_r_nSugg.style.display = "none"
         sub_r_nLink.style.display = "none"
     }
 }
 
-function addSugg(cm, xxID, ccID, iiID, appe, classP) {
-    if (cm === null || cm === "") {
-        return false
-    }
-    var n = cm.replace("../../../", "")
-    var li = document.createElement("div");
-    li.className = classP;
-    li.id = n + ccID
-    appe.append(li)
-
-    var lic = document.createElement("script");
-    lic.src = cm + `Javascript/` + iiID
-    pMinex.append(lic)
-    callGayes()
-}
-function adSugg(cm, xxID, ccID, iiID, appe, classP) {
+function adSugg(cm, ccID, iiID, appe, classP) {
     if (cm === null || cm === "") {
         return false
     }
