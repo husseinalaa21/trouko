@@ -206,7 +206,7 @@ xReq.onload = function () {
 var counValue = 0
 valueWeb()
 function valueWeb() {
-    if(counValue <= sectionLoad.length){
+    if(counValue <= sectionLoad.length && sectionLoad[counValue].c === true){
         var et = sectionLoad[counValue].n
         var ki = new XMLHttpRequest();
         ki.open('GET', '../jsData/' + et.replace(/\//g, "") + '.json');
@@ -245,11 +245,14 @@ function adValue(di,lv,typ) {
         // THE FIRST VALUE
         if(numBasic < 4){
             numBasic ++;
-            
-            let nv = document.createElement("div")
-            nv.className = "web_index_con_tit"
-            nv.innerHTML = `<a href="`+lv[u]+`" >`+lv[u].replace(clearNam,"").replace(/\//g,"").replace(/_/g," ")+`</a>`
-            adrs.append(nv)
+            try {
+                let nv = document.createElement("div")
+                nv.className = "web_index_con_tit"
+                nv.innerHTML = `<a href="`+lv[u]+`" >`+lv[u].replace(clearNam,"").replace(/\//g,"").replace(/_/g," ")+`</a>`
+                adrs.append(nv)
+            } catch {
+                // Not Set
+            }
         }
     }
 }
@@ -272,48 +275,6 @@ function randoPag() {
     location.href = xData[r]
 }
 // END > RANDom
-
-/*$(document).ready(function () {
-    sectionLoad.forEach(a => {
-        if (a.c === true) {
-            var e = a
-            let hrt = e.n.replace(/\//g, "")
-            $.getJSON("../jsData/" + hrt + ".json", function (data) {
-                var e = a, xcas;
-                if (e.z === "sfirst") {
-                    xcas = " مواضيع عن "
-                } else if (e.z === "sTwo") {
-                    xcas = " أسئلة عن "
-                }
-                if (data.length > 0) {
-                    var sfirst = document.getElementById(e.z)
-                    let li = document.createElement("div")
-                    li.id = "x_" + e.n
-                    li.innerHTML = `<li class="li_list" id=` + hrt + `  onclick="hsh(this.id)"> <div id="im` + hrt + `">  <img src="icons/align-left-solid.svg" style="width: 14px;"> </div>` + xcas + e.x + `</li> <ul class="item_list_sub sub" id="s_` + hrt + `" style="display:none;"> </ul>`
-                    sfirst.append(li)
-                    let isFull = false
-                    for (var x = 0; x < data.length; x++) {
-                        if (x < 5) {
-                            let nam = data[x].replace(e.n, "").replace("https://trouko.com/", "").replace(/\//g, "").replace(/_/g, " ")
-                            let li = document.createElement("li")
-                            li.innerHTML = '<a href=' + data[x] + '>' + nam + '</a>'
-                            document.getElementById('s_' + hrt).append(li)
-                        } else {
-                            isFull = true
-                        }
-                    }
-                    if (isFull === true) {
-                        let li = document.createElement("li")
-                        li.innerHTML = '<a href="../sub_s/' + e.s + '/index.html" > مشاهدة المزيد </a>'
-                        document.getElementById('s_' + hrt).append(li)
-                    }
-                }
-            }).fail(function () {
-                // 
-            });
-        }
-    })
-})*/
 function random_a() {
     random_t_ser.style.padding = "10px";
     var xData = JSON.parse(xReq.responseText);
@@ -331,42 +292,6 @@ function random_a() {
     return el.innerHTML;
 }
 
-/* 
-function addNewSubr(xData) {
-    var storageD = [];
-    var numCSub = 0,
-        numCQu = 0,
-        ranPick = 0;
-    for (var i = 0; i < xData.length; i++) {
-        let e = xData[(xData.length - i) - 1]
-        if (e.includes("subjects") === true && numCSub < 6) {
-            numCSub++;
-            let src = e.replace("https://trouko.com/", "../")
-            addNewSubrtPlus(src, document.getElementById("xOne"))
-        } else if (e.includes("questions") === true && numCQu < 6) {
-            numCQu++;
-            let src = e.replace("https://trouko.com/", "../")
-            addNewSubrtPlus(src, document.getElementById("xTwo"))
-        } else if (ranPick < 20) {
-            ranPick++;
-            storageD.push(e)
-        }
-    }
-    var arr = [],
-        swet = 0;
-    while (arr.length < storageD.length) {
-        let r = Math.floor(Math.random() * storageD.length);
-        if (arr.indexOf(r) === -1) arr.push(r);
-    }
-    for(var cs =0; cs < arr.length; cs++){
-        if(swet < 8){
-            swet ++;
-            let src = storageD[arr[cs]].replace("https://trouko.com/", "../")
-            addNewSubrtPlus(src, sub_r_s)
-        }
-    }
-}*/
-
 // CHECK URL
 var url_string = window.location.href
 var url = new URL(url_string);
@@ -378,20 +303,24 @@ reso()
 
 // IMPORTANT PERSON
 function reqHussein() {
-    var cm = containersAll[whereHussein].nam
-    var appe = containersAll[whereHussein].plc
-
-    var n = cm.replace("../", "").replace(/\//g, "_"),
-        li = document.createElement("div"),
-        ew = Math.floor(Math.random() * 1000) + 10,
-        we = Math.floor(Math.random() * 1000) + 6;
-    li.className = "s_sub_t_d";
-    li.id = we + n + ew
-    appe.append(li)
-    document.getElementById("whereHu").innerText = we + n + ew
-
-    var lic = document.createElement("script");
-    lic.src = cm + "Javascript/i_fscript.js"
-    pMinex.append(lic)
-    whereHussein++;
+    try {
+        var cm = containersAll[whereHussein].nam
+        var appe = containersAll[whereHussein].plc
+    
+        var n = cm.replace("../", "").replace(/\//g, "_"),
+            li = document.createElement("div"),
+            ew = Math.floor(Math.random() * 1000) + 10,
+            we = Math.floor(Math.random() * 1000) + 6;
+        li.className = "s_sub_t_d";
+        li.id = we + n + ew
+        appe.append(li)
+        document.getElementById("whereHu").innerText = we + n + ew
+    
+        var lic = document.createElement("script");
+        lic.src = cm + "Javascript/i_fscript.js"
+        pMinex.append(lic)
+        whereHussein++;
+    } catch {
+        // Last Son
+    }
 }

@@ -60,7 +60,7 @@ function ad(s, t) {
                 cos++
                 var x = arr[i]
                 addSuggTIndex(s[x].linkPage, s[x].namePath)
-                let src = s[x].linkPage.replace("https://trouko.com/","../../../")
+                let src = s[x].linkPage.replace("https://trouko.com/", "../../../")
                 adSugg(src, sub_r_sSugg);
             }
         }
@@ -69,7 +69,7 @@ function ad(s, t) {
             if (cos < 4) {
                 cos++
                 var x = arr[i]
-                let src = s[x].linkPage.replace("https://trouko.com/","../../../")
+                let src = s[x].linkPage.replace("https://trouko.com/", "../../../")
                 adSugg(src, sub_r_s);
             }
         }
@@ -163,8 +163,8 @@ function cdLink(x) {
     if (x === true) {
         lisSys.forEach(vr => {
             if (vr !== "") {
-                let src = vr.replace("https://trouko.com/","../../../")
-                adSugg(src,sub_r_s);
+                let src = vr.replace("https://trouko.com/", "../../../")
+                adSugg(src, sub_r_s);
             }
         })
     } else {
@@ -192,30 +192,34 @@ function callGayes() {
 }
 
 function reqHussein() {
-    var cm = containersAll[whereHussein].nam
-    var appe = containersAll[whereHussein].plc
+    try {
+        var cm = containersAll[whereHussein].nam
+        var appe = containersAll[whereHussein].plc
 
-    var n = cm.replace("../../../", "").replace(/\//g,"_"),
-        li = document.createElement("div"),
-        ew = Math.floor(Math.random() * 1000) + 10,
-        we = Math.floor(Math.random() * 1000) + 6;
-    li.className = "s_sub_t_d";
-    li.id =we+ n + ew
-    appe.append(li)
-    document.getElementById("whereHu").innerText = we+ n + ew
+        var n = cm.replace("../../../", "").replace(/\//g, "_"),
+            li = document.createElement("div"),
+            ew = Math.floor(Math.random() * 1000) + 10,
+            we = Math.floor(Math.random() * 1000) + 6;
+        li.className = "s_sub_t_d";
+        li.id = we + n + ew
+        appe.append(li)
+        document.getElementById("whereHu").innerText = we + n + ew
 
-    var lic = document.createElement("script");
-    lic.src = cm + "Javascript/i_fscript.js"
-    pMinex.append(lic)
-    whereHussein ++;
-    callGayes()
+        var lic = document.createElement("script");
+        lic.src = cm + "Javascript/i_fscript.js"
+        pMinex.append(lic)
+        whereHussein++;
+        callGayes()
+    } catch {
+        // Last Son
+    }
 }
-function adSugg(cm,appe) {
-    if(isFirst === false){
-        containersAll.push({nam : cm, plc : appe})
+function adSugg(cm, appe) {
+    if (isFirst === false) {
+        containersAll.push({ nam: cm, plc: appe })
         reqHussein()
         isFirst = true
     } else {
-        containersAll.push({nam : cm, plc : appe})
+        containersAll.push({ nam: cm, plc: appe })
     }
 }
