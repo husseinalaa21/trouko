@@ -460,11 +460,11 @@ body {
     color: aliceblue;
     background-color: #72b6e4;
     margin-left: 6px;
-    height: 6px;
-    width: 6px;
+    height: 4px;
+    width: 4px;
     position: absolute;
     right: -20px;
-    top: 8px;
+    top: 10.5px;
 }
 strong {
     text-decoration: underline;
