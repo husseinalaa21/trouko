@@ -198,7 +198,7 @@ li:focus{
 .top_sec {
     display: flex;
     justify-content: space-around;
-    width: 94%;
+    width: 97%;
     margin: auto;
 }
 .sec_lastNews {
@@ -223,7 +223,7 @@ li:focus{
     box-shadow: 0 1px 4px rgb(0 0 0 / 10%), 0 0px 10px rgb(0 0 0 / 10%);
     border-radius: 5px;
     overflow: hidden;
-    width: 47%;
+    width: 47.7%;
     height: fit-content;
     margin: auto;
     margin-bottom: 10px;
