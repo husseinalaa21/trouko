@@ -16,6 +16,11 @@ sub_r_nLink = document.getElementById("sub_r_nLink")
 var et = document.getElementById("psp").innerText
 var pMinex = document.getElementById("javaAx")
 
+var containersAll = []
+var isFirst = false
+var whereHussein = 0
+
+
 var lisSys = []
 var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
 for (var t = 0; t < lisHtm.length; t++) {
@@ -56,7 +61,7 @@ function ad(s, t) {
                 var x = arr[i]
                 addSuggTIndex(s[x].linkPage, s[x].namePath)
                 let src = s[x].linkPage.replace("https://trouko.com/","../../../")
-                adSugg(src, "_pag_x_242", "i_tfscript.js", sub_r_sSugg, "s_sub_t_dTw");
+                adSugg(src, sub_r_sSugg);
             }
         }
     } else {
@@ -65,7 +70,7 @@ function ad(s, t) {
                 cos++
                 var x = arr[i]
                 let src = s[x].linkPage.replace("https://trouko.com/","../../../")
-                adSugg(src, "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+                adSugg(src, sub_r_s);
             }
         }
     }
@@ -159,7 +164,7 @@ function cdLink(x) {
         lisSys.forEach(vr => {
             if (vr !== "") {
                 let src = vr.replace("https://trouko.com/","../../../")
-                adSugg(src, "_pag_n_232", "i_fscript.js", sub_r_s, "s_sub_t_d");
+                adSugg(src,sub_r_s);
             }
         })
     } else {
@@ -186,18 +191,31 @@ function callGayes() {
     }
 }
 
-function adSugg(cm, ccID, iiID, appe, classP) {
-    if (cm === null || cm === "") {
-        return false
-    }
-    var n = cm.replace("../../../", "")
-    var li = document.createElement("div");
-    li.className = classP;
-    li.id = n + ccID
+function reqHussein() {
+    var cm = containersAll[whereHussein].nam
+    var appe = containersAll[whereHussein].plc
+
+    var n = cm.replace("../../../", "").replace(/\//g,"_"),
+        li = document.createElement("div"),
+        ew = Math.floor(Math.random() * 1000) + 10,
+        we = Math.floor(Math.random() * 1000) + 6;
+    li.className = "s_sub_t_d";
+    li.id =we+ n + ew
     appe.append(li)
+    document.getElementById("whereHu").innerText = we+ n + ew
 
     var lic = document.createElement("script");
-    lic.src = cm + `Javascript/` + iiID
+    lic.src = cm + "Javascript/i_fscript.js"
     pMinex.append(lic)
+    whereHussein ++;
     callGayes()
+}
+function adSugg(cm,appe) {
+    if(isFirst === false){
+        containersAll.push({nam : cm, plc : appe})
+        reqHussein()
+        isFirst = true
+    } else {
+        containersAll.push({nam : cm, plc : appe})
+    }
 }

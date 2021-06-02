@@ -1,5 +1,5 @@
 var random_t_ser, sub_r_s;
-var serJs, selects, resSer,sesTrouko;
+var serJs, selects, resSer, sesTrouko;
 
 var xReq = new XMLHttpRequest();
 xReq.open('GET', '../data.json');
@@ -15,6 +15,10 @@ selects = document.getElementById("selects")
 resSer = document.getElementById("resSer")
 sesTrouko = document.getElementById("sesTrouko")
 // ...
+var pMinex = document.getElementById("javaXs")
+var containersAll = []
+var isFirst = false
+var whereHussein = 0
 
 function hsh(s) {
     let element = document.getElementById("s_" + s)
@@ -31,19 +35,23 @@ function hsh(s) {
 }
 var sectionHide = ["text_one", "text_two", "text_three", "text_four", "text_five", "text_six"]
 
-var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfirst", c: true },
-{ n: "subjects/physics", s: "physics", x: "الفيزياء", z: "sfirst", c: true },
-{ n: "subjects/sciences", s: "sciences", x: "العلوم", z: "sfirst", c: true },
-{ n: "subjects/technology", s: "technology", x: " التكنلوجيا ", z: "sfirst", c: true },
-{ n: "subjects/geography", s: "geography", x: " الجغرافية ", z: "sfirst", c: true },
-{ n: "subjects/else", s: "else", x: " متنوعة ", z: "sfirst", c: true },
+var sectionLoad = [
+{ n: "subjects/space", s: "space", x: "الفضاء", c: true },
+{ n: "questions/questions_space", s: "space", x: "الفضاء", c: true },
 
-{ n: "questions/questions_space", s: "space", x: "الفضاء", z: "sTwo", c: true },
-{ n: "questions/questions_physics", s: "physics", x: "الفيزياء", z: "sTwo", c: true },
-{ n: "questions/questions_else", s: "else", x: " متنوعة ", z: "sTwo", c: true },
-{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo", c: true },
+{ n: "subjects/technology", s: "technology", x: " التكنلوجيا ", c: true },
+{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", c: true },
 
-{ n: "subjects/movies", c: false, x: "افلام و مسلسلات" }]
+{ n: "subjects/else", s: "else", x: " متنوعة ", c: true },
+{ n: "questions/questions_else", s: "else", x: " متنوعة ", c: true },
+
+{ n: "subjects/physics", s: "physics", x: "الفيزياء", c: true },
+{ n: "questions/questions_physics", s: "physics", x: "الفيزياء", c: true },
+
+{ n: "subjects/geography", s: "geography", x: " الجغرافية ", c: true },
+{ n: "subjects/sciences", s: "sciences", x: "العلوم", c: true },
+
+{ n: "subjects/movies", x: "افلام و مسلسلات", c: false}]
 var alerAdd = []
 sectionLoad.forEach(e => {
     if (alerAdd.includes(e.s) === false) {
@@ -58,22 +66,22 @@ var robenAre = 0,
     huAl = false,
     seWww = 0,
     okKey = false
-selects.addEventListener("change", e=>{
-    if(okKey === false){
+selects.addEventListener("change", e => {
+    if (okKey === false) {
         resSer.innerHTML = ""
         okKey = true
         reso()
     }
 })
-serJs.addEventListener('input', e=>{
-    if(okKey === false){
+serJs.addEventListener('input', e => {
+    if (okKey === false) {
         resSer.innerHTML = ""
         okKey = true
         reso()
     }
 })
 function reso() {
-    if(huAl === false){
+    if (huAl === false) {
         sesTrouko.style.display = "block"
         husDev()
         okKey = false
@@ -81,7 +89,7 @@ function reso() {
         if (seWww) clearTimeout(seWww);
         robenAre = setTimeout(() => {
             reso()
-        },10)
+        }, 10)
     }
 }
 async function husDev() {
@@ -191,15 +199,81 @@ async function husDev() {
 
 xReq.onload = function () {
     var xData = JSON.parse(xReq.responseText);
-    addNewSubr(xData);
+    //addNewSubr(xData);
 }
+
+// ADD VALUE TO PROFILE
+var counValue = 0
+valueWeb()
+function valueWeb() {
+    if(counValue <= sectionLoad.length){
+        var et = sectionLoad[counValue].n
+        var ki = new XMLHttpRequest();
+        ki.open('GET', '../jsData/' + et.replace(/\//g, "") + '.json');
+        ki.send();
+        ki.onload = function () {
+            adValue(sectionLoad[counValue].s,JSON.parse(ki.responseText),sectionLoad[counValue].n)
+            counValue ++;
+            valueWeb()
+        }
+    } else {
+        // WHICH IS MEAN DONE!! WHAT NEXT?! REQ ANYTHING ;)
+    }
+}
+
+function adValue(di,lv,typ) {
+    let adrs;
+    let clearNam;
+    if(typ.includes("subjects")){
+        adrs = document.getElementById("web_"+di)
+        clearNam = "https://trouko.com/subjects/"+di+"/"
+    } else {
+        adrs = document.getElementById("weq_"+di)
+        clearNam = "https://trouko.com/questions/questions_"+di+"/"
+    }
+    let numLast = 0;
+    let numBasic = 0;
+
+    for(var u =0; u < lv.length ; u++){
+        // THE NEWS VALUE
+        let lastU = lv[(lv.length - u) - 1]
+        if(numLast < 2){
+            numLast ++;
+            let src = lastU.replace("https://trouko.com/", "../")
+            addNewSubrtPlus(src, document.getElementById("sec_"+di))
+        }
+        // THE FIRST VALUE
+        if(numBasic < 4){
+            numBasic ++;
+            
+            let nv = document.createElement("div")
+            nv.className = "web_index_con_tit"
+            nv.innerHTML = `<a href="`+lv[u]+`" >`+lv[u].replace(clearNam,"").replace(/\//g,"").replace(/_/g," ")+`</a>`
+            adrs.append(nv)
+        }
+    }
+}
+
+function addNewSubrtPlus(cm, appe) {
+    if (isFirst === false) {
+        containersAll.push({ nam: cm, plc: appe })
+        reqHussein()
+        isFirst = true
+    } else {
+        containersAll.push({ nam: cm, plc: appe })
+    }
+}
+// END > ADD VALUE TO PROFILE
+
+// RANDom
 function randoPag() {
     var xData = JSON.parse(xReq.responseText);
     var r = Math.floor(Math.random() * xData.length)
     location.href = xData[r]
 }
+// END > RANDom
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     sectionLoad.forEach(a => {
         if (a.c === true) {
             var e = a
@@ -239,7 +313,7 @@ $(document).ready(function () {
             });
         }
     })
-})
+})*/
 function random_a() {
     random_t_ser.style.padding = "10px";
     var xData = JSON.parse(xReq.responseText);
@@ -256,10 +330,10 @@ function random_a() {
     el.innerHTML = "   الموضوع المقترح :  " + x + "<a class='r' href='" + xData[r] + "'>" + " [ انقر هنا للقرأه ]" + "</a>";
     return el.innerHTML;
 }
+
+/* 
 function addNewSubr(xData) {
-    var storageD = [],
-        strSub = [],
-        strQu = [];
+    var storageD = [];
     var numCSub = 0,
         numCQu = 0,
         ranPick = 0;
@@ -267,73 +341,57 @@ function addNewSubr(xData) {
         let e = xData[(xData.length - i) - 1]
         if (e.includes("subjects") === true && numCSub < 6) {
             numCSub++;
-            strSub.push(e)
+            let src = e.replace("https://trouko.com/", "../")
+            addNewSubrtPlus(src, document.getElementById("xOne"))
         } else if (e.includes("questions") === true && numCQu < 6) {
             numCQu++;
-            strQu.push(e)
+            let src = e.replace("https://trouko.com/", "../")
+            addNewSubrtPlus(src, document.getElementById("xTwo"))
         } else if (ranPick < 20) {
             ranPick++;
             storageD.push(e)
         }
     }
-    var callSub = 0,
-        callQu = 0;
-    setit()
-    function setit() {
-        if (callSub < strSub.length) {
-            let src = strSub[callSub].replace("https://trouko.com/","../")
-            addNewSubrtPlus(src, document.getElementById("xOne"), "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw").then(e => {
-                callSub++;
-                setit()
-            })
-        } else if (callQu < strQu.length) {
-            let src = strQu[callQu].replace("https://trouko.com/","../")
-            addNewSubrtPlus(src, document.getElementById("xTwo"), "_J_n_Hus_Qu", "_pag_s_262", "i_tnfscript.js", "s_sub_t_dTw").then(e => {
-                callQu++;
-                setit()
-            })
-        } else {
-            var c = { a: "_J_n_Hus_", b: "_pag_n_232", c: "i_fscript.js", d: "s_sub_t_d" },
-                cs = 0,
-                arr = [];
-            while (arr.length < storageD.length) {
-                let r = Math.floor(Math.random() * storageD.length);
-                if (arr.indexOf(r) === -1) arr.push(r);
-            }
-            setSug()
-            function setSug() {
-                if (cs < 6) {
-                    let src = storageD[arr[cs]].replace("https://trouko.com/","../")
-                    addNewSubrtPlus(src, sub_r_s, c.a, c.b, c.c, c.d).then(e => {
-                        cs++;
-                        setSug()
-                    })
-                }
-            }
-            return false
+    var arr = [],
+        swet = 0;
+    while (arr.length < storageD.length) {
+        let r = Math.floor(Math.random() * storageD.length);
+        if (arr.indexOf(r) === -1) arr.push(r);
+    }
+    for(var cs =0; cs < arr.length; cs++){
+        if(swet < 8){
+            swet ++;
+            let src = storageD[arr[cs]].replace("https://trouko.com/", "../")
+            addNewSubrtPlus(src, sub_r_s)
         }
     }
-    async function addNewSubrtPlus(m, xz, vz, xxc, psssp, classP) {
-        var n = m.replace("../", "")
+}*/
 
-        var g = Math.floor(Math.random() * 2000911);
-
-        var li = document.createElement("div");
-        li.className = classP;
-        li.id = n + vz + g
-        li.innerHTML = '<div id="' + n + xxc + '"></div>'
-        xz.append(li)
-
-        var pMine = document.getElementById(n + vz + g)
-
-        var li = document.createElement("script");
-        li.src = m+`Javascript/`+ psssp
-        pMine.append(li)
-    }
-}
+// CHECK URL
 var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("c");
 serJs.value = c
 window.history.pushState({}, document.title, "/");
 reso()
+// END CHECK URL
+
+// IMPORTANT PERSON
+function reqHussein() {
+    var cm = containersAll[whereHussein].nam
+    var appe = containersAll[whereHussein].plc
+
+    var n = cm.replace("../", "").replace(/\//g, "_"),
+        li = document.createElement("div"),
+        ew = Math.floor(Math.random() * 1000) + 10,
+        we = Math.floor(Math.random() * 1000) + 6;
+    li.className = "s_sub_t_d";
+    li.id = we + n + ew
+    appe.append(li)
+    document.getElementById("whereHu").innerText = we + n + ew
+
+    var lic = document.createElement("script");
+    lic.src = cm + "Javascript/i_fscript.js"
+    pMinex.append(lic)
+    whereHussein++;
+}

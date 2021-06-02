@@ -121,15 +121,120 @@ body{
     font-family: 'Almarai', sans-serif;
 }
 
-.infoPageSuQuTw,.p_t_infTw,.infoPageSuQuTwTw{
-    background-color: #f7f7f7;
+
+/* */
+
+div.s_sub_t_d {
+    width: 93%;
+    max-width: 700px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    direction: ltr;
+    margin: auto;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    height: fit-content;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.infoPageSuQuTw{
+div.s_sub_t_d:hover {
+    border: 1px solid #e1e7eb;
+    outline-color: 0;
+}
+
+.img_p_sugg_p {
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+}
+.sugg_p_t_bo_23{
+    position: relative;
+    z-index: 10;
+}
+
+a.link_t_read_p {
+    font-size: 13px;
+    background-color: #3265b8;
+    color: #dee0e4;
+    border-radius: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Almarai', sans-serif;
+}
+
+.p_t_inf , .link_t_read_p{
+    background-color: #fcfcfc;
+    height: 70px;
+}
+
+a.s_sub_t {
+    font-size: 17.6px;
+    font-weight: 500;
+    display: flex;
+    direction: rtl;
+    padding: 10px 7px 10px 7px;
+    background-color: #fcfcfc;
+    text-decoration: underline;
+    height: 27px;
+    align-items: center;
+}
+
+.p_t_inf {
+    direction: rtl;
+    padding: 7px 7px 6px 7px;
+    color:  #1f2224;
+    text-align: right;
+    bottom: 0;
+}
+
+.infoPageSuQu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 7px 4px 7px;
     border: 0;
-    border-top: 1px solid #e3e4e6;
+    align-items: center;
+    position: absolute;
+    bottom:.1em;
+    margin-left: 4px;
+    z-index: 1;
 }
-.s_sub_t {
-    color: rgb(52, 53, 56);
-    text-decoration: none;
+
+.infoPageSuQu p{
+    margin-right: 2px;
+    font-family: 'Almarai', sans-serif;
+    font-size: 11px;
 }
+.infoPageSuQu i {
+    font-size: 13px !important;
+    margin-top: 1px;
+    color: #393e46cb !important;
+}
+
+.infoPageSuQuTw {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    border: 0;
+    font-size: 11px;
+    border:0;
+    background-color: #f9f9fa;
+    border-top: 1px solid #e3e4e652 !important;
+    padding-top: 10px;
+    display: n;
+}
+
+.infoPageSuQuTw i{
+    font-size: 13px !important;
+    position: relative;
+    bottom: 4px;
+}
+.infoPageSuQuTw p{
+    align-items: center;
+    margin-right: 2px;
+    position: relative;
+    bottom: 4px;
+}
+
+/* t */

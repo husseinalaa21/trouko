@@ -8,6 +8,11 @@ var xReq = new XMLHttpRequest();
 xReq.open('GET', '../../data.json');
 xReq.send();
 
+var containersAll = []
+var isFirst = false
+var whereHussein = 0
+var pMinex = document.getElementById("javaXs")
+
 var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText];
 var blackList = []
 var lisB = []
@@ -28,7 +33,7 @@ function ad(s) {
             cos++
             var x = arr[i]
             let src = s[x].replace("https://trouko.com/","../../")
-            addNewSubrt(src, addSuggSQ, "_J_n_Hus_Qu", "_pag_n_232", "i_fscript.js", "s_sub_t_dTw")
+            addNewSubrt(src, addSuggSQ)
         }
     }
 }
@@ -52,7 +57,7 @@ xReq.onload = function () {
                     if (i < 4) {
                         let c = (data.length - i) - 1
                         let src = data[c].replace("https://trouko.com/","../../")
-                        addNewSubrt(src, main_sub_ad, "_J_n_Hus_Qu", "_pag_x_242", "i_tfscript.js", "s_sub_t_dTw")
+                        addNewSubrt(src, main_sub_ad)
                         blackList.push(data[c])
                     }
                     if (i < 7) {
@@ -99,22 +104,34 @@ xReq.onload = function () {
         }, 1000);
     })
 }
-function addNewSubrt(m, xz, vz, xxc, psssp, classP) {
-    var n = m.replace("../../", "")
 
-    var g = Math.floor(Math.random() * 2000911);
+function reqHussein() {
+    var cm = containersAll[whereHussein].nam
+    var appe = containersAll[whereHussein].plc
 
-    var li = document.createElement("div");
-    li.className = classP;
-    li.id = n + vz + g
-    li.innerHTML = '<div id="' + n + xxc + '"></div>'
-    xz.append(li)
+    var n = cm.replace("../../../", "").replace(/\//g,"_"),
+        li = document.createElement("div"),
+        ew = Math.floor(Math.random() * 1000) + 10,
+        we = Math.floor(Math.random() * 1000) + 6;
+    li.className = "s_sub_t_d";
+    li.id =we+ n + ew
+    appe.append(li)
+    document.getElementById("whereHu").innerText = we+ n + ew
 
-    var pMine = document.getElementById(n + vz + g)
+    var lic = document.createElement("script");
+    lic.src = cm + "Javascript/i_fscript.js"
+    pMinex.append(lic)
+    whereHussein ++;
+}
 
-    var li = document.createElement("script");
-    li.src = m+`Javascript/` + psssp
-    pMine.append(li)
+function addNewSubrt(cm,appe) {
+    if(isFirst === false){
+        containersAll.push({nam : cm, plc : appe})
+        reqHussein()
+        isFirst = true
+    } else {
+        containersAll.push({nam : cm, plc : appe})
+    }
 }
 var iconT = document.getElementById("uMenuMine_m"),
     iconBarTh = document.getElementsByClassName("icon-bar")[0],

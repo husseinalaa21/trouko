@@ -1,16 +1,5 @@
-var titleIn , addTitleIpage ,nameP , namePpath, discriptionP , photoP,infSuGuPageOn , infSuGuPageTw;
-titleIn = "أقرب كوكب صالح للحياة من الأرض";
-adPhoto = "../../../imgs/Centaur%20planet%20closest.jpg"
-adDiscription = "يوجد عدد كبير جداً من الكواكب الشبيها بالارض و التي يشار الى أنها صالحة للحياة , وذلك نضراً لتوفر العوامل التي تساعد الانسان على العيش بها , فأذا كنت تقصد اي كوكب صالح للعيش وألا يكون توأم الارض ويتسم بنفس المقومات الصالحه للحياة على الارض حتى لو كانت ليست بطبيعية كالهواء مثلا حيث يكون بداخل المحطات المخصصة للسكن او البدلات , فسيكون اول جوب هو الكوكب الاحمر او المريخ وغيره من الكواكب القريبة , وذلك بسبب عدة عوامل يتسم بها هذا الكوكب , وقد كتبنا بالفعل مقالة لهذا الكوكب الرائع والذي سيصبح يوماً ما المستقبل البشر "
-namePpath = "https://trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض/"
-infSuGuPageOn = '<p>  أسئلة / الفضاء  </p>'+'<i class="material-icons" style="font-size:16px; color: #393e46;">folder</i>'
-infSuGuPageTw = '<p> الجمعه, 30 ابريل 2021  </p>'+'<i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i>'
-nameP = namePpath.replace('https://trouko.com/',"")
-addTitleIpage = document.getElementById(nameP+'_pag_n_232');
-addt(titleIn)
-function addt(m){
-var textDis = adDiscription.slice(0, 80);
-var ap = document.createElement('div')
-ap.innerHTML ='<div class="img_p_sugg_p"> <a href="'+namePpath+'">'+'<img src="'+adPhoto +'" alt="'+m+'"  class="sub_s_i" style="width:100%"> </a> </div>' + "<div class='sugg_p_t_bo_23'> <a class='s_sub_t' href='"+namePpath+"'>"+m+"</a>"+'<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">'+'<div class="infoPageSuQu">'+infSuGuPageOn+'</div>'+"<div class='p_t_inf'> <p>"+textDis +"... </p>"+ '<a class="link_t_read_p" href="'+namePpath+'"> قراءة المزيد </a>'+"</div>"+'<div class="infoPageSuQuTw">'+infSuGuPageTw+'</div>'+ "</div>"
-addTitleIpage.append(ap)
-}
+var letHu  = document.getElementById("whereHu").innerText
+var addTitleIpage = document.getElementById(letHu)
+
+addTitleIpage.innerHTML = '<div class="img_p_sugg_p"> <a href="https://trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض"> <img src="../../../imgs/Centaur%20planet%20closest.jpg" alt="أقرب كوكب صالح للحياة من الأرض"  class="sub_s_i" style="width:100%" height="auto"> </a> </div> <div class="sugg_p_t_bo_23"> <a class="s_sub_t" href="https://trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض">أقرب كوكب صالح للحياة من الأرض</a> <div class="infoPageSuQu"><p> أسئلة / الفضاء </p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div><div class="p_t_inf" > <p>يوجد عدد كبير جداً من الكواكب الشبيها بالارض و التي يشار الى أنها صالحة للحياة , وذلك نضراً لتوفر ال... </p><a class="link_t_read_p" href="https://trouko.com/questions/questions_space/أقرب_كوكب_صالح_للحياة_من_الأرض"> قراءة المزيد </a></div><div class="infoPageSuQuTw"><p> الجمعه, 30 ابريل 2021  </p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div></div>'
+reqHussein()

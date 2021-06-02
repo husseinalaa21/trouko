@@ -765,3 +765,9 @@ a:hover {
   #sEndWe a{
       color: #d0dae091 !important;
   }
+
+  .wepIfrem {
+      width: 100%;
+      border: none;
+      height: fit-content;
+  }
