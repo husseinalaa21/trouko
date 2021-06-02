@@ -171,7 +171,7 @@ li:focus{
 .subtitle_ss {
     display: flex;
     justify-content: space-between;
-    padding: 13px;
+    padding: 16px;
     background-color: #f7f7f7;
     font-family: Almarai;
     border: 0;
@@ -198,6 +198,8 @@ li:focus{
 .top_sec {
     display: flex;
     justify-content: space-around;
+    width: 94%;
+    margin: auto;
 }
 .sec_lastNews {
     display: grid;
@@ -206,7 +208,9 @@ li:focus{
 @media screen and (max-width:550px) {
     .sec_lastNews {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
+        width: 97%;
+        margin: auto;
     }
 }
 @media screen and (max-width:350px) {
@@ -219,7 +223,7 @@ li:focus{
     box-shadow: 0 1px 4px rgb(0 0 0 / 10%), 0 0px 10px rgb(0 0 0 / 10%);
     border-radius: 5px;
     overflow: hidden;
-    width: 46%;
+    width: 47%;
     height: fit-content;
     margin: auto;
     margin-bottom: 10px;
@@ -318,7 +322,7 @@ li:focus{
 /* */
 
 div.s_sub_t_d {
-    width: 93%;
+    width: 97%;
     max-width: 700px;
     position: relative;
     border-radius: 4px;
