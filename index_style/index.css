@@ -246,7 +246,7 @@ li:focus{
     align-items: center;
 }
 .web_index_title .tpot{
-    padding: 6px 7px 6px 7px;
+    padding: 8px 7px 8px 7px;
     font-family: Almarai;
     font-size: 14px;
 }
@@ -254,14 +254,14 @@ li:focus{
     background-color: rgba(221, 230, 233, 0.247);
 }
 .wits .phot{
-    padding: 6px 14px 6px 14px;
+    padding: 8px 12px 8px 12px;
     background-color: rgba(221, 229, 233, 0.979);
 }
 .witq {
     background-color: rgba(241, 234, 232, 0.411);
 }
 .witq .phot{
-    padding: 6px 14px 6px 14px;
+    padding: 8px 12px 8px 12px;
     background-color: rgb(235, 222, 220);
 }
 /* END CONTAINERS ROOT */
