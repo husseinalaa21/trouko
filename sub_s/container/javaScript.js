@@ -50,85 +50,82 @@ function shoWe(){
 }
 
 xReq.onload = function () {
-    async function seeFirst() {
-        surc.forEach(a => {
-            $.getJSON("../../jsData/" + a + ".json", function (data) {
-                for (var i = 0; i < data.length; i++) {
-                    if (i < 4) {
-                        let c = (data.length - i) - 1
-                        let src = data[c].replace("https://trouko.com/","../../")
-                        addNewSubrt(src, main_sub_ad)
-                        blackList.push(data[c])
-                    }
-                    if (i < 7) {
-                        isEle ++;
-                        let t = document.createElement("div")
-                        t.className = "itD"
-                        let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace(/_/g, " ")
-                        t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
-                        main_sub_ad_q.append(t)
-                    }
-                    if(i > 7){
-                        isMore = true
-                        if(lisB.includes(data[i]) !== true){
-                            lisB.push(data[i])
-                            van.push(a)
+    var isAdFull = false
+    surc.forEach(a => {
+        $.getJSON("../../jsData/" + a + ".json", function (data) {
+            for (var i = 0; i < data.length; i++) {
+                if (i < 4) {
+                    let c = (data.length - i) - 1
+                    let src = data[c].replace("https://trouko.com/","../../")
+                    addNewSubrt(src, main_sub_ad)
+                    blackList.push(data[c])
+                }
+                if (i < 7) {
+                    isEle ++;
+                    let t = document.createElement("div")
+                    t.className = "itD"
+                    let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace(/_/g, " ")
+                    t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
+                    main_sub_ad_q.append(t)
+                }
+                if(i > 7){
+                    if(lisB.includes(data[i]) !== true){
+                        lisB.push(data[i])
+                        van.push(a)
+                        if(isAdFull === false){
+                            isAdFull = true
+                            var m = document.createElement("div")
+                            m.className = "isMore"
+                            m.innerHTML = " أضهار المزيد "
+                            document.getElementById("isMox").innerHTML = `<div class="isMore" onclick="shoWe()"> أضهار المزيد </div>`
                         }
                     }
                 }
-            }).fail(function () {
-                // 
-            });
-        })
-    }
-    seeFirst().then(e=>{
-        setTimeout(() => {
-            if (isMore === true) {
-                var m = document.createElement("div")
-                m.className = "isMore"
-                m.innerHTML = " أضهار المزيد "
-                document.getElementById("isMox").innerHTML = `<div class="isMore" onclick="shoWe()"> أضهار المزيد </div>`
             }
-            var neAr = []
-            var ed = JSON.parse(xReq.responseText);
-            for (var w = 0; w < ed.length; w++) {
-                if(blackList.includes(ed[w])){
-        
-                } else {
-                    if (w < 20) {
-                        neAr.push(ed[w])
-                    }
-                }
-            }
-            ad(neAr)
-        }, 1000);
+        }).fail(function () {
+            // 
+        });
     })
+    var neAr = []
+    var ed = JSON.parse(xReq.responseText);
+    for (var w = 0; w < ed.length; w++) {
+        if(blackList.includes(ed[w])){
+
+        } else {
+            if (w < 20) {
+                neAr.push(ed[w])
+            }
+        }
+    }
+    ad(neAr)
 }
 
 function reqHussein() {
-    var cm = containersAll[whereHussein].nam
-    var appe = containersAll[whereHussein].plc
-
-    var n = cm.replace("../../../", "").replace(/\//g,"_"),
-        li = document.createElement("div"),
-        ew = Math.floor(Math.random() * 1000) + 10,
-        we = Math.floor(Math.random() * 1000) + 6;
-    li.className = "s_sub_t_d";
-    li.id =we+ n + ew
-    appe.append(li)
-    document.getElementById("whereHu").innerText = we+ n + ew
-
-    var lic = document.createElement("script");
-    lic.src = cm + "Javascript/i_fscript.js"
-    pMinex.append(lic)
-    whereHussein ++;
+    if(containersAll[whereHussein] !== undefined){
+        var cm = containersAll[whereHussein].nam
+        var appe = containersAll[whereHussein].plc
+    
+        var n = cm.replace("../../../", "").replace(/\//g,"_"),
+            li = document.createElement("div"),
+            ew = Math.floor(Math.random() * 1000) + 10,
+            we = Math.floor(Math.random() * 1000) + 6;
+        li.className = "s_sub_t_d";
+        li.id =we+ n + ew
+        appe.append(li)
+        document.getElementById("whereHu").innerText = we+ n + ew
+    
+        var lic = document.createElement("script");
+        lic.src = cm + "Javascript/i_fscript.js"
+        pMinex.append(lic)
+        whereHussein ++;
+    }
 }
 
 function addNewSubrt(cm,appe) {
     if(isFirst === false){
         containersAll.push({nam : cm, plc : appe})
-        reqHussein()
         isFirst = true
+        reqHussein()
     } else {
         containersAll.push({nam : cm, plc : appe})
     }
