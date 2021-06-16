@@ -11,9 +11,15 @@ xReq.send();
 var containersAll = []
 var isFirst = false
 var whereHussein = 0
+var numAdFullStaff = 0
 var pMinex = document.getElementById("javaXs")
 
-var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText];
+var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText]
+
+window.onload = function(){
+    adFullStaff()
+}
+
 var blackList = []
 var lisB = []
 var van = []
@@ -32,14 +38,14 @@ function ad(s) {
         if (cos < 10) {
             cos++
             var x = arr[i]
-            let src = s[x].replace("https://trouko.com/","../../")
+            let src = s[x].replace("https://trouko.com/", "../../")
             addNewSubrt(src, addSuggSQ)
         }
     }
 }
-function shoWe(){
-    for(var c = 0; c < lisB.length; c++){
-        isEle ++;
+function shoWe() {
+    for (var c = 0; c < lisB.length; c++) {
+        isEle++;
         let t = document.createElement("div")
         t.className = "itD"
         let canday = lisB[c].replace("https://trouko.com", "").replace(/\//g, "").replace(van[c], "").replace(/_/g, " ")
@@ -49,81 +55,98 @@ function shoWe(){
     document.getElementById("isMox").innerHTML = ``
 }
 
+var isReqLast = false
+var isAdFull = false
+
 xReq.onload = function () {
-    var isAdFull = false
-    surc.forEach(a => {
+    isReqLast = true
+}
+function lastCheck(){
+    if(isReqLast === true){
+        var neAr = []
+        var ed = JSON.parse(xReq.responseText);
+        for (var w = 0; w < ed.length; w++) {
+            if (blackList.includes(ed[w]) === false && w < 20) {
+                neAr.push(ed[w])
+            }
+        }
+        ad(neAr)
+        
+    } else {
+        setTimeout(() => {
+            lastCheck()
+        }, 10);
+    }
+}
+function adFullStaff(){
+    if (surc.length - 1 === numAdFullStaff) {
+        lastCheck()
+    } else {
+        var a = surc[numAdFullStaff]
         $.getJSON("../../jsData/" + a + ".json", function (data) {
             for (var i = 0; i < data.length; i++) {
                 if (i < 4) {
                     let c = (data.length - i) - 1
-                    let src = data[c].replace("https://trouko.com/","../../")
+                    let src = data[c].replace("https://trouko.com/", "../../")
                     addNewSubrt(src, main_sub_ad)
                     blackList.push(data[c])
                 }
                 if (i < 7) {
-                    isEle ++;
+                    isEle++;
                     let t = document.createElement("div")
                     t.className = "itD"
                     let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace(/_/g, " ")
                     t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
                     main_sub_ad_q.append(t)
-                }
-                if(i > 7){
-                    if(lisB.includes(data[i]) !== true){
+                } else {
+                    if (lisB.includes(data[i]) !== true) {
                         lisB.push(data[i])
                         van.push(a)
-                        if(isAdFull === false){
+                        if (isAdFull === false) {
                             isAdFull = true
-                            var m = document.createElement("div")
+                            let m = document.createElement("div")
                             m.className = "isMore"
                             m.innerHTML = " أضهار المزيد "
                             document.getElementById("isMox").innerHTML = `<div class="isMore" onclick="shoWe()"> أضهار المزيد </div>`
                         }
                     }
                 }
+                if (data.length - 1 === i) {
+                    numAdFullStaff ++;
+                    adFullStaff()
+                }
             }
-        }).fail(function () {
-            // 
-        });
-    })
-    var neAr = []
-    var ed = JSON.parse(xReq.responseText);
-    for (var w = 0; w < ed.length; w++) {
-        if(blackList.includes(ed[w]) === false && w < 20){
-            neAr.push(ed[w])
-        }
+        })
     }
-    ad(neAr)
 }
-
 function reqHussein() {
-    if(containersAll[whereHussein] !== undefined){
+    if (containersAll[whereHussein] !== undefined) {
         var cm = containersAll[whereHussein].nam
         var appe = containersAll[whereHussein].plc
-    
-        var n = cm.replace("../../../", "").replace(/\//g,"_"),
+
+        var n = cm.replace("../../../", "").replace(/\//g, "_"),
             li = document.createElement("div"),
             ew = Math.floor(Math.random() * 1000) + 10,
             we = Math.floor(Math.random() * 1000) + 6;
         li.className = "s_sub_t_d";
-        li.id =we+ n + ew
+        li.id = we + n + ew
         appe.append(li)
-        document.getElementById("whereHu").innerText = we+ n + ew
-    
+        document.getElementById("whereHu").innerText = we + n + ew
+
         var lic = document.createElement("script");
         lic.src = cm + "Javascript/i_fscript.js"
         pMinex.append(lic)
-        whereHussein ++;
+        whereHussein++;
     }
 }
 
-function addNewSubrt(cm,appe) {
-    if(isFirst === false){
-        containersAll.push({nam : cm, plc : appe})
+function addNewSubrt(cm, appe) {
+    if (isFirst === false) {
+        containersAll.push({ nam: cm, plc: appe })
         isFirst = true
         reqHussein()
     } else {
-        containersAll.push({nam : cm, plc : appe})
+        containersAll.push({ nam: cm, plc: appe })
     }
 }
 var iconT = document.getElementById("uMenuMine_m"),
@@ -132,10 +155,10 @@ var iconT = document.getElementById("uMenuMine_m"),
     iconBarT = document.getElementsByClassName("icon-bar")[2],
     isClickMenu = false,
     isAppen = false,
-    isWebT= false,
+    isWebT = false,
     menLis = document.getElementById("menuLisWeb");
 
-    var lisBox = `
+var lisBox = `
     <div class="newBody" id="covBody" onclick="iloveHusseinAlaa()"></div>
     <div id="mySidenav" class="sidenav">
     <div class="sliteLIst">
@@ -166,7 +189,7 @@ var iconT = document.getElementById("uMenuMine_m"),
     </a> </div>
     </div>
     </div>`
-    function iloveHusseinAlaa() {
+function iloveHusseinAlaa() {
     iconBarTh.className = "icon-bar";
     iconBar.className = "icon-bar"
     iconBarT.className = "icon-bar"
@@ -174,8 +197,8 @@ var iconT = document.getElementById("uMenuMine_m"),
     document.getElementById("mySidenav").style.width = "0";
     isClickMenu = false
     isWebT = false
-    }
-    function seIns(z) {
+}
+function seIns(z) {
     let element = document.getElementById(z)
     element.style.display = (element.style.display == 'none') ? er(true) : er(false);
     function er(params) {
@@ -187,23 +210,23 @@ var iconT = document.getElementById("uMenuMine_m"),
             document.getElementById("erSAre").className = "arrow"
         }
     }
-    }
-    var rt = document.getElementsByTagName('BODY')
-    iconT.addEventListener("click", e => {
-        if (isClickMenu === false) {
-            if(isAppen === false){
-                menLis.innerHTML = lisBox
-                isAppen = true
-            }
-            isClickMenu = true
-            isWebT = true
-            iconBarTh.className = "icon-bar bar_a";
-            setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 150);
-            setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 250);
-            document.getElementById("covBody").style.width = "100%";
-            document.getElementById("mySidenav").style.width = "100%";
-            document.getElementById("mySidenav").style.maxWidth = "500px";
-        } else {
-            iloveHusseinAlaa()
+}
+var rt = document.getElementsByTagName('BODY')
+iconT.addEventListener("click", e => {
+    if (isClickMenu === false) {
+        if (isAppen === false) {
+            menLis.innerHTML = lisBox
+            isAppen = true
         }
-    })
+        isClickMenu = true
+        isWebT = true
+        iconBarTh.className = "icon-bar bar_a";
+        setTimeout(function () { iconBar.className = "icon-bar bar_a" }, 150);
+        setTimeout(function () { iconBarT.className = "icon-bar bar_a" }, 250);
+        document.getElementById("covBody").style.width = "100%";
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenav").style.maxWidth = "500px";
+    } else {
+        iloveHusseinAlaa()
+    }
+})

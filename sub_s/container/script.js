@@ -8,8 +8,7 @@ sideSlider = document.getElementById("sideSlider")
 // ...
 
 // Slider 
-var ollStuff = [{n : "الرئيسة" , u : "/"},{n:"آخر المقالات",u:"#al_s"},{n : "الفهرسة", u :"#al_q"},{n:"مقترحات", u : "#al_g"}
-,{n:"الفضاء",u:"../space/"},{n:"الجغرافية",u:"../geography/"},{n:"التقنية",u:"../technology/"},{n:"علوم",u:"../sciences/"},{n:"منوعات",u:"../else/"},{n:"فيزياء",u:"../physics/"},{n:"افلام و مسلسلات",u:"../movies/"}]
+var ollStuff = [{n : " الرئيسة " , u : "/"},{n:" الفضاء ",u:"../space/"},{n:" التقنية ",u:"../technology/"},{n:" منوعات ",u:"../else/"},{n:" الفيزياء ",u:"../physics/"},{n:" الجغرافية ",u:"../geography/"},{n:" العلوم ",u:"../sciences/"},{n:" افلام و مسلسلات ",u:"../movies/"}]
 
 ollStuff.forEach(r=>{
    if(r.u.includes(document.getElementById("adrs").innerText)){
