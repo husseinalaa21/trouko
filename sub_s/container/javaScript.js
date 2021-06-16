@@ -89,12 +89,8 @@ xReq.onload = function () {
     var neAr = []
     var ed = JSON.parse(xReq.responseText);
     for (var w = 0; w < ed.length; w++) {
-        if(blackList.includes(ed[w])){
-
-        } else {
-            if (w < 20) {
-                neAr.push(ed[w])
-            }
+        if(blackList.includes(ed[w]) === false && w < 20){
+            neAr.push(ed[w])
         }
     }
     ad(neAr)
