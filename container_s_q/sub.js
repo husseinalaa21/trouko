@@ -46,43 +46,12 @@ cdLink(true)
 
 //
 
-function ad(s, t) {
-    var cos = 0
-    var arr = [];
-    while (arr.length < s.length) {
-        var r = Math.floor(Math.random() * s.length);
-        if (arr.indexOf(r) === -1) arr.push(r);
-    }
-    var i;
-    if (t === false) {
-        for (i = 0; i < arr.length; i++) {
-            if (cos < 4) {
-                cos++
-                var x = arr[i]
-                addSuggTIndex(s[x].linkPage, s[x].namePath)
-                let src = s[x].linkPage.replace("https://trouko.com/", "../../../")
-                adSugg(src, sub_r_sSugg);
-            }
-        }
-    } else {
-        for (i = 0; i < arr.length; i++) {
-            if (cos < 4) {
-                cos++
-                var x = arr[i]
-                let src = s[x].linkPage.replace("https://trouko.com/", "../../../")
-                adSugg(src, sub_r_s);
-            }
-        }
-    }
-}
-
 var storageD = [];
-var iWeSt = []
+
 function adIndexSugg() {
     var miUrl = document.getElementById("miUrl").innerText + '/',
         xData = JSON.parse(xReq.responseText),
-        iBasic = 0, iWe = 0,
-        iVe = 0,
+        iBasic = 0,
         iVeSt = [],
         po = new RegExp('https://trouko.com/', 'g'),
         etx = et.replace(/\//g, ""),
@@ -90,47 +59,34 @@ function adIndexSugg() {
 
     for (var x = 0; x < xData.length; x++) {
         var e = (xData.length - x) - 1
-        if (lisSys.includes(xData[e]) !== true && miUrl !== xData[e]) {
-            if (iBasic < 8) {
-                iBasic++
-                var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
-                var l = xData[e];
-                var sub = { "linkPage": l, "namePath": s };
-                storageD.push(sub)
-            } else if (iVe < 16) {
-                iVe++
-                var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
-                var l = xData[e];
-                var sub = { "linkPage": l, "namePath": s };
-                iVeSt.push(sub)
-            } else {
-                if (iWe < 8) {
-                    iWe++
-                    var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
-                    var l = xData[e];
-                    var sub = { "linkPage": l, "namePath": s };
-                    iWeSt.push(sub)
-                }
-            }
+        if (lisSys.includes(xData[e]) !== true && miUrl !== xData[e] && iBasic < 20) {
+            iBasic++
+            var s = xData[e].replace(po, "").replace(/\//g, "").replace(pet, "").replace(/_/g, " ")
+            var l = xData[e];
+            var sub = { "linkPage": l, "namePath": s };
+            iVeSt.push(sub)
         }
     }
-    iVeSt.forEach(e => {
-        if (iBasic < 8) {
-            iBasic++
-            var s = e.namePath;
-            var l = e.linkPage;
-            var sub = { "linkPage": l, "namePath": s };
-            storageD.push(sub)
+    var cos = 0
+    var arr = [];
+    while (arr.length < iVeSt.length) {
+        var r = Math.floor(Math.random() * iVeSt.length);
+        if (arr.indexOf(r) === -1) arr.push(r);
+    }
+    // Need Fix :|
+    for (var i = 0; i < arr.length; i++) {
+        if (cos < 4) {
+            cos++
+            var x = arr[i]
+            addSuggTIndex(iVeSt[x].linkPage, iVeSt[x].namePath)
+            let src = iVeSt[x].linkPage.replace("https://trouko.com/", "../../../")
+            adSugg(src, sub_r_sSugg);
         } else {
-            if (iWe < 8) {
-                var s = e.namePath;
-                var l = e.linkPage;
-                var sub = { "linkPage": l, "namePath": s };
-                iWeSt.push(sub)
-            }
+            var x = arr[i]
+            var sub = { "linkPage": iVeSt[x].linkPage, "namePath": iVeSt[x].namePath };
+            storageD.push(sub)
         }
-    })
-    ad(storageD, false);
+    }
     cdLink(false)
 }
 
@@ -175,7 +131,20 @@ function cdLink(x) {
             }
         })
         if (didFile === false) {
-            ad(iWeSt, true)
+            var cos = 0
+            var arr = [];
+            while (arr.length < storageD.length) {
+                var r = Math.floor(Math.random() * storageD.length);
+                if (arr.indexOf(r) === -1) arr.push(r);
+            }
+            for (var i = 0; i < arr.length; i++) {
+                if (cos < 4) {
+                    cos++
+                    var x = arr[i]
+                    let src = storageD[x].linkPage.replace("https://trouko.com/", "../../../")
+                    adSugg(src, sub_r_s);
+                }
+            }
         }
     }
 }
