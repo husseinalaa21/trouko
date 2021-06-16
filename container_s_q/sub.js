@@ -130,17 +130,11 @@ function cdLink(x) {
                 didFile = true
             }
         })
-        if (didFile === false) {
-            var cos = 0
-            var arr = [];
-            while (arr.length < storageD.length) {
-                var r = Math.floor(Math.random() * storageD.length);
-                if (arr.indexOf(r) === -1) arr.push(r);
-            }
-            for (var i = 0; i < arr.length; i++) {
+        if (didFile === false && storageD.length > 0) {
+            var cos = 0;
+            for (var x = 0; x < storageD.length; x++) {
                 if (cos < 4) {
                     cos++
-                    var x = arr[i]
                     let src = storageD[x].linkPage.replace("https://trouko.com/", "../../../")
                     adSugg(src, sub_r_s);
                 }
