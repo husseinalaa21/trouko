@@ -40,7 +40,7 @@
 }
 .container_upTop a:hover{
     color: #2d2e31 !important;
-    border-bottom: 2px solid #2d2e31;
+    border-bottom: 2px solid #2d2e3167;
 }
 .container_upTop p{
     font-family: 'Almarai', sans-serif;
@@ -48,7 +48,7 @@
     padding: 10px 14px 10px 14px;
     flex: 0 0 auto;
     border: 0;
-    border-bottom: 2px solid #1f4068;
+    border-bottom: 2px solid #4179bd;
 }
 /* SLIDER END */
 .search_main_i_page {

@@ -79,13 +79,13 @@ function lastCheck(){
     }
 }
 function adFullStaff(){
-    if (surc.length - 1 === numAdFullStaff) {
+    if (surc.length === numAdFullStaff) {
         lastCheck()
     } else {
         var a = surc[numAdFullStaff]
         $.getJSON("../../jsData/" + a + ".json", function (data) {
             for (var i = 0; i < data.length; i++) {
-                if (i < 4) {
+                if (i < 3) {
                     let c = (data.length - i) - 1
                     let src = data[c].replace("https://trouko.com/", "../../")
                     addNewSubrt(src, main_sub_ad)
