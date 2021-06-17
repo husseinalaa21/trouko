@@ -8,7 +8,7 @@ sideSlider = document.getElementById("sideSlider")
 // ...
 
 // Slider 
-var ollStuff = [{n : " الرئيسة " , u : "/"},{n:" الفضاء ",u:"../space/"},{n:" التقنية ",u:"../technology/"},{n:" منوعات ",u:"../else/"},{n:" الفيزياء ",u:"../physics/"},{n:" الجغرافية ",u:"../geography/"},{n:" العلوم ",u:"../sciences/"},{n:" افلام و مسلسلات ",u:"../movies/"}]
+var ollStuff = [{n : " الرئيسة " , u : "/"},{n:" الفضاء ",u:"../space/"},{n:" التقنية ",u:"../technology/"},{n:" منوعات ",u:"../else/"},{n:" الفيزياء ",u:"../physics/"},{n:" الجغرافية ",u:"../geography/"},{n:" العلوم ",u:"../sciences/"},{n:" الاقتصاد ",u:"../economie/"},{n:" افلام و مسلسلات ",u:"../movies/"}]
 
 ollStuff.forEach(r=>{
    if(r.u.includes(document.getElementById("adrs").innerText)){
@@ -33,7 +33,10 @@ var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfi
 { n: "questions/questions_space", s: "space", x: "الفضاء", z: "sTwo", c: true },
 { n: "questions/questions_physics", s: "physics", x: "الفيزياء", z: "sTwo", c: true },
 { n: "questions/questions_else", s: "else", x: " متنوعة ", z: "sTwo", c: true },
-{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo", c: true },
+{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo", c: true },,
+
+{ n: "subjects/economie", s : "economie", c: false, x: "الاقتصاد" },
+{ n: "questions/questions_economie", s : "economie", c: false, x: "الاقتصاد" },
 
 { n: "subjects/movies", s : "movies", c: false, x: "افلام و مسلسلات" }]
 var alerAdd = []
