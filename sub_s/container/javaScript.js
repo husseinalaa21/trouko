@@ -84,38 +84,46 @@ function adFullStaff(){
     } else {
         var a = surc[numAdFullStaff]
         $.getJSON("../../jsData/" + a + ".json", function (data) {
-            for (var i = 0; i < data.length; i++) {
-                if (i < 3) {
-                    let c = (data.length - i) - 1
-                    let src = data[c].replace("https://trouko.com/", "../../")
-                    addNewSubrt(src, main_sub_ad)
-                    blackList.push(data[c])
-                }
-                if (i < 7) {
-                    isEle++;
-                    let t = document.createElement("div")
-                    t.className = "itD"
-                    let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace(/_/g, " ")
-                    t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
-                    main_sub_ad_q.append(t)
-                } else {
-                    if (lisB.includes(data[i]) !== true) {
-                        lisB.push(data[i])
-                        van.push(a)
-                        if (isAdFull === false) {
-                            isAdFull = true
-                            let m = document.createElement("div")
-                            m.className = "isMore"
-                            m.innerHTML = " أضهار المزيد "
-                            document.getElementById("isMox").innerHTML = `<div class="isMore" onclick="shoWe()"> أضهار المزيد </div>`
+            if(data.length > 0){
+                for (var i = 0; i < data.length; i++) {
+                    if (i < 3) {
+                        let c = (data.length - i) - 1
+                        let src = data[c].replace("https://trouko.com/", "../../")
+                        addNewSubrt(src, main_sub_ad)
+                        blackList.push(data[c])
+                    }
+                    if (i < 7) {
+                        isEle++;
+                        let t = document.createElement("div")
+                        t.className = "itD"
+                        let canday = data[i].replace("https://trouko.com", "").replace(/\//g, "").replace(a, "").replace(/_/g, " ")
+                        t.innerHTML = isEle + `. <a href="` + data[i] + `" > ` + canday + `</a>`
+                        main_sub_ad_q.append(t)
+                    } else {
+                        if (lisB.includes(data[i]) !== true) {
+                            lisB.push(data[i])
+                            van.push(a)
+                            if (isAdFull === false) {
+                                isAdFull = true
+                                let m = document.createElement("div")
+                                m.className = "isMore"
+                                m.innerHTML = " أضهار المزيد "
+                                document.getElementById("isMox").innerHTML = `<div class="isMore" onclick="shoWe()"> أضهار المزيد </div>`
+                            }
                         }
                     }
+                    if (data.length - 1 === i) {
+                        numAdFullStaff ++;
+                        adFullStaff()
+                    }
                 }
-                if (data.length - 1 === i) {
-                    numAdFullStaff ++;
-                    adFullStaff()
-                }
+            } else {
+                numAdFullStaff ++;
+                adFullStaff()
             }
+        }).fail(function() {
+            numAdFullStaff ++;
+            adFullStaff()
         })
     }
 }
