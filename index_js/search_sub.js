@@ -15,9 +15,6 @@ selects = document.getElementById("selects")
 resSer = document.getElementById("resSer")
 sesTrouko = document.getElementById("sesTrouko")
 // ...
-var pMinex = document.getElementById("javaXs")
-var containersAll = []
-var isFirst = false
 var whereHussein = 0
 
 function hsh(s) {

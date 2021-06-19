@@ -8,11 +8,8 @@ var xReq = new XMLHttpRequest();
 xReq.open('GET', '../../data.json');
 xReq.send();
 
-var containersAll = []
-var isFirst = false
 var whereHussein = 0
 var numAdFullStaff = 0
-var pMinex = document.getElementById("javaXs")
 
 var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText]
 
@@ -24,7 +21,6 @@ var blackList = []
 var lisB = []
 var van = []
 var isEle = 0
-var isMore = false
 
 function ad(s) {
     var cos = 0

@@ -14,10 +14,7 @@ sub_r_nSugg = document.getElementById("sub_r_nSugg")
 sub_r_sSugg = document.getElementById("sub_r_sSugg")
 sub_r_nLink = document.getElementById("sub_r_nLink")
 var et = document.getElementById("psp").innerText
-var pMinex = document.getElementById("javaAx")
 
-var containersAll = []
-var isFirst = false
 var whereHussein = 0
 
 
