@@ -755,6 +755,7 @@ a:hover {
   }
   .twitShe {
       background-color: #55ACEE;
+      cursor: pointer;
   }
   #admenPage {
       direction: ltr;
@@ -765,7 +766,7 @@ a:hover {
   #sEndWe a{
       color: #d0dae091 !important;
   }
-
+twitShe
   .wepIfrem {
       width: 100%;
       border: none;
