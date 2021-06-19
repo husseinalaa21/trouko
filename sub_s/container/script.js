@@ -23,22 +23,23 @@ ollStuff.forEach(r=>{
    }
 })
 // ...
-var sectionLoad = [{ n: "subjects/space", s: "space", x: "الفضاء", z: "sfirst", c: true },
-{ n: "subjects/physics", s: "physics", x: "الفيزياء", z: "sfirst", c: true },
-{ n: "subjects/sciences", s: "sciences", x: "العلوم", z: "sfirst", c: true },
-{ n: "subjects/technology", s: "technology", x: " التكنلوجيا ", z: "sfirst", c: true },
-{ n: "subjects/geography", s: "geography", x: " الجغرافية ", z: "sfirst", c: true },
-{ n: "subjects/else", s: "else", x: " متنوعة ", z: "sfirst", c: true },
-
-{ n: "questions/questions_space", s: "space", x: "الفضاء", z: "sTwo", c: true },
-{ n: "questions/questions_physics", s: "physics", x: "الفيزياء", z: "sTwo", c: true },
-{ n: "questions/questions_else", s: "else", x: " متنوعة ", z: "sTwo", c: true },
-{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", z: "sTwo", c: true },,
-
-{ n: "subjects/economie", s : "economie", c: false, x: "الاقتصاد" },
-{ n: "questions/questions_economie", s : "economie", c: false, x: "الاقتصاد" },
-
-{ n: "subjects/movies", s : "movies", c: false, x: "افلام و مسلسلات" }]
+var sectionLoad = [
+    { n: "subjects/space", s: "space", x: "الفضاء", c: true },
+    { n: "questions/questions_space", s: "space", x: "الفضاء", c: true },
+    
+    { n: "subjects/technology", s: "technology", x: " التكنلوجيا ", c: true },
+    { n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", c: true },
+    
+    { n: "subjects/else", s: "else", x: " متنوعة ", c: true },
+    { n: "questions/questions_else", s: "else", x: " متنوعة ", c: true },
+    
+    { n: "subjects/physics", s: "physics", x: "الفيزياء", c: true },
+    { n: "questions/questions_physics", s: "physics", x: "الفيزياء", c: true },
+    
+    { n: "subjects/geography", s: "geography", x: " الجغرافية ", c: true },
+    { n: "subjects/sciences", s: "sciences", x: "العلوم", c: true },
+    
+    { n: "subjects/movies", x: "افلام و مسلسلات", c: false}]
 var alerAdd = []
 sectionLoad.forEach(e => {
     if (alerAdd.includes(e.s) === false) {
@@ -117,24 +118,35 @@ async function husDev() {
                 if (sectionLoad[nCalln].s === selects.value || selects.value === "hussein") {
                     let nno = sectionLoad[nCalln].n
                     let soWhat = nno.replace(/\//g, "")
-                    $.getJSON("../../jsData/" + soWhat + ".json", function (data) {
-                        for (var o = 0; o < data.length; o++) {
-                            let numCach = 0,
-                                didCach = false
-                            let sese = data[o].replace("https://trouko.com/", "").replace(nno, "").replace(/\//g, "").replace(/_/g, " ")
-                            let sw = sese.split(" ");
-                            for (var e = 0; e < spText.length; e++) {
-                                if (sw.includes(spText[e])) {
-                                    didCach = true
-                                    numCach++;
+                    $.getJSON("../../jsData/" + soWhat + ".json", function (dataX) {
+                        var data = dataX,
+                            o = 0;
+                        inDataDeep()
+                        function inDataDeep() {
+                            if(data.length - 1 === o || data.length === 0){
+                                nCalln++;
+                                serIn()
+                                // done deep
+                            } else {
+                                let numCach = 0,
+                                    didCach = false
+                                let sese = data[o].replace("https://trouko.com/", "").replace(nno, "").replace(/\//g, "").replace(/_/g, " ")
+                                let sw = sese.split(" ");
+                                for (var e = 0; e < spText.length; e++) {
+                                    if (sw.includes(spText[e])) {
+                                        didCach = true
+                                        numCach++;
+                                    }
+                                    if(spText.length - 1 === e){
+                                        o ++;
+                                        inDataDeep()
+                                    }
+                                }
+                                if (didCach === true) {
+                                    catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
                                 }
                             }
-                            if (didCach === true) {
-                                catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
-                            }
                         }
-                        nCalln++;
-                        serIn()
                     })
                 } else {
                     nCalln++;
@@ -145,7 +157,7 @@ async function husDev() {
                     var lisWeb = [], numCall = 0
                     seeReels()
                     function seeReels() {
-                        if (numCall < catcho.length) {
+                        if (numCall < catcho.length && numCall < 8) {
                             let heNum = 0, n, u, numCatch;
                             for (var e = 0; e < catcho.length; e++) {
                                 if (catcho[e].num > heNum) {

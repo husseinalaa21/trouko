@@ -125,24 +125,35 @@ async function husDev() {
                 if (sectionLoad[nCalln].s === selects.value || selects.value === "hussein") {
                     let nno = sectionLoad[nCalln].n
                     let soWhat = nno.replace(/\//g, "")
-                    $.getJSON("../jsData/" + soWhat + ".json", function (data) {
-                        for (var o = 0; o < data.length; o++) {
-                            let numCach = 0,
-                                didCach = false
-                            let sese = data[o].replace("https://trouko.com/", "").replace(nno, "").replace(/\//g, "").replace(/_/g, " ")
-                            let sw = sese.split(" ");
-                            for (var e = 0; e < spText.length; e++) {
-                                if (sw.includes(spText[e])) {
-                                    didCach = true
-                                    numCach++;
+                    $.getJSON("../jsData/" + soWhat + ".json", function (dataX) {
+                        var data = dataX,
+                            o = 0;
+                        inDataDeep()
+                        function inDataDeep() {
+                            if(data.length - 1 === o || data.length === 0){
+                                nCalln++;
+                                serIn()
+                                // done deep
+                            } else {
+                                let numCach = 0,
+                                    didCach = false
+                                let sese = data[o].replace("https://trouko.com/", "").replace(nno, "").replace(/\//g, "").replace(/_/g, " ")
+                                let sw = sese.split(" ");
+                                for (var e = 0; e < spText.length; e++) {
+                                    if (sw.includes(spText[e])) {
+                                        didCach = true
+                                        numCach++;
+                                    }
+                                    if(spText.length - 1 === e){
+                                        o ++;
+                                        inDataDeep()
+                                    }
+                                }
+                                if (didCach === true) {
+                                    catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
                                 }
                             }
-                            if (didCach === true) {
-                                catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
-                            }
                         }
-                        nCalln++;
-                        serIn()
                     })
                 } else {
                     nCalln++;
@@ -153,7 +164,7 @@ async function husDev() {
                     var lisWeb = [], numCall = 0
                     seeReels()
                     function seeReels() {
-                        if (numCall < catcho.length) {
+                        if (numCall < catcho.length && numCall < 8) {
                             let heNum = 0, n, u, numCatch;
                             for (var e = 0; e < catcho.length; e++) {
                                 if (catcho[e].num > heNum) {
@@ -255,6 +266,9 @@ function adValue(di,lv,typ) {
 }
 
 function addNewSubrtPlus(cm, appe) {
+    if(appe === null){
+        return false
+    }
     whereHussein ++;
     var n = cm.replace("../../", "").replace(/\//g, "_"),
         li = document.createElement("div");
