@@ -154,35 +154,31 @@ function callGayes() {
     }
 }
 
-function reqHussein() {
-    try {
-        var cm = containersAll[whereHussein].nam
-        var appe = containersAll[whereHussein].plc
-
-        var n = cm.replace("../../../", "").replace(/\//g, "_"),
-            li = document.createElement("div"),
-            ew = Math.floor(Math.random() * 1000) + 10,
-            we = Math.floor(Math.random() * 1000) + 6;
-        li.className = "s_sub_t_d";
-        li.id = we + n + ew
-        appe.append(li)
-        document.getElementById("whereHu").innerText = we + n + ew
-
-        var lic = document.createElement("script");
-        lic.src = cm + "Javascript/i_fscript.js"
-        pMinex.append(lic)
-        whereHussein++;
-        callGayes()
-    } catch {
-        // Last Son
-    }
-}
 function adSugg(cm, appe) {
-    if (isFirst === false) {
-        containersAll.push({ nam: cm, plc: appe })
-        reqHussein()
-        isFirst = true
-    } else {
-        containersAll.push({ nam: cm, plc: appe })
-    }
+    whereHussein ++;
+    var n = cm.replace("../../../", "").replace(/\//g, "_"),
+        li = document.createElement("div");
+    li.className = "s_sub_t_d";
+    li.id = n + whereHussein
+    appe.append(li)
+    adsInH(cm,n + whereHussein)
+    callGayes()
+}
+
+function adsInH(cm,dorra){
+    $.getJSON(cm + "Javascript/i_fscript.js", function (hus) {
+        document.getElementById(dorra).innerHTML = `
+        <div class="img_p_sugg_p">
+        <a href="`+hus[0]+`">
+        <img src="`+hus[2]+`" alt="`+hus[1]+`"  class="sub_s_i" style="width:100%" height="auto">
+        </a>
+        </div>
+
+        <div class="sugg_p_t_bo_23">
+        <a class="s_sub_t" href="`+hus[0]+`" >`+hus[1]+`</a>
+        <div class="infoPageSuQu"><p>`+hus[3]+`</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
+        <div class="p_t_inf"><p>`+hus[4]+`</p><a class="link_t_read_p" href="`+hus[0]+`"> قراءة المزيد </a></div>
+        <div class="infoPageSuQuTw"><p>`+hus[5]+`</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
+        </div>`
+    })
 }

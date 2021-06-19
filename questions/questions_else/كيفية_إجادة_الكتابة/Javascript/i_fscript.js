@@ -1,5 +1,1 @@
-var letHu  = document.getElementById("whereHu").innerText
-var addTitleIpage = document.getElementById(letHu)
-
-addTitleIpage.innerHTML = '<div class="img_p_sugg_p"> <a href="https://trouko.com/questions/questions_else/كيفية_إجادة_الكتابة"> <img src="../../../imgs/writing.webp" alt="كيفية إجادة الكتابة"  class="sub_s_i" style="width:100%" height="auto"> </a> </div> <div class="sugg_p_t_bo_23"> <a class="s_sub_t" href="https://trouko.com/questions/questions_else/كيفية_إجادة_الكتابة">كيفية إجادة الكتابة</a> <div class="infoPageSuQu"><p>الاسئلة / متنوعة</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div><div class="p_t_inf" > <p>هل تود أن تصبح كاتبًا جيدًا؟ رغم أن ذلك سوف يستغرق منك بعض الوقت إلا أنه على ما يبدو أسهل كثيرًا من ... </p><a class="link_t_read_p" href="https://trouko.com/questions/questions_else/كيفية_إجادة_الكتابة"> قراءة المزيد </a></div><div class="infoPageSuQuTw"><p> الجمعه, 18 يونيو 2021  </p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div></div>'
-reqHussein()
+["https://trouko.com/questions/questions_else/كيفية_إجادة_الكتابة","كيفية إجادة الكتابة","../../../imgs/writing.webp","الاسئلة / متنوعة","هل تود أن تصبح كاتبًا جيدًا؟ رغم أن ذلك سوف يستغرق منك بعض الوقت إلا أنه على ما يبدو أسهل كثيرًا من ...","الجمعه, 18 يونيو 2021"]

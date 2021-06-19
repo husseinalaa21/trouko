@@ -1,5 +1,1 @@
-var letHu  = document.getElementById("whereHu").innerText
-var addTitleIpage = document.getElementById(letHu)
-
-addTitleIpage.innerHTML = '<div class="img_p_sugg_p"> <a href="https://trouko.com/subjects/movies/افضل_مسلسلات_خيال_علمي"> <img src="../../../imgs/blackMirror.webp" alt="افضل مسلسلات خيال علمي"  class="sub_s_i" style="width:100%" height="auto"> </a> </div> <div class="sugg_p_t_bo_23"> <a class="s_sub_t" href="https://trouko.com/subjects/movies/افضل_مسلسلات_خيال_علمي">افضل مسلسلات خيال علمي</a> <div class="infoPageSuQu"><p> المواضيع / افلام و مسلسلات  </p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div><div class="p_t_inf" > <p>في السنوات الاخيرة الماضية أنتشرت مسلسلات الخيال العلمي بشكل غير مسبوق , وفي هذه المقالة سوف نتحدث ع... </p><a class="link_t_read_p" href="https://trouko.com/subjects/movies/افضل_مسلسلات_خيال_علمي"> قراءة المزيد </a></div><div class="infoPageSuQuTw"><p> الثلاثاء, 4 مايو 2021  </p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div></div>'
-reqHussein()
+["https://trouko.com/subjects/movies/افضل_مسلسلات_خيال_علمي","افضل مسلسلات خيال علمي","../../../imgs/blackMirror.webp"," المواضيع / افلام و مسلسلات  ","في السنوات الاخيرة الماضية أنتشرت مسلسلات الخيال العلمي بشكل غير مسبوق , وفي هذه المقالة سوف نتحدث ع...","الثلاثاء, 4 مايو 2021"]

@@ -1,5 +1,1 @@
-var letHu  = document.getElementById("whereHu").innerText
-var addTitleIpage = document.getElementById(letHu)
-
-addTitleIpage.innerHTML = '<div class="img_p_sugg_p"> <a href="https://trouko.com/subjects/sciences/تعريف_العلم"> <img src="../../../imgs/scscsc2021.webp" alt="تعريف العلم"  class="sub_s_i" style="width:100%" height="auto"> </a> </div> <div class="sugg_p_t_bo_23"> <a class="s_sub_t" href="https://trouko.com/subjects/sciences/تعريف_العلم">تعريف العلم</a> <div class="infoPageSuQu"><p> المواضيع / العلوم  </p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div><div class="p_t_inf" > <p>مفهوم العلم هو أسلوب منهجي يقوم ببناء وتنظيم المعرفة في شكل تفسيرات وتوقعات قابلة للاختبار حول الكون... </p><a class="link_t_read_p" href="https://trouko.com/subjects/sciences/تعريف_العلم"> قراءة المزيد </a></div><div class="infoPageSuQuTw"><p> الاربعاء, 9 يونيو 2021  </p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div></div>'
-reqHussein()
+["https://trouko.com/subjects/sciences/تعريف_العلم","تعريف العلم","../../../imgs/scscsc2021.webp"," المواضيع / العلوم  ","مفهوم العلم هو أسلوب منهجي يقوم ببناء وتنظيم المعرفة في شكل تفسيرات وتوقعات قابلة للاختبار حول الكون...","الاربعاء, 9 يونيو 2021"]
