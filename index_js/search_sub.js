@@ -145,12 +145,12 @@ async function husDev() {
                                         numCach++;
                                     }
                                     if(spText.length - 1 === e){
+                                        if (didCach === true) {
+                                            catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
+                                        }
                                         o ++;
                                         inDataDeep()
                                     }
-                                }
-                                if (didCach === true) {
-                                    catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
                                 }
                             }
                         }
