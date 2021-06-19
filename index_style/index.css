@@ -216,7 +216,8 @@ li:focus{
     border-radius: 5px;
     overflow: hidden;
     width: 47.7%;
-    height: fit-content;
+    height: auto;
+    min-height: 170px;
     margin: auto;
     margin-bottom: 10px;
     margin-top: 10px;
