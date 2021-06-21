@@ -39,11 +39,9 @@ window.onload = function () {
     
     var xReq = new XMLHttpRequest();
     xReq.open('GET', '../../../jsData/' + et.replace(/\//g, "") + '.json');
-    
     xReq.send();
-    
     xReq.onload = function () {
-        adIndexSugg(title_p_index)
+        adIndexSugg()
     }
     cdLink(true)
     
