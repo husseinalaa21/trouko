@@ -134,6 +134,12 @@ function addNewSubrt(cm, appe) {
         li = document.createElement("div");
     li.className = "s_sub_t_d";
     li.id = n + whereHussein
+    li.innerHTML = `<div class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>`
     appe.append(li)
     myDataAlone.push({ cm, id: n + whereHussein })
     reqHuss()

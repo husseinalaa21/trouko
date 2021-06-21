@@ -1,18 +1,15 @@
-var index_sugg_p, nameP, title_p_index, sub_r_s, hol_sugg, psp
-    , sub_r_sSugg, sub_r_nSugg, sub_r_nLink, index_sugg_pT, hol_suggT;
+var index_sugg_p,title_p_index, sub_r_s, hol_sugg, psp
+    , sub_r_sSugg, index_sugg_pT, hol_suggT;
 
 index_sugg_p = document.getElementById("index_sugg_p")
 index_sugg_pT = document.getElementById("index_sugg_pT")
-nameP = document.getElementById("title").innerHTML
-title_p_index = document.getElementById("title_p_index").innerHTML = nameP;
+title_p_index = document.getElementById("titleTs").innerText
 sub_r_s = document.getElementById("sub_r_s")
 hol_sugg = document.getElementById("hol_sugg")
 hol_suggT = document.getElementById("hol_suggT")
 psp = document.getElementById("psp").innerHTML
 
-sub_r_nSugg = document.getElementById("sub_r_nSugg")
 sub_r_sSugg = document.getElementById("sub_r_sSugg")
-sub_r_nLink = document.getElementById("sub_r_nLink")
 var et = document.getElementById("psp").innerText
 
 var myDataAlone = [],
@@ -36,28 +33,25 @@ window.onload = function () {
             console.log("we feal!")
         }
     }
-    
-    var xReq = new XMLHttpRequest();
-    xReq.open('GET', '../../../jsData/' + et.replace(/\//g, "") + '.json');
-    xReq.send();
-    xReq.onload = function () {
+
+    var docMain = new XMLHttpRequest();
+    docMain.open('GET', '../../../jsData/' + et.replace(/\//g, "") + '.json');
+    docMain.send();
+    docMain.onload = function () {
+        cdLink()
         adIndexSugg()
     }
-    cdLink(true)
-    
+
     //
-    
-    var storageD = [];
-    
     function adIndexSugg() {
         var miUrl = document.getElementById("miUrl").innerText + '/',
-            xData = JSON.parse(xReq.responseText),
+            xData = JSON.parse(docMain.responseText),
             iBasic = 0,
             iVeSt = [],
             po = new RegExp('https://trouko.com/', 'g'),
             etx = et.replace(/\//g, ""),
             pet = new RegExp(etx, 'g');
-    
+
         for (var x = 0; x < xData.length; x++) {
             var e = (xData.length - x) - 1
             if (lisSys.includes(xData[e]) !== true && miUrl !== xData[e] && iBasic < 20) {
@@ -68,38 +62,53 @@ window.onload = function () {
                 iVeSt.push(sub)
             }
         }
-        var cos = 0
-        var arr = [];
+        var arr = [],
+            nFirst = 0,
+            nSec = 0;
         while (arr.length < iVeSt.length) {
             var r = Math.floor(Math.random() * iVeSt.length);
             if (arr.indexOf(r) === -1) arr.push(r);
         }
         // Need Fix :|
+        var didFile = false;
+        lisSys.forEach(vr => {
+            if (vr !== "") {
+                didFile = true
+            }
+        })
         for (var i = 0; i < arr.length; i++) {
-            if (cos < 4) {
-                cos++
-                var x = arr[i]
+            var x = arr[i],
+                sub = { "linkPage": iVeSt[x].linkPage.replace("https://trouko.com/", "../../../") };
+            if (i < 4) {
                 addSuggTIndex(iVeSt[x].linkPage, iVeSt[x].namePath)
-                let src = iVeSt[x].linkPage.replace("https://trouko.com/", "../../../")
-                adSugg(src, sub_r_sSugg);
+                weFindIndex()
+            }
+            if (didFile === false) {
+                // mean add to > sugg - first
+                if (nFirst < 4) {
+                    // add to > sugg - first (And) add to > sugg - seconed
+                    nFirst++;
+                    adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_s);
+                    weFindFirst()
+                } else if (nSec < 4) {
+                    nSec++;
+                    adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_sSugg);
+                    weFindSec()
+                }
             } else {
-                var x = arr[i]
-                var sub = { "linkPage": iVeSt[x].linkPage, "namePath": iVeSt[x].namePath };
-                storageD.push(sub)
+                // mean add to > sugg - seconed
+                if (nSec < 4) {
+                    nSec++;
+                    adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_sSugg);
+                    weFindSec()
+                }
             }
         }
-        cdLink(false)
     }
-    
-    var callf = 0;
-    
+
     function addSuggTIndex(l, n) {
         var g = title_p_index.replace(/ /g, "")
-        callf++;
-        if (callf > 5) {
-            return false
-        }
-        else if (g.includes(n)) {
+        if (g.includes(n)) {
             return false
         }
         var lit, li;
@@ -112,61 +121,59 @@ window.onload = function () {
         index_sugg_p.append(li)
         index_sugg_pT.append(lit)
     }
-    
-    
-    //.
-    
+
     function cdLink(x) {
-        if (x === true) {
-            lisSys.forEach(vr => {
-                if (vr !== "") {
-                    let src = vr.replace("https://trouko.com/", "../../../")
-                    adSugg(src, sub_r_s);
-                }
-            })
-        } else {
-            var didFile = false
-            lisSys.forEach(vr => {
-                if (vr !== "") {
-                    didFile = true
-                }
-            })
-            if (didFile === false && storageD.length > 0) {
-                var cos = 0;
-                for (var x = 0; x < storageD.length; x++) {
-                    if (cos < 4) {
-                        cos++
-                        let src = storageD[x].linkPage.replace("https://trouko.com/", "../../../")
-                        adSugg(src, sub_r_s);
-                    }
-                }
+        lisSys.forEach(vr => {
+            if (vr !== "") {
+                let src = vr.replace("https://trouko.com/", "../../../")
+                adSugg(src, sub_r_s);
+                weFindFirst()
             }
-        }
+        })
     }
-    var isCallHim = false
-    function callGayes() {
-        if (isCallHim === false) {
-            isCallHim = true
+    //.
+
+
+    var isWeFindFirst = false,
+        isWeFindSec = false,
+        isWeFindIndex = false;
+    function weFindIndex() {
+        if (isWeFindIndex === false) {
+            isWeFindIndex = true
             document.getElementById("suggContainerMed").style.display = "block"
             document.getElementById("suggContainerWeb").style.display = "block"
-            // Suggesst in buttom
-            sub_r_nSugg.style.display = "none"
-            sub_r_nLink.style.display = "none"
         }
     }
-    
+    function weFindFirst() {
+        if (isWeFindFirst === false) {
+            isWeFindFirst = true
+            document.getElementById("suggest_Main").style.display = "block"
+        }
+    }
+    function weFindSec() {
+        if (isWeFindSec === false) {
+            isWeFindSec = true
+            document.getElementById("suggest_sugg").style.display = "block"
+        }
+    }
+
     function adSugg(cm, appe) {
         whereHussein++;
         var n = cm.replace("../../../", "").replace(/\//g, "_"),
             li = document.createElement("div");
         li.className = "s_sub_t_d";
         li.id = n + whereHussein
+        li.innerHTML = `<div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>`
         appe.append(li)
         myDataAlone.push({ cm, id: n + whereHussein })
         reqHuss()
-        callGayes()
     }
-    
+
     function reqHuss() {
         if (isTakeng === false) {
             if (myDataAlone.length > timeTakeing) {
@@ -217,13 +224,13 @@ function randoPag() {
     var xData = JSON.parse(xReq.responseText);
     async function biOne() {
         let c = Math.floor(Math.random() * xData.length)
-        if(c === miUrlx+"/"){
+        if (c === miUrlx + "/") {
             biOne()
         } else {
             return c
         }
     }
-    biOne().then(e=>{
+    biOne().then(e => {
         location.href = xData[e]
     })
 }
@@ -237,11 +244,11 @@ var iconT = document.getElementById("uMenuMine_m"),
     click_material = document.getElementById("click_material"),
     isClickMenu = false,
     isAppen = false,
-    isWebT= false,
+    isWebT = false,
     menLis = document.getElementById("menuLisWeb"),
     photo_page_im = document.getElementById("photo_page_im"),
     change = 'open';
-    
+
 click_material.addEventListener("click", e => {
     if (change === 'open') {
         photo_page_im.style.maxHeight = "100%";
@@ -276,7 +283,7 @@ var lisBox = `
        </div>
     </div>
   </div>
-  <a href="`+document.getElementById("Urlsame").innerText+`"> مقالات مشابهة </a>
+  <a href="`+ document.getElementById("Urlsame").innerText + `"> مقالات مشابهة </a>
   <div class="secSearch">
     <form role="search" method="get" class="search-form" action="https://trouko.com/" id="grootIsTree">
     <input type="search" class="search-field" placeholder="ابحث عن شيء …" name="c">
@@ -297,31 +304,31 @@ function imGroot() {
     document.getElementById("grootIsTree").submit();
 }
 function iloveHusseinAlaa() {
-iconBarTh.className = "icon-bar";
-iconBar.className = "icon-bar"
-iconBarT.className = "icon-bar"
-document.getElementById("covBody").style.width = "0";
-document.getElementById("mySidenav").style.width = "0";
-isClickMenu = false
-isWebT = false
+    iconBarTh.className = "icon-bar";
+    iconBar.className = "icon-bar"
+    iconBarT.className = "icon-bar"
+    document.getElementById("covBody").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0";
+    isClickMenu = false
+    isWebT = false
 }
 function seIns(z) {
-let element = document.getElementById(z)
-element.style.display = (element.style.display == 'none') ? er(true) : er(false);
-function er(params) {
-    if (params === true) {
-        element.style.display = 'block'
-        document.getElementById("erSAre").className = "arrow active"
-    } else {
-        element.style.display = 'none'
-        document.getElementById("erSAre").className = "arrow"
+    let element = document.getElementById(z)
+    element.style.display = (element.style.display == 'none') ? er(true) : er(false);
+    function er(params) {
+        if (params === true) {
+            element.style.display = 'block'
+            document.getElementById("erSAre").className = "arrow active"
+        } else {
+            element.style.display = 'none'
+            document.getElementById("erSAre").className = "arrow"
+        }
     }
-}
 }
 var rt = document.getElementsByTagName('BODY')
 iconT.addEventListener("click", e => {
     if (isClickMenu === false) {
-        if(isAppen === false){
+        if (isAppen === false) {
             menLis.innerHTML = lisBox
             isAppen = true
         }
@@ -341,7 +348,7 @@ var prevScrollpos = window.pageYOffset;
 /*var shtPagr = document.getElementById("infDir"),
     nbxc = document.getElementById("titleTs").innerHTML*/
 window.onscroll = function () {
-    if(isWebT === false){
+    if (isWebT === false) {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos || 53 > currentScrollPos) {
             document.getElementById("navMean").style.top = "0";
