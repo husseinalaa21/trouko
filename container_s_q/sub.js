@@ -15,7 +15,11 @@ sub_r_sSugg = document.getElementById("sub_r_sSugg")
 sub_r_nLink = document.getElementById("sub_r_nLink")
 var et = document.getElementById("psp").innerText
 
-var whereHussein = 0
+var myDataAlone = [],
+    timeTakeing = 0,
+    whereHussein = 0,
+    isDoneReq = false,
+    isTakeng = false;
 
 
 var lisSys = []
@@ -152,30 +156,53 @@ function callGayes() {
 }
 
 function adSugg(cm, appe) {
-    whereHussein ++;
+    whereHussein++;
     var n = cm.replace("../../../", "").replace(/\//g, "_"),
         li = document.createElement("div");
     li.className = "s_sub_t_d";
     li.id = n + whereHussein
     appe.append(li)
-    adsInH(cm,n + whereHussein)
+    myDataAlone.push({ cm, id: n + whereHussein })
+    reqHuss()
     callGayes()
 }
 
-function adsInH(cm,dorra){
-    $.getJSON(cm + "Javascript/i_fscript.js", function (hus) {
+function reqHuss() {
+    if (isTakeng === false) {
+        if (myDataAlone.length > timeTakeing) {
+            isTakeng = true
+            adsInH(myDataAlone[timeTakeing].cm, myDataAlone[timeTakeing].id)
+        } else {
+            isDoneReq = true
+        }
+    } else {
+        if (isDoneReq === true) {
+            isDoneReq = false
+            adsInH(myDataAlone[timeTakeing].cm, myDataAlone[timeTakeing].id)
+        }
+    }
+}
+function adsInH(cm, dorra) {
+    var xReq = new XMLHttpRequest();
+    xReq.open('GET', cm + "Javascript/i_fscript.js");
+    xReq.send();
+    xReq.onload = function () {
+        var hus = JSON.parse(xReq.responseText)
         document.getElementById(dorra).innerHTML = `
         <div class="img_p_sugg_p">
-        <a href="`+hus[0]+`">
-        <img src="`+hus[2]+`" alt="`+hus[1]+`"  class="sub_s_i" style="width:100%" height="auto">
+        <a href="`+ hus[0] + `">
+        <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%" height="auto">
         </a>
         </div>
 
         <div class="sugg_p_t_bo_23">
-        <a class="s_sub_t" href="`+hus[0]+`" >`+hus[1]+`</a>
-        <div class="infoPageSuQu"><p>`+hus[3]+`</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
-        <div class="p_t_inf"><p>`+hus[4]+`</p><a class="link_t_read_p" href="`+hus[0]+`"> قراءة المزيد </a></div>
-        <div class="infoPageSuQuTw"><p>`+hus[5]+`</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
+        <a class="s_sub_t" href="`+ hus[0] + `" >` + hus[1] + `</a>
+        <div class="infoPageSuQu"><p>`+ hus[3] + `</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
+        <div class="p_t_inf"><p>`+ hus[4] + `</p><a class="link_t_read_p" href="` + hus[0] + `"> قراءة المزيد </a></div>
+        <div class="infoPageSuQuTw"><p>`+ hus[5] + `</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
         </div>`
-    })
+        timeTakeing++;
+        isTakeng = false
+        reqHuss()
+    }
 }

@@ -8,19 +8,23 @@ var xReq = new XMLHttpRequest();
 xReq.open('GET', '../../data.json');
 xReq.send();
 
-var whereHussein = 0
-var numAdFullStaff = 0
+var myDataAlone = [],
+    timeTakeing = 0,
+    whereHussein = 0,
+    numAdFullStaff = 0,
+    isDoneReq = false,
+    isTakeng = false;
 
 var surc = ["subjects" + adrs.innerText, "questionsquestions_" + adrs.innerText]
 
-window.onload = function(){
+window.onload = function () {
     adFullStaff()
 }
 
-var blackList = []
-var lisB = []
-var van = []
-var isEle = 0
+var blackList = [],
+    lisB = [],
+    van = [],
+    isEle = 0
 
 function ad(s) {
     var cos = 0
@@ -57,8 +61,8 @@ var isAdFull = false
 xReq.onload = function () {
     isReqLast = true
 }
-function lastCheck(){
-    if(isReqLast === true){
+function lastCheck() {
+    if (isReqLast === true) {
         var neAr = []
         var ed = JSON.parse(xReq.responseText);
         for (var w = 0; w < ed.length; w++) {
@@ -67,20 +71,20 @@ function lastCheck(){
             }
         }
         ad(neAr)
-        
+
     } else {
         setTimeout(() => {
             lastCheck()
         }, 10);
     }
 }
-function adFullStaff(){
+function adFullStaff() {
     if (surc.length === numAdFullStaff) {
         lastCheck()
     } else {
         var a = surc[numAdFullStaff]
         $.getJSON("../../jsData/" + a + ".json", function (data) {
-            if(data.length > 0){
+            if (data.length > 0) {
                 for (var i = 0; i < data.length; i++) {
                     if (i < 3) {
                         let c = (data.length - i) - 1
@@ -109,20 +113,21 @@ function adFullStaff(){
                         }
                     }
                     if (data.length - 1 === i) {
-                        numAdFullStaff ++;
+                        numAdFullStaff++;
                         adFullStaff()
                     }
                 }
             } else {
-                numAdFullStaff ++;
+                numAdFullStaff++;
                 adFullStaff()
             }
-        }).fail(function() {
-            numAdFullStaff ++;
+        }).fail(function () {
+            numAdFullStaff++;
             adFullStaff()
         })
     }
 }
+
 function addNewSubrt(cm, appe) {
     whereHussein ++;
     var n = cm.replace("../../", "").replace(/\//g, "_"),
@@ -130,24 +135,48 @@ function addNewSubrt(cm, appe) {
     li.className = "s_sub_t_d";
     li.id = n + whereHussein
     appe.append(li)
-    reqHussein(cm,n + whereHussein)
+    myDataAlone.push({ cm, id: n + whereHussein })
+    reqHuss()
 }
-function reqHussein(cm,dorra) {
-    $.getJSON(cm + "Javascript/i_fscript.js", function (hus) {
+
+function reqHuss() {
+    if (isTakeng === false) {
+        if (myDataAlone.length > timeTakeing) {
+            isTakeng = true
+            adsInH(myDataAlone[timeTakeing].cm, myDataAlone[timeTakeing].id)
+        } else {
+            isDoneReq = true
+        }
+    } else {
+        if (isDoneReq === true) {
+            isDoneReq = false
+            adsInH(myDataAlone[timeTakeing].cm, myDataAlone[timeTakeing].id)
+        }
+    }
+}
+function adsInH(cm, dorra) {
+    var xReq = new XMLHttpRequest();
+    xReq.open('GET', cm + "Javascript/i_fscript.js");
+    xReq.send();
+    xReq.onload = function () {
+        var hus = JSON.parse(xReq.responseText)
         document.getElementById(dorra).innerHTML = `
         <div class="img_p_sugg_p">
-        <a href="`+hus[0]+`">
-        <img src="`+hus[2]+`" alt="`+hus[1]+`"  class="sub_s_i" style="width:100%" height="auto">
+        <a href="`+ hus[0] + `">
+        <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%" height="auto">
         </a>
         </div>
 
         <div class="sugg_p_t_bo_23">
-        <a class="s_sub_t" href="`+hus[0]+`" >`+hus[1]+`</a>
-        <div class="infoPageSuQu"><p>`+hus[3]+`</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
-        <div class="p_t_inf"><p>`+hus[4]+`</p><a class="link_t_read_p" href="`+hus[0]+`"> قراءة المزيد </a></div>
-        <div class="infoPageSuQuTw"><p>`+hus[5]+`</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
+        <a class="s_sub_t" href="`+ hus[0] + `" >` + hus[1] + `</a>
+        <div class="infoPageSuQu"><p>`+ hus[3] + `</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
+        <div class="p_t_inf"><p>`+ hus[4] + `</p><a class="link_t_read_p" href="` + hus[0] + `"> قراءة المزيد </a></div>
+        <div class="infoPageSuQuTw"><p>`+ hus[5] + `</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
         </div>`
-    })
+        timeTakeing++;
+        isTakeng = false
+        reqHuss()
+    }
 }
 
 var iconT = document.getElementById("uMenuMine_m"),

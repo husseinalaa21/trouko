@@ -15,7 +15,11 @@ selects = document.getElementById("selects")
 resSer = document.getElementById("resSer")
 sesTrouko = document.getElementById("sesTrouko")
 // ...
-var whereHussein = 0
+var myDataAlone = [],
+    timeTakeing = 0,
+    whereHussein = 0,
+    isDoneReq = false,
+    isTakeng = false;
 
 function hsh(s) {
     let element = document.getElementById("s_" + s)
@@ -33,22 +37,22 @@ function hsh(s) {
 var sectionHide = ["text_one", "text_two", "text_three", "text_four", "text_five", "text_six"]
 
 var sectionLoad = [
-{ n: "subjects/space", s: "space", x: "الفضاء", c: true },
-{ n: "questions/questions_space", s: "space", x: "الفضاء", c: true },
+    { n: "subjects/space", s: "space", x: "الفضاء", c: true },
+    { n: "questions/questions_space", s: "space", x: "الفضاء", c: true },
 
-{ n: "subjects/technology", s: "technology", x: " التكنلوجيا ", c: true },
-{ n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", c: true },
+    { n: "subjects/technology", s: "technology", x: " التكنلوجيا ", c: true },
+    { n: "questions/questions_technology", s: "technology", x: " التكنلوجيا ", c: true },
 
-{ n: "subjects/else", s: "else", x: " متنوعة ", c: true },
-{ n: "questions/questions_else", s: "else", x: " متنوعة ", c: true },
+    { n: "subjects/else", s: "else", x: " متنوعة ", c: true },
+    { n: "questions/questions_else", s: "else", x: " متنوعة ", c: true },
 
-{ n: "subjects/physics", s: "physics", x: "الفيزياء", c: true },
-{ n: "questions/questions_physics", s: "physics", x: "الفيزياء", c: true },
+    { n: "subjects/physics", s: "physics", x: "الفيزياء", c: true },
+    { n: "questions/questions_physics", s: "physics", x: "الفيزياء", c: true },
 
-{ n: "subjects/geography", s: "geography", x: " الجغرافية ", c: true },
-{ n: "subjects/sciences", s: "sciences", x: "العلوم", c: true },
+    { n: "subjects/geography", s: "geography", x: " الجغرافية ", c: true },
+    { n: "subjects/sciences", s: "sciences", x: "العلوم", c: true },
 
-{ n: "subjects/movies", x: "افلام و مسلسلات", c: false}]
+    { n: "subjects/movies", x: "افلام و مسلسلات", c: false }]
 var alerAdd = []
 sectionLoad.forEach(e => {
     if (alerAdd.includes(e.s) === false) {
@@ -130,7 +134,7 @@ async function husDev() {
                             o = 0;
                         inDataDeep()
                         function inDataDeep() {
-                            if(data.length - 1 === o || data.length === 0){
+                            if (data.length - 1 === o || data.length === 0) {
                                 nCalln++;
                                 serIn()
                                 // done deep
@@ -144,11 +148,11 @@ async function husDev() {
                                         didCach = true
                                         numCach++;
                                     }
-                                    if(spText.length - 1 === e){
+                                    if (spText.length - 1 === e) {
                                         if (didCach === true) {
                                             catcho.push({ num: numCach, tit: sw.toString().replace(/,/g, " "), url: data[o] })
                                         }
-                                        o ++;
+                                        o++;
                                         inDataDeep()
                                     }
                                 }
@@ -214,14 +218,14 @@ xReq.onload = function () {
 var counValue = 0
 valueWeb()
 function valueWeb() {
-    if(counValue <= sectionLoad.length && sectionLoad[counValue].c === true){
+    if (counValue <= sectionLoad.length && sectionLoad[counValue].c === true) {
         var et = sectionLoad[counValue].n
         var ki = new XMLHttpRequest();
         ki.open('GET', '../jsData/' + et.replace(/\//g, "") + '.json');
         ki.send();
         ki.onload = function () {
-            adValue(sectionLoad[counValue].s,JSON.parse(ki.responseText),sectionLoad[counValue].n)
-            counValue ++;
+            adValue(sectionLoad[counValue].s, JSON.parse(ki.responseText), sectionLoad[counValue].n)
+            counValue++;
             valueWeb()
         }
     } else {
@@ -229,34 +233,34 @@ function valueWeb() {
     }
 }
 
-function adValue(di,lv,typ) {
+function adValue(di, lv, typ) {
     let adrs;
     let clearNam;
-    if(typ.includes("subjects")){
-        adrs = document.getElementById("web_"+di)
-        clearNam = "https://trouko.com/subjects/"+di+"/"
+    if (typ.includes("subjects")) {
+        adrs = document.getElementById("web_" + di)
+        clearNam = "https://trouko.com/subjects/" + di + "/"
     } else {
-        adrs = document.getElementById("weq_"+di)
-        clearNam = "https://trouko.com/questions/questions_"+di+"/"
+        adrs = document.getElementById("weq_" + di)
+        clearNam = "https://trouko.com/questions/questions_" + di + "/"
     }
     let numLast = 0;
     let numBasic = 0;
 
-    for(var u =0; u < lv.length ; u++){
+    for (var u = 0; u < lv.length; u++) {
         // THE NEWS VALUE
         let lastU = lv[(lv.length - u) - 1]
-        if(numLast < 2){
-            numLast ++;
+        if (numLast < 2) {
+            numLast++;
             let src = lastU.replace("https://trouko.com/", "../")
-            addNewSubrtPlus(src, document.getElementById("sec_"+di))
+            addNewSubrtPlus(src, document.getElementById("sec_" + di))
         }
         // THE FIRST VALUE
-        if(numBasic < 4){
-            numBasic ++;
+        if (numBasic < 4) {
+            numBasic++;
             try {
                 let nv = document.createElement("div")
                 nv.className = "web_index_con_tit"
-                nv.innerHTML = `<a href="`+lv[u]+`" >`+lv[u].replace(clearNam,"").replace(/\//g,"").replace(/_/g," ")+`</a>`
+                nv.innerHTML = `<a href="` + lv[u] + `" >` + lv[u].replace(clearNam, "").replace(/\//g, "").replace(/_/g, " ") + `</a>`
                 adrs.append(nv)
             } catch {
                 // Not Set
@@ -275,7 +279,24 @@ function addNewSubrtPlus(cm, appe) {
     li.className = "s_sub_t_d";
     li.id = n + whereHussein
     appe.append(li)
-    reqHussein(cm,n + whereHussein)
+    myDataAlone.push({ cm, id: n + whereHussein })
+    reqHuss()
+}
+
+function reqHuss() {
+    if (isTakeng === false) {
+        if (myDataAlone.length > timeTakeing) {
+            isTakeng = true
+            adsInH(myDataAlone[timeTakeing].cm, myDataAlone[timeTakeing].id)
+        } else {
+            isDoneReq = true
+        }
+    } else {
+        if (isDoneReq === true) {
+            isDoneReq = false
+            adsInH(myDataAlone[timeTakeing].cm, myDataAlone[timeTakeing].id)
+        }
+    }
 }
 // END > ADD VALUE TO PROFILE
 
@@ -313,20 +334,27 @@ reso()
 // END CHECK URL
 
 // IMPORTANT PERSON
-function reqHussein(cm,dorra) {
-    $.getJSON(cm + "Javascript/i_fscript.js", function (hus) {
+function adsInH(cm, dorra) {
+    var xReq = new XMLHttpRequest();
+    xReq.open('GET', cm + "Javascript/i_fscript.js");
+    xReq.send();
+    xReq.onload = function () {
+        var hus = JSON.parse(xReq.responseText)
         document.getElementById(dorra).innerHTML = `
         <div class="img_p_sugg_p">
-        <a href="`+hus[0]+`">
-        <img src="`+hus[2]+`" alt="`+hus[1]+`"  class="sub_s_i" style="width:100%" height="auto">
+        <a href="`+ hus[0] + `">
+        <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%" height="auto">
         </a>
         </div>
 
         <div class="sugg_p_t_bo_23">
-        <a class="s_sub_t" href="`+hus[0]+`" >`+hus[1]+`</a>
-        <div class="infoPageSuQu"><p>`+hus[3]+`</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
-        <div class="p_t_inf"><p>`+hus[4]+`</p><a class="link_t_read_p" href="`+hus[0]+`"> قراءة المزيد </a></div>
-        <div class="infoPageSuQuTw"><p>`+hus[5]+`</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
+        <a class="s_sub_t" href="`+ hus[0] + `" >` + hus[1] + `</a>
+        <div class="infoPageSuQu"><p>`+ hus[3] + `</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
+        <div class="p_t_inf"><p>`+ hus[4] + `</p><a class="link_t_read_p" href="` + hus[0] + `"> قراءة المزيد </a></div>
+        <div class="infoPageSuQuTw"><p>`+ hus[5] + `</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
         </div>`
-    })
+        timeTakeing++;
+        isTakeng = false
+        reqHuss()
+    }
 }
