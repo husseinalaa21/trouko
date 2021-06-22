@@ -116,9 +116,9 @@ window.onload = function () {
         li = document.createElement("p");
         li.className = "linShort"
         li.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
-        lit = document.createElement("p");
-        lit.className = "linShort"
-        lit.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
+        //lit = document.createElement("p");
+        //lit.className = "linShort"
+        //lit.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
         index_sugg_p.append(li)
         // FIX*
         //index_sugg_pT.append(lit)
