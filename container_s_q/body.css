@@ -41,7 +41,7 @@ body {
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 3px;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     overflow: hidden;
     margin-top: 14px;
@@ -54,45 +54,21 @@ body {
     color: #363738;
 }
 /* TITLE OF SUGG AND CONT . *TEST* -- END*/
-@media screen and (min-width: 730px),
-(min-width: 1000px) {
-    .bodyRootDisplay {
-        display: flex;
-        justify-content: space-between;
-    }
-    .bodyDivs {
-        width: 70%;
-    }
-    .webDiskTols {
-        display: block;
-        width: 30%;
-        transition: 0.3s;
-        padding-left: 14px;
-        padding-right: 14px;
-        background: #f5f5f5;
-        border: 0;
-        border-right: 1px solid #e3e9ec63;
-        transition: 0.3s;
-        padding-top: 30px;
-        direction: rtl;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .contactCon {
-        display: none;
-    }
-}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 840px) {
     .bodyRootDisplay {
         display: flex;
         justify-content: space-between;
     }
     .bodyDivs {
-        width: 78%;
+        width: auto;
+        max-width: 78%;
+        overflow: hidden;
     }
     .webDiskTols {
         display: block;
         width: 22%;
+        min-width: 250px;
         transition: 0.3s;
         padding-left: 14px;
         padding-right: 14px;
