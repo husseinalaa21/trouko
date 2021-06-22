@@ -301,8 +301,8 @@ a.s_sub_tTw {
     .adsEqMain { width: 728px !important; height: 90px !important;margin: auto !important;}
 }
 .adsWeb {
-    width: 95%;
-    max-width: 260px;
+    width: 85%;
+    max-width: 300px;
     margin: auto;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 1%);
     background-color:  #f7f7f7;

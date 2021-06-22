@@ -21,10 +21,6 @@ body {
     padding-top: 0;
 }
 
-.webDiskTols {
-    display: none;
-}
-
 .sectionProcess {
     padding-bottom: 30px;
 }
@@ -66,7 +62,7 @@ body {
         overflow: hidden;
     }
     .webDiskTols {
-        display: block;
+        display: block !important;
         width: 22%;
         min-width: 250px;
         transition: 0.3s;
@@ -79,20 +75,27 @@ body {
         direction: rtl;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .contactCon {
-        display: none;
+    .contactIndex,.contactCon {
+        position: absolute;
+        left: 0;
+        border: 0;
+        width: 22%;
+        min-width: 280px;
+        align-items: center;
     }
-}
-
-.info_indexSec {
-    background-color: #f7f7f7;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 8px;
-    overflow: hidden;
-    width: 95%;
-    max-width: 260px;
-    margin: auto;
-    margin-bottom: 16px;
+    .contactIndex {
+        top: 110px;
+    }
+    .adsWeb {
+        display: block !important;
+    }
+    .info_index {
+        width: 85%;
+        max-width: 300px;
+    }/*
+    .contactCon {
+         top : #makw it next element 
+    }*/
 }
 
 .ad_intro_in_p_h {
