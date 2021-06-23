@@ -1,4 +1,4 @@
-var index_sugg_p,title_p_index, sub_r_s, hol_sugg, psp
+var index_sugg_p, title_p_index, sub_r_s, hol_sugg, psp
     , sub_r_sSugg, index_sugg_pT, hol_suggT;
 
 index_sugg_p = document.getElementById("index_sugg_p")
@@ -19,6 +19,10 @@ var myDataAlone = [],
     isDoneReq = false,
     isTakeng = false;
 
+
+var isWeFindFirst = false,
+    isWeFindSec = false,
+    isWeFindIndex = false;
 
 var lisSys = []
 var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
@@ -77,32 +81,51 @@ window.onload = function () {
                 didFile = true
             }
         })
-        for (var i = 0; i < arr.length; i++) {
-            var x = arr[i],
-                sub = { "linkPage": iVeSt[x].linkPage.replace("https://trouko.com/", "../../../") };
-            if (i < 4) {
-                addSuggTIndex(iVeSt[x].linkPage, iVeSt[x].namePath)
-                weFindIndex()
+        if (arr.length > 0) {
+            for (var i = 0; i < arr.length; i++) {
+                var x = arr[i],
+                    sub = { "linkPage": iVeSt[x].linkPage.replace("https://trouko.com/", "../../../") };
+                if (i < 4) {
+                    addSuggTIndex(iVeSt[x].linkPage, iVeSt[x].namePath)
+                    weFindIndex()
+                }
+                if (didFile === false) {
+                    // mean add to > sugg - first
+                    if (nFirst < 4) {
+                        // add to > sugg - first (And) add to > sugg - seconed
+                        nFirst++;
+                        adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_s);
+                        weFindFirst(true)
+                    } else if (nSec < 4) {
+                        nSec++;
+                        adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_sSugg);
+                        weFindSec(true)
+                    }
+                } else {
+                    // mean add to > sugg - seconed
+                    if (nSec < 4) {
+                        nSec++;
+                        adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_sSugg);
+                        weFindSec(true)
+                    }
+                }
+
+                // CHECK ADDS
+                if (arr.length - 1 === i) {
+                    if (isWeFindFirst === false) {
+                        weFindFirst(false)
+                    }
+                    if (isWeFindSec === false) {
+                        weFindSec(false)
+                    }
+                }
             }
-            if (didFile === false) {
-                // mean add to > sugg - first
-                if (nFirst < 4) {
-                    // add to > sugg - first (And) add to > sugg - seconed
-                    nFirst++;
-                    adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_s);
-                    weFindFirst()
-                } else if (nSec < 4) {
-                    nSec++;
-                    adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_sSugg);
-                    weFindSec()
-                }
-            } else {
-                // mean add to > sugg - seconed
-                if (nSec < 4) {
-                    nSec++;
-                    adSugg(iVeSt[x].linkPage.replace("https://trouko.com/", "../../../"), sub_r_sSugg);
-                    weFindSec()
-                }
+        } else {
+            if (isWeFindFirst === false) {
+                weFindFirst(false)
+            }
+            if (isWeFindSec === false) {
+                weFindSec(false)
             }
         }
     }
@@ -129,16 +152,12 @@ window.onload = function () {
             if (vr !== "") {
                 let src = vr.replace("https://trouko.com/", "../../../")
                 adSugg(src, sub_r_s);
-                weFindFirst()
+                weFindFirst(true)
             }
         })
     }
     //.
 
-
-    var isWeFindFirst = false,
-        isWeFindSec = false,
-        isWeFindIndex = false;
     function weFindIndex() {
         if (isWeFindIndex === false) {
             isWeFindIndex = true
@@ -147,16 +166,26 @@ window.onload = function () {
             document.getElementById("suggContainerWeb").style.display = "block"
         }
     }
-    function weFindFirst() {
+    function weFindFirst(x) {
         if (isWeFindFirst === false) {
             isWeFindFirst = true
-            document.getElementById("suggest_Main").style.display = "block"
+            if (x === true) {
+                document.getElementById("suggest_Main").innerText = ""
+            } else {
+                console.log("************************")
+                document.getElementById("suggest_Main").innerHTML = "no"
+            }
         }
     }
-    function weFindSec() {
+    function weFindSec(x) {
         if (isWeFindSec === false) {
             isWeFindSec = true
-            document.getElementById("suggest_sugg").style.display = "block"
+            if (x === true) {
+                document.getElementById("suggest_sugg").innerText = ""
+            } else {
+                console.log("************************")
+                document.getElementById("suggest_sugg").innerHTML = "no"
+            }
         }
     }
 
@@ -166,11 +195,9 @@ window.onload = function () {
             li = document.createElement("div");
         li.className = "s_sub_t_d";
         li.id = n + whereHussein
-        li.innerHTML = `<div class="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        li.innerHTML = `<div class="loaderSection">
+        <div class="l_top"></div>
+        <div class="l_down"><div class="l_title"></div><div class="l_dis"></div><div class="l_end"><div></div><div></div></div></div>
         </div>`
         appe.append(li)
         myDataAlone.push({ cm, id: n + whereHussein })

@@ -92,16 +92,48 @@ a.a_link {
 a.a_link:hover {
     color: #143d58;
 }
+
+/* Loding secions */
+
+.loaderSection {
+  position: relative;
+}
+.l_top {
+  height: 134px;
+  background-color: #f5f5f5;
+}
+.l_down {
+position: relative;
+background-color: #f8f8f8;
+}
+.l_title {
+  width: 70%;
+  border-radius: 4px;
+  padding: 4px;
+  height: 15px;
+  margin: 10px;
+  margin-left: auto;
+  background-color: #f5f5f5;
+}
+.l_dis {
+  border-radius: 4px;
+  height: 75px;
+  width: 93%;
+  margin: auto;
+  margin-top: 13px;
+  padding: 4px;
+  background-color: #f5f5f5;
+}
 /* START - LOAD SUGG */
 .loader {
   position: relative;
   display: grid;
-  grid-template-columns: 33% 33%;
-  width: 45px;
+  grid-template-columns: 50% 50%;
+  width: 30px;
   height: 30px;
-  top: 50%;
-  left: 50%;
-  margin: -10px 0 0 -10px;
+  margin: auto;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 .loader > div {
   position: relative;

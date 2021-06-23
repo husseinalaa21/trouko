@@ -278,11 +278,9 @@ function addNewSubrtPlus(cm, appe) {
         li = document.createElement("div");
     li.className = "s_sub_t_d";
     li.id = n + whereHussein
-    li.innerHTML = `<div class="loader">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    li.innerHTML = `<div class="loaderSection">
+    <div class="l_top"></div>
+    <div class="l_down"><div class="l_title"></div><div class="l_dis"></div></div>
     </div>`
     appe.append(li)
     myDataAlone.push({ cm, id: n + whereHussein })
