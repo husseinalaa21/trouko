@@ -92,10 +92,17 @@ body {
     .info_index {
         width: 85%;
         max-width: 300px;
-    }/*
+    }
     .contactCon {
-         top : #makw it next element 
-    }*/
+        z-index: 10;
+    }
+    .contactFront {
+        display: inline-block;
+    }
+    .container_text {
+        position: relative !important;
+        display: inline-block;
+    }
 }
 
 .ad_intro_in_p_h {
