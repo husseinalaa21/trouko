@@ -3,7 +3,7 @@ var index_sugg_p,title_p_index, sub_r_s, hol_sugg, psp
 
 index_sugg_p = document.getElementById("index_sugg_p")
 // FIX*
-//index_sugg_pT = document.getElementById("index_sugg_pT")
+index_sugg_pT = document.getElementById("index_sugg_pT")
 title_p_index = document.getElementById("titleTs").innerText
 sub_r_s = document.getElementById("sub_r_s")
 hol_sugg = document.getElementById("hol_sugg")
@@ -116,12 +116,12 @@ window.onload = function () {
         li = document.createElement("p");
         li.className = "linShort"
         li.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
-        //lit = document.createElement("p");
-        //lit.className = "linShort"
-        //lit.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
-        index_sugg_p.append(li)
+        lit = document.createElement("p");
+        lit.className = "linShort"
+        lit.innerHTML = "<a class='sugg_i_li' href='" + l + "'>" + n + "</a><a href='" + l + "' class='icoLinShort'><img src='../../../icons/chevron-left-solid.svg'  style='width:10px;'></a>";
+        index_sugg_p.appendChild(li)
         // FIX*
-        //index_sugg_pT.append(lit)
+        index_sugg_pT.appendChild(lit)
     }
 
     function cdLink(x) {
@@ -144,7 +144,7 @@ window.onload = function () {
             isWeFindIndex = true
             document.getElementById("suggContainerMed").style.display = "block"
             // FIX*
-            //document.getElementById("suggContainerWeb").style.display = "block"
+            document.getElementById("suggContainerWeb").style.display = "block"
         }
     }
     function weFindFirst() {
