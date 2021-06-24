@@ -172,8 +172,7 @@ window.onload = function () {
             if (x === true) {
                 document.getElementById("suggest_Main").innerText = ""
             } else {
-                console.log("************************")
-                document.getElementById("suggest_Main").innerHTML = "no"
+                document.getElementById("suggest_Main").innerHTML = `<div class='wrongSugg'> <div class='wr_icon'><div class="moon"><div class="star"></div></div><img src="../../../icons/telescope.svg" style="width:34px;height: 34px;"></div> <div class='wr_title'> تعذر العثور على مقالات ذات صلة. </div>  </div>`
             }
         }
     }
@@ -183,8 +182,7 @@ window.onload = function () {
             if (x === true) {
                 document.getElementById("suggest_sugg").innerText = ""
             } else {
-                console.log("************************")
-                document.getElementById("suggest_sugg").innerHTML = "no"
+                document.getElementById("suggest_sugg").innerHTML = `<div class='wrongSugg'> <div class='wr_icon'><div class="moon"><div class="star"></div></div><img src="../../../icons/telescope.svg" style="width:34px;height: 34px;"></div> <div class='wr_title'> تعذر العثور على مقترحات. </div>  </div>`
             }
         }
     }
