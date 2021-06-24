@@ -226,7 +226,7 @@ window.onload = function () {
             document.getElementById(dorra).innerHTML = `
             <div class="img_p_sugg_p">
             <a href="`+ hus[0] + `">
-            <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%" height="auto">
+            <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%;height:100%;">
             </a>
             </div>
             <div class="sugg_p_t_bo_23">
