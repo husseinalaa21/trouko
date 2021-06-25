@@ -158,6 +158,8 @@ window.onload = function () {
     }
     //.
 
+    var nbEmpt = `<div class='wrongSugg'> <div class='wr_icon'><div class="moon"><div class="star"></div></div><img src="../../../icons/telescope.svg" style="width:34px;height: 34px;"></div> <div class='wr_title'>`
+
     function weFindIndex() {
         if (isWeFindIndex === false) {
             isWeFindIndex = true
@@ -172,7 +174,7 @@ window.onload = function () {
             if (x === true) {
                 document.getElementById("suggest_Main").innerText = ""
             } else {
-                document.getElementById("suggest_Main").innerHTML = `<div class='wrongSugg'> <div class='wr_icon'><div class="moon"><div class="star"></div></div><img src="../../../icons/telescope.svg" style="width:34px;height: 34px;"></div> <div class='wr_title'> تعذر العثور على مقالات ذات صلة. </div>  </div>`
+                document.getElementById("suggest_Main").innerHTML = nbEmpt+`تعذر العثور على مقالات ذات صلة.</div></div>`
             }
         }
     }
@@ -182,7 +184,7 @@ window.onload = function () {
             if (x === true) {
                 document.getElementById("suggest_sugg").innerText = ""
             } else {
-                document.getElementById("suggest_sugg").innerHTML = `<div class='wrongSugg'> <div class='wr_icon'><div class="moon"><div class="star"></div></div><img src="../../../icons/telescope.svg" style="width:34px;height: 34px;"></div> <div class='wr_title'> تعذر العثور على مقترحات. </div>  </div>`
+                document.getElementById("suggest_sugg").innerHTML = nbEmpt+`تعذر العثور على مقترحات.</div></div>`
             }
         }
     }
@@ -226,7 +228,7 @@ window.onload = function () {
             document.getElementById(dorra).innerHTML = `
             <div class="img_p_sugg_p">
             <a href="`+ hus[0] + `">
-            <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%;height:100%;">
+            <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%;height:auto;">
             </a>
             </div>
             <div class="sugg_p_t_bo_23">
