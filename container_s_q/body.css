@@ -479,6 +479,7 @@ b {
     padding: 10px;
     display: flex;
     direction: rtl;
+    padding-bottom: 2px;
 }
 .sou_an_quo_content {
     margin-bottom: 12px;
@@ -797,54 +798,10 @@ a:hover {
     width: 40px;
     padding: 10px;
     align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 4px 16px rgb(0 0 0 / 1%);
 }
 .wr_icon img{
     position: relative;
     z-index: 10;
     margin-bottom: -23px;
-    
-}
-.moon {
-    position: absolute;
-    margin: auto;
-    height: 18px;
-    width: 18px;
-    margin-top: -10px;
-    margin-left: -5px;
-    background-color: #2a4166;
-    border-radius: 60px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-}
-.star:nth-child(1){
-    background-color: #F6F5F5;
-    height: 2px;
-    width: 2px;
-    border-radius: 100px;
-    position: absolute;
-    margin-top: 6px;
-    margin-left: 2px;
-    border: 1px solid #bcbec4;
-    clear: both;
-}
-.star:nth-child(2){
-    background-color: #F6F5F5;
-    height: 1px;
-    width: 1px;
-    border-radius: 100px;
-    position: relative;
-    margin-top: 9px;
-    margin-left: 8px;
-    border: 1px solid #bcbec4;
-    clear: both;
-}
-.star:nth-child(3){
-    background-color: #F6F5F5;
-    height: 1px;
-    width: 1px;
-    border-radius: 100px;
-    position: relative;
-    margin-top: -4px;
-    margin-left: 13px;
-    border: 1px solid #bcbec4;
-    clear: both;
 }
