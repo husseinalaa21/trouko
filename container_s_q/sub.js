@@ -373,23 +373,3 @@ iconT.addEventListener("click", e => {
         iloveHusseinAlaa()
     }
 })
-var prevScrollpos = window.pageYOffset;
-/*var shtPagr = document.getElementById("infDir"),
-    nbxc = document.getElementById("titleTs").innerHTML*/
-window.onscroll = function () {
-    if (isWebT === false) {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos || 53 > currentScrollPos) {
-            document.getElementById("navMean").style.top = "0";
-        } else {
-            document.getElementById("navMean").style.top = "-90px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-    /*
-    if(window.scrollY > 170){
-      shtPagr.innerHTML = '<div class="titPage" ><p> عنوان المقالة : '+nbxc+' </p></div>'
-    } else {
-      shtPagr.innerHTML = ""
-    }*/
-}

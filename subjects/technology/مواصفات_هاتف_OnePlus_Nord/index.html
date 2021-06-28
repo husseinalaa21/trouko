@@ -33,7 +33,7 @@
        </script>
        <title id="title">مواصفات هاتف OnePlus Nord</title>
     </head>
-    <!-- v 5.4 -->
+    <!-- v 5.5 -->
     <body>
     <header>
        <div class="headerMenu" id="navMean">
@@ -51,7 +51,6 @@
                    </div>
                 </div>
              </div>
-             <p id="infDir"> </p>
              <div id="menuLisWeb"> </div>
           </div>
        </div>
@@ -324,5 +323,19 @@
    </div>
  </div>
  </body>
-  <script src="../../../container_s_q/sub.js" type="text/javascript"></script>
+ <script>
+   var prevScrollpos = window.pageYOffset;
+   window.onscroll = function () {
+       if (isWebT === false) {
+           var currentScrollPos = window.pageYOffset;
+           if (prevScrollpos > currentScrollPos || 53 > currentScrollPos) {
+               document.getElementById("navMean").style.top = "0";
+           } else {
+               document.getElementById("navMean").style.top = "-90px";
+           }
+           prevScrollpos = currentScrollPos;
+       }
+   }
+ </script>
+ <script src="../../../container_s_q/sub.js" type="text/javascript"></script>
 </html>
