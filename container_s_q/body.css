@@ -453,7 +453,7 @@ body {
     position: relative;
     z-index: 10;
 }
-.title__ad_subject_p:before {
+/*.title__ad_subject_p:before {
     content: "";
     position: absolute;
     bottom: 4px;
@@ -462,7 +462,7 @@ body {
     z-index: -10;
     background-color: #6fb9eb3f;
     border-bottom: 2px solid #6fb9eb63;
-}
+}*/
 .ad_i_subject a ,.container_text a{
     color: #4f97f5 !important;
 }
