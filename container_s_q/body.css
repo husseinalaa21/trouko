@@ -407,6 +407,7 @@ body {
 .title_con {
     margin-bottom: 7px;
     display: flex;
+    align-items: center;
 }
 .titInside {
     width: 94%;
@@ -419,7 +420,6 @@ body {
     content: "";
     display: block;
     position: relative;
-    margin-top: 17px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 10px solid #6fb9eb;
