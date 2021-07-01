@@ -27,6 +27,21 @@ var isWeFindFirst = false,
 var lisSys = []
 var lisHtm = ['lin_k_One', 'lin_k_Two', 'lin_k_Three', 'lin_k_Four', 'lin_k_Five']
 
+// inside
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    if (isWebT === false) {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos || 53 > currentScrollPos) {
+            document.getElementById("navMean").style.top = "0";
+        } else {
+            document.getElementById("navMean").style.top = "-90px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+}
+//.
+
 window.onload = function () {
     for (var t = 0; t < lisHtm.length; t++) {
         try {

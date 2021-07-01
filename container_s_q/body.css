@@ -42,10 +42,11 @@ body {
     overflow: hidden;
     margin-top: 14px;
     margin-bottom: 14px;
+    font-size: 16.4px;
 }
 /* TITLE OF SUGG AND CONT . *TEST* -- START*/
 .tpot {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     color: #363738;
 }
@@ -94,7 +95,6 @@ body {
 .ad_intro_in_p_h {
     font-size: 27px;
     font-weight: 600;
-    line-height: 1.4;
     padding: 8px 8px 6px 8px;
     text-align: start;
     word-break: break-word;
@@ -103,6 +103,7 @@ body {
     hyphens: auto;
     color: #2b2b2c;
     width: 85%;
+    margin-bottom: 5px;
 }
 
 .menfontmen {
@@ -289,41 +290,48 @@ body {
 .adConIn {
     display: flex;
     font-size: 11px;
-    padding: 4px;
-    border: 0;
-    border-right: 2.5px solid #b1cce0;
-    font-family: 'Almarai', sans-serif;
-    margin: 3px 1px 3px 1px;
-    width: 70%;
-    max-width: 400px;
+    padding: 10px 10px 0px 10px;
     align-items: center;
-    color: #595959;
+    color: #252525;
+    margin-bottom: 11px;
+    align-items: center;
 }
-#edTime {
-    margin-bottom: 6px;
+.admenPage {
+    font-size: 11px;
 }
+
 .time_write_this_page_o {
     padding: 10px 10px 0px 10px;
     align-items: center;
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
 }
-.buIndex {
+.buIndex ,.buIndexBy{
     position: relative;
-    font-size: 13px !important;
+    width: fit-content;
+    width: -moz-fit-content;
 }
-.buIndey {
-    height: 4px;
-    padding-left: 38px;
-    margin-left: auto;
+.buIndexBy::before{
     content: "";
     position: absolute;
-    margin-top: 13px;
-    z-index: -1;
-    transition: top 200ms cubic-bezier(0, .8, .13, 1);
-    background-color: #d5e3eb60;
+    bottom: -1px;
+    height: 2px;
+    width: 85%;
+    z-index: -10;
+    background-color: #d5e3ebb9;
     border: 0;
-    border-bottom: 1px solid #d5e3eb9f;
+    border-bottom: 1px solid #d5e3ebd5;
+}
+.buIndex::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 6px;
+    width: 92%;
+    z-index: -10;
+    background-color: #ebedeeb2;
+    border: 0;
+    border-bottom: 2px solid #ebedeee3;
 }
 .adConInQ {
     font-display: swap;
@@ -373,40 +381,87 @@ body {
 
 /* MAIN CONTAINERS */
 
-.container_text {
-    padding: 5px 13px 19px 13px;
-    font-size: 17.6px;
+.ad_sub {
+    margin-bottom: 1.5em;
+}
+
+.container_text ,.ad_i_subject {
+    width: 94%;
+    margin: auto;
+    font-size: 18px;
     line-height: 25px;
     word-break: break-word;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    margin-top: 0.3em;
     color: #000;
 }
+.container_text {
+    margin-top: 0.4em;
+    margin-bottom: .5em;
+}
+.ad_i_subject {
+    margin-top: 0.2em;
+}
 
+.title_con {
+    margin-bottom: 7px;
+    display: flex;
+}
+.titInside {
+    width: 94%;
+    margin: auto;
+}
+.arrTitle {
+    width: 0;
+    height: 0;
+    right: 0;
+    content: "";
+    display: block;
+    position: relative;
+    margin-top: 17px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #6fb9eb;
+}
+@media screen and (min-width: 840px) {
+    .container_text ,.ad_i_subject {
+        width: 97%;
+        margin: auto;
+    }
+    .titInside {
+        width: 97%;
+        margin: auto;
+    }
+    .container_text {
+        margin-top: 0.9em;
+        margin-bottom: .5em;
+    }
+    .ad_i_subject {
+        margin-top: 0.2em;
+    }    
+}
 .title__ad_subject_p {
     font-size: 23px;
     font-weight: 600;
-    border: 0;
     line-height: 1.4;
-    padding: 4px 10px 8px 10px;
-    border-right: 5px solid #6fb9eb;
+    padding: 4px 0 8px 0;
     color: #32363b;
     word-break: break-word;
-    width: 85%;
+    width: fit-content;
+    width: -moz-fit-content;
+    position: relative;
+    z-index: 10;
 }
-
-.ad_i_subject {
-    padding: 5px 13px 19px 13px;
-    font-size: 17.6px;
-    line-height: 25px;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    margin-top: 0.2em;
-    color: #000;
+.title__ad_subject_p:before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    height: 7px;
+    width: 100%;
+    z-index: -10;
+    background-color: #6fb9eb3f;
+    border-bottom: 2px solid #6fb9eb63;
 }
 .ad_i_subject a ,.container_text a{
     color: #4f97f5 !important;
@@ -463,8 +518,8 @@ blockquote {
 .source_quotes div {
     display: flex;
     align-items: center;
-    position: relative;
-    margin-top: -10px;
+    margin-top: 7px;
+    font-size: 13px;
 }
 
 .source_quotes div a {
