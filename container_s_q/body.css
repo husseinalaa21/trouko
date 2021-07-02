@@ -420,9 +420,10 @@ body {
     content: "";
     display: block;
     position: relative;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid #6fb9eb;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 11px solid #6fb9eb;
+    margin-left: 12px;
 }
 @media screen and (min-width: 840px) {
     .container_text ,.ad_i_subject {
