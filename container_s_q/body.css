@@ -313,10 +313,10 @@ body {
     content: "";
     position: absolute;
     bottom: -1px;
-    height: 2px;
+    height: 6px;
     width: 85%;
     z-index: -10;
-    background-color: #d5e3ebb9;
+    background-color: #d5e3eb65;
     border: 0;
     border-bottom: 1px solid #d5e3ebd5;
 }
