@@ -239,22 +239,29 @@ window.onload = function () {
         xReq.open('GET', cm + "Javascript/i_fscript.js");
         xReq.send();
         xReq.onload = function () {
-            var hus = JSON.parse(xReq.responseText)
-            document.getElementById(dorra).innerHTML = `
-            <div class="img_p_sugg_p">
-            <a href="`+ hus[0] + `">
-            <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%;height:auto;">
-            </a>
-            </div>
-            <div class="sugg_p_t_bo_23">
-            <a class="s_sub_t" href="`+ hus[0] + `" >` + hus[1] + `</a>
-            <div class="infoPageSuQu"><p>`+ hus[3] + `</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
-            <div class="p_t_inf"><p>`+ hus[4] + `</p><a class="link_t_read_p" href="` + hus[0] + `"> قراءة المزيد </a></div>
-            <div class="infoPageSuQuTw"><p>`+ hus[5] + `</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
-            </div>`
-            timeTakeing++;
-            isTakeng = false
-            reqHuss()
+            if (xReq.status === 200) {
+                var hus = JSON.parse(xReq.responseText)
+                document.getElementById(dorra).innerHTML = `
+                <div class="img_p_sugg_p">
+                <a href="`+ hus[0] + `">
+                <img src="`+ hus[2] + `" alt="` + hus[1] + `"  class="sub_s_i" style="width:100%;height:auto;">
+                </a>
+                </div>
+                <div class="sugg_p_t_bo_23">
+                <a class="s_sub_t" href="`+ hus[0] + `" >` + hus[1] + `</a>
+                <div class="infoPageSuQu"><p>`+ hus[3] + `</p><i class="material-icons" style="font-size:16px; color: #393e46;">folder</i></div>
+                <div class="p_t_inf"><p>`+ hus[4] + `</p><a class="link_t_read_p" href="` + hus[0] + `"> قراءة المزيد </a></div>
+                <div class="infoPageSuQuTw"><p>`+ hus[5] + `</p><i class="material-icons" style="font-size:15px; color: #393e46; margin-right: 5px;">date_range</i></div>
+                </div>`
+                timeTakeing++;
+                isTakeng = false
+                reqHuss()
+            } else {
+                document.getElementById(dorra).style.display = "none"
+                timeTakeing++;
+                isTakeng = false
+                reqHuss()
+            }
         }
     }
 }
