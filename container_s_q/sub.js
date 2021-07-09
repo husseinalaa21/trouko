@@ -269,21 +269,24 @@ window.onload = function () {
 // script.js
 
 function randoPag() {
-    var xReq = new XMLHttpRequest();
-    xReq.open('GET', '../data.js');
-    var miUrlx = document.getElementById("miUrl")
-    var xData = JSON.parse(xReq.responseText);
-    async function biOne() {
-        let c = Math.floor(Math.random() * xData.length)
-        if (c === miUrlx + "/") {
-            biOne()
-        } else {
-            return c
+    var xd = new XMLHttpRequest();
+    xd.open('GET', '../../../data.json');
+    xd.send(); 
+    xd.onload = function () {
+        var miUrlx = document.getElementById("miUrl")
+        var xData = JSON.parse(xd.responseText);
+        async function biOne() {
+            let c = Math.floor(Math.random() * xData.length)
+            if (c === miUrlx + "/") {
+                biOne()
+            } else {
+                return c
+            }
         }
+        biOne().then(e => {
+            location.href = xData[e]
+        })
     }
-    biOne().then(e => {
-        location.href = xData[e]
-    })
 }
 
 // index_main.js
