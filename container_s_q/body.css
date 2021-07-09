@@ -384,7 +384,7 @@ body {
 }
 
 .container_text ,.ad_i_subject {
-    width: 94%;
+    width: 90%;
     margin: auto;
     font-size: 18px;
     line-height: 25px;
@@ -396,7 +396,7 @@ body {
 }
 .container_text {
     margin-top: 0.4em;
-    margin-bottom: .5em;
+    margin-bottom: 1.2em;
 }
 .ad_i_subject {
     margin-top: 0.2em;
@@ -408,7 +408,7 @@ body {
     align-items: center;
 }
 .titInside {
-    width: 94%;
+    width: 90%;
     margin: auto;
 }
 .arrTitle {
@@ -423,18 +423,27 @@ body {
     border-right: 11px solid #6fb9eb;
     margin-left: 12px;
 }
-@media screen and (min-width: 840px) {
-    .container_text ,.ad_i_subject {
-        width: 97%;
+@media screen and (min-width: 740px) {
+    .container_text ,.ad_i_subject ,.titInside {
+        width: 94%;
         margin: auto;
     }
-    .titInside {
+    .container_text {
+        margin-top: 0.9em;
+        margin-bottom: 1.2em;
+    }
+    .ad_i_subject {
+        margin-top: 0.2em;
+    }    
+}
+@media screen and (min-width: 840px) {
+    .container_text ,.ad_i_subject ,.titInside {
         width: 97%;
         margin: auto;
     }
     .container_text {
         margin-top: 0.9em;
-        margin-bottom: .5em;
+        margin-bottom: 1.2em;
     }
     .ad_i_subject {
         margin-top: 0.2em;
