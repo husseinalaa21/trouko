@@ -879,3 +879,6 @@ a:hover {
     z-index: 10;
     margin-bottom: -23px;
 }
+.randPag {
+    cursor: pointer !important;
+}
