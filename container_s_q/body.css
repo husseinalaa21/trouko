@@ -438,7 +438,7 @@ body {
 }
 @media screen and (min-width: 840px) {
     .container_text ,.ad_i_subject ,.titInside {
-        width: 97%;
+        width: 95%;
         margin: auto;
     }
     .container_text {
