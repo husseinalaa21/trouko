@@ -483,7 +483,7 @@ body {
     line-height: 1.6;
 }
 .clis .spanx{
-    padding: 1.6px 8.2px 2.9px 8.2px;
+    padding: 1px 8.2px 2px 8.2px;
     font-size: 15.5px;
     position: relative;
     border-radius: 5px;
@@ -493,7 +493,7 @@ body {
     text-align: center;
     align-items: center;
     border: 0;
-    border-bottom: 1.8px solid #60a1cc;
+    border-bottom: 2px solid #60a1cc;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
 }
 .clis .spano{
