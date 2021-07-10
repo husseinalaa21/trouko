@@ -251,7 +251,9 @@ a.s_sub_tTw {
     font-family: 'Almarai', sans-serif;
 }
 .adsInside {
-    width: 90%;
+    max-width: 90%;
+    width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
     margin-top: 5px;
     margin-bottom: 5px;
