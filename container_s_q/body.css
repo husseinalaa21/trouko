@@ -485,7 +485,7 @@ body {
 .clis .spanx{
     padding: 1px 8.2px 1.3px 7.7px;
     position: relative;
-    border-radius: 3px;
+    border-radius: 5px;
     color: aliceblue;
     background-color: #7db7dd;
     margin-left: 4px;
