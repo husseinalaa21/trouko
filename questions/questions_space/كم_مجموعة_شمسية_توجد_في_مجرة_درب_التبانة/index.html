@@ -33,7 +33,7 @@
        </script>
        <title>كم مجموعة شمسية توجد في مجرة درب التبانة</title>
     </head>
-    <!-- v 5.6-->
+    <!-- v 5.7-->
     <body>
     <header>
        <div class="headerMenu" id="navMean">
@@ -77,15 +77,20 @@
                    </div>
                 </div>
              </div>
-             <div class="adsWeb">
+             <div class="adsWeb" id="ads_web_wOne">
                <div class="adsTitle">
                  إعلان
                </div>
                <div class="adsContainer">
                  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                  <!-- اعلان عمودي 1.0 -->
-                 <ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828"
-                   data-ad-slot="1106443123"></ins>
+                 <script>
+                  if (window.innerWidth > 960) {
+                     document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
+                  } else {
+                     document.getElementById("ads_web_wOne").style.display = "none"
+                  }
+                 </script>
                  <script>
                    (adsbygoogle = window.adsbygoogle || []).push({});
                  </script>
@@ -130,7 +135,7 @@
                   <p class="admenPage" id="admenPage"> Hussein A. </p>
             </div>
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاحد, 16 مايو 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل :  الاحد, 16 مايو 2021</p> 
+           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاحد, 16 مايو 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل : الاحد, 16 مايو 2021</p> 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
