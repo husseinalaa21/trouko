@@ -314,12 +314,6 @@ a.s_sub_tTw {
     color: #53575abb;
     text-align: center;
 }
-.adsContainer {
-    margin: 3.6px;
-    height: fit-content;
-    height: -moz-fit-content;
-    min-height: 30px;
-}
 .adsWebContainer {
     height: auto;
     min-height: 320px;
