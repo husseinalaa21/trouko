@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.co/sub_s/space/"> المواضيع / الفضاء</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.co/sub_s/space/"> المواضيع / الفضاء</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> تاريخ استكشاف أقمار المريخ </a></div><div class="index_list_"><a href="#titleContainerTwo_"> القمر فوبس </a></div><div class="index_list_"><a href="#titleContainerThree_"> القمر ديموس </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -131,7 +129,7 @@
                   <p class="admenPage" id="admenPage"> Adam Jim </p>
             </div>
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاثنين, 18 يناير 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل :  الجمعه, 23 ابريل 2021 </p> 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاثنين, 18 يناير 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل : الجمعه, 23 ابريل 2021 </p> 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -140,50 +138,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=أقمار كوكب المريخ&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/nasa-N3BQHYOVq5E-unsplash.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> تاريخ استكشاف أقمار المريخ </a></div><div class="index_list_"><a href="#titleContainerTwo_"> القمر فوبس </a></div><div class="index_list_"><a href="#titleContainerThree_"> القمر ديموس </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">عدد اقمار المريخ اثنان ، هما: القمر ديموس، وفوبوس , تم اكتشافهما من قبل آساف هال في شهر آب من عام 1977م، عندما كان آساف على وشك التخلي عن بحثه عن أقمار المريخ إلا أن زوجته أنجلينا شجعته وحثته، واستطاع آساف اكتشاف ديموس في الليلة التالية واكتشاف فوبس بعد ذلك بست ليال، وقام آساف هال بتسمية الأقمار نسبة إلى أبناء أريز الأسطوريين، فوبس بمعني الخوف أو الذعر،</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">عدد اقمار المريخ اثنان ، هما: القمر ديموس، وفوبوس , تم اكتشافهما من قبل آساف هال في شهر آب من عام 1977م، عندما كان آساف على وشك التخلي عن بحثه عن أقمار المريخ إلا أن زوجته أنجلينا شجعته وحثته، واستطاع آساف اكتشاف ديموس في الليلة التالية واكتشاف فوبس بعد ذلك بست ليال، وقام آساف هال بتسمية الأقمار نسبة إلى أبناء أريز الأسطوريين، فوبس بمعني الخوف أو الذعر،</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">تاريخ استكشاف أقمار المريخ</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">ساهمت العديد من المركبات الفضائية في اكتشاف القمر فوبوس، والقمر ديموس، ومن أهمها:المركبة مارينر 9 : التقطت هذه المركبة أول صورة للقمرين في عام 1971م. مدار فايكنج : قدم هذه المدار معلومات تكون الأساس للنماذج الشكلية والديناميكية للقمرين، وذلك في نهاية السبعينات. المركبة فوبوس 2 : استطاعت هذه المركبة السوفيتية في عام 1988م، الوصول إلى مسافة تبعد 100 كم من الهبوط على سطح القمر فوبوس .</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">ساهمت العديد من المركبات الفضائية في اكتشاف القمر فوبوس، والقمر ديموس، ومن أهمها:المركبة مارينر 9 : التقطت هذه المركبة أول صورة للقمرين في عام 1971م. مدار فايكنج : قدم هذه المدار معلومات تكون الأساس للنماذج الشكلية والديناميكية للقمرين، وذلك في نهاية السبعينات. المركبة فوبوس 2 : استطاعت هذه المركبة السوفيتية في عام 1988م، الوصول إلى مسافة تبعد 100 كم من الهبوط على سطح القمر فوبوس .</div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -220,14 +219,12 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">القمر فوبس</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">يعد فوبس بأنه القمر الداخلي والأكبر من أقمار المريخ، وهو عبارة عن جسم صخري صغير غير منتظم، بيضاوي تقريبا، وله سطح رمادي داكن جدا محطم ومغطى بالأخاديد الخطية، ويبلغ طوله حوالي 26 . 378 كم في مدار دائري.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">يعد فوبس بأنه القمر الداخلي والأكبر من أقمار المريخ، وهو عبارة عن جسم صخري صغير غير منتظم، بيضاوي تقريبا، وله سطح رمادي داكن جدا محطم ومغطى بالأخاديد الخطية، ويبلغ طوله حوالي 26 . 378 كم في مدار دائري.</div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerThree_">القمر ديموس</h2></div></div>
-             <div class="ad_i_subject"><div id="containerThree_">يعد القمر ديموس بأنه القمر الخارجي والأصغر من أقمار كوكب المريخ الاثنين، وهو عبارة عن جسم صخري غير منتظم، بيضاوي الشكل تقريبا، وله سطح فوضوي مغطى بطبقة سميكة من الحطام الصخري الدقيق، ولونه رمادي ومظلم، ويبلغ طوله حوالي 15 كم في أطول أبعاده، ويدور حول المريخ مرة واحدة كل ثلاثين ساعة و17 دقيقة على مسافة تبلغ حوالي 23</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerThree_">يعد القمر ديموس بأنه القمر الخارجي والأصغر من أقمار كوكب المريخ الاثنين، وهو عبارة عن جسم صخري غير منتظم، بيضاوي الشكل تقريبا، وله سطح فوضوي مغطى بطبقة سميكة من الحطام الصخري الدقيق، ولونه رمادي ومظلم، ويبلغ طوله حوالي 15 كم في أطول أبعاده، ويدور حول المريخ مرة واحدة كل ثلاثين ساعة و17 دقيقة على مسافة تبلغ حوالي 23</div></div>
          </div>
                
                
@@ -296,18 +293,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

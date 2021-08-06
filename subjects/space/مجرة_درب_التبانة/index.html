@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.co/sub_s/space/"> المواضيع / الفضاء</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.co/sub_s/space/"> المواضيع / الفضاء</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> عمر مجرة درب التبانة </a></div><div class="index_list_"><a href="#titleContainerTwo_"> دوران المجرة حول نفسها </a></div><div class="index_list_"><a href="#titleContainerThree_"> بنية المجرة </a></div><div class="index_list_"><a href="#titleContainerFour_"> أشعة غاما </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -131,7 +129,7 @@
                   <p class="admenPage" id="admenPage"> Adam Jim </p>
             </div>
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الثلاثاء, 27 اكتوبر 2020</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل :  الاحد, 16 مايو 2021</p> 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الثلاثاء, 27 اكتوبر 2020</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل : الاحد, 16 مايو 2021</p> 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -140,50 +138,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=مجرة درب التبانة&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/300px-ESO-VLT-Laser-phot-33a-07.jpg">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> عمر مجرة درب التبانة </a></div><div class="index_list_"><a href="#titleContainerTwo_"> دوران المجرة حول نفسها </a></div><div class="index_list_"><a href="#titleContainerThree_"> بنية المجرة </a></div><div class="index_list_"><a href="#titleContainerFour_"> أشعة غاما </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">مجرة درب التبانة او ما تعرف «الطريق اللبني» , و يظهر درب التبانة على شكل حزمة لبنية عريضة من ضوء النجوم تمتد عبر السماء , و مجرة درب التبانة هي المجرة التي ينتمي اليها الارض و الشمس و باقي كواكب واقمار النضام الشمسي للأرض , تنتشر في مجرة درب التبانة سحابات هائلة من ذرات التراب والغازات في شتى أطرافها.وأصل تسميتها بأن العرب شبَّهت ما يسقط من التبن الذي كانت تحمله مواشيهم كان يظهر أثره على الأرض كأذرع ملتوية تشبه أذرع المجرة. لأن جزء منها يرى في الليالي الصافية كطريق أبيض من التبن يتمثل للرائي بسبب النور الأبيض الخافت الممتد في السماء نتيجة الملايين من النجوم السماوية المضيئة والتي تبدو رغم أبعادها الشاسعة كأنها متراصة متجاورة، كما ترى كامل المجرة من مجرة أخرى على شكل شريط أبيض باهت في السماء.وتحتوي المجرة ما بين 200 إلى 400 مليار نجم .</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">مجرة درب التبانة او ما تعرف «الطريق اللبني» , و يظهر درب التبانة على شكل حزمة لبنية عريضة من ضوء النجوم تمتد عبر السماء , و مجرة درب التبانة هي المجرة التي ينتمي اليها الارض و الشمس و باقي كواكب واقمار النضام الشمسي للأرض , تنتشر في مجرة درب التبانة سحابات هائلة من ذرات التراب والغازات في شتى أطرافها.وأصل تسميتها بأن العرب شبَّهت ما يسقط من التبن الذي كانت تحمله مواشيهم كان يظهر أثره على الأرض كأذرع ملتوية تشبه أذرع المجرة. لأن جزء منها يرى في الليالي الصافية كطريق أبيض من التبن يتمثل للرائي بسبب النور الأبيض الخافت الممتد في السماء نتيجة الملايين من النجوم السماوية المضيئة والتي تبدو رغم أبعادها الشاسعة كأنها متراصة متجاورة، كما ترى كامل المجرة من مجرة أخرى على شكل شريط أبيض باهت في السماء.وتحتوي المجرة ما بين 200 إلى 400 مليار نجم .</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">عمر مجرة درب التبانة</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">العلماء الفلك يقدرون بأن مجرة درب التبانة تكونت قبل مدة زمنية تقدر بـ12–14 مليار سنة، فيما يعد علماء الفلك المجرة بأنها صغيرة العمر نسبيًا بالنسبة لمجرات كونية أخرى.<br /><strong>تم تحديد عمر المجرة باستخدام تقنية علم التسلسل الزمني الكوني .</strong></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">العلماء الفلك يقدرون بأن مجرة درب التبانة تكونت قبل مدة زمنية تقدر بـ12–14 مليار سنة، فيما يعد علماء الفلك المجرة بأنها صغيرة العمر نسبيًا بالنسبة لمجرات كونية أخرى. <br> <strong>تم تحديد عمر المجرة باستخدام تقنية علم التسلسل الزمني الكوني .</strong></div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -202,14 +201,12 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">دوران المجرة حول نفسها</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">تدور مجرة درب التبانة حول نفسها دورة كل نحو 250 مليون سنة.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">تدور مجرة درب التبانة حول نفسها دورة كل نحو 250 مليون سنة.</div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerThree_">بنية المجرة</h2></div></div>
-             <div class="ad_i_subject"><div id="containerThree_">تقسم بنية المجرة إلى ثلاثة أقسام رئيسية:<br /><br />1 - النواة : عبارة عن انتفاخ مضيئ شبه كروي يحتل مركز المجرة، كما بينت قياسات العشر سنوات الأخيرة وجود ثقب أسود عملاق في مركز المجرة وتبلغ كتلته نحو 2 مليون كتلة شمسية. يزداد اتساعه مع كبر عمر المجرة، كما توجد في الحوصلة المجرية تجمع هائل للنجوم والغبار الكوني. ويمكن بسهولة رؤية حوصلة المجرة المنتفخ نسبيا ليلا في وسط الطريق اللبني حيث أنها شديدة الضياء بصفة عامة، رغم صعوبة رؤية تفاصيلها الداخلية بسبب وجود غبار كثيف فيها يحجب الضوء.<br /><br />2-الأذرع: هي التي تحيط بالنواة المجرية وهي أذرع عملاقة تدور حول مركز المجرة.<br /><br />3-الهالة: وهي عبارة عن الإكليل الكروي الذي يحيط بالقرص المجري إلى مسافات بعيدة يبلغ قطرها نحو 150.000 سنة ضوئية متكونة من غازات مختلفة وسحب كونية.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerThree_">تقسم بنية المجرة إلى ثلاثة أقسام رئيسية: <br>  <br> 1 - النواة : عبارة عن انتفاخ مضيئ شبه كروي يحتل مركز المجرة، كما بينت قياسات العشر سنوات الأخيرة وجود ثقب أسود عملاق في مركز المجرة وتبلغ كتلته نحو 2 مليون كتلة شمسية. يزداد اتساعه مع كبر عمر المجرة، كما توجد في الحوصلة المجرية تجمع هائل للنجوم والغبار الكوني. ويمكن بسهولة رؤية حوصلة المجرة المنتفخ نسبيا ليلا في وسط الطريق اللبني حيث أنها شديدة الضياء بصفة عامة، رغم صعوبة رؤية تفاصيلها الداخلية بسبب وجود غبار كثيف فيها يحجب الضوء. <br>  <br> 2-الأذرع: هي التي تحيط بالنواة المجرية وهي أذرع عملاقة تدور حول مركز المجرة. <br>  <br> 3-الهالة: وهي عبارة عن الإكليل الكروي الذي يحيط بالقرص المجري إلى مسافات بعيدة يبلغ قطرها نحو 150.000 سنة ضوئية متكونة من غازات مختلفة وسحب كونية.</div></div>
          </div>
                
                
@@ -234,8 +231,7 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerFour_">أشعة غاما</h2></div></div>
-             <div class="ad_i_subject"><div id="containerFour_">اكتشف العالم الفلكي دوج فينكبانر في يوم 9 نوفمبر 2010 من مركز هارفارد- سمثسونيان للأبحات الفلكية فقعتين ضخمتين شديدتي الطاقة تنطلقان من وسط المجرة إلى الشمال وإلى الجنوب . وتم اكتشاف ذلك بواسطة مرصد فيرمي الفضائي لأشعة غاما.<br />يبلغ قطر الفقاعة منهما نحو 25.000 سنة ضوئية وتمتد عبر الفضاء في الجنوب من كوكبة العذراء إلى كوكبة الكركي. ولا يزال تفسيرها غامضا.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerFour_">اكتشف العالم الفلكي دوج فينكبانر في يوم 9 نوفمبر 2010 من مركز هارفارد- سمثسونيان للأبحات الفلكية فقعتين ضخمتين شديدتي الطاقة تنطلقان من وسط المجرة إلى الشمال وإلى الجنوب . وتم اكتشاف ذلك بواسطة مرصد فيرمي الفضائي لأشعة غاما. <br> يبلغ قطر الفقاعة منهما نحو 25.000 سنة ضوئية وتمتد عبر الفضاء في الجنوب من كوكبة العذراء إلى كوكبة الكركي. ولا يزال تفسيرها غامضا.</div></div>
          </div>
                
                
@@ -301,18 +297,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

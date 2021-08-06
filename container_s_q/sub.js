@@ -398,3 +398,15 @@ function randoPag() {
         })
     }
 }
+var isOp = false
+function setListPhone(){
+    if(isOp === false){
+        isOp = true
+        document.getElementById("listPhone").style.display = "none"
+        document.getElementById("si_phoneList").innerText = "[+]"
+    } else {
+        isOp = false
+        document.getElementById("listPhone").style.display = "grid"
+        document.getElementById("si_phoneList").innerText = "[--]"
+    }
+}

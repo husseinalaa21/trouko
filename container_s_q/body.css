@@ -42,6 +42,35 @@ body {
     margin-bottom: 14px;
     font-size: 16.4px;
 }
+
+.phoneList {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7de57;
+    position: relative;
+}
+.phoneList_word {
+    display: flex;
+}
+.phoneList_word div{
+    padding: 7px;
+}
+.phoneList_signal {
+    position: absolute;
+    left: 7px;
+    color: #393e46;
+    padding: 0 3px 4px 3px;
+    border-radius: 2px;
+    top: 6px;
+    background-color: #eff0f3;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+.phoneList_signal:hover{
+    background-color: #e8eaee;
+}
 /* TITLE OF SUGG AND CONT . *TEST* -- START*/
 .tpot {
     font-size: 17px;
@@ -400,6 +429,9 @@ body {
 .ad_i_subject {
     margin-top: 0.2em;
 }
+.textInside {
+    display: inline
+}
 
 .title_con {
     margin-bottom: 7px;
@@ -471,7 +503,7 @@ body {
     border-bottom: 2px solid #6fb9eb63;
 }*/
 .ad_i_subject a ,.container_text a{
-    color: #4f97f5 !important;
+    color: #4f97f5;
 }
 .ad_i_subject .clis {
     width: 86%;
@@ -528,15 +560,11 @@ blockquote {
 
 /* SOURCE */
 
-.source_quotes div {
-    display: flex;
-    align-items: center;
-    margin-top: 7px;
-    font-size: 13px;
-}
-
-.source_quotes div a {
-    padding-left: 6px;
+.linkTo {
+    margin-right: 5px;
+    position: relative;
+    top: -6px;
+    font-size: 12px;
 }
 
 .title_sour_an_qou {
@@ -582,13 +610,6 @@ blockquote {
     border:1px dotted#94b2d8;
 }
 
-.p_t_container {
-    color: #393e46;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-size: 13px;
-}
 a {
     text-decoration: none;
     color: #393e46;
@@ -597,18 +618,6 @@ a {
 a:hover {
     color: #3282b8;
 }
-
-.source_quotes div {
-    padding: 13px;
-    padding-left: 0;
-    padding-top: 0;
-}
-
-.source_quotes a {
-    color: #3282b8;
-    font-size: 13px;
-}
-
 
 /* list Menu */
 .newBody {

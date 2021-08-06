@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/space/"> المواضيع / الفضاء</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/space/"> المواضيع / الفضاء</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> متى تم اكتشاف نبتون؟  </a></div><div class="index_list_"><a href="#titleContainerTwo_"> الخضائص الفيزيائية و الغلاف الجوي و الطقس </a></div><div class="index_list_"><a href="#titleContainerThree_"> ما معنى ان  نبتون كوكب غازي </a></div><div class="index_list_"><a href="#titleContainerFour_"> لماذا نبتون أزرق؟ </a></div><div class="index_list_"><a href="#titleContainerFive_"> كم عدد أقمار نبتون؟ </a></div><div class="index_list_"><a href="#titleContainerSix_"> طول اليوم في نبتون </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -127,7 +125,7 @@
          <div id="title_index" class="tit_index__"> <h1 class="ad_intro_in_p_h" id="main_t_page">حقائق عن كوكب نبتون</h1> </div>
          
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاربعاء, 19 مايو 2021</p> &nbsp; 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاربعاء, 19 مايو 2021</p> &nbsp; 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -136,50 +134,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=حقائق عن كوكب نبتون&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/neptune.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> متى تم اكتشاف نبتون؟  </a></div><div class="index_list_"><a href="#titleContainerTwo_"> الخضائص الفيزيائية و الغلاف الجوي و الطقس </a></div><div class="index_list_"><a href="#titleContainerThree_"> ما معنى ان  نبتون كوكب غازي </a></div><div class="index_list_"><a href="#titleContainerFour_"> لماذا نبتون أزرق؟ </a></div><div class="index_list_"><a href="#titleContainerFive_"> كم عدد أقمار نبتون؟ </a></div><div class="index_list_"><a href="#titleContainerSix_"> طول اليوم في نبتون </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">يعد كوكب نبتون ثالث اكبر كوكب في مجموعتنا الشمسية كما ويقع في الترتيب الثامن من حيث البعد عن الشمس، ، كما يقع في الترتيب الرابع من حيث حجمه، و تمّ اعتباره الكوكب الأبعد عن الشمس منذ أن أعاد العلماء تصنيف كوكب بلوتو ككوكب قزم عام ٢٠٠٦ م وتصل كتلته إلى حوالي ١٧ ضعفاً من كتلة كوكب الأرض، و يمكن مشاهدته من خلال التلسكوب كقرص صغير للغاية باللون الأزرق المخضر الباهت،؛ ويعود السبب وراء لونه الأزرق إلى امتصاص غاز الميثان للضوء ذي اللون الأحمر من غلافه الجوي .</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">يعد كوكب نبتون ثالث اكبر كوكب في مجموعتنا الشمسية كما ويقع في الترتيب الثامن من حيث البعد عن الشمس، ، كما يقع في الترتيب الرابع من حيث حجمه، و تمّ اعتباره الكوكب الأبعد عن الشمس منذ أن أعاد العلماء تصنيف كوكب بلوتو ككوكب قزم عام ٢٠٠٦ م وتصل كتلته إلى حوالي ١٧ ضعفاً من كتلة كوكب الأرض، و يمكن مشاهدته من خلال التلسكوب كقرص صغير للغاية باللون الأزرق المخضر الباهت،؛ ويعود السبب وراء لونه الأزرق إلى امتصاص غاز الميثان للضوء ذي اللون الأحمر من غلافه الجوي .</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">متى تم اكتشاف نبتون؟ </h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">يعد نبتون او كوكب يتم اكتشافه باستخدام الرياضيات. بعد اكتشاف أورانوس في عام 1781 ، لاحظ علماء الفلك أن الكوكب يُسحب قليلاً من مداره الطبيعي. استخدم جون كوتش آدمز من بريطانيا وأوربان جان جوزيف ليفرييه من فرنسا الرياضيات للتنبؤ بأن الجاذبية من كوكب آخر خارج أورانوس تؤثر على مدار أورانوس. لقد اكتشفوا ليس فقط مكان وجود الكوكب ، ولكن أيضًا مقدار كتلته. <strong> قرر عالم الفلك الشاب يوهان جوتفريد جالي البحث عن الكوكب المتوقع ورصد كوكب نبتون لأول مرة في عام 1846.</strong></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">يعد نبتون او كوكب يتم اكتشافه باستخدام الرياضيات. بعد اكتشاف أورانوس في عام 1781 ، لاحظ علماء الفلك أن الكوكب يُسحب قليلاً من مداره الطبيعي. استخدم جون كوتش آدمز من بريطانيا وأوربان جان جوزيف ليفرييه من فرنسا الرياضيات للتنبؤ بأن الجاذبية من كوكب آخر خارج أورانوس تؤثر على مدار أورانوس. لقد اكتشفوا ليس فقط مكان وجود الكوكب ، ولكن أيضًا مقدار كتلته. <strong> قرر عالم الفلك الشاب يوهان جوتفريد جالي البحث عن الكوكب المتوقع ورصد كوكب نبتون لأول مرة في عام 1846.</strong></div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -198,14 +197,12 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">الخضائص الفيزيائية و الغلاف الجوي و الطقس</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_"><br /><p class="clis"> <b> بعض من خصائص كوكب نبتون الفيزيائية :- </b> </p><br /><p class="clis"><span class="spano"></span> كتلة كوكب نبتون: 1.0241 × 1022 كغم.</p><br /><p class="clis"><span class="spano"></span> كثافة كوكب نبتون: 1.638 غم/سم3 .</p><br /><p class="clis"><span class="spano"></span> حجم كوكب نبتون 62,525,703,987,421 كم3.</p><br /><p class="clis"><span class="spano"></span> مساحة سطح كوكب نبتون 7,618,272,763 كم2.</p><br /><br /><p class="clis"> <b> الطقس و الغلاف الجوي </b>  . يعد نبتون كوكب غازي كثافته ليست كبيرة , وفي ما يلي بعض المعلومات عن غلافه الجوي و درجة حرارته : </p><br /><p class="clis"><span class="spano"></span> تتراوح متوسط درجة الحرارة الغيوم من حوالي -240 درجة إلى -330 درجة فهرنهايت  </p><br /><p class="clis"><span class="spano"></span> يُشكّل الهيدروجين بنسبة اكبر من الغلاف الجوي لكوكب نبتون، بالإضافة إلى نسب أقل من الهيليوم والميثان . </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_"> <br> <p class="clis"> <b> بعض من خصائص كوكب نبتون الفيزيائية :- </b> </p> <br> <p class="clis"><span class="spano"></span> كتلة كوكب نبتون: 1.0241 × 1022 كغم.</p> <br> <p class="clis"><span class="spano"></span> كثافة كوكب نبتون: 1.638 غم/سم3 .</p> <br> <p class="clis"><span class="spano"></span> حجم كوكب نبتون 62,525,703,987,421 كم3.</p> <br> <p class="clis"><span class="spano"></span> مساحة سطح كوكب نبتون 7,618,272,763 كم2.</p> <br>  <br> <p class="clis"> <b> الطقس و الغلاف الجوي </b>  . يعد نبتون كوكب غازي كثافته ليست كبيرة , وفي ما يلي بعض المعلومات عن غلافه الجوي و درجة حرارته : </p> <br> <p class="clis"><span class="spano"></span> تتراوح متوسط درجة الحرارة الغيوم من حوالي -240 درجة إلى -330 درجة فهرنهايت  </p> <br> <p class="clis"><span class="spano"></span> يُشكّل الهيدروجين بنسبة اكبر من الغلاف الجوي لكوكب نبتون، بالإضافة إلى نسب أقل من الهيليوم والميثان . </p></div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerThree_">ما معنى ان  نبتون كوكب غازي</h2></div></div>
-             <div class="ad_i_subject"><div id="containerThree_">يعد كوكب نبتون كوكب غازي أي أنه يتكون من الغازات ، بالتالي فليس له سطح صلب يُمكن المشي أو الهبوط عليه .</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerThree_">يعد كوكب نبتون كوكب غازي أي أنه يتكون من الغازات ، بالتالي فليس له سطح صلب يُمكن المشي أو الهبوط عليه .</div></div>
          </div>
                
    <div class="adsInside">
@@ -241,21 +238,18 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerFour_">لماذا نبتون أزرق؟</h2></div></div>
-             <div class="ad_i_subject"><div id="containerFour_">سبب ظهور نبتون باللون الأزرق لانه يتكون غلافه الجوي من الهيدروجين والهيليوم والميثان. و يمتص الميثان الموجود في الغلاف الجوي العلوي لنبتون الضوء الأحمر من الشمس ولكنه يعكس الضوء الأزرق من الشمس إلى الفضاء.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerFour_">سبب ظهور نبتون باللون الأزرق لانه يتكون غلافه الجوي من الهيدروجين والهيليوم والميثان. و يمتص الميثان الموجود في الغلاف الجوي العلوي لنبتون الضوء الأحمر من الشمس ولكنه يعكس الضوء الأزرق من الشمس إلى الفضاء.</div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerFive_">كم عدد أقمار نبتون؟</h2></div></div>
-             <div class="ad_i_subject"><div id="containerFive_">لدى نبتون <b> ثلاثة عشر قمرًا نعرفها </b> , وفي ما يلي بعض من اقماره المكتشفه لغاية الان بحسب موقع ناسا في قسم " NASA Neptune " :<br /><br /><p class="clis"><span class="spanx">1</span> القمر تريتون : يعد تريتون أصغر قليلاً من قمر الأرض وبه براكين نشطة تنفجر مثل السخانات وتطلق صقيع النيتروجين على السطح.</p><br /><p class="clis"><span class="spanx">2</span> نيريد . </p><br /><p class="clis"><span class="spanx">3</span> بروتيوس.</p><br /><p class="clis"><span class="spanx">4</span> لاريسا.  </p><br /><p class="clis"><span class="spanx">5</span> ديسبينا. </p><br /><p class="clis"><span class="spanx">6</span> جالاتيا. </p><br /><p class="clis"><span class="spanx">7</span> ثالاسا. </p><br /><p class="clis"><span class="spanx">8</span> ناياد. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerFive_">لدى نبتون <b> ثلاثة عشر قمرًا نعرفها </b> , وفي ما يلي بعض من اقماره المكتشفه لغاية الان بحسب موقع ناسا في قسم " NASA Neptune " : <br>  <br> <p class="clis"><span class="spanx">1</span> القمر تريتون : يعد تريتون أصغر قليلاً من قمر الأرض وبه براكين نشطة تنفجر مثل السخانات وتطلق صقيع النيتروجين على السطح.</p> <br> <p class="clis"><span class="spanx">2</span> نيريد . </p> <br> <p class="clis"><span class="spanx">3</span> بروتيوس.</p> <br> <p class="clis"><span class="spanx">4</span> لاريسا.  </p> <br> <p class="clis"><span class="spanx">5</span> ديسبينا. </p> <br> <p class="clis"><span class="spanx">6</span> جالاتيا. </p> <br> <p class="clis"><span class="spanx">7</span> ثالاسا. </p> <br> <p class="clis"><span class="spanx">8</span> ناياد. </p></div></div>
          </div>
                
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerSix_">طول اليوم في نبتون</h2></div></div>
-             <div class="ad_i_subject"><div id="containerSix_">اليوم هو الوقت الذي يستغرقه الكوكب للدوران مرة واحدة حول محوره. يدور نبتون أسرع من الأرض ، لذا فإن اليوم على نبتون أقصر من يوم على الأرض. <strong> اليوم على نبتون هو حوالي 16 ساعة أرضية بينما اليوم على الأرض 23.934 ساعة </strong>.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerSix_">اليوم هو الوقت الذي يستغرقه الكوكب للدوران مرة واحدة حول محوره. يدور نبتون أسرع من الأرض ، لذا فإن اليوم على نبتون أقصر من يوم على الأرض. <strong> اليوم على نبتون هو حوالي 16 ساعة أرضية بينما اليوم على الأرض 23.934 ساعة </strong>.</div></div>
          </div>
            </div>
       </div>
@@ -318,18 +312,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

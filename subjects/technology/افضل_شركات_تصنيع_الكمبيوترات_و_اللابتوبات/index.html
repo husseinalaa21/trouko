@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/"> المواضيع / تكنلوجيا</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/"> المواضيع / تكنلوجيا</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> قائمة بأفضل الشركات </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -131,7 +129,7 @@
                   <p class="admenPage" id="admenPage"> Mona Halbert </p>
             </div>
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاربعاء, 5 مايو 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل :  الخميس, 13 مايو 2021 </p> 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاربعاء, 5 مايو 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل : الخميس, 13 مايو 2021 </p> 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -140,39 +138,42 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=افضل شركات تصنيع الكمبيوترات و اللابتوبات&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/des-laptop.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> قائمة بأفضل الشركات </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">يعد اختيار شركة الكمبيوتر أو اللابتوت آمراً مهماً - وذلك بسبب تحديد سرعة و كفائة الجهاز , ويوجد الكثير من الشركات الجديدة التي تضهر كل يوم والتي ربما تكون جيدة مقارنة بالشركات التي سوف نذكرها في هذه المقال . كما وأننا حرصنا في تصنيف الشركات بالاعتماد على استطلاعات الكثير من المواقع على الانترنت .</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">يعد اختيار شركة الكمبيوتر أو اللابتوت آمراً مهماً - وذلك بسبب تحديد سرعة و كفائة الجهاز , ويوجد الكثير من الشركات الجديدة التي تضهر كل يوم والتي ربما تكون جيدة مقارنة بالشركات التي سوف نذكرها في هذه المقال . كما وأننا حرصنا في تصنيف الشركات بالاعتماد على استطلاعات الكثير من المواقع على الانترنت .</div>
                    
          <div id="suggContainerMed" style="display:none;">
          <div class="contactCon">
@@ -193,15 +194,13 @@
          </div>
          </div>
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">قائمة بأفضل الشركات</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">بحسب مجلة " Global Brands " فأن افضل الشركات المصنعة للكمبيوترات و اللابتوبات في العالم هي كالاتي :<br /><br />1 - شركة أبل " Apple " : هي بالتأكيد واحدة من العلامات التجارية الفاخرة عندما يتعلق الأمر بأجهزة الكمبيوتر المحمولة والهواتف الذكية وأجهزة الكمبيوتر والأجهزة اللوحية.<br /><br />2- شركة  اتش بي " HP " : وهي واحدة من أقدم العلامات التجارية للإلكترونيات التي لم تعد شائعة كما كانت من قبل. عندما يتعلق الأمر بأجهزة الكمبيوتر المكتبية ، فإنها لا تزال توفر أكثر الأجهزة موثوقية وتستخدم على نطاق واسع من قبل اللاعبين والمحترفين.<br /><br />3 - شركة ديل " Dell " : تعتبر غالبية أجهزة الكمبيوتر المحمولة من Dell ملائمة للميزانية ومعظم تصميماتها وأجهزتها واضحة جدًا وقوية. ومع ذلك ، لا يحب الجميع التصميم البسيط وهذا هو السبب الوحيد الذي يجعل بعض المستخدمين يتجنبون Dell.<br /><br />4 - شركة " Lenovo " : تعد Lenovo واحدة من أكثر ماركات أجهزة الكمبيوتر المحمولة تميزًا وأسعارها أعلى قليلاً مقارنة بالمصنعين الآخرين. ومع ذلك ، فإن أجهزة الكمبيوتر المحمولة الخاصة بهم مثالية لجميع أنواع المهام ويمكن لأي شخص استخدامها بما في ذلك اللاعبين المحترفين ورجال الأعمال وطلاب الجامعات.<br /><br />5 - شركة " Acer " : هي شركة تصنيع أجهزة كمبيوتر تايوانية ولديها عملاء عالميون. عادةً ما تكون أجهزة الكمبيوتر المحمولة من Acer هي الأفضل مقابل المال ، وفي معظم الأحيان مع Acer تحصل على ما تدفع مقابله.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">بحسب مجلة " Global Brands " فأن افضل الشركات المصنعة للكمبيوترات و اللابتوبات في العالم هي كالاتي : <br>  <br> 1 - شركة أبل " Apple " : هي بالتأكيد واحدة من العلامات التجارية الفاخرة عندما يتعلق الأمر بأجهزة الكمبيوتر المحمولة والهواتف الذكية وأجهزة الكمبيوتر والأجهزة اللوحية. <br>  <br> 2- شركة  اتش بي " HP " : وهي واحدة من أقدم العلامات التجارية للإلكترونيات التي لم تعد شائعة كما كانت من قبل. عندما يتعلق الأمر بأجهزة الكمبيوتر المكتبية ، فإنها لا تزال توفر أكثر الأجهزة موثوقية وتستخدم على نطاق واسع من قبل اللاعبين والمحترفين. <br>  <br> 3 - شركة ديل " Dell " : تعتبر غالبية أجهزة الكمبيوتر المحمولة من Dell ملائمة للميزانية ومعظم تصميماتها وأجهزتها واضحة جدًا وقوية. ومع ذلك ، لا يحب الجميع التصميم البسيط وهذا هو السبب الوحيد الذي يجعل بعض المستخدمين يتجنبون Dell. <br>  <br> 4 - شركة " Lenovo " : تعد Lenovo واحدة من أكثر ماركات أجهزة الكمبيوتر المحمولة تميزًا وأسعارها أعلى قليلاً مقارنة بالمصنعين الآخرين. ومع ذلك ، فإن أجهزة الكمبيوتر المحمولة الخاصة بهم مثالية لجميع أنواع المهام ويمكن لأي شخص استخدامها بما في ذلك اللاعبين المحترفين ورجال الأعمال وطلاب الجامعات. <br>  <br> 5 - شركة " Acer " : هي شركة تصنيع أجهزة كمبيوتر تايوانية ولديها عملاء عالميون. عادةً ما تكون أجهزة الكمبيوتر المحمولة من Acer هي الأفضل مقابل المال ، وفي معظم الأحيان مع Acer تحصل على ما تدفع مقابله.</div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -286,18 +285,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

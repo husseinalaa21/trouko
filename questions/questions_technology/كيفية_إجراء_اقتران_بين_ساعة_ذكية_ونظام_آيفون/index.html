@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/">الاسئلة / تكنلوجيا</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/">الاسئلة / تكنلوجيا</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> إقران ساعة ذكية تعمل بنظام اندرويد بهاتف يعمل بنظام ايفون </a></div><div class="index_list_"><a href="#titleContainerTwo_"> إقران ساعة أبل بهاتف ايفون </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -127,7 +125,7 @@
          <div id="title_index" class="tit_index__"> <h1 class="ad_intro_in_p_h" id="main_t_page">كيفية إجراء اقتران بين ساعة ذكية ونظام آيفون</h1> </div>
          
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : السبت, 26 يونيو 2021</p> &nbsp; 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : السبت, 26 يونيو 2021</p> &nbsp; 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -136,50 +134,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=كيفية إجراء اقتران بين ساعة ذكية ونظام آيفون&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/smartwatch-apple.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> إقران ساعة ذكية تعمل بنظام اندرويد بهاتف يعمل بنظام ايفون </a></div><div class="index_list_"><a href="#titleContainerTwo_"> إقران ساعة أبل بهاتف ايفون </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">ساهمت شركة أبل في السنوات الماضية في تطور فكرة الساعات التقليدة التي تستخدم لمعرفة الوقت الى ساعة تستخدم للأتصالات و ادارة جدول المهام و الرد على الرسائل بل وحتى تصفح الانترنت و مشاهدة بعض الفيديوهات القصيرة. تعمل الساعات الذكية بأنظمة تشغيل مختلفة، و إن كانت ساعتك تعمل بنظام ايفون أو اندرويد يؤدي اقتران الساعة الذكية بنظام أندرويد إلى تفعيل الوصول لوظائف أساسية، مثل الاتصال وعرض الرسائل أثناء القيادة وأداء المهام المختلفة في هاتف الايفون دون الاضطرار لاستخدام هاتفك.</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">ساهمت شركة أبل في السنوات الماضية في تطور فكرة الساعات التقليدة التي تستخدم لمعرفة الوقت الى ساعة تستخدم للأتصالات و ادارة جدول المهام و الرد على الرسائل بل وحتى تصفح الانترنت و مشاهدة بعض الفيديوهات القصيرة. تعمل الساعات الذكية بأنظمة تشغيل مختلفة، و إن كانت ساعتك تعمل بنظام ايفون أو اندرويد يؤدي اقتران الساعة الذكية بنظام أندرويد إلى تفعيل الوصول لوظائف أساسية، مثل الاتصال وعرض الرسائل أثناء القيادة وأداء المهام المختلفة في هاتف الايفون دون الاضطرار لاستخدام هاتفك.</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">إقران ساعة ذكية تعمل بنظام اندرويد بهاتف يعمل بنظام ايفون</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">لإقران ساعة ذكية تعمل بنظام اندرويد بهاتف يعمل بنظام ايفون , اتبع الخطوات التالية :<br /><br /><p class="clis"><span class="spano"></span> قم بتنزيل "Wear OS by Google - Smartwatch" على جهاز iPhone الخاص بك. التطبيق متاح مجانًا على App Store </p><br /><p class="clis"><span class="spano"></span> قم بتشغيل Bluetooth على ساعتك الذكية.</p><br /><p class="clis"><span class="spano"></span> انتقل إلى الإعدادات على جهاز iPhone الخاص بك ، وانقر فوق Bluetooth. انتظر حتى تظهر ساعتك على جهاز iPhone الخاص بك.</p><br /><p class="clis"><span class="spano"></span> اضغط على طراز الساعة الذي تقوم بإقرانه واقبل طلب اقتران Bluetooth.</p><br /><p class="clis"><span class="spano"></span> بمجرد الاقتران ، قم بتسجيل الدخول إلى حساب Google الخاص بك.</p><br /><p class="clis"><span class="spano"></span> قم بتمكين الإشعارات والموقع والرسائل والوصول إلى التقويم وما إلى ذلك. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">لإقران ساعة ذكية تعمل بنظام اندرويد بهاتف يعمل بنظام ايفون , اتبع الخطوات التالية : <br>  <br> <p class="clis"><span class="spano"></span> قم بتنزيل "Wear OS by Google - Smartwatch" على جهاز iPhone الخاص بك. التطبيق متاح مجانًا على App Store </p> <br> <p class="clis"><span class="spano"></span> قم بتشغيل Bluetooth على ساعتك الذكية.</p> <br> <p class="clis"><span class="spano"></span> انتقل إلى الإعدادات على جهاز iPhone الخاص بك ، وانقر فوق Bluetooth. انتظر حتى تظهر ساعتك على جهاز iPhone الخاص بك.</p> <br> <p class="clis"><span class="spano"></span> اضغط على طراز الساعة الذي تقوم بإقرانه واقبل طلب اقتران Bluetooth.</p> <br> <p class="clis"><span class="spano"></span> بمجرد الاقتران ، قم بتسجيل الدخول إلى حساب Google الخاص بك.</p> <br> <p class="clis"><span class="spano"></span> قم بتمكين الإشعارات والموقع والرسائل والوصول إلى التقويم وما إلى ذلك. </p></div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -216,8 +215,7 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">إقران ساعة أبل بهاتف ايفون</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">لأقران ساعة أبل بهاتف ابفون , أتبع الخطوات التالية :<br /><br /><p class="clis"><span class="spano"></span> افتح تطبيق Apple Watch على iPhone الجديد. </p><br /><p class="clis"><span class="spano"></span> احرص على تقريب Apple Watch وiPhone من بعضهما.</p><br /><p class="clis"><span class="spano"></span> افتح تطبيق Apple Watch على iPhone. </p><br /><p class="clis"><span class="spano"></span> إذا طلب منك iPhone تأكيد رغبتك في استخدام الساعة، فاتّبع الخطوات التي تظهر على الشاشة لإكمال الإعداد.</p><br /><p class="clis"><span class="spano"></span>  إذا طلب iPhone منك بدء الإقران، فقم بإلغاء اقتران Apple Watch، بحيث يمكنك إعدادها. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">لأقران ساعة أبل بهاتف ابفون , أتبع الخطوات التالية : <br>  <br> <p class="clis"><span class="spano"></span> افتح تطبيق Apple Watch على iPhone الجديد. </p> <br> <p class="clis"><span class="spano"></span> احرص على تقريب Apple Watch وiPhone من بعضهما.</p> <br> <p class="clis"><span class="spano"></span> افتح تطبيق Apple Watch على iPhone. </p> <br> <p class="clis"><span class="spano"></span> إذا طلب منك iPhone تأكيد رغبتك في استخدام الساعة، فاتّبع الخطوات التي تظهر على الشاشة لإكمال الإعداد.</p> <br> <p class="clis"><span class="spano"></span>  إذا طلب iPhone منك بدء الإقران، فقم بإلغاء اقتران Apple Watch، بحيث يمكنك إعدادها. </p></div></div>
          </div>
                
                
@@ -287,18 +285,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

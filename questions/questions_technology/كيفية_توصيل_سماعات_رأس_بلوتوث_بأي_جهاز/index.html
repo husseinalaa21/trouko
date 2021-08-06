@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/">الاسئلة / تكنلوجيا</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/">الاسئلة / تكنلوجيا</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> توصيل سماعات رأس بلوتوث بجهاز كمبيوتر الماك </a></div><div class="index_list_"><a href="#titleContainerTwo_"> توصيل سماعات رأس بلوتوث بجهاز كمبيوتر الويندوز </a></div><div class="index_list_"><a href="#titleContainerThree_"> توصيل سماعات رأس بلوتوث بهاتف اندرويد </a></div><div class="index_list_"><a href="#titleContainerFour_"> توصيل سماعات رأس بلوتوث بهاتف الاقون </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -127,7 +125,7 @@
          <div id="title_index" class="tit_index__"> <h1 class="ad_intro_in_p_h" id="main_t_page">كيفية توصيل سماعات رأس بلوتوث بأي جهاز</h1> </div>
          
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاحد, 27 يونيو 2021</p> &nbsp; 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاحد, 27 يونيو 2021</p> &nbsp; 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -136,50 +134,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=كيفية توصيل سماعات رأس بلوتوث بأي جهاز&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/headphone_bluototh.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> توصيل سماعات رأس بلوتوث بجهاز كمبيوتر الماك </a></div><div class="index_list_"><a href="#titleContainerTwo_"> توصيل سماعات رأس بلوتوث بجهاز كمبيوتر الويندوز </a></div><div class="index_list_"><a href="#titleContainerThree_"> توصيل سماعات رأس بلوتوث بهاتف اندرويد </a></div><div class="index_list_"><a href="#titleContainerFour_"> توصيل سماعات رأس بلوتوث بهاتف الاقون </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">تعد سماعات البلوتوث من السماعات التي لا تحتوي على أي أسلاك لتوصيلها بأجهزتك. لذلك ، من المفهوم ما إذا كنت تواجه مشكلة في توصيل سماعات الرأس المزودة بتقنية Bluetooth بجهاز الكمبيوتر أو الهاتف الذكي. ومع ذلك ، من السهل توصيل سماعات الرأس بأي جهاز. إليك كيفية توصيل سماعة رأس بلوتوث بجهاز  ماك أو ويندوز أو ايفون أو هاتف اندرويد.</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">تعد سماعات البلوتوث من السماعات التي لا تحتوي على أي أسلاك لتوصيلها بأجهزتك. لذلك ، من المفهوم ما إذا كنت تواجه مشكلة في توصيل سماعات الرأس المزودة بتقنية Bluetooth بجهاز الكمبيوتر أو الهاتف الذكي. ومع ذلك ، من السهل توصيل سماعات الرأس بأي جهاز. إليك كيفية توصيل سماعة رأس بلوتوث بجهاز  ماك أو ويندوز أو ايفون أو هاتف اندرويد.</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">توصيل سماعات رأس بلوتوث بجهاز كمبيوتر الماك</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">لإجراء اقتران بين آي سماعة بلوتوث و كمبيوتر ماك , أتبع الخطوات التالية :<br /><br /><p class="clis"><span class="spano"></span> افتح قائمة أبل. قائمة أبل هي أيقونة على شكل شعار أبل في الزاوية العلوية اليسرى من شاشتك. بمجرد النقر فوقه ، سيتم فتح قائمة منسدلة. </p><br /><p class="clis"><span class="spano"></span> بعد ذلك , انقر فوق تفضيلات النظام.</p><br /><p class="clis"><span class="spano"></span> بعد ذلك ، انقر فوق خيار بلوتوث " Bluetooth ". </p><br /><p class="clis"><span class="spano"></span> بعد ذلك ، أذا كانت علامة " Bluetooth " الموجودة أول القائمة " off " أجعلها تصبح " on " و أذا كانت " on " أتركها كما هي.</p><br /><p class="clis"><span class="spano"></span> بعد ذلك , اضغط مع الاستمرار على زر الطاقة في سماعات الرأس. من أجل توصيل سماعات بلوتوث الخاص بك إلى ماك، تحتاج إلى تفعيل وضع الاقتران على سماعات الرأس.  </p><br /><p class="clis"><span class="spano"></span> أخيرًا ، في قائمة  " Bluetooth " من على كمبيوتر ماك انقر فوق اتصال بجوار اسم سماعات الرأس الخاصة بك. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">لإجراء اقتران بين آي سماعة بلوتوث و كمبيوتر ماك , أتبع الخطوات التالية : <br>  <br> <p class="clis"><span class="spano"></span> افتح قائمة أبل. قائمة أبل هي أيقونة على شكل شعار أبل في الزاوية العلوية اليسرى من شاشتك. بمجرد النقر فوقه ، سيتم فتح قائمة منسدلة. </p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , انقر فوق تفضيلات النظام.</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك ، انقر فوق خيار بلوتوث " Bluetooth ". </p> <br> <p class="clis"><span class="spano"></span> بعد ذلك ، أذا كانت علامة " Bluetooth " الموجودة أول القائمة " off " أجعلها تصبح " on " و أذا كانت " on " أتركها كما هي.</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , اضغط مع الاستمرار على زر الطاقة في سماعات الرأس. من أجل توصيل سماعات بلوتوث الخاص بك إلى ماك، تحتاج إلى تفعيل وضع الاقتران على سماعات الرأس.  </p> <br> <p class="clis"><span class="spano"></span> أخيرًا ، في قائمة  " Bluetooth " من على كمبيوتر ماك انقر فوق اتصال بجوار اسم سماعات الرأس الخاصة بك. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام. </p></div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -198,14 +197,12 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">توصيل سماعات رأس بلوتوث بجهاز كمبيوتر الويندوز</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">لإجراء اقتران بين آي سماعة بلوتوث و كمبيوتر ويندوز, أتبع الخطوات التالية :<br /><br /><p class="clis"><span class="spano"></span> على جهاز الكمبيوتر، انقر على القائمة ابدأ. الموجود في الزاوية السفلية اليسرى من الشاشة أو " اليمنى بحسب لغة النضام ".</p><br /><p class="clis"><span class="spano"></span> بعد ذلك , انقر فوق "إعدادات".</p><br /><p class="clis"><span class="spano"></span>  بعد ذلك , ثم انقر فوق الأجهزة أو " Devices ".</p><br /><p class="clis"><span class="spano"></span> بعد ذلك , انقر فوق "بلوتوث وغيرها من الأجهزة" في الشريط الجانبي الأيسر.</p><br /><p class="clis"><span class="spano"></span> بعد ذلك , انقر على "إضافة بلوتوث أو جهاز آخر". </p><br /><p class="clis"><span class="spano"></span> بعد ذلك , في النافذة المنبثقة ، حدد Bluetooth.</p><br /><p class="clis"><span class="spano"></span> بعد ذلك , اضغط مع الاستمرار على زر الطاقة في سماعات الرأس. لتوصيل سماعات بلوتوث بجهاز الكمبيوتر الشخصي الذي يعمل بنظام ويندوز10 ، تحتاج إلى تنشيط وضع الاقتران على سماعات الرأس الخاصة بك. اعتمادًا على سماعات الرأس التي لديك.</p><br /><p class="clis"><span class="spano"></span> أخيرًا ، حدد اسم سماعات الرأس الخاصة بك من القائمة لإقران كلا الجهازين. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام.</p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">لإجراء اقتران بين آي سماعة بلوتوث و كمبيوتر ويندوز, أتبع الخطوات التالية : <br>  <br> <p class="clis"><span class="spano"></span> على جهاز الكمبيوتر، انقر على القائمة ابدأ. الموجود في الزاوية السفلية اليسرى من الشاشة أو " اليمنى بحسب لغة النضام ".</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , انقر فوق "إعدادات".</p> <br> <p class="clis"><span class="spano"></span>  بعد ذلك , ثم انقر فوق الأجهزة أو " Devices ".</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , انقر فوق "بلوتوث وغيرها من الأجهزة" في الشريط الجانبي الأيسر.</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , انقر على "إضافة بلوتوث أو جهاز آخر". </p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , في النافذة المنبثقة ، حدد Bluetooth.</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك , اضغط مع الاستمرار على زر الطاقة في سماعات الرأس. لتوصيل سماعات بلوتوث بجهاز الكمبيوتر الشخصي الذي يعمل بنظام ويندوز10 ، تحتاج إلى تنشيط وضع الاقتران على سماعات الرأس الخاصة بك. اعتمادًا على سماعات الرأس التي لديك.</p> <br> <p class="clis"><span class="spano"></span> أخيرًا ، حدد اسم سماعات الرأس الخاصة بك من القائمة لإقران كلا الجهازين. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام.</p></div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerThree_">توصيل سماعات رأس بلوتوث بهاتف اندرويد</h2></div></div>
-             <div class="ad_i_subject"><div id="containerThree_">لإجراء اقتران بين آي سماعة بلوتوث وهاتف اندرويد , أتبع الخطوات التالية :<br /><br /><p class="clis"><span class="spano"></span> أولا افتح الإعدادات في هاتف الاندرويد. يمكنك العثور عليه ضمن تطبيقاتك ، أو عن طريق تمرير إصبعك من أعلى الشاشة الى الأسفل والضغط المطول فوق رمز البلوتوث في الزاوية العلوية (حسب نوع جهازك). </p><br /><p class="clis"><span class="spano"></span> بعد ذلك ، انقر فوق اتصالات ثم بلوتوث. أو "بلوتوث" بشكل مباشر. أو أذ لم ترى خيار البلوتوث - انقر على المزيد من الخيارات.</p><br /><p class="clis"><span class="spano"></span> ثم اضغط تشغيل البلوتوث " سوف يضهر لك اول خيار ". وأذا كان شغال اتركه كما هو و أنتقل الى الخطوة التالية. </p><br /><p class="clis"><span class="spano"></span> بعد ذلك ، اضغط مع الاستمرار على زر الطاقة في سماعات الرأس.  لتوصيل سماعات بلوتوث بهاتف الاندرويد ، تحتاج إلى تنشيط وضع الاقتران على سماعات الرأس الخاصة بك. </p><br /><p class="clis"><span class="spano"></span> أخيرًا ، ابحث عن سماعة الرأس واضغط عليها. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام.</p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerThree_">لإجراء اقتران بين آي سماعة بلوتوث وهاتف اندرويد , أتبع الخطوات التالية : <br>  <br> <p class="clis"><span class="spano"></span> أولا افتح الإعدادات في هاتف الاندرويد. يمكنك العثور عليه ضمن تطبيقاتك ، أو عن طريق تمرير إصبعك من أعلى الشاشة الى الأسفل والضغط المطول فوق رمز البلوتوث في الزاوية العلوية (حسب نوع جهازك). </p> <br> <p class="clis"><span class="spano"></span> بعد ذلك ، انقر فوق اتصالات ثم بلوتوث. أو "بلوتوث" بشكل مباشر. أو أذ لم ترى خيار البلوتوث - انقر على المزيد من الخيارات.</p> <br> <p class="clis"><span class="spano"></span> ثم اضغط تشغيل البلوتوث " سوف يضهر لك اول خيار ". وأذا كان شغال اتركه كما هو و أنتقل الى الخطوة التالية. </p> <br> <p class="clis"><span class="spano"></span> بعد ذلك ، اضغط مع الاستمرار على زر الطاقة في سماعات الرأس.  لتوصيل سماعات بلوتوث بهاتف الاندرويد ، تحتاج إلى تنشيط وضع الاقتران على سماعات الرأس الخاصة بك. </p> <br> <p class="clis"><span class="spano"></span> أخيرًا ، ابحث عن سماعة الرأس واضغط عليها. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام.</p></div></div>
          </div>
                
    <div class="adsInside">
@@ -241,8 +238,7 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerFour_">توصيل سماعات رأس بلوتوث بهاتف الاقون</h2></div></div>
-             <div class="ad_i_subject"><div id="containerFour_">لإجراء اقتران بين آي سماعة بلوتوث وهاتف الايفون, أتبع الخطوات التالية :<br /><br /><p class="clis"><span class="spano"></span> أولاً ، انقر فوق الإعدادات في هاتف الايفون.</p><br /><p class="clis"><span class="spano"></span> ثم انقر فوق Bluetooth وتأكد من أن شريط التمرير في الجزء العلوي أخضر.</p><br /><p class="clis"><span class="spano"></span> بعد ذلك ، اضغط مع الاستمرار على زر الطاقة في سماعات الرأس. لتوصيل سماعات رأس Bluetooth بجهاز ايفون الخاص بك ، تحتاج إلى تنشيط وضع الاقتران على سماعات الرأس الخاصة بك.</p><br /><p class="clis"><span class="spano"></span> أخيرًا ، حدد سماعات الرأس الخاصة بك من القائمة الموجودة أسفل الشاشة في هاتف الايفون. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerFour_">لإجراء اقتران بين آي سماعة بلوتوث وهاتف الايفون, أتبع الخطوات التالية : <br>  <br> <p class="clis"><span class="spano"></span> أولاً ، انقر فوق الإعدادات في هاتف الايفون.</p> <br> <p class="clis"><span class="spano"></span> ثم انقر فوق Bluetooth وتأكد من أن شريط التمرير في الجزء العلوي أخضر.</p> <br> <p class="clis"><span class="spano"></span> بعد ذلك ، اضغط مع الاستمرار على زر الطاقة في سماعات الرأس. لتوصيل سماعات رأس Bluetooth بجهاز ايفون الخاص بك ، تحتاج إلى تنشيط وضع الاقتران على سماعات الرأس الخاصة بك.</p> <br> <p class="clis"><span class="spano"></span> أخيرًا ، حدد سماعات الرأس الخاصة بك من القائمة الموجودة أسفل الشاشة في هاتف الايفون. قد يتم إدراج سماعات الرأس مع رقم الطراز الخاص بها ، والذي قد يكون عبارة عن سلسلة من الأحرف والأرقام. </p></div></div>
          </div>
                
                
@@ -319,18 +315,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

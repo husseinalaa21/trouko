@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/space/"> المواضيع / الفضاء</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/space/"> المواضيع / الفضاء</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> عدد الكواكب في مجموعتنا الشمسية و بعض المعلومات عنها </a></div><div class="index_list_"><a href="#titleContainerTwo_"> هل كوكب بلوتو ضمن مجموعتنا الشمسية </a></div><div class="index_list_"><a href="#titleContainerThree_"> ما هو اسخن كوكب في نضامنا الشمسي </a></div><div class="index_list_"><a href="#titleContainerFour_"> هل الشمس نجم ؟ </a></div><div class="index_list_"><a href="#titleContainerFive_"> متى تشكلت مجموعتنا الشمسية </a></div><div class="index_list_"><a href="#titleContainerSix_"> ما هو اقدم كوكب في نضامنا الشمسي </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -127,7 +125,7 @@
          <div id="title_index" class="tit_index__"> <h1 class="ad_intro_in_p_h" id="main_t_page">كم عدد الكواكب في مجموعتنا الشمسية</h1> </div>
          
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الخميس, 20 مايو 2021</p> &nbsp; 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الخميس, 20 مايو 2021</p> &nbsp; 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -136,50 +134,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=كم عدد الكواكب في مجموعتنا الشمسية&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/solar-system.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> عدد الكواكب في مجموعتنا الشمسية و بعض المعلومات عنها </a></div><div class="index_list_"><a href="#titleContainerTwo_"> هل كوكب بلوتو ضمن مجموعتنا الشمسية </a></div><div class="index_list_"><a href="#titleContainerThree_"> ما هو اسخن كوكب في نضامنا الشمسي </a></div><div class="index_list_"><a href="#titleContainerFour_"> هل الشمس نجم ؟ </a></div><div class="index_list_"><a href="#titleContainerFive_"> متى تشكلت مجموعتنا الشمسية </a></div><div class="index_list_"><a href="#titleContainerSix_"> ما هو اقدم كوكب في نضامنا الشمسي </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">تحتوي مجموعتنا الشمسية على ثمانية كواكب تدور حول الشمس وهي : عطارد ، الزهرة ، الأرض ، المريخ ، المشتري ، زحل ، أورانوس ، و نبتون. و يعد النضام الشمسي نظام الكوكبي يتكون من الشمس وجميع ما يَدور حولها من أجرام بما في ذلك الأرض والكواكب الأخرى و حزام كايبر . و يَشمل النظام الشمسي أجراماً أخرى أصغر حجماً هي الكواكب القزمة والكويكبات والنيازك والمذنبات، إضافة إلى سحابة رقيقة من الغاز والغبار تعرف بالوسط بين الكوكبي. كان بلوتو في السابق يعتبر كوكبًا تاسعًا تابعًا ل المجموعة الشمسية. ولكن في يوم 24 أغسطس من العام 2006، قام الاتحاد الفلكي الدولي بإنزال رتبه 'بلوتو' من كوكب إلى كوكب قزم، وأصبح نظامنا الشمسي يمتلك 8 كواكب رئيسية فقط، أبعدها هو كوكب نبتون بحسب التعريف الجديد.</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">تحتوي مجموعتنا الشمسية على ثمانية كواكب تدور حول الشمس وهي : عطارد ، الزهرة ، الأرض ، المريخ ، المشتري ، زحل ، أورانوس ، و نبتون. و يعد النضام الشمسي نظام الكوكبي يتكون من الشمس وجميع ما يَدور حولها من أجرام بما في ذلك الأرض والكواكب الأخرى و حزام كايبر . و يَشمل النظام الشمسي أجراماً أخرى أصغر حجماً هي الكواكب القزمة والكويكبات والنيازك والمذنبات، إضافة إلى سحابة رقيقة من الغاز والغبار تعرف بالوسط بين الكوكبي. كان بلوتو في السابق يعتبر كوكبًا تاسعًا تابعًا ل المجموعة الشمسية. ولكن في يوم 24 أغسطس من العام 2006، قام الاتحاد الفلكي الدولي بإنزال رتبه 'بلوتو' من كوكب إلى كوكب قزم، وأصبح نظامنا الشمسي يمتلك 8 كواكب رئيسية فقط، أبعدها هو كوكب نبتون بحسب التعريف الجديد.</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">عدد الكواكب في مجموعتنا الشمسية و بعض المعلومات عنها</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">تم ترتيب الكوكب في مجموعتنا الشمسية بحسب بعدها عن الشمس وهي :<br /><br /><p class="clis"><span class="spanx">1</span> <b>عطارد</b> : يعد عطارد أقرب كوكب إلى الشمس. كما إنه أصغر كوكب في نظامنا الشمسي. يكمل عطارد دورته حول الشمس في 88 يومًا. و يتميز بكونه كوكبًا صخريًا ذا قطر استوائي يصل إلى 1516 ميلًا.  </p><br /><p class="clis"><span class="spanx">2</span> <b>الزهرة</b> : يعد كوكب الزهرة ثاني أقرب كوكب إلى الشمس. كما و إنه أكثر الكواكب حرارة والتي تبلغ 863 درجة فهرنهايت. طبيعة الجو على كوكب الزهرة كثيفة ويحبس الهواء الدافئ بداخله. </p><br /><p class="clis"><span class="spanx">3</span> <b>الأرض</b> :  يعد كوكب الارض الكوكب الوحيد المعروف الذي توجد فيه حياة. يكمل دورته السنوية حول الشمس كل 365.256 يومًا. يبعد 92,955,820 ميلًا عن الشمس وهو ثالث أقرب كوكب إلى الشمس. </p><br /><p class="clis"><span class="spanx">4</span> <b>المريخ</b> : يعد كوكب المريخ  الكوكب الرابع في المجموعة الشمسية من حيث البعد عن الشمس ومن حيث الحجم فهو ثاني أصغرها. له سطح صلب تمامًا مثل الأرض، ولكن بغلاف جوي رقيق. كما وهو شبيه بالارض الى حد كبير . </p><br /><p class="clis"><span class="spanx">5</span> <b>المشتري</b> : هو خامس أكبر كوكب في النظام الشمسي كما و هو الكوكب الخامس من حيث البعد عن الشمس . تبلغ كتلة كوكب المشتري 2.5 ضعف الكتلة الكلية للكواكب الأخرى مجتمعةً.كما أن كوكب المشتري كوكب غازي وهذا يعني أنه ليس له سطح صلب. </p><br /><p class="clis"><span class="spanx">6</span> <b>زحل</b> : يعد كوكب زحل ثاني أكبر كوكب في المجموعة الشمسية بعد كوكب المشتري. و سادس الكواكب من حيث بعده عن الشمس . يتميز بأنه كوكب غازي تمامًا مثل المشتري ولكنه يحتوي على تسع حلقات متواصلة من الصخور والجليد. </p><br /><p class="clis"><span class="spanx">7</span> <b>أورانوس</b> : هو ثالث أكبر كوكب في النظام الشمسي. وسابع الكواكب من حيث بعده عن الشمس و يتألف سطحه من مكوّن مجمّد، وبالتالي يعتبر عملاقًا جليديًا. ومع ذلك ، فإن غلافه الجوي يتكون من الهيدروجين والهيليوم إلى جانب (العناصر الجليدية) الأخرى مثل الميثان والأمونيا والمياه. </p><br /><p class="clis"><span class="spanx">8</span> <b>نبتون</b> : كوكب نبتون هو أبعد كوكب عن الشمس. وقد اعتبر في البادئ نجمًا ثابتًا من قبل غاليلو الذي استخدم الحسابات الرياضية لاكتشافه بدلًا من الطريقة الاعتيادية باستخدام الرصد. يبعد حوالي 2.8 مليار ميلًا عن الشمس ويكمل دورته حول الشمس كل 164.8 سنة أرضية. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">تم ترتيب الكوكب في مجموعتنا الشمسية بحسب بعدها عن الشمس وهي : <br>  <br> <p class="clis"><span class="spanx">1</span> <b>عطارد</b> : يعد عطارد أقرب كوكب إلى الشمس. كما إنه أصغر كوكب في نظامنا الشمسي. يكمل عطارد دورته حول الشمس في 88 يومًا. و يتميز بكونه كوكبًا صخريًا ذا قطر استوائي يصل إلى 1516 ميلًا.  </p> <br> <p class="clis"><span class="spanx">2</span> <b>الزهرة</b> : يعد كوكب الزهرة ثاني أقرب كوكب إلى الشمس. كما و إنه أكثر الكواكب حرارة والتي تبلغ 863 درجة فهرنهايت. طبيعة الجو على كوكب الزهرة كثيفة ويحبس الهواء الدافئ بداخله. </p> <br> <p class="clis"><span class="spanx">3</span> <b>الأرض</b> :  يعد كوكب الارض الكوكب الوحيد المعروف الذي توجد فيه حياة. يكمل دورته السنوية حول الشمس كل 365.256 يومًا. يبعد 92,955,820 ميلًا عن الشمس وهو ثالث أقرب كوكب إلى الشمس. </p> <br> <p class="clis"><span class="spanx">4</span> <b>المريخ</b> : يعد كوكب المريخ  الكوكب الرابع في المجموعة الشمسية من حيث البعد عن الشمس ومن حيث الحجم فهو ثاني أصغرها. له سطح صلب تمامًا مثل الأرض، ولكن بغلاف جوي رقيق. كما وهو شبيه بالارض الى حد كبير . </p> <br> <p class="clis"><span class="spanx">5</span> <b>المشتري</b> : هو خامس أكبر كوكب في النظام الشمسي كما و هو الكوكب الخامس من حيث البعد عن الشمس . تبلغ كتلة كوكب المشتري 2.5 ضعف الكتلة الكلية للكواكب الأخرى مجتمعةً.كما أن كوكب المشتري كوكب غازي وهذا يعني أنه ليس له سطح صلب. </p> <br> <p class="clis"><span class="spanx">6</span> <b>زحل</b> : يعد كوكب زحل ثاني أكبر كوكب في المجموعة الشمسية بعد كوكب المشتري. و سادس الكواكب من حيث بعده عن الشمس . يتميز بأنه كوكب غازي تمامًا مثل المشتري ولكنه يحتوي على تسع حلقات متواصلة من الصخور والجليد. </p> <br> <p class="clis"><span class="spanx">7</span> <b>أورانوس</b> : هو ثالث أكبر كوكب في النظام الشمسي. وسابع الكواكب من حيث بعده عن الشمس و يتألف سطحه من مكوّن مجمّد، وبالتالي يعتبر عملاقًا جليديًا. ومع ذلك ، فإن غلافه الجوي يتكون من الهيدروجين والهيليوم إلى جانب (العناصر الجليدية) الأخرى مثل الميثان والأمونيا والمياه. </p> <br> <p class="clis"><span class="spanx">8</span> <b>نبتون</b> : كوكب نبتون هو أبعد كوكب عن الشمس. وقد اعتبر في البادئ نجمًا ثابتًا من قبل غاليلو الذي استخدم الحسابات الرياضية لاكتشافه بدلًا من الطريقة الاعتيادية باستخدام الرصد. يبعد حوالي 2.8 مليار ميلًا عن الشمس ويكمل دورته حول الشمس كل 164.8 سنة أرضية. </p></div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -198,14 +197,12 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">هل كوكب بلوتو ضمن مجموعتنا الشمسية</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">في أغسطس 2006 ، خفض الاتحاد الفلكي الدولي (IAU) مرتبة بلوتو إلى "كوكب قزم". هذا يعني أنه من الآن فصاعدًا فقط العوالم الصخرية للنظام الشمسي الداخلي وعمالقة الغاز في النظام الخارجي سيتم تصنيفها ككواكب.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">في أغسطس 2006 ، خفض الاتحاد الفلكي الدولي (IAU) مرتبة بلوتو إلى "كوكب قزم". هذا يعني أنه من الآن فصاعدًا فقط العوالم الصخرية للنظام الشمسي الداخلي وعمالقة الغاز في النظام الخارجي سيتم تصنيفها ككواكب.</div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerThree_">ما هو اسخن كوكب في نضامنا الشمسي</h2></div></div>
-             <div class="ad_i_subject"><div id="containerThree_">كوكب الزهرة هو الاستثناء ، حيث أن قربه من الشمس وجو كثيف يجعله أكثر كوكب في نظامنا الشمسي سخونة. متوسط درجات حرارة الكواكب في نظامنا الشمسي هو: عطارد - 800 درجة فهرنهايت (430 درجة مئوية) أثناء النهار ، -290 درجة فهرنهايت <p class="clis">180 درجة مئوية) في الليل. الزهرة - 880 درجة فهرنهايت (471 درجة مئوية)</p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerThree_">كوكب الزهرة هو الاستثناء ، حيث أن قربه من الشمس وجو كثيف يجعله أكثر كوكب في نظامنا الشمسي سخونة. متوسط درجات حرارة الكواكب في نظامنا الشمسي هو: عطارد - 800 درجة فهرنهايت (430 درجة مئوية) أثناء النهار ، -290 درجة فهرنهايت <p class="clis">180 درجة مئوية) في الليل. الزهرة - 880 درجة فهرنهايت (471 درجة مئوية)</p></div></div>
          </div>
                
                
@@ -230,21 +227,18 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerFour_">هل الشمس نجم ؟</h2></div></div>
-             <div class="ad_i_subject"><div id="containerFour_">شمسنا هي نجمة عادية ، واحدة فقط من بين مئات المليارات من النجوم في مجرة درب التبانة. باعتباره النجم الوحيد الذي يمكننا أن نلاحظه بالتفصيل ، فإنه يوفر أساسًا لفهمنا لجميع النجوم. تتكون الشمس بالكامل تقريبًا من الهيدروجين وغاز الهليوم.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerFour_">شمسنا هي نجمة عادية ، واحدة فقط من بين مئات المليارات من النجوم في مجرة درب التبانة. باعتباره النجم الوحيد الذي يمكننا أن نلاحظه بالتفصيل ، فإنه يوفر أساسًا لفهمنا لجميع النجوم. تتكون الشمس بالكامل تقريبًا من الهيدروجين وغاز الهليوم.</div></div>
          </div>
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerFive_">متى تشكلت مجموعتنا الشمسية</h2></div></div>
-             <div class="ad_i_subject"><div id="containerFive_">تشكلت الشمس وبقية النظام الشمسي من سحابة عملاقة دوارة من الغاز والغبار تسمى السديم الشمسي منذ حوالي 4.5 مليار سنة. مع انهيار السديم بسبب جاذبيته الساحقة .</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerFive_">تشكلت الشمس وبقية النظام الشمسي من سحابة عملاقة دوارة من الغاز والغبار تسمى السديم الشمسي منذ حوالي 4.5 مليار سنة. مع انهيار السديم بسبب جاذبيته الساحقة .</div></div>
          </div>
                
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerSix_">ما هو اقدم كوكب في نضامنا الشمسي</h2></div></div>
-             <div class="ad_i_subject"><div id="containerSix_">تظهر النيازك القديمة أن كوكب المشتري هو أقدم كوكب في المجموعة الشمسية. تشكل كوكب المشتري في وميض جيولوجي. اندمج قلبه الصخري بعد أقل من مليون سنة من بداية نظامنا الشمسي ، حسبما أفاد العلماء يوم الاثنين في وقائع الأكاديمية الوطنية للعلوم.</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerSix_">تظهر النيازك القديمة أن كوكب المشتري هو أقدم كوكب في المجموعة الشمسية. تشكل كوكب المشتري في وميض جيولوجي. اندمج قلبه الصخري بعد أقل من مليون سنة من بداية نظامنا الشمسي ، حسبما أفاد العلماء يوم الاثنين في وقائع الأكاديمية الوطنية للعلوم.</div></div>
          </div>
            </div>
       </div>
@@ -307,18 +301,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

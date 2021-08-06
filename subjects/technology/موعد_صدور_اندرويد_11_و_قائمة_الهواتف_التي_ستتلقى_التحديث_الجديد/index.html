@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/"> المواضيع / تكنلوجيا</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/technology/"> المواضيع / تكنلوجيا</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> ميزات اندرويد 11 </a></div><div class="index_list_"><a href="#titleContainerTwo_"> قائمة بالهواتف التي سوف تحصل على اندرويد 11 </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -127,7 +125,7 @@
          <div id="title_index" class="tit_index__"> <h1 class="ad_intro_in_p_h" id="main_t_page">موعد صدور اندرويد 11 و قائمة الهواتف التي ستتلقى التحديث الجديد</h1> </div>
          
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاحد, 23 مايو 2021</p> &nbsp; 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاحد, 23 مايو 2021</p> &nbsp; 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -136,50 +134,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=موعد صدور اندرويد 11 و قائمة الهواتف التي ستتلقى التحديث الجديد&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/android11.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> ميزات اندرويد 11 </a></div><div class="index_list_"><a href="#titleContainerTwo_"> قائمة بالهواتف التي سوف تحصل على اندرويد 11 </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">Android 11 هو نظام تشغيل من Google أعلنت عنه Google في 8 سبتمبر 2020 .و سوف تأتي الهواتف الذكية الجديدة التي تعمل بنضام اندرويد مزودة بنظام Android 11 المثبت مسبقًا ، على الرغم من أن التحديث لا يزال متاحًا للهواتف الذكية القديمة في جميع أنحاء العالم. اعتمادًا على الهاتف الذي تستخدمه ، قد تنتظر بعض الوقت - أو قد لا تحصل على التحديث مطلقًا.إذا كان لديك هاتف اندرويد منخفض المستوى ، فقد لا يأتيك اندرويد 11 على الإطلاق - ولهذا السبب صممت Google أيضًا Android 11 (إصدار Go) وهو إصدار خفيف من نظام التشغيل يعمل على الهواتف ذات 2 جيجابايت أو أقل من ذاكرة الوصول العشوائي .</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">Android 11 هو نظام تشغيل من Google أعلنت عنه Google في 8 سبتمبر 2020 .و سوف تأتي الهواتف الذكية الجديدة التي تعمل بنضام اندرويد مزودة بنظام Android 11 المثبت مسبقًا ، على الرغم من أن التحديث لا يزال متاحًا للهواتف الذكية القديمة في جميع أنحاء العالم. اعتمادًا على الهاتف الذي تستخدمه ، قد تنتظر بعض الوقت - أو قد لا تحصل على التحديث مطلقًا.إذا كان لديك هاتف اندرويد منخفض المستوى ، فقد لا يأتيك اندرويد 11 على الإطلاق - ولهذا السبب صممت Google أيضًا Android 11 (إصدار Go) وهو إصدار خفيف من نظام التشغيل يعمل على الهواتف ذات 2 جيجابايت أو أقل من ذاكرة الوصول العشوائي .</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">ميزات اندرويد 11</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">أهم مميزات اندرويد 11 :<br /><br /><p class="clis"><span class="spano"></span> <b>تسجيل شاشة مدمج</b> : يتيح لك هذا استخدام عناصر التحكم التي يمكن الوصول إليها بسهولة داخل الهاتف لإنشاء مقطع فيديو لما هو معروض على شاشتك ، على غرار لقطات الشاشة. و يمكنك حتى تسجيل صوت تطبيقات هاتفك و استخدام الميكروفون أثناء التسجيل لسرد ما تفعل </p><br /><p class="clis"><span class="spano"></span> <b>علامة تبويب المحادثات الجديدة </b> : عندما تقوم بالتمرير من الاعلى الى الاسفل في اندرويد 10 ، فإنك تقوم بإسقاط شريط الإشعارات ، في اندرويد 11 ، يتم تقسيم شريط الاشعارات إلى قسمين ، يتألفان من الإشعارات و "محادثاتك".<br /><br />هذه المحادثات هي في الأساس مجرد إشعارات دردشة من تطبيقات الدردشة مثل WhatsApp و Facebook Messenger و Twitter ، لذا فأنت تعلم أنها على الأرجح تستحق الاهتمام أكثر من الإشعارات الأخرى.  </p><br /><p class="clis"><span class="spano"></span> <b>المنزل الذكي وأدوات التحكم في الوسائط</b> : يأتي تحديث اندرويد11 الجديد مع الكثير من التغييرات للأشخاص الذين يستخدمون الكثير من الأجهزة المنزلية الذكية.<br /><br />من قائمة واحدة يسهل الوصول إليها (يمكن الوصول إليها عن طريق الضغط لفترة طويلة على زر الطاقة) ، يمكنك التحكم في جميع أجهزة إنترنت الأشياء (إنترنت الأشياء) التي قمت بتوصيلها بهاتفك ، بالإضافة إلى بطاقات NFC المصرفية. </p><br /><p class="clis"><span class="spano"></span> <b>تحسين إمكانية الوصول</b> : اصدار اندرويد 11 سيقلل من العمل الذي تحتاج إلى القيام به على هاتفك ، من خلال توقع عاداتك وأنماطك.<br /><br />ومن المتوقع أن ميزة الرد الذكي التي يمكن استخدامها بالفعل في هواتف اندرويد قد تلقت بعض التعديلات.  </p><br /><p class="clis"><span class="spano"></span> <b>الأمن والخصوصية</b> : يجلب تحديث اندرويد 11 بعض التغييرات على أذونات التطبيق. الآن ، يمكنك منح التطبيق إذنًا للكاميرا أو الموقع ، على سبيل المثال ، على أساس لمرة واحدة ، بدلاً من الخيارات الحالية "طوال الوقت" و "فقط أثناء استخدام التطبيق".<br /><br />بالإضافة إلى ذلك ، سيقوم هاتفك تلقائيًا بإلغاء أذونات التطبيقات إذا لم تستخدمها منذ فترة  ، على سبيل المثال لن يتتبع التطبيق موقعك إذا نسيت أنك قمت بتنزيله. </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">أهم مميزات اندرويد 11 : <br>  <br> <p class="clis"><span class="spano"></span> <b>تسجيل شاشة مدمج</b> : يتيح لك هذا استخدام عناصر التحكم التي يمكن الوصول إليها بسهولة داخل الهاتف لإنشاء مقطع فيديو لما هو معروض على شاشتك ، على غرار لقطات الشاشة. و يمكنك حتى تسجيل صوت تطبيقات هاتفك و استخدام الميكروفون أثناء التسجيل لسرد ما تفعل </p> <br> <p class="clis"><span class="spano"></span> <b>علامة تبويب المحادثات الجديدة </b> : عندما تقوم بالتمرير من الاعلى الى الاسفل في اندرويد 10 ، فإنك تقوم بإسقاط شريط الإشعارات ، في اندرويد 11 ، يتم تقسيم شريط الاشعارات إلى قسمين ، يتألفان من الإشعارات و "محادثاتك". <br>  <br> هذه المحادثات هي في الأساس مجرد إشعارات دردشة من تطبيقات الدردشة مثل WhatsApp و Facebook Messenger و Twitter ، لذا فأنت تعلم أنها على الأرجح تستحق الاهتمام أكثر من الإشعارات الأخرى.  </p> <br> <p class="clis"><span class="spano"></span> <b>المنزل الذكي وأدوات التحكم في الوسائط</b> : يأتي تحديث اندرويد11 الجديد مع الكثير من التغييرات للأشخاص الذين يستخدمون الكثير من الأجهزة المنزلية الذكية. <br>  <br> من قائمة واحدة يسهل الوصول إليها (يمكن الوصول إليها عن طريق الضغط لفترة طويلة على زر الطاقة) ، يمكنك التحكم في جميع أجهزة إنترنت الأشياء (إنترنت الأشياء) التي قمت بتوصيلها بهاتفك ، بالإضافة إلى بطاقات NFC المصرفية. </p> <br> <p class="clis"><span class="spano"></span> <b>تحسين إمكانية الوصول</b> : اصدار اندرويد 11 سيقلل من العمل الذي تحتاج إلى القيام به على هاتفك ، من خلال توقع عاداتك وأنماطك. <br>  <br> ومن المتوقع أن ميزة الرد الذكي التي يمكن استخدامها بالفعل في هواتف اندرويد قد تلقت بعض التعديلات.  </p> <br> <p class="clis"><span class="spano"></span> <b>الأمن والخصوصية</b> : يجلب تحديث اندرويد 11 بعض التغييرات على أذونات التطبيق. الآن ، يمكنك منح التطبيق إذنًا للكاميرا أو الموقع ، على سبيل المثال ، على أساس لمرة واحدة ، بدلاً من الخيارات الحالية "طوال الوقت" و "فقط أثناء استخدام التطبيق". <br>  <br> بالإضافة إلى ذلك ، سيقوم هاتفك تلقائيًا بإلغاء أذونات التطبيقات إذا لم تستخدمها منذ فترة  ، على سبيل المثال لن يتتبع التطبيق موقعك إذا نسيت أنك قمت بتنزيله. </p></div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -216,8 +215,7 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">قائمة بالهواتف التي سوف تحصل على اندرويد 11</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">في ما عدا الهواتف الذكية التي طرحت بعد صدرو اندرويد 11 - لأنها ببساطة سوف تأتي على الاغلب مع اندرويد 11 العادي أو اصدار (Go) .<br />فيما يلي قائمة بالهواتف التي سوف تحصل على تحديث اندرويد 11 :<br /><br /><p class="clis"><span class="spano"></span> Google Pixel 2 / 2 XL / 3 / 3 XL / 3a / 3a XL / 4 / 4 XL / 4a / 4a 5G / 5 </p><br /><p class="clis"><span class="spano"></span> Samsung Galaxy S10 / S10 Plus / S10e / S10 Lite / S20 / S20 Plus / S20 Ultra / S20 FE / S21 / S21 Plus / S21 Ultra </p><br /><p class="clis"><span class="spano"></span> Samsung Galaxy A32 / A51 / A52 / A72 </p><br /><p class="clis"><span class="spano"></span> Samsung Galaxy Note 10 / Note 10 Plus / Note 10 Lite / Note 20 / Note 20 Ultra </p><br /><p class="clis"><span class="spano"></span> OnePlus 8 / 8 Pro / 8T / 9 / 9 Pro </p><br /><p class="clis"><span class="spano"></span> Sony Xperia 1 II / 5 II / 10 II </p><br /><p class="clis"><span class="spano"></span> Xiaomi Mi 10 / Mi 10 Pro / Mi 10T / Mi 10T Pro / Mi Note 10 / Mi 11 / Mi 11 Ultra / Mi 11 Lite 5G </p><br /><p class="clis"><span class="spano"></span> Xiaomi Pocophone F1 / F2 Pro / X3 Pro </p><br /><p class="clis"><span class="spano"></span> Xiaomi Redmi Note 10 / Note 10 Pro </p><br /><p class="clis"><span class="spano"></span>  Nokia 1.4 / 3.4 / 8.3 5G / X20 </p><br /><p class="clis"><span class="spano"></span> LG Velvet </p><br /><p class="clis"><span class="spano"></span> Lenovo Legion Phone Duel 2 </p><br /><p class="clis"><span class="spano"></span>  Nubia Red Magic 6 </p><br /><p class="clis"><span class="spano"></span>  Asus ROG Phone 5 </p></div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">في ما عدا الهواتف الذكية التي طرحت بعد صدرو اندرويد 11 - لأنها ببساطة سوف تأتي على الاغلب مع اندرويد 11 العادي أو اصدار (Go) . <br> فيما يلي قائمة بالهواتف التي سوف تحصل على تحديث اندرويد 11 : <br>  <br> <p class="clis"><span class="spano"></span> Google Pixel 2 / 2 XL / 3 / 3 XL / 3a / 3a XL / 4 / 4 XL / 4a / 4a 5G / 5 </p> <br> <p class="clis"><span class="spano"></span> Samsung Galaxy S10 / S10 Plus / S10e / S10 Lite / S20 / S20 Plus / S20 Ultra / S20 FE / S21 / S21 Plus / S21 Ultra </p> <br> <p class="clis"><span class="spano"></span> Samsung Galaxy A32 / A51 / A52 / A72 </p> <br> <p class="clis"><span class="spano"></span> Samsung Galaxy Note 10 / Note 10 Plus / Note 10 Lite / Note 20 / Note 20 Ultra </p> <br> <p class="clis"><span class="spano"></span> OnePlus 8 / 8 Pro / 8T / 9 / 9 Pro </p> <br> <p class="clis"><span class="spano"></span> Sony Xperia 1 II / 5 II / 10 II </p> <br> <p class="clis"><span class="spano"></span> Xiaomi Mi 10 / Mi 10 Pro / Mi 10T / Mi 10T Pro / Mi Note 10 / Mi 11 / Mi 11 Ultra / Mi 11 Lite 5G </p> <br> <p class="clis"><span class="spano"></span> Xiaomi Pocophone F1 / F2 Pro / X3 Pro </p> <br> <p class="clis"><span class="spano"></span> Xiaomi Redmi Note 10 / Note 10 Pro </p> <br> <p class="clis"><span class="spano"></span>  Nokia 1.4 / 3.4 / 8.3 5G / X20 </p> <br> <p class="clis"><span class="spano"></span> LG Velvet </p> <br> <p class="clis"><span class="spano"></span> Lenovo Legion Phone Duel 2 </p> <br> <p class="clis"><span class="spano"></span>  Nubia Red Magic 6 </p> <br> <p class="clis"><span class="spano"></span>  Asus ROG Phone 5 </p></div></div>
          </div>
                
                
@@ -287,18 +285,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

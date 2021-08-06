@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.com/sub_s/technology/"> المواضيع / تكنلوجيا</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://www.trouko.com/sub_s/technology/"> المواضيع / تكنلوجيا</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       
                       <div class="index_list_"><a href="#titleContainerOne_"> أنشاء مواقع الويب </a></div><div class="index_list_"><a href="#titleContainerTwo_"> أنشاء تطبيقات اندرويد </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -131,7 +129,7 @@
                   <p class="admenPage" id="admenPage"> Hussein A. </p>
             </div>
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الجمعه, 23 ابريل 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل :  الخميس, 13 مايو 2021</p> 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الجمعه, 23 ابريل 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل : الخميس, 13 مايو 2021</p> 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -140,50 +138,51 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=هل لغة بايثون مفيدة حقاً&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/pyThonLan.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                
                                <div class="index_list_"><a href="#titleContainerOne_"> أنشاء مواقع الويب </a></div><div class="index_list_"><a href="#titleContainerTwo_"> أنشاء تطبيقات اندرويد </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">تعتبر لغة بايثون من لغة سهلة الفهم و التعلم أذ أنها من اشهر لغات البرمجة في الوقت الحالي و قدم تم تطوير بايثون في معهد الرياضيات والمعلوماتية الهولندي في مدينة أمستردام على يد جايدو فان روسم في أواخر ثمانينات القرن العشرين، وكان أول إعلان عنها في عام 1991م. كُتبت نواة اللغة باستعمال لغة سي. أطلق روسم الاسم 'بايثون' على لغته تعبيرًا عن إعجابه بفِرقَة مسرحية هزلية شهيرة من بريطانيا، كانت تطلق على نفسها اسم مونتي بايثون.</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">تعتبر لغة بايثون من لغة سهلة الفهم و التعلم أذ أنها من اشهر لغات البرمجة في الوقت الحالي و قدم تم تطوير بايثون في معهد الرياضيات والمعلوماتية الهولندي في مدينة أمستردام على يد جايدو فان روسم في أواخر ثمانينات القرن العشرين، وكان أول إعلان عنها في عام 1991م. كُتبت نواة اللغة باستعمال لغة سي. أطلق روسم الاسم 'بايثون' على لغته تعبيرًا عن إعجابه بفِرقَة مسرحية هزلية شهيرة من بريطانيا، كانت تطلق على نفسها اسم مونتي بايثون.</div>
                    
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">أنشاء مواقع الويب</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">لاشك بأنك يمكنك استخدام لغة بايثون في تطوير موقع الويب حيث يمكنك بناء سيرفر يعمل في الخلفية باستخدام لغة بايثون , وسيكون من السهل عليك انشائه و تعديله و يجب بالطبع استخدام في المقدمة(front-end)استخدام لغة اجتي أم ال(HTML)و سي أس أس للشكل(css) أو استخدام react.js , فالام عائد اليك .</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">لاشك بأنك يمكنك استخدام لغة بايثون في تطوير موقع الويب حيث يمكنك بناء سيرفر يعمل في الخلفية باستخدام لغة بايثون , وسيكون من السهل عليك انشائه و تعديله و يجب بالطبع استخدام في المقدمة(front-end)استخدام لغة اجتي أم ال(HTML)و سي أس أس للشكل(css) أو استخدام react.js , فالام عائد اليك .</div></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -220,8 +219,7 @@
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerTwo_">أنشاء تطبيقات اندرويد</h2></div></div>
-             <div class="ad_i_subject"><div id="containerTwo_">بالطبع يمكنك أنشاء تطبيقات الهاتف بأستخدام لغة بايثون ولكن سوف يتوجب عليك استخدام برامج تقوم بتعديل كود بايثون الى  جافا وذلك بسبب أن لكل نضام تشغيل لغة معينة يعتمد عليها ولكن لا تحزن فتستطيع بالطبع استخدام بايثون و من ثم تحويل كود بايثون الى الكود الذي يدعمه نضام التشغيل(فمثلا للاندرويد جافا)و بالتالي سيكون هذا ممتعاً , أم لا , ما رئيك .</div></div>
-             <div class="source_quotes">  </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerTwo_">بالطبع يمكنك أنشاء تطبيقات الهاتف بأستخدام لغة بايثون ولكن سوف يتوجب عليك استخدام برامج تقوم بتعديل كود بايثون الى  جافا وذلك بسبب أن لكل نضام تشغيل لغة معينة يعتمد عليها ولكن لا تحزن فتستطيع بالطبع استخدام بايثون و من ثم تحويل كود بايثون الى الكود الذي يدعمه نضام التشغيل(فمثلا للاندرويد جافا)و بالتالي سيكون هذا ممتعاً , أم لا , ما رئيك .</div></div>
          </div>
                
                
@@ -291,18 +289,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  

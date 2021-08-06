@@ -52,7 +52,7 @@
        <div id="menuLisWeb"> </div>
     </header>
     <div class="adConInQ">
-       <img src="../../../icons/folder-regular.svg" style="width: 14px;height:14px;" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/space/"> المواضيع / الفضاء</a>
+       <img src="../../../icons/folder-regular.svg"  width="14px" height="14px" id="icon_folder" >&nbsp;  <a href="/">الصفحة الرئيسية</a> / <a id="lin" href="https://trouko.com/sub_s/space/"> المواضيع / الفضاء</a>
     </div>
        <div class="bodyRootDisplay">
           <div class="webDiskTols" style="display:none;">
@@ -60,20 +60,20 @@
                 <div class="index_page">
                    <div class="menfontmen">
                       <div class="phot">
-                         <img src="../../../icons/list-alt-regular.svg" style="width:14px;height: 14px;">
+                         <img src="../../../icons/list-alt-regular.svg" width="14px" height="14px" style="width:14px;height: 14px;">
                       </div>
                       <div class="tpot">
                          محتويات
                       </div>
                    </div>
                    <div class="index_list_i">
-                      <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                      <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                       <a class="b_index" href="#souquo"> المراجع </a>
                       <div class="index_list_"><a href="#titleContainerOne_"> مركبة دراجون الفضائية </a></div>
                    </div>
                 </div>
              </div>
-             <div class="adsWeb" id="ads_web_wOne">
+             <div class="adsWeb">
                <div class="adsTitle">
                  إعلان
                </div>
@@ -83,8 +83,6 @@
                  <script>
                   if (window.innerWidth > 960) {
                      document.write('<ins class="adsbygoogle adsWebContainer" style="display:inline-block" data-ad-client="ca-pub-7171306952666828" data-ad-slot="1106443123"></ins>')
-                  } else {
-                     document.getElementById("ads_web_wOne").style.display = "none"
                   }
                  </script>
                  <script>
@@ -127,7 +125,7 @@
          <div id="title_index" class="tit_index__"> <h1 class="ad_intro_in_p_h" id="main_t_page">مركبة سبيس إكس دراجون</h1> </div>
          
          <div class="adConIn">
-           <img src="../../../icons/date.svg" style="width: 13px;height: 13px; margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاثنين, 3 مايو 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل :  الخميس, 13 مايو 2021</p> 
+           <img src="../../../icons/date.svg" width="13px" height="13px" style="margin-left: 4px;"> <p id="timeWrite">  تاريخ النشر  : الاثنين, 3 مايو 2021</p> &nbsp;  | &nbsp; <p id="edTime"> آخر تعديل : الخميس, 13 مايو 2021</p> 
          </div>
          <div class="time_write_this_page_o">
          <p class="buIndex"> مشاركة على : </p>
@@ -136,39 +134,42 @@
          </a>
          <a class="sheThPage twitShe" onclick="location.href = 'http://twitter.com/share?text=مركبة سبيس إكس دراجون&url='+encodeURI(window.location.href)"><img src="../../../icons/twitter-m.svg" width="13px" height="13px"/> </a>
          </div>
-         <div class="index__page__main" id="introudiction">
+         <div class="index__page__main">
                 <div class="Content__for__index__m">
                    <div id="ad_photo">
      <div class="photo_page_im" id="photo_page_im">
        <img class="img" id="img" src="../../../imgs/spacex-.webp">
        <p class="pText_Image">
        <i id="click_material">
-         <img src="../../../icons/expand-solid.svg" class="material_i" style="width: 16px;">
+         <img src="../../../icons/expand-solid.svg" class="material_i" width="16px" height="16px">
        </i>
        </p>
      </div></div>
                    <div class="contactIndex contactCon">
                       <div class="info_index">
                          <div class="index_page indexMedialPage">
-                            <div class="menfontmen">
-                               <div class="phot">
-                                  <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                            <div class="phoneList">
+                               <div class="phoneList_word">
+                                 <div class="phot">
+                                    <img src="../../../icons/list-alt-regular.svg" style="width:14px; height:14px">
+                                 </div>
+                                 <div class="tpot">
+                                    محتويات
+                                 </div>
                                </div>
-                               <div class="tpot">
-                                  محتويات
+                               <div class="phoneList_signal" onclick="setListPhone()">
+                                 <div id="si_phoneList">[--]</div>
                                </div>
                             </div>
-                            <div class="index_list_i">
-                               <a class="a_index" id="a_index_int" href="#introudiction"> المقدمه </a>
+                            <div class="index_list_i" id="listPhone">
+                               <a class="a_index" id="a_index_int" href="#discription_page"> المقدمه </a>
                                <a class="b_index" href="#souquo"> المراجع </a>
                                <div class="index_list_"><a href="#titleContainerOne_"> مركبة دراجون الفضائية </a></div>
                             </div>
                          </div>
                    </div>
                    </div>
-                   <div class="container_text" id="Content__for__index__m">
-                      <div class="ad_continer"> <p id="discription_page">تاسست شركة سبيس إكس في 2002 على يد رجل الاعمال الامريكي إيلون ماسك , وهي شركة متخصصة بالرحلات الفضائية و هي تعمل على تصنيع معدات الطيران والنقل الفضائي , كما و أنها أطقلت العديد من الأقمار الصناعيّة لخدمة الإنترنت في مشروع ' ستارلنك ' ، وطورت العديد من المركّبات منها مركبة الشحن الفضائيّة دراجون، ونقلت البشر إلى محطة الفضاء الدولية على مركبة دراجون 2 ، كما و إِطلقت أول صاروخ يعمل بالوقود السائل ممول من القطاع الخاص ولها الكثير من الانجازات .وتعد شركة سبيس إكس  أول شركة خاصَّة ترسل مركبة فضائية إلى مدار حول الأرض وتعيدها إلى الأرض بنجاح، وأول شركة خاصَّة ترسل مركبة فضائية ورواد فضاء إلى محطّة الفضاء الدوليَّة .</p> </div>
-                   </div>
+                   <div class="container_text" id="discription_page">تاسست شركة سبيس إكس في 2002 على يد رجل الاعمال الامريكي إيلون ماسك , وهي شركة متخصصة بالرحلات الفضائية و هي تعمل على تصنيع معدات الطيران والنقل الفضائي , كما و أنها أطقلت العديد من الأقمار الصناعيّة لخدمة الإنترنت في مشروع ' ستارلنك ' ، وطورت العديد من المركّبات منها مركبة الشحن الفضائيّة دراجون، ونقلت البشر إلى محطة الفضاء الدولية على مركبة دراجون 2 ، كما و إِطلقت أول صاروخ يعمل بالوقود السائل ممول من القطاع الخاص ولها الكثير من الانجازات .وتعد شركة سبيس إكس  أول شركة خاصَّة ترسل مركبة فضائية إلى مدار حول الأرض وتعيدها إلى الأرض بنجاح، وأول شركة خاصَّة ترسل مركبة فضائية ورواد فضاء إلى محطّة الفضاء الدوليَّة .</div>
                    
          <div id="suggContainerMed" style="display:none;">
          <div class="contactCon">
@@ -189,15 +190,13 @@
          </div>
          </div>
                 </div>
-                <div id="ad_sources_quotes_index" class="source_quotes"></div>
              </div>
              <!-- add a sub -->
              <div class="s_add">
                
          <div class="ad_sub">
              <div class="title_con"><span class="arrTitle"></span><div class="titInside"><h2 class="title__ad_subject_p" id="titleContainerOne_">مركبة دراجون الفضائية</h2></div></div>
-             <div class="ad_i_subject"><div id="containerOne_">تستطيع مركبة دراجون الفضائية حمل ما يصل إلى 7 ركاب من وإلى مدار الأرض وما بعده.كما وهي المركبة الفضائية الوحيدة التي تطير حاليًا والقادرة على إعادة كميات كبيرة من البضائع إلى الأرض ، وهي أول مركبة فضائية خاصة تنقل البشر إلى المحطة الفضائية .<br /><br />بعض من خصائص المركبة :-<br />الطول - " 8.1 m "<br />حجم كبسولة - " 9.3 m³ "<br />حجم صندوق الأمتعة  - " 37 m³ "<br /><br />اصدارات المركبة : اصدرت شركة سبيس إكس اصدارين من المركبة الفضائية دراجون , الاولى " دراجون 1 " والاخرى " دراجون 2 " .</div></div>
-             <div class="source_quotes"> <div> <a href='#souquo'>(1)</a><p class='nameSources'>سبيس إكس</p> </div> </div>
+             <div class="ad_i_subject"><div class="textInside" id="containerOne_">تستطيع مركبة دراجون الفضائية حمل ما يصل إلى 7 ركاب من وإلى مدار الأرض وما بعده.كما وهي المركبة الفضائية الوحيدة التي تطير حاليًا والقادرة على إعادة كميات كبيرة من البضائع إلى الأرض ، وهي أول مركبة فضائية خاصة تنقل البشر إلى المحطة الفضائية . <br>  <br> بعض من خصائص المركبة :- <br> الطول - " 8.1 m " <br> حجم كبسولة - " 9.3 m³ " <br> حجم صندوق الأمتعة  - " 37 m³ " <br>  <br> اصدارات المركبة : اصدرت شركة سبيس إكس اصدارين من المركبة الفضائية دراجون , الاولى " دراجون 1 " والاخرى " دراجون 2 " .</div><sub class='linkTo'><a href='#souquo'>[1]</a></sub></div>
          </div>
                <div id="adWebSec_Two"></div>
                
@@ -255,7 +254,7 @@
             </div>
             <div class="notesQ" > يتم أضافة المصادر و المراجع و الاقتباسات  لغاية تحسين جودة معلومات المقالة. </div>
             <div class="sou_an_quo_content" id="souquo">
-               <div> <a href='https://www.spacex.com/vehicles/dragon/'> [1] &nbsp; سبيس إكس </a></div> 
+               <div> <a href='https://www.spacex.com/vehicles/dragon/'> (1) &nbsp; سبيس إكس </a></div> 
                 
                 
                 
@@ -296,18 +295,18 @@
     
        <div class="b_sess dis_sess"> 
        <div class="m_facebook w_each">
-         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="face" href="https://web.facebook.com/trouko1"> <img src="../../../icons/facebook-f-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_twiter twi w_each">
-         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" style="width: 18px; height:18px"> </a>
+         <a class="twi" href="https://twitter.com/trouko1">  <img src="../../../icons/twitter-brands.svg" width="18px" height="18px"> </a>
        </div>
        <div class="m_telegram w_each">
-        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" style="width: 18px; height:18px"> </a>
+        <a class="m_telegram" href="https://t.me/trouko"> <img src="../../../icons/telegram-plane-brands.svg" width="18px" height="18px"> </a>
        </div>
     </div>
  </div>
  <div class="trouko_about">
-     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" style="width: 9px; height:9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
+     <div class="trouko-about_p"> <img src="../../../icons/check-circle-regular.svg" width="9px" height="9px"> &nbsp;  تروكو هو موقع لنشر المقالات المختلفة باللغة العربية , الهدف الرئيسي من أنشائه هو لرفع نسبة
      المقالات المطروحة باللغة العربية. </div>
      <div class="trouko_about_t">
       <div>  
